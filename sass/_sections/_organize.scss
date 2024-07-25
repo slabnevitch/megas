@@ -1,0 +1,136 @@
+/*--------------------organize----------------------*/
+.organize {
+	position: relative;
+	margin-top: rem(-1);
+	padding-top: rem(83.86);
+	padding-bottom: rem(124);
+	background-color: #F2F2F2;
+
+	@include max-screen($lgg){
+		padding-top: rem(50.26);
+		padding-bottom: rem(97.23);
+	}
+	@include max-screen($sm){
+		padding-top: rem(55.52);
+		padding-bottom: rem(78);
+	}
+	.heading {
+		margin-bottom: rem(59.06);
+
+		@include max-screen($lgg){
+			margin-bottom: rem(37.76);
+		}
+		@include max-screen($sm){
+			margin-bottom: rem(31.51);
+
+		}
+	}
+}
+.organize__wrapper {}
+.heading {
+	// padding-left: rem(20);
+
+	@include min-screen($sm){
+		margin-left: prc(400, $maxWidthContainer);
+		
+	}
+}
+.heading__subtitle {}
+.heading__title {}
+.organize__options {
+	max-width: prc(580,  $maxWidthContainer);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: rem(60.74);
+
+	@include max-screen($lgg){
+		max-width: prc(376,  1024);
+		margin-left: prc(260, 1024);
+		margin-right: 0;
+		margin-bottom: rem(50.86);
+	}
+	@include max-screen($sm){
+		max-width: none;
+		margin-left: 0;
+		margin-bottom: rem(43.47);
+
+	}
+
+	@include max-screen($xs){
+		max-width: rem(200);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.organize__option {
+	display: flex;
+	align-items: center;
+	column-gap: rem(45);
+
+	@include max-screen($lgg){
+		column-gap: rem(30);
+		
+	}
+	@include max-screen($sm){
+		
+		flex-direction: column;
+		text-align: center;
+		row-gap: rem(19);
+	}
+	&:not(:last-child){
+		margin-bottom: rem(52.42);
+
+		@include max-screen($lgg){
+			margin-bottom: rem(18);
+			
+		}
+		@include max-screen($sm){
+			margin-bottom: rem(32.6);
+			
+		}
+	}
+
+}
+.option-organize {}
+.option-organize__icon {
+	flex-shrink: 0;
+	width: rem(54.09);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	@include max-screen($lgg){
+		width: rem(47.53);
+	}
+	@include max-screen($md){
+		width: rem(37.87);
+	}
+
+	img{
+		// display: block;
+		max-width: 100%;
+	}
+}
+.option-organize__text {
+	font-size: rem(21.9);
+
+	@include max-screen($lgg){
+		font-size: rem(19);
+	}
+	@include max-screen($md){
+		font-size: rem(15);
+	}
+}
+.organize__bottom {
+
+	@include max-screen($sm){
+		text-align: center;
+	}
+	@include min-screen($sm){
+		
+		padding-left: prc(400, $maxWidthContainer);
+	}
+
+}
+.btn {}
+/*--------------------END organize----------------------*/ 

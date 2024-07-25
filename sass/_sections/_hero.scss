@@ -29,7 +29,11 @@
 	z-index: 2;
 
 	@include max-screen($lgg){
-		padding-right: rem(30);
+		// padding-right: rem(30);
+	}
+	@include min-screen($sm){
+		max-width: none;
+		margin-right: prc(800, $maxWidthContainer);
 	}
 }
 .hero__slogan {

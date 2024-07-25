@@ -1,0 +1,16 @@
+section.organize
+	.organize__wrapper
+		.heading
+			.heading__subtitle Организуем
+			h2.heading__title.organize__title 24/7
+		
+		.organize__options
+			- var opts = ['быстрый перекус с помощью современных технологий', 'умное оборудование и цифровые системы самообслуживания, корпоративного питания', 'высокое качество товаров и ингредиентов, премиальный зерновой кофе', 'профессиональное обслуживание, 18 лет опыта'];
+			each opt, i in opts
+				article.organize__option.option-organize
+					.option-organize__icon
+						img(src="img/organize/"+(i+1)+".svg" alt="alt")
+					.option-organize__text= opt
+		
+		.organize__bottom
+			a(href="#").btn Узнать больше >
