@@ -14,6 +14,12 @@
 	document.addEventListener('DOMContentLoaded', function() {
 		console.log('DOMContentLoaded!');
 
+		document.querySelector('.toggle-mnu').onclick = function(e) {
+			this.classList.toggle('on');
+			document.documentElement.classList.toggle('menu-opened');
+			document.documentElement.classList.toggle('lock');
+		}
+
 		document.onclick = function(e) {
 			var targ = e.target;
 			console.log(targ)

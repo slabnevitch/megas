@@ -148,6 +148,11 @@ textarea{
 	max-width: rem($maxContainerWidth);
 	// outline: 1px solid;
 
+	@include max-screen($md){
+		padding-left: rem(30);
+		padding-right: rem(30);
+	}
+
 }
 // classes for smartgrid(c) structure
 // .wrapper-smart{
