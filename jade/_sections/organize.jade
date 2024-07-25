@@ -8,7 +8,7 @@ section.organize
 			- var opts = ['быстрый перекус с помощью современных технологий', 'умное оборудование и цифровые системы самообслуживания, корпоративного питания', 'высокое качество товаров и ингредиентов, премиальный зерновой кофе', 'профессиональное обслуживание, 18 лет опыта'];
 			each opt, i in opts
 				article.organize__option.option-organize
-					.option-organize__icon
+					.option-organize__icon(data-trigger style="transition-delay:"+(0.1 * i)+"s")
 						img(src="img/organize/"+(i+1)+".svg" alt="alt")
 					.option-organize__text= opt
 		

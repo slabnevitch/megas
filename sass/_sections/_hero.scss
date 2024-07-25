@@ -30,6 +30,10 @@
 
 	@include max-screen($lgg){
 		// padding-right: rem(30);
+
+	}
+	@include max-screen($sm){
+		max-width: rem(232);
 	}
 	@include min-screen($sm){
 		max-width: none;

@@ -1,0 +1,91 @@
+/*--------------------system----------------------*/
+.system {
+	position: relative;
+	padding-top: rem(57.66);
+	background-color: #000;
+
+	@include max-screen($lgg){
+		padding-top: rem(40.82);
+		
+	}
+}
+.system__top {}
+.system__wrapper {
+	min-height: rem(570.44);
+
+	@include max-screen($lgg){
+		min-height: rem(401.83);
+		
+	}
+	@include max-screen($sm){
+		min-height: rem(316.21);
+		
+	}
+}
+.system__heading {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	margin-left: prc(400, $maxWidthContainer);
+
+	@include max-screen($sm){
+		margin-left: rem(45);
+	}
+}
+.system__logo {
+	margin-bottom: rem(29.49);
+	max-width: rem(43.01);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(18.99);
+		
+	}
+	@include max-screen($sm){
+		max-width: rem(30.78);
+		margin-bottom: rem(10);
+	}
+
+	img{
+		width: 100%;
+		display: block;
+	}
+}
+.system__text {
+	font-size: rem(21);
+	@include max-screen($lgg){
+		font-size: rem(19);
+	}
+	@include max-screen($sm){
+		font-size: rem(15);
+	}
+}
+.system__image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	@include max-screen($xs){
+		width: calc(135%);
+	}
+	@include max-screen($xsss){
+		left: -35%;
+		
+	}
+}
+.system__picture {
+	padding-bottom: 0;
+	margin: 0 auto;
+	max-width: rem($maxWidth);
+	height: 100%;
+	// aspect-ratio: $maxWidth / 570.44;
+
+	._fit-img{
+		@include max-screen($xsss){
+			// left: -30%;
+			object-position: left center;
+		}
+	}
+}
+/*--------------------END system----------------------*/ 
