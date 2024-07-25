@@ -1,1 +1,23 @@
 header.header
+	.header__wrapper
+		.header__body
+			a(href="#").header__logo
+				img(src="img/header-logo.svg" alt="alt")
+
+			.header__menu.menu-header
+				button.toggle-mnu
+					span
+				nav.menu-header__body
+					+menu('menu', ['Вендинговые Аппараты', 'Школьный вендинг', 'Почему MegasVending', 'Примеры Установок', 'Польза от вендинга'])
+
+			button(type="button").header__search-button
+				img(src="img/icons/search.svg" alt="alt")
+			
+	.header__serch-area
+		.__wrapper
+			form(action="#" class="header__serch-form serch-form-header")
+				label.serch-form-header__label
+					button.serch-form-header__submit(type="submit")
+						img(src="img/icons/search.svg" alt="alt")
+					
+					input(autocomplete="off" type="text" name="" class="serch-form-header__input" placeholder="Поиск")

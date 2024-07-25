@@ -1,5 +1,120 @@
 /*--------------------header----------------------*/
 .header{
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+  // min-height: 100px; /*опционально*/
+  background-color: rgba($bg, 0.88);
+}
+.header__wrapper{
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // min-height: 100px;/*опционально*/
+  transition: all .5s ease;/*опционально*/
+}
+// header._scroll .header__wrapper{
+//   min-height: 50px;/*опционально*/
+// }
+.header__wrapper {}
+.header__body {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: rem(64);
+}
+.header__logo {
+	max-width: rem(32.11);
+	@include adaptive-value-rem('margin-right', 103.89, 10, $maxWidth, $minWidth, 1);
+	img{
+		width: 100%;
+	}
+}
+.header__menu {}
+.menu-header {}
+.toggle-mnu {}
+.menu-header__body {}
+.menu__list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	@include adaptive-value-rem('column-gap', 48, 10, $maxWidth, $minWidth, 1);
+	row-gap: rem(5);
+}
+.menu__item {
+	list-style-type: none;
+}
+.menu__link {
+	font-size: rem(15.5);
+	color: #fff;
+	letter-spacing: .5%;
+	text-decoration: none;
 
+	@media (any-hover: hover) { //только для устройств с ховером
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+}
+.header__search-button {
+	@include but-null;
+	@include adaptive-value-rem('margin-left', 79.7, 10, $maxWidth, $minWidth, 1);
+	width: rem(18.39);
+	height: rem(17);
+
+	img{
+		width: 100%;
+		max-height: 100%;
+	}
+}
+.header__serch-area {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: rem(395);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s ease;
+	background-color: rgba($bg, .88);
+
+	.search-open & {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.header__serch-form {}
+.serch-form-header {
+	padding-top: rem(55);
+	padding-left: rem(81.2);
+}
+.serch-form-header__label {
+	display: flex;
+	align-items: center;
+	column-gap: rem(31);
+}
+.serch-form-header__submit{
+	@include but-null();
+	width: rem(24.88);
+	height: rem(23);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img{
+		width: 100%;
+		max-height: 100%;
+	}
+}
+.serch-form-header__input {
+	height: rem(37);
+	background-color: transparent;
+	@include placecolor(#fff);
+	font-size: rem(24);
+	line-height: math.div(32.64, 24);
+	font-family: inherit;
+	color: #fff;
 }
 /*--------------------END header----------------------*/ 

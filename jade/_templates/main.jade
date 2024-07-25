@@ -34,12 +34,12 @@ html(lang='ru')
 		//- include ../_misc/_body-html-for-slideout 
 
 		//- footer-to-bottom--------------------
-		//- include ../_misc/_footer-to-bottom
+		include ../_misc/_footer-to-bottom
 		
 		//- при использовании _body-html-for-slideout или _footer-to-bottom  -- закомментировать:
-		include ../_sections/header
-		block content
-		include ../_sections/footer
+		//- include ../_sections/header
+		//- block content
+		//- include ../_sections/footer
 		
 
 		//- УДАЛИТЬ если в gulpfile.js buildMode = 'webpack'
@@ -49,10 +49,10 @@ html(lang='ru')
 		block page-scripts
 		
 		//- УДАЛИТЬ если в gulpfile.js buildMode = 'webpack'
-		//- script(src='js/common.js')
+		script(src='js/common.js')
 		
 
 		//- если в gulpfile.js buildMode = 'webpack'
-		script(src='js/main.min.js')
+		//- script(src='js/main.min.js')
 		
 		//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_NAmCu9dm16a9i0oeX0T6rBQFgObeiZA&amp;callback=initMap" async defer>)

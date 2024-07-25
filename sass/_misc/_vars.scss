@@ -1,12 +1,13 @@
 $maxWidth: 1440;//ширина макета в граф. редакторе
 $minWidth: 320;
 $maxWidthContainer: 1180;//ширина ограничивающего контейнера без паддингов
-$containerPaddings: 30;//сумма левого и правого паддингов ограничивающего контейнера
+$containerPaddings: 20;//сумма левого и правого паддингов ограничивающего контейнера
 $maxContainerWidth: $maxWidthContainer + $containerPaddings;// итоговая ширина ограничивающего контейнера
 
 // colors
 $accent: #009245;
 $text: #4D4D4D;
+$bg: #333333;
 
 // paths
 	// use: background-image: url($icos + 'arrow-right.svg');
@@ -38,7 +39,7 @@ $gutter: $grid-gutter-width;
 
 //fonts
 $baseFontSize: 17;// основной размер шрифта в макете
-$reg: 'Articulat CF', sans-serif;
+$reg: 'Articulat CF Normal', sans-serif;
 $med: 'Articulat CF Medium', sans-serif;
 $light: 'Articulat CF Light', sans-serif;
 

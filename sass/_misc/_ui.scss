@@ -38,62 +38,62 @@
    
 // }
 
-// .toggle-mnu{
-// 	position: fixed;
-// 	right: rem(30);
-// 	top: rem(15);
-//   display: block;
-//   width: rem(28);
-//   height: rem(28);
-//   margin-top: rem(14);
-//   padding: 0;
-//   background-color: transparent;
-//   border: none;
+.toggle-mnu{
+	position: fixed;
+	right: rem(30);
+	top: rem(15);
+  display: none;
+  width: rem(28);
+  height: rem(28);
+  margin-top: rem(14);
+  padding: 0;
+  background-color: transparent;
+  border: none;
 
-//   span:after, span:before{
+  span:after, span:before{
 
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     top: rem(9);
-//   } 
+    content: "";
+    position: absolute;
+    left: 0;
+    top: rem(9);
+  } 
 
-//   span:after{
+  span:after{
 
-//     top: rem(18);
-//   }
+    top: rem(18);
+  }
 
-//   span{
+  span{
 
-//     position: relative;
-//     display: block;
-//   } 
+    position: relative;
+    display: block;
+  } 
 
-//   span, span:after, span:before{
+  span, span:after, span:before{
 
-//     width: 100%;
-//     height: rem(2);
-//     background-color: #000;
-//     transition: all 0.3s;
-//     backface-visibility: hidden;
-//     border-radius: rem(2);
-//   }
+    width: 100%;
+    height: rem(2);
+    background-color: #000;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: rem(2);
+  }
 
 
-//   &.on span{
+  &.on span{
 
-//     background-color: transparent;
-//   } 
+    background-color: transparent;
+  } 
 
-//   &.on span:before{
+  &.on span:before{
 
-//     transform: rotate(45deg) translate(rem(-1), 0);
-//   } 
+    transform: rotate(45deg) translate(rem(-1), 0);
+  } 
 
-//   &.on span:after{
+  &.on span:after{
 
-//     transform: rotate(-45deg) translate(rem(6), rem(-7));
-//   } 
-// } 
+    transform: rotate(-45deg) translate(rem(6), rem(-7));
+  } 
+} 
 
 /*--------------------END ui----------------------*/ 

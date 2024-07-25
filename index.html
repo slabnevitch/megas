@@ -18,14 +18,44 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="header"></header>
-    <h1 style="text-align:center;">Привет! Можно начинать</h1>
-    <div class="__wrapper"></div>
-    <footer class="footer"></footer>
+    <main class="main">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__body"><a href="#" class="header__logo"><img src="img/header-logo.svg" alt="alt"></a>
+            <div class="header__menu menu-header">
+              <button class="toggle-mnu"><span></span></button>
+              <nav class="menu-header__body">
+                    <ul class="menu__list">
+                      <li class="menu__item"><a href="#" class="menu__link">Вендинговые Аппараты</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link">Школьный вендинг</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link">Почему MegasVending</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link">Примеры Установок</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link">Польза от вендинга</a></li>
+                    </ul>
+              </nav>
+            </div>
+            <button type="button" class="header__search-button"><img src="img/icons/search.svg" alt="alt"></button>
+          </div>
+        </div>
+        <div class="header__serch-area">
+          <div class="__wrapper">
+            <form action="#" class="header__serch-form serch-form-header">
+              <label class="serch-form-header__label">
+                <button type="submit" class="serch-form-header__submit"><img src="img/icons/search.svg" alt="alt"></button>
+                <input autocomplete="off" type="text" name="" placeholder="Поиск" class="serch-form-header__input">
+              </label>
+            </form>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+      </div>
+      <footer class="footer"></footer>
+    </main>
     
     
     
     
-    <script src="js/main.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
