@@ -1,0 +1,142 @@
+.menu-list{
+	@include min-screen($multilevelPoint){
+		display: flex;
+	}
+	
+	li{
+		list-style-type: none;
+	}
+	a{
+		text-decoration: none;
+	}
+
+}
+.menu-list__item{
+
+  	@include min-screen($multilevelPoint){
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	&:not(:last-child){
+ 
+		@include min-screen($multilevelPoint){
+			margin-right: rem(10);
+		}
+	}
+	.submenu-list{
+		@include min-screen($multilevelPoint){
+			left: 0;
+			top: 100%;
+			background-color: gray;
+		}
+	}
+
+	@media (any-hover: hover) { //только для устройств с ховером
+		&:hover{
+			& > .submenu-list{
+				display: block;
+
+			}
+			& > .menu-list__icon{
+				transform: rotate(180deg);
+			}
+		}
+
+	}
+
+	&.active{
+		& > .menu-list__icon{
+			transform: rotate(180deg);
+		}rem(
+
+		& > .submenu-list{
+			display: block;
+
+		}
+	}
+
+}
+.submenu-list__item{
+
+	@include min-screen($multilevelPoint){
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	} 
+
+	a{
+		@include min-screen($multilevelPoint){
+			display: block;
+			padding: rem(5) rem(10);
+			flex: 1 0 auto;
+		}
+	}
+	.submenu-list{
+		@include min-screen($multilevelPoint){
+			left: 100%;
+			top: 0;
+		}
+	}
+
+	@media (any-hover: hover) { //только для устройств с ховером
+		&:hover{
+			& >.submenu-list{
+				display: block;
+			}
+			& > .menu-list__icon{
+				transform: rotate(90deg);
+			}
+		}
+	}
+	&.active{
+		& > .menu-list__icon{
+			transform: rotate(90deg);
+		}
+
+		& > .submenu-list{
+			display: block;
+
+		}
+	}
+
+}
+.menu-list__icon{
+	width: rem(20);
+	height: rem(20);
+	margin: 0 rem(5);
+	// outline: 1px solid red;
+	position: relative;
+	display: inline-block;
+	@include max-screen($multilevelPoint){
+		display: none;
+	}
+
+	&:after{
+		content: '';
+		@include absolute-center;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width:rem(10) rem(7.5) 0 rem(7.5);
+		border-color: #000 transparent transparent transparent;
+	}
+}
+.submenu-list{
+	@include min-screen($multilevelPoint){
+		position: absolute;
+		display: none;
+		min-width: rem(200);
+	}
+
+	&.opened{
+		display: block;
+	}
+	a{
+		@include max-screen($sm){
+			font-size: rem(12);
+		}  
+	}
+}
+

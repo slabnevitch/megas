@@ -1,0 +1,100 @@
+.form__input {
+	height: rem(50);
+	padding-left: rem(24);
+	padding-right: rem(24);
+	border: 1px solid #000;
+	padding-right: 55px;
+	background: #fff ;
+	border-radius: rem(3) 0 0 rem(3);
+	@include placecolor(rgba(#fff, 0.5));
+	color: #fff;
+	font-family: inherit;
+}
+.form__custom-policy {
+	display: flex;
+	align-items: flex-start;
+
+}
+.form__custom {
+	position: relative;
+	flex-shrink: 0;
+	margin-right: rem(20);
+}
+.form__check {
+	@include checkbox;
+	&:checked + .form__custom-chek {
+		&:before{
+			display: block;
+		}
+	}
+}
+.form__custom-chek {
+	display: block;
+	position: relative;
+	width: rem(16);
+	height: rem(16);
+	border: 1px solid #000;
+	border-radius: rem(2);
+
+	@media (any-hover: hover) { //только для устройств с ховером
+				&:hover{
+				cursor: pointer;
+			}
+		}
+	&:before{
+		@include absolute-center-old;
+		display: none;
+		width: rem(8);
+		height: rem(8);
+		border-radius: rem(2);
+		background-color: #000;
+		content: '';
+	}
+}
+.form__area{
+	width: 100%;
+	height: rem(100);
+	padding:rem(20);
+    resize: none;
+	border: none;
+	background: #fff;
+	padding-left: rem(20);
+	color: #222222;
+	font-family: inherit;
+}
+.form__policy {
+
+}
+
+// иконка глаза для скрытия пароля
+// gist - "password input eye"
+
+.eye-ico{
+	width: rem(24);
+	height: rem(24);
+	position: relative;
+	@include but-null();
+	position: absolute;
+	bottom: rem(12);
+	right: rem(20);
+
+	.icon{
+		@include absolute-center;
+		font-size: rem(14);
+	}
+
+	&.unblind{
+		.eye-ico__show{
+			display: block;
+
+		}
+		.eye-ico__hide{
+			display: none;
+
+		}
+	}
+
+	.eye-ico__show{
+		display: none;
+	}
+}

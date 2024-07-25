@@ -1,0 +1,39 @@
+// @import "bourbon/bourbon"
+// +font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", $file-formats: woff woff2)
+@font-face {
+    font-family: 'Articulat CF Light';
+    src: url('ArticulatCF-Light.woff2') format('woff2'),
+        url('ArticulatCF-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Medium';
+    src: url('ArticulatCF-Medium.woff2') format('woff2'),
+        url('ArticulatCF-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Normal';
+    src: url('ArticulatCF-Normal.woff2') format('woff2'),
+        url('ArticulatCF-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Fonts helper:
+	// 100 - Thin (Hairline)
+	// 200 - Extra Light (Ultra Light)
+	// 300 - Light (Ultra Light)
+	// 400 - Regular (Normal)
+	// 500 - Medium
+	// 600 - Semi Bold (Demi Bold)
+	// 700 - Bold
+	// 800 - Extra Bold (Ultra Bold)
+	// 900 - Black (Heavy)
