@@ -555,6 +555,7 @@ textarea {
 .header {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 5;
   width: 100%;
   left: 0;
   top: 0;
@@ -562,6 +563,8 @@ textarea {
 }
 
 .header__wrapper {
+  position: relative;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -746,7 +749,7 @@ textarea {
 
 .header__serch-area {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 23.2352941176rem;
@@ -760,9 +763,11 @@ textarea {
   opacity: 1;
 }
 
+.serch-form-header {
+  padding-top: 7rem;
+}
 @media only screen and (min-width: 61.99875em) {
   .serch-form-header {
-    padding-top: 3.2352941176rem;
     padding-left: 4.7764705882rem;
   }
 }
@@ -824,4 +829,149 @@ textarea {
 }
 
 /*--------------------END header----------------------*/
+/*--------------------hero----------------------*/
+.hero {
+  position: relative;
+  min-height: 44.5376470588rem;
+  padding-top: 21.1176470588rem;
+  background-color: #EFF2F7;
+}
+@media only screen and (max-width: 64em) {
+  .hero {
+    min-height: 42.4494117647rem;
+    padding-top: 19.3529411765rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .hero {
+    min-height: 34.0588235294rem;
+    padding-top: 17.6470588235rem;
+  }
+}
+
+.hero__content {
+  max-width: 23.5294117647rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 64em) {
+  .hero__content {
+    padding-right: 1.7647058824rem;
+  }
+}
+
+.hero__slogan {
+  font-family: "Articulat CF Medium", sans-serif;
+  margin-bottom: 1.7647058824rem;
+  font-size: 1.2941176471rem;
+  color: #1A1A1A;
+}
+@media only screen and (max-width: 64em) {
+  .hero__slogan {
+    font-size: 1.1176470588rem;
+    margin-bottom: 1.4705882353rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .hero__slogan {
+    font-size: 0.8823529412rem;
+  }
+}
+
+.hero__logo {
+  width: 100%;
+  max-width: 16.0588235294rem;
+  margin-bottom: 2.7647058824rem;
+}
+@media only screen and (max-width: 64em) {
+  .hero__logo {
+    margin-bottom: 2.4117647059rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .hero__logo {
+    max-width: 10.5882352941rem;
+  }
+}
+.hero__logo img {
+  display: block;
+  width: 100%;
+}
+
+.hero__text {
+  line-height: 130%;
+  text-align: right;
+}
+@media only screen and (max-width: 64em) {
+  .hero__text {
+    font-size: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .hero__text {
+    font-size: 0.7647058824rem;
+  }
+}
+
+.hero__image {
+  padding-bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80.1523529412rem;
+}
+@media only screen and (max-width: 85.375em) {
+  .hero__image {
+    right: -10%;
+  }
+}
+@media only screen and (max-width: 73.75em) {
+  .hero__image {
+    right: -20%;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .hero__image {
+    right: -22%;
+    width: 76.3847058824rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .hero__image {
+    right: -30%;
+    width: 64.9129411765rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .hero__image {
+    right: -60%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero__image {
+    right: -60%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .hero__image {
+    right: -105%;
+  }
+}
+.hero__image ._fit-img {
+  object-position: right top;
+}
+@media only screen and (max-width: 61.99875em) {
+  .hero__image ._fit-img {
+    object-position: right bottom;
+  }
+}
+
+/*--------------------END hero----------------------*/
 /*# sourceMappingURL=maps/main.css.map */

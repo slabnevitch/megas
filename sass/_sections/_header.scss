@@ -1,6 +1,7 @@
 /*--------------------header----------------------*/
 .header{
   position: sticky;
+  z-index: 5;
   width: 100%;
   left: 0;
   top: 0;
@@ -8,7 +9,8 @@
   background-color: rgba($bg, 0.88);
 }
 .header__wrapper{
-  // position: fixed;
+  position: relative;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -113,7 +115,7 @@
 }
 .header__serch-area {
 	position: absolute;
-	top: 100%;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: rem(395);
@@ -129,8 +131,8 @@
 }
 .header__serch-form {}
 .serch-form-header {
+		padding-top: rem(calc(55 + 64));
 	@include min-screen($md){
-		padding-top: rem(55);
 		padding-left: rem(81.2);
 		
 	}

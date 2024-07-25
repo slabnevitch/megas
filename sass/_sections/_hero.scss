@@ -1,0 +1,133 @@
+/*--------------------hero----------------------*/
+.hero {
+	position: relative;
+	min-height: rem(757.14);
+	padding-top: rem(359);
+	// padding-bottom: rem(101.14);
+	background-color: #EFF2F7;
+
+	@include max-screen($lgg){
+		min-height: rem(721.64);
+		
+		padding-top: rem(329);
+	}
+
+	@include max-screen($md){
+		min-height: rem(579);
+		padding-top: rem(300);
+	}
+}
+.hero__wrapper {
+
+}
+.hero__content {
+	max-width: rem(400);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+	z-index: 2;
+
+	@include max-screen($lgg){
+		padding-right: rem(30);
+	}
+}
+.hero__slogan {
+	font-family: $med;
+	margin-bottom: rem(30);
+	font-size: rem(22);
+	color: #1A1A1A;
+
+	@include max-screen($lgg){
+		font-size: rem(19);
+		margin-bottom: rem(25);
+	}
+	@include max-screen($md){
+		font-size: rem(15);
+		
+	}
+}
+.hero__logo {
+	width: 100%;
+	max-width: rem(273);
+	margin-bottom: rem(47);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(41);
+	}
+
+	@include max-screen($md){
+		max-width: rem(180);
+	}
+
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+.hero__text {
+	line-height: 130%;
+	text-align: right;
+
+	@include max-screen($lgg){
+		font-size: rem(15);
+	}
+	@include max-screen($md){
+		font-size: rem(13);
+	}
+}
+.hero__image {
+	padding-bottom: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	// width: prc(1362.59, $maxWidth);
+	width: rem(1362.59);
+	// text-align: right;
+	// aspect-ratio: 1362.59 / 757.14;
+
+	@include max-screen(em(1366)){
+		right: -10%;
+	}
+	@include max-screen($lg){
+		right: -20%;
+	}
+	@include max-screen($lgg){
+		right: -22%;
+		width: rem(1298.54);
+	}
+	@include max-screen($md){
+		right: -30%;
+		width: rem(1103.52);
+
+	}
+	@include max-screen($sm){
+		right: -60%;
+		// width: rem(1103.52);
+
+	}
+	@include max-screen($xs){
+		right: -60%;
+		// width: rem(1103.52);
+
+	}
+	@include max-screen($xss){
+		right: -105%;
+		// width: rem(1103.52);
+
+	}
+
+	._fit-img{
+		// bottom: 0;
+		// right: 0;
+		object-position: right top;
+
+		@include max-screen($md){
+			object-position: right bottom;
+			
+		}
+	}
+}
+._fit {}
+/*--------------------END hero----------------------*/ 
