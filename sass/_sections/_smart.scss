@@ -2,10 +2,6 @@
 .smart {
 	padding-top: rem(95);
 
-	@include max-screen($lgg){
-		padding-bottom: rem(83);
-	}
-
 	@include max-screen($sm){
 		padding-top: rem(50);
 	}
@@ -45,14 +41,20 @@
 .smart__image {
 	aspect-ratio: 1440 / 945;
 	// max-height: rem(945);
+	background-attachment:fixed;
+	background-size: cover;
+	background-position: center center;
+
 	@include max-screen($lgg){
 		aspect-ratio: 1024 / 681.38;
 	}
 	@include max-screen($xs){
 		aspect-ratio: 360 / 545;
 	}
+	._fit-img {
+		object-fit: fixed;
+	}
 }
 ._fit {}
-._fit-img {}
 
 /*--------------------END smart----------------------*/ 

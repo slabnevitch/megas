@@ -360,6 +360,182 @@ textarea {
 }
 
 /*--------------------END ui----------------------*/
+/*--------------------assortmetn----------------------*/
+.assortment {
+  padding-top: 3.7535294118rem;
+  padding-bottom: 10.3294117647rem;
+}
+@media only screen and (max-width: 64em) {
+  .assortment {
+    padding-top: 3.3705882353rem;
+    padding-bottom: 7.1947058824rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment {
+    padding-top: 2.5217647059rem;
+    padding-bottom: 4.4541176471rem;
+  }
+}
+
+.assortment__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 2.0294117647rem;
+}
+@media only screen and (max-width: 64em) {
+  .assortment__content {
+    margin-bottom: 2.7988235294rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__content {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1.2941176471rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .assortment__content {
+    column-gap: 10.1694915254%;
+  }
+}
+
+@media only screen and (max-width: 47.99875em) {
+  .assortment__text {
+    text-align: center;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .assortment__text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex: 0 0 49.1525423729%;
+    flex: 0 0 49.1525423729%;
+  }
+}
+.assortment__text p {
+  line-height: 130%;
+  font-size: 1.2941176471rem;
+  font-family: "Articulat CF Light", sans-serif;
+}
+@media only screen and (max-width: 64em) {
+  .assortment__text p {
+    font-size: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__text p {
+    font-size: 0.8235294118rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .assortment__text p {
+    max-width: 18.4117647059rem;
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__text p br {
+    display: none;
+  }
+}
+
+.assortment__picts {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  column-gap: 1.9411764706rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__picts {
+    margin-bottom: 2.6888235294rem;
+    column-gap: 1.2082352941rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .assortment__picts {
+    margin-bottom: 0.3529411765rem;
+  }
+}
+
+.assortment__pict {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 4.2941176471rem;
+  max-height: 5.2352941176rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__pict:first-child {
+    max-width: 1.1958823529rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__pict:nth-child(2) {
+    max-width: 2.6741176471rem;
+  }
+}
+.assortment__pict img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.assortment__shedule {
+  font-size: 3.19rem;
+  font-family: "Articulat CF Light", sans-serif;
+  line-height: 0.6;
+  color: #009245;
+}
+@media only screen and (max-width: 64em) {
+  .assortment__shedule {
+    font-size: 2.7241176471rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__shedule {
+    font-size: 1.9858823529rem;
+  }
+}
+
+.assortment__bottom {
+  font-size: 1.2941176471rem;
+  font-family: "Articulat CF Medium", sans-serif;
+  text-align: center;
+}
+@media only screen and (max-width: 64em) {
+  .assortment__bottom {
+    font-size: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .assortment__bottom {
+    font-size: 0.8235294118rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .assortment__bottom {
+    max-width: 49.1525423729%;
+    text-align: right;
+  }
+}
+
+/*--------------------END assortmetn----------------------*/
 /*--------------------footer----------------------*/
 .footer {
   padding-top: 3.6988235294rem;
@@ -1323,11 +1499,6 @@ textarea {
 .smart {
   padding-top: 5.5882352941rem;
 }
-@media only screen and (max-width: 64em) {
-  .smart {
-    padding-bottom: 4.8823529412rem;
-  }
-}
 @media only screen and (max-width: 47.99875em) {
   .smart {
     padding-top: 2.9411764706rem;
@@ -1357,6 +1528,9 @@ textarea {
 
 .smart__image {
   aspect-ratio: 1440/945;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
 @media only screen and (max-width: 64em) {
   .smart__image {
@@ -1367,6 +1541,9 @@ textarea {
   .smart__image {
     aspect-ratio: 360/545;
   }
+}
+.smart__image ._fit-img {
+  object-fit: fixed;
 }
 
 /*--------------------END smart----------------------*/

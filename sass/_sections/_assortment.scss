@@ -1,0 +1,150 @@
+/*--------------------assortmetn----------------------*/
+.assortment {
+	padding-top: rem(63.81);
+	padding-bottom: rem(175.6);
+
+	@include max-screen($lgg){
+		padding-top: rem(57.3);
+		padding-bottom: rem(122.31);
+	}
+	@include max-screen($sm){
+		padding-top: rem(42.87);
+		padding-bottom: rem(75.72);
+	}
+}
+.assortment__wrapper {
+	
+}
+.assortment__content {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: rem(34.5);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(47.58);
+	}
+	@include max-screen($sm){
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: rem(22);
+	}
+	@include min-screen($sm){
+		column-gap: prc(120, $maxWidthContainer);
+		
+	}
+}
+.assortment__text {
+
+	@include max-screen($sm){
+		text-align: center;
+		order: 2;
+	}
+
+	@include min-screen($sm){
+		display: flex;
+		justify-content: flex-end;
+		flex: 0 0 prc(580, $maxWidthContainer);
+		
+	}
+	p{
+		line-height: 130%;
+		font-size: rem(22);
+		font-family: $light;
+
+		@include max-screen($lgg){
+			font-size: rem(19);
+		}
+		@include max-screen($sm){
+			font-size: rem(14);
+		}
+		@include min-screen($sm){
+			max-width: rem(313);
+			text-align: right;
+			
+		}
+
+		br{
+			@include max-screen($sm){
+				display: none;
+			}
+		}
+
+	}
+}
+.assortment__picts {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: flex-end;
+	column-gap: rem(33);
+
+	@include max-screen($sm){
+		margin-bottom: rem(45.71);
+		column-gap: rem(20.54);
+	}
+	@include min-screen($sm){	
+		margin-bottom: rem(6);
+	}
+}
+.assortment__pict {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: flex-end;
+	max-width: rem(73);
+	max-height: rem(89);
+
+	&:first-child{
+		@include max-screen($sm){
+			max-width: rem(20.33);
+			
+		}
+	}
+	&:nth-child(2){
+		@include max-screen($sm){
+			max-width: rem(45.46);
+			
+		}
+
+	}
+
+
+	@include max-screen($lgg){
+	}
+
+	img{
+		display: block;
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+}
+.assortment__shedule {
+	font-size: rem(54.23);
+	font-family: $light;
+	line-height: .6;
+	color: $accent;
+
+	@include max-screen($lgg){
+		font-size: rem(46.31);
+	}
+	@include max-screen($sm){
+		font-size: rem(33.76);
+	}
+}
+.assortment__bottom {
+	font-size: rem(22);
+	font-family: $med;
+	text-align: center;
+
+	@include max-screen($lgg){
+		font-size: rem(19);
+	}
+	@include max-screen($sm){
+		font-size: rem(14);
+	}
+	@include min-screen($sm){
+		max-width: prc(580, $maxWidthContainer);
+		
+		text-align: right;
+	}
+}
+/*--------------------END assortmetn----------------------*/ 
