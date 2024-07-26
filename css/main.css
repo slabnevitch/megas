@@ -1176,15 +1176,9 @@ textarea {
 
 /*--------------------END organize----------------------*/
 /*--------------------system----------------------*/
-.system {
+.system__top {
   position: relative;
-  padding-top: 3.3917647059rem;
   background-color: #000;
-}
-@media only screen and (max-width: 64em) {
-  .system {
-    padding-top: 2.4011764706rem;
-  }
 }
 
 .system__wrapper {
@@ -1193,11 +1187,28 @@ textarea {
 @media only screen and (max-width: 64em) {
   .system__wrapper {
     min-height: 23.6370588235rem;
+    padding-left: 15.8203125%;
+    padding-right: 15.8203125%;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .system__wrapper {
+    padding-left: 1.7647058824rem;
+    padding-right: 1.7647058824rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .system__wrapper {
     min-height: 18.6005882353rem;
+  }
+}
+
+.system__top-wrapper {
+  padding-top: 3.3917647059rem;
+}
+@media only screen and (max-width: 64em) {
+  .system__top-wrapper {
+    padding-top: 2.4011764706rem;
   }
 }
 
@@ -1274,6 +1285,221 @@ textarea {
 @media only screen and (max-width: 23.4375em) {
   .system__picture ._fit-img {
     object-position: left center;
+  }
+}
+
+.system__content {
+  padding-top: 4.4635294118rem;
+  padding-bottom: 10rem;
+  background-color: #F2F2F2;
+}
+@media only screen and (max-width: 64em) {
+  .system__content {
+    padding-top: 4.3570588235rem;
+    padding-bottom: 8.6188235294rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .system__content {
+    padding-top: 2.7352941176rem;
+    padding-bottom: 3.8364705882rem;
+  }
+}
+
+.system__descr {
+  margin-left: 8.4745762712%;
+  font-size: 1.2941176471rem;
+}
+@media only screen and (max-width: 64em) {
+  .system__descr {
+    margin-left: 0;
+    font-size: 1.1176470588rem;
+  }
+}
+
+.descr-system__chapter {
+  margin-bottom: 2.2352941176rem;
+  max-width: 18.8235294118rem;
+}
+
+.descr-system__app {
+  max-width: 37.6470588235rem;
+  margin-bottom: 0.8823529412rem;
+}
+@media only screen and (max-width: 64em) {
+  .descr-system__app {
+    margin-bottom: 0.5882352941rem;
+  }
+}
+.descr-system__app a {
+  font-size: 2.1176470588rem;
+  color: #009245;
+  text-decoration: none;
+  line-height: 176%;
+  font-family: "Articulat CF Light", sans-serif;
+}
+@media only screen and (max-width: 64em) {
+  .descr-system__app a {
+    font-size: 1.9411764706rem;
+    line-height: 170%;
+  }
+}
+@media (any-hover: hover) {
+  .descr-system__app a:hover {
+    color: #4D4D4D;
+    font-family: "Articulat CF Medium", sans-serif;
+  }
+}
+
+.parameters-title {
+  margin-bottom: 7.9811764706rem;
+}
+@media only screen and (max-width: 64em) {
+  .parameters-title {
+    margin-bottom: 5.9535294118rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .parameters-title {
+    margin-bottom: 3.7758823529rem;
+  }
+}
+
+.system__items {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 1.1764705882rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 4.5882352941rem;
+}
+.system__items .item-system {
+  -ms-flex-preferred-size: calc(calc(100% / 3) - calc(1.1764705882rem / 3 * calc(3 - 1)));
+  flex-basis: calc(calc(100% / 3) - calc(1.1764705882rem / 3 * calc(3 - 1)));
+}
+@media only screen and (max-width: 61.99875em) {
+  .system__items .item-system {
+    -ms-flex-preferred-size: calc(calc(100% / 1) - calc(1.1764705882rem / 1 * calc(1 - 1)));
+    flex-basis: calc(calc(100% / 1) - calc(1.1764705882rem / 1 * calc(1 - 1)));
+  }
+}
+@media only screen and (max-width: 64em) {
+  .system__items {
+    row-gap: 2.2941176471rem;
+  }
+}
+
+.system__item {
+  font-size: 1rem;
+}
+.system__item--title .item-system__icon {
+  display: none;
+}
+@media only screen and (max-width: 64em) {
+  .system__item {
+    font-size: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .system__item:not(.system__item--title) {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2rem 1fr;
+    grid-template-columns: 2rem 1fr;
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 1.7647058824rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .system__item {
+    margin-left: 15.3333333333%;
+    margin-right: 15.3333333333%;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .system__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.item-system__icon {
+  width: 2.7558823529rem;
+  height: 2.8117647059rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4.1176470588rem;
+}
+.item-system__icon[data-trigger] {
+  transition: all 0.7s ease-out;
+  opacity: 0;
+  -ms-transform: translateX(2.3529411765rem);
+  transform: translateX(2.3529411765rem);
+}
+.item-system__icon[data-trigger].visible {
+  opacity: 1;
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.item-system__icon--circle {
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 0.2941176471rem;
+}
+@media only screen and (min-width: 61.99875em) {
+  .item-system__icon--circle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .item-system__icon {
+    width: 2.2323529412rem;
+    height: 2.3241176471rem;
+    margin-bottom: 3.85rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .item-system__icon {
+    margin-bottom: 0;
+    width: 2rem;
+    height: 2.0911764706rem;
+    grid-row: 1/3;
+  }
+}
+.item-system__icon img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+
+.item-system__circle {
+  width: 0.7058823529rem;
+  height: 0.7058823529rem;
+  border: 2px solid #666666;
+  border-radius: 50%;
+}
+
+.item-system__title {
+  margin-bottom: 0.7647058824rem;
+  font-family: "Articulat CF Medium", sans-serif;
+  line-height: 150%;
+}
+
+.item-system__text {
+  font-family: "Articulat CF Light", sans-serif;
+}
+@media only screen and (max-width: 61.99875em) {
+  .item-system__text {
+    grid-column: 2/3;
   }
 }
 
