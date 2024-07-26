@@ -81,7 +81,7 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  color: #4D4D4D;
+  color: #1A1A1A;
 }
 .lock body {
   overflow: hidden;
@@ -240,6 +240,10 @@ textarea {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .btn {
@@ -312,6 +316,9 @@ textarea {
 .heading__title {
   font-size: 2.2352941176rem;
   font-family: "Articulat CF Medium", sans-serif;
+}
+.heading__title span {
+  font-size: 1.2941176471rem;
 }
 @media only screen and (max-width: 47.99875em) {
   .heading {
@@ -1045,9 +1052,8 @@ textarea {
     margin-bottom: 1.8535294118rem;
   }
 }
-
 @media only screen and (min-width: 47.99875em) {
-  .heading {
+  .organize .heading {
     margin-left: 33.8983050847%;
   }
 }
@@ -1175,6 +1181,111 @@ textarea {
 }
 
 /*--------------------END organize----------------------*/
+/*--------------------premium----------------------*/
+.premium {
+  padding-top: 7.1505882353rem;
+  padding-bottom: 8.7135294118rem;
+}
+@media only screen and (max-width: 64em) {
+  .premium {
+    padding-top: 4.1664705882rem;
+    padding-bottom: 6.4852941176rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .premium {
+    padding-top: 3.0294117647rem;
+    padding-bottom: 4.6152941176rem;
+  }
+}
+
+.heading {
+  margin-bottom: 0.6764705882rem;
+}
+@media only screen and (max-width: 64em) {
+  .heading {
+    margin-bottom: 0.5094117647rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .heading {
+    margin-bottom: 1.1541176471rem;
+  }
+}
+
+.premium__image {
+  margin-bottom: 3.1688235294rem;
+  margin-left: 11.6949152542%;
+  margin-right: 11.6949152542%;
+}
+@media only screen and (max-width: 64em) {
+  .premium__image {
+    margin-bottom: 2.0211764706rem;
+    margin-left: 12.0338983051%;
+    margin-right: 12.0338983051%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .premium__image {
+    margin-bottom: 2.1935294118rem;
+    margin-left: -0.8823529412rem;
+    margin-right: -0.8823529412rem;
+  }
+}
+.premium__image img {
+  width: 100%;
+  display: block;
+}
+
+.premium__bottom {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 1.1764705882rem;
+  line-height: 150%;
+}
+@media only screen and (max-width: 64em) {
+  .premium__bottom {
+    font-size: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .premium__bottom {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    row-gap: 0.8688235294rem;
+    text-align: center;
+    line-height: 120%;
+  }
+}
+
+.premium__link {
+  -ms-flex: 0 0 40.6779661017%;
+  flex: 0 0 40.6779661017%;
+}
+@media only screen and (min-width: 47.99875em) {
+  .premium__link {
+    text-align: right;
+  }
+}
+
+.premium__text {
+  -ms-flex: 0 0 57.6271186441%;
+  flex: 0 0 57.6271186441%;
+}
+@media only screen and (max-width: 47.99875em) {
+  .premium__text {
+    -ms-flex-order: -1;
+    order: -1;
+    font-size: 0.7647058824rem;
+  }
+}
+.premium__text p {
+  max-width: 16.8235294118rem;
+}
+
+/*--------------------END premium----------------------*/
 /*--------------------system----------------------*/
 .system__top {
   position: relative;
@@ -1346,7 +1457,7 @@ textarea {
 }
 @media (any-hover: hover) {
   .descr-system__app a:hover {
-    color: #4D4D4D;
+    color: #1A1A1A;
     font-family: "Articulat CF Medium", sans-serif;
   }
 }

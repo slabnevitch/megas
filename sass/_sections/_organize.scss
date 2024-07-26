@@ -24,17 +24,13 @@
 			margin-bottom: rem(31.51);
 
 		}
+		@include min-screen($sm){
+			margin-left: prc(400, $maxWidthContainer);
+			
+		}
 	}
 }
 .organize__wrapper {}
-.heading {
-	// padding-left: rem(20);
-
-	@include min-screen($sm){
-		margin-left: prc(400, $maxWidthContainer);
-		
-	}
-}
 .heading__subtitle {}
 .heading__title {}
 .organize__options {
