@@ -67,29 +67,55 @@
 	           	 }
 	        	}
 
-			},
-			scroll: {
-		        // The amount of ms the scroll loop should keep triggering after the
-		        // scrolling has stopped. This is sometimes nice for canvas
-		        // animations.
-		        sustain: 200,
-		        // Window|HTMLDocument|HTMLElement to check for scroll events
-		        element: window,
-		        // Add a callback when the user has scrolled, keeps on triggering for
-		        // as long as the sustain is set to do
-		        callback: function() {
-		        	// console.log(this);
-		        },
-		        // Callback when the user started scrolling
-		        start: () => {},
-		        // Callback when the user stopped scrolling
-		        stop: () => {},
-		        // Callback when the user changes direction in scrolling
-		        directionChange: () => {}
-		    }
+			}
         }); // When not using npm, create a new instance with 'new ScrollTrigger.default()'
 				// Add all html elements with attribute data-trigger
 		trigger.add('[data-trigger]');
+
+
+		// main-slider
+		// usage: http://ganlanyuan.github.io/tiny-slider/#usage
+		if(document.querySelector('.main-slider__carousel .tiny-sldr') !== null){
+			var slider = tns({
+				container: '.main-slider__carousel .tiny-sldr',
+				mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
+				items: 1,
+				speed: 1000,
+				// loop: false,
+				slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
+				autoplay: true,
+				// center: true,
+				controls: false, // отключение кнопок "вперед/назад"
+				// controlsContainer: '.hits.carouseled .block-header__nav', // внутри .block-header__nav должны быть 2 заранее отстилизованные кнопки
+				// navContainer: "#customize-thumbnails",//конткйнер для навигации миниатюрами
+				// navAsThumbnails: true, //включение навигации миниатюрами
+				// nav: false, //отключение bullets
+				navPosition: 'bottom',//положение bullets
+				mouseDrag: true,
+				gutter: 20, //добавляет padding, а не margin! Нужна обертка вокруг содержимого каждого слайда!
+				responsive: { // mobile first!
+					320: {
+
+				      items: 1
+					},
+					640: {
+				      // edgePadding: 20,
+				      // gutter: 20,
+				      // items: 2
+					},
+					768: {
+				      // items: 2.5
+						edgePadding: 240 
+					},
+					1025: {
+				      items: 3
+
+					}
+				}
+			});
+		}
+
+		// END main-slider
 		
 	});
 })();
