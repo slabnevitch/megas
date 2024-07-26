@@ -227,30 +227,26 @@ padding-bottom: 52.25%;
 	left: rem(55);
 	z-index: 20;
 }
-.fab__phone{
-	position: absolute;
-	top: 0;
-	transition: all 0.5s ease;
-	.drive &{
-		opacity: 0;
-	}
-		img{
-			max-width: 100%;
-			vertical-align: bottom;
-		}
-}
+.fab__phone,
 .fab__drive{
 	position: absolute;
 	left: 0;
 	top: 0;
-	transition: all 0.5s ease;;
-	opacity: 0;
-	.drive &{
-		opacity: 1;
-	}
+	transition: opacity 0.5s ease;
 	img{
 		max-width: 100%;
 		vertical-align: bottom;
+	}
+}
+.fab__phone{
+	.drive &{
+		opacity: 0;
+	}
+}
+.fab__drive{
+	opacity: 0;
+	.drive &{
+		opacity: 1;
 	}
 }
 // tabs-pure base styles

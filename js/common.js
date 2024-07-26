@@ -117,10 +117,22 @@
 		// END main-slider
 
 		// fab button
-		var fabTimer;
-		window.onscroll = function(e) {
-			console.log(document.querySelector('.fab').getBoundingClientRect().top);
-			// document.querySelector('.fab').getBoundingClientRect.top;
+		var fabTimer,
+			fab = document.querySelector('.fab'),
+			hero = document.querySelector('.hero'),
+			footer = document.querySelector('.footer');
+
+		fabTimer = setInterval(function() {
+			fab.classList.toggle('drive');
+		}, 8000);
+
+		window.onscroll = function(e) {		
+			if(hero.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
+				|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
+				fab.style.visibility = 'hidden';
+			}else{
+				fab.style.visibility = 'visible';
+			}
 		}
 		// END fab button
 		

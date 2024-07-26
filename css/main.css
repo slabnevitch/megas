@@ -201,7 +201,7 @@
   float: left;
 }
 
-/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
+
 /*--end tiny-slider--*/
 /*--tiny-slider--*/
 /*--end tiny-slider--*/
@@ -408,32 +408,28 @@ textarea {
   z-index: 20;
 }
 
-.fab__phone {
-  position: absolute;
-  top: 0;
-  transition: all 0.5s ease;
-}
-.drive .fab__phone {
-  opacity: 0;
-}
-.fab__phone img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
+.fab__phone,
 .fab__drive {
   position: absolute;
   left: 0;
   top: 0;
-  transition: all 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.fab__phone img,
+.fab__drive img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.drive .fab__phone {
+  opacity: 0;
+}
+
+.fab__drive {
   opacity: 0;
 }
 .drive .fab__drive {
   opacity: 1;
-}
-.fab__drive img {
-  max-width: 100%;
-  vertical-align: bottom;
 }
 
 /*--------------------END adjustment----------------------*/
@@ -1005,7 +1001,6 @@ textarea {
 /*--------------------END footer----------------------*/
 /*--------------------header----------------------*/
 .header {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 5;
   width: 100%;
