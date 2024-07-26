@@ -1,5 +1,6 @@
 /*--------------------ui----------------------*/
 .btn{
+  display: inline-block;
   text-decoration: none;
   color: $accent;
 
@@ -14,6 +15,22 @@
 
 		}
 	}
+
+  @include max-screen($sm){
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: rem(-3);
+      left: 0;
+      right: 0;
+      height: rem(1);
+      background-color: $accent;
+
+    }
+
+  }
    
 }
 

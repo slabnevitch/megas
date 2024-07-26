@@ -124,6 +124,11 @@
 	transition: opacity .5s ease;
 	background-color: rgba($bg, .88);
 
+	@include max-screen($lgg){
+		position: fixed;
+		height: 100%;
+	}
+
 	.search-open & {
 		visibility: visible;
 		opacity: 1;

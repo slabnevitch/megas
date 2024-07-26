@@ -56,8 +56,6 @@
 	                // Here an example where all triggers take 10ms to trigger
 	                // the 'out' class.
 	            	out: (trigger) => {
-	            		console.log('out!');
-	            		console.log(trigger);
 	                    // `trigger` contains the Trigger object that goes out
 	                    // of the viewport
 	            		return new Promise((resolve, reject) => {
@@ -108,7 +106,8 @@
 						edgePadding: 240 
 					},
 					1025: {
-				      items: 3
+				      items: 3,
+				      edgePadding: 0
 
 					}
 				}
@@ -116,6 +115,14 @@
 		}
 
 		// END main-slider
+
+		// fab button
+		var fabTimer;
+		window.onscroll = function(e) {
+			console.log(document.querySelector('.fab').getBoundingClientRect().top);
+			// document.querySelector('.fab').getBoundingClientRect.top;
+		}
+		// END fab button
 		
 	});
 })();

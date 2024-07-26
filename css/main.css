@@ -399,9 +399,47 @@ textarea {
   background-color: #F2F2F2;
 }
 
+.fab {
+  position: fixed;
+  width: 9.2941176471rem;
+  height: 10.9329411765rem;
+  top: 33.2352941176rem;
+  left: 3.2352941176rem;
+  z-index: 20;
+}
+
+.fab__phone {
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.drive .fab__phone {
+  opacity: 0;
+}
+.fab__phone img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.fab__drive {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.drive .fab__drive {
+  opacity: 1;
+}
+.fab__drive img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .btn {
+  display: inline-block;
   text-decoration: none;
   color: #009245;
 }
@@ -416,6 +454,20 @@ textarea {
   }
   .btn:hover {
     font-family: "Articulat CF Medium", sans-serif;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .btn {
+    position: relative;
+  }
+  .btn:after {
+    content: "";
+    position: absolute;
+    bottom: -0.1764705882rem;
+    left: 0;
+    right: 0;
+    height: 0.0588235294rem;
+    background-color: #009245;
   }
 }
 
@@ -1157,6 +1209,12 @@ textarea {
   opacity: 0;
   transition: opacity 0.5s ease;
   background-color: rgba(51, 51, 51, 0.88);
+}
+@media only screen and (max-width: 64em) {
+  .header__serch-area {
+    position: fixed;
+    height: 100%;
+  }
 }
 .search-open .header__serch-area {
   visibility: visible;

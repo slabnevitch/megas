@@ -219,6 +219,40 @@ padding-bottom: 52.25%;
 .gray-bg{
 	background-color: $gray-bg;
 }
+.fab{
+	position: fixed;
+	width: rem(158);
+	height: rem(185.86);
+	top: rem(565);
+	left: rem(55);
+	z-index: 20;
+}
+.fab__phone{
+	position: absolute;
+	top: 0;
+	transition: all 0.5s ease;
+	.drive &{
+		opacity: 0;
+	}
+		img{
+			max-width: 100%;
+			vertical-align: bottom;
+		}
+}
+.fab__drive{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.5s ease;;
+	opacity: 0;
+	.drive &{
+		opacity: 1;
+	}
+	img{
+		max-width: 100%;
+		vertical-align: bottom;
+	}
+}
 // tabs-pure base styles
 // .tabs__buttons{
 // 	display: flex;
