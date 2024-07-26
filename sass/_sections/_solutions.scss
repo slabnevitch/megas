@@ -1,0 +1,117 @@
+/*--------------------solutions----------------------*/
+.solutions {
+	padding-top: rem(94);
+	padding-bottom: rem(95);
+	background-color: #F2F2F2;
+
+	@include max-screen($lgg){
+		padding-top: rem(83.29);
+		padding-bottom: rem(83);
+	}
+	@include max-screen($sm){
+		padding-top: rem(58);
+		padding-bottom: rem(50);
+	}
+}
+.solutions__wrapper {
+
+	&--top{
+		display: flex;
+		align-items: flex-start;
+		column-gap: prc(120, $maxWidthContainer);
+
+		@include max-screen($lgg){
+			column-gap: prc(140, $maxWidthContainer);
+		}
+		@include max-screen($sm){
+			column-gap: rem(11);
+		}
+	}
+}
+.solutions__image {
+	width: prc(480, $maxWidthContainer);
+	margin-left: prc(100, $maxWidthContainer);
+	padding-bottom: 0;
+	aspect-ratio: 480 / 794;
+	flex-shrink: 0;
+
+	@include max-screen($lgg){
+		width: prc(340, 1024);
+		margin-left: prc(162, 1024);
+	}
+	@include max-screen($sm){
+		width: prc(150, 300);
+		margin-left: 0;
+		aspect-ratio: 159 / 314;
+	}
+}
+.solutions__content {
+	flex: 1 1 aito;
+	padding-top: rem(129);
+
+	@include max-screen($lgg){
+		padding-top: rem(63.46);
+	}
+	@include max-screen($sm){
+		padding-top: rem(14.83);
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.btn {
+		@include max-screen($sm){
+			display: none;
+		}
+	}
+}
+.solutions__slogan {
+	margin-bottom: rem(21.72);
+	font-size: rem(22);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(19.7);
+		font-size: rem(19);
+	}
+	@include max-screen($sm){
+		margin-bottom: 0;
+		font-size: rem(13);
+	}
+}
+.solutions__descr {
+	max-width: rem(305);
+	margin-bottom: rem(35);
+	font-size: rem(22);
+	line-height: 150%;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(32.09);
+		font-size: rem(19);
+	}
+	@include max-screen($sm){
+		font-size: rem(14);
+	}
+	
+}
+.solutions__note {
+	max-width: rem(300);
+	margin-top: rem(158);
+	line-height: 185%;
+
+	@include max-screen($lgg){
+		margin-top: rem(103);
+		font-size: rem(15);
+	}
+	@include max-screen($sm){
+		margin-top: 0;
+		margin-bottom: rem(63);
+		font-size: rem(14);
+		line-height: 140%;
+	}
+}
+.heading {}
+.text-center {}
+.heading__subtitle {}
+.heading__title {}
+.premium__title {}
+/*--------------------END solutions----------------------*/ 
