@@ -1,0 +1,58 @@
+/*--------------------smart----------------------*/.smart {}
+.smart {
+	padding-top: rem(95);
+
+	@include max-screen($lgg){
+		padding-bottom: rem(83);
+	}
+
+	@include max-screen($sm){
+		padding-top: rem(50);
+	}
+	
+	.heading {
+		margin-bottom: rem(16.68);
+	}
+}
+.smart__wrapper {}
+.text-center {}
+.heading__subtitle {}
+.heading__title {}
+.smart__title {}
+.smart__content {
+	@extend .premium__bottom;
+	margin-bottom: rem(52);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(46.7);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(38.7);
+	}
+}
+.smart__link {
+	@extend .premium__link;
+
+}
+.btn {}
+.smart__text {
+	@extend .premium__text;
+	p{
+
+		max-width: none;
+	}
+}
+.smart__image {
+	aspect-ratio: 1440 / 945;
+	// max-height: rem(945);
+	@include max-screen($lgg){
+		aspect-ratio: 1024 / 681.38;
+	}
+	@include max-screen($xs){
+		aspect-ratio: 360 / 545;
+	}
+}
+._fit {}
+._fit-img {}
+
+/*--------------------END smart----------------------*/ 

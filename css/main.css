@@ -218,7 +218,6 @@ textarea {
 }
 
 ._fit {
-  padding-bottom: 80%;
   position: relative;
 }
 
@@ -242,6 +241,10 @@ textarea {
 
 .text-center {
   text-align: center;
+}
+
+.gray-bg {
+  background-color: #F2F2F2;
 }
 
 /*--------------------END adjustment----------------------*/
@@ -324,7 +327,7 @@ textarea {
   }
 }
 .heading__title {
-  font-size: 2.2352941176rem;
+  font-size: 2.6470588235rem;
   font-family: "Articulat CF Medium", sans-serif;
 }
 @media only screen and (max-width: 64em) {
@@ -1225,7 +1228,7 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .premium {
     padding-top: 3.0294117647rem;
-    padding-bottom: 4.6152941176rem;
+    padding-bottom: 2.2764705882rem;
   }
 }
 
@@ -1267,19 +1270,19 @@ textarea {
   display: block;
 }
 
-.premium__bottom {
+.premium__bottom, .smart__content {
   display: -ms-flexbox;
   display: flex;
   column-gap: 1.1764705882rem;
   line-height: 150%;
 }
 @media only screen and (max-width: 64em) {
-  .premium__bottom {
+  .premium__bottom, .smart__content {
     font-size: 0.8823529412rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
-  .premium__bottom {
+  .premium__bottom, .smart__content {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: center;
@@ -1290,32 +1293,83 @@ textarea {
   }
 }
 
-.premium__link {
+.premium__link, .smart__link {
   -ms-flex: 0 0 40.6779661017%;
   flex: 0 0 40.6779661017%;
 }
 @media only screen and (min-width: 47.99875em) {
-  .premium__link {
+  .premium__link, .smart__link {
     text-align: right;
   }
 }
 
-.premium__text {
+.premium__text, .smart__text {
   -ms-flex: 0 0 57.6271186441%;
   flex: 0 0 57.6271186441%;
 }
 @media only screen and (max-width: 47.99875em) {
-  .premium__text {
+  .premium__text, .smart__text {
     -ms-flex-order: -1;
     order: -1;
     font-size: 0.7647058824rem;
   }
 }
-.premium__text p {
+.premium__text p, .smart__text p {
   max-width: 16.8235294118rem;
 }
 
 /*--------------------END premium----------------------*/
+/*--------------------smart----------------------*/
+.smart {
+  padding-top: 5.5882352941rem;
+}
+@media only screen and (max-width: 64em) {
+  .smart {
+    padding-bottom: 4.8823529412rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .smart {
+    padding-top: 2.9411764706rem;
+  }
+}
+.smart .heading {
+  margin-bottom: 0.9811764706rem;
+}
+
+.smart__content {
+  margin-bottom: 3.0588235294rem;
+}
+@media only screen and (max-width: 64em) {
+  .smart__content {
+    margin-bottom: 2.7470588235rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .smart__content {
+    margin-bottom: 2.2764705882rem;
+  }
+}
+
+.smart__text p {
+  max-width: none;
+}
+
+.smart__image {
+  aspect-ratio: 1440/945;
+}
+@media only screen and (max-width: 64em) {
+  .smart__image {
+    aspect-ratio: 1024/681.38;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .smart__image {
+    aspect-ratio: 360/545;
+  }
+}
+
+/*--------------------END smart----------------------*/
 /*--------------------solutions----------------------*/
 .solutions {
   padding-top: 5.5294117647rem;

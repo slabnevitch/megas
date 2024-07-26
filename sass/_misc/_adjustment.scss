@@ -195,7 +195,6 @@ padding-bottom: 52.25%;
 	}
 }
 ._fit{
-	padding-bottom: 80%;
 	position: relative;
 }
 ._fit ._fit-img{//_fit - class for object-fit
@@ -216,6 +215,9 @@ padding-bottom: 52.25%;
 }
 .text-center{
 	text-align: center;
+}
+.gray-bg{
+	background-color: $gray-bg;
 }
 // tabs-pure base styles
 // .tabs__buttons{
