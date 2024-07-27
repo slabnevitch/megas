@@ -35,9 +35,10 @@
 }
 
 .toggle-mnu{
-	// position: fixed;
-	right: rem(30);
-	top: rem(15);
+	position: relative;
+  z-index: 6;
+	// right: rem(30);
+	// top: rem(15);
   display: none;
   width: rem(23.15);
   height: rem(14);
@@ -83,12 +84,12 @@
 
   &.on span:before{
 
-    transform: rotate(45deg) translate(rem(-1), 0);
+    transform: rotate(45deg) translate(rem(-2), 0);
   } 
 
   &.on span:after{
 
-    transform: rotate(-45deg) translate(rem(6), rem(-7));
+    transform: rotate(-45deg) translate(rem(5), rem(-7));
   } 
 } 
 

@@ -1,12 +1,16 @@
 /*--------------------header----------------------*/
 .header{
   position: sticky;
-  z-index: 5;
+  z-index: 22;
   width: 100%;
   left: 0;
   top: 0;
   // min-height: 100px; /*опционально*/
   background-color: rgba($bg, 0.88);
+
+  .search-open &{
+  	background-color: transparent;
+  }
 }
 .header__wrapper{
   position: relative;
@@ -58,13 +62,18 @@
 .menu-header {
 	margin-top: rem(7);
 
-	@include menu-mob($media: $md, $burgerColor: #fff, $burgerOpenColor: #fff, $plateBgColor: #fff, $plateHeight: 52);
+	@include menu-mob($media: $md, $burgerColor: #fff, $burgerOpenColor: $text, $plateBgColor: #fff, $plateHeight: 52);
 	@include max-screen($md){
 		margin-left: auto;
 	}
 }
 .toggle-mnu {}
-.menu-header__body {}
+.menu-header__body {
+
+	@include max-screen($md){
+		background-color: #fff;
+	}
+}
 .menu__list {
 	display: flex;
 	align-items: center;
@@ -74,6 +83,12 @@
 
 	@include max-screen($lgg){
 		column-gap: rem(29);
+	}
+	@include max-screen($md){
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: rem(25);
+		padding: rem(95) rem(30) rem(30) rem(30);
 	}
 }
 .menu__item {
@@ -87,6 +102,12 @@
 
 	@include max-screen($lgg){
 		font-size: rem(14);
+	}
+	@include max-screen($md){
+		color: $text;
+		font-size: rem(22);
+		font-family: $med;
+		line-height: rem(54);
 	}
 }
 .header__search-button {
@@ -168,5 +189,6 @@
 	line-height: math.div(32.64, 24);
 	font-family: inherit;
 	color: #fff;
+	letter-spacing: rem(0.5);
 }
 /*--------------------END header----------------------*/ 

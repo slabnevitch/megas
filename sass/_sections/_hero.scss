@@ -2,19 +2,19 @@
 .hero {
 	position: relative;
 	min-height: rem(757.14);
-	padding-top: rem(359);
+	
 	// padding-bottom: rem(101.14);
 	background-color: #EFF2F7;
 
 	@include max-screen($lgg){
 		min-height: rem(721.64);
 		
-		padding-top: rem(329);
+		
 	}
 
 	@include max-screen($md){
 		min-height: rem(579);
-		padding-top: rem(300);
+
 	}
 }
 .hero__wrapper {
@@ -22,6 +22,7 @@
 }
 .hero__content {
 	max-width: rem(400);
+	padding-top: rem(358);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -29,8 +30,11 @@
 	z-index: 2;
 
 	@include max-screen($lgg){
-		// padding-right: rem(30);
+		padding-top: rem(328);
 
+	}
+	@include max-screen($md){
+		padding-top: rem(300);
 	}
 	@include max-screen($sm){
 		max-width: rem(232);
