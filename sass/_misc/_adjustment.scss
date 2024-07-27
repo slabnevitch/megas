@@ -224,21 +224,46 @@ padding-bottom: 52.25%;
 	width: rem(158);
 	height: rem(185.86);
 	top: rem(565);
-	left: rem(55);
+	left: prc(55, $maxWidth);
 	z-index: 20;
+
+	@include max-screen($lgg){
+		width: rem(130);
+		height: rem(152.4);
+		top: rem(372.63);
+		left: rem(34.29);
+	}
+	@include max-screen($sm){
+		width: rem(110.96);
+		height: rem(130);
+		top: rem(418);
+		left: rem(14);
+	}
+
+	@include min-screen(em(1500)){
+		left: calc((100% - rem($maxWidth)) / 2 - rem(55));
+	}
 }
 .fab__phone,
 .fab__drive{
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: 0;
 	transition: opacity 0.5s ease;
 	img{
 		max-width: 100%;
+		max-height: 100%;
 		vertical-align: bottom;
 	}
 }
 .fab__phone{
+	@include max-screen($lgg){
+		width: rem(93.42);
+	}
+	@include max-screen($sm){
+		width: rem(79.69);
+	}
+
 	.drive &{
 		opacity: 0;
 	}

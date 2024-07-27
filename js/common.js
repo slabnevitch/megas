@@ -119,7 +119,7 @@
 		// fab button
 		var fabTimer,
 			fab = document.querySelector('.fab'),
-			hero = document.querySelector('.hero'),
+			fabFade = document.querySelector('[data-fab-fade]'),
 			footer = document.querySelector('.footer');
 
 		fabTimer = setInterval(function() {
@@ -127,7 +127,7 @@
 		}, 8000);
 
 		window.onscroll = function(e) {		
-			if(hero.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
+			if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
 				|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
 				fab.style.visibility = 'hidden';
 			}else{
