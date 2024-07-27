@@ -6,7 +6,12 @@
   left: 0;
   top: 0;
   // min-height: 100px; /*опционально*/
-  background-color: rgba($bg, 0.88);
+  background-color: rgba(#fff, 0.88);
+
+  &--dark{
+  	background-color: rgba($bg, 0.88);
+
+  }
 
   .search-open &{
   	background-color: transparent;
@@ -96,9 +101,13 @@
 }
 .menu__link {
 	font-size: rem(15.5);
-	color: #fff;
+	color: $text;
 	letter-spacing: .3;
 	text-decoration: none;
+
+	.header--dark &{
+		color: #fff;
+	}
 
 	@include max-screen($lgg){
 		font-size: rem(14);
@@ -127,9 +136,17 @@
 		height: rem(18.36);
 	}
 
-	img{
+	img, svg{
 		width: 100%;
 		max-height: 100%;
+	}
+
+	svg{
+		path{
+			
+			stroke: red;
+		}
+
 	}
 
 
