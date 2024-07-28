@@ -9,7 +9,7 @@
 	}
 	@include max-screen($sm){
 		padding-top: rem(51.5);
-		padding-bottom: rem(38.7);
+		padding-bottom: rem(78.46);
 	}
 }
 .premium__wrapper {}
@@ -66,7 +66,7 @@
 	}
 }
 .premium__link {
-	flex: 0 0 prc(480, $maxWidthContainer);
+	flex: 0 0 prc(610, $maxWidth);
 
 	@include min-screen($sm){
 		text-align: right;
@@ -75,7 +75,7 @@
 }
 .btn {}
 .premium__text {
-	flex: 0 0 prc(680, $maxWidthContainer);
+	flex: 0 0 prc(680, $maxWidth);
 
 	@include max-screen($sm){
 		order: -1;

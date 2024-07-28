@@ -16,18 +16,17 @@
 	}
 	.heading {
 		margin-bottom: rem(59.06);
+		margin-left: prc(530, $maxWidth);
 
 		@include max-screen($lgg){
 			margin-bottom: rem(37.76);
+			margin-left: prc(400, 1024);
 		}
 		@include max-screen($sm){
 			margin-bottom: rem(31.51);
+			margin-left: 0;
+		}
 
-		}
-		@include min-screen($sm){
-			margin-left: prc(400, $maxWidthContainer);
-			
-		}
 	}
 }
 .organize__wrapper {}
@@ -35,13 +34,13 @@
 .heading__title {}
 .organize__options {
 	max-width: prc(580,  $maxWidthContainer);
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: prc(410,  $maxWidth);
+	// margin-right: auto;
 	margin-bottom: rem(60.74);
 
 	@include max-screen($lgg){
 		max-width: prc(376,  1024);
-		margin-left: prc(260, 1024);
+		margin-left: prc(323, 1024);
 		margin-right: 0;
 		margin-bottom: rem(50.86);
 	}
@@ -61,7 +60,7 @@
 .organize__option {
 	display: flex;
 	align-items: center;
-	column-gap: rem(45);
+	column-gap: prc(45, 580);
 
 	@include max-screen($lgg){
 		column-gap: rem(30);
@@ -81,7 +80,7 @@
 			
 		}
 		@include max-screen($sm){
-			margin-bottom: rem(32.6);
+			margin-bottom: rem(19);
 			
 		}
 	}
@@ -105,18 +104,29 @@
 
 	@include max-screen($lgg){
 		width: rem(47.53);
+		height: rem(45.48);
 	}
 	@include max-screen($md){
 		width: rem(37.87);
+
+	}
+
+	&--rost{
+		@include max-screen($md){
+			width: rem(43.87);
+			height: rem(33.66);
+		}
 	}
 
 	img{
 		// display: block;
 		max-width: 100%;
+		max-height: 100%;
 	}
 }
 .option-organize__text {
 	font-size: rem(21.9);
+	line-height: 140%;
 
 	@include max-screen($lgg){
 		font-size: rem(19);
@@ -127,12 +137,15 @@
 }
 .organize__bottom {
 
-	@include max-screen($sm){
-		text-align: center;
-	}
-	@include min-screen($sm){
+		padding-left: prc(530, $maxWidth);
+
+	@include max-screen($lgg){
 		
-		padding-left: prc(400, $maxWidthContainer);
+		padding-left: prc(400, 1024);
+	}
+	@include max-screen($sm){
+		padding-left: 0;
+		text-align: center;
 	}
 
 }

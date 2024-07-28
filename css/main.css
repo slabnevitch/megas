@@ -1385,8 +1385,9 @@ textarea {
 }
 
 .hero__content {
-  max-width: 23.5294117647rem;
+  max-width: 19.4117647059rem;
   padding-top: 21.0588235294rem;
+  margin-right: 64.9305555556%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1399,6 +1400,7 @@ textarea {
 @media only screen and (max-width: 64em) {
   .hero__content {
     padding-top: 19.2941176471rem;
+    margin-right: 61.71875%;
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -1409,15 +1411,21 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .hero__content {
     max-width: 13.6470588235rem;
+    padding-top: 18.8235294118rem;
+    margin-right: 0;
+    margin-left: 14.6484375%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero__content {
+    margin-left: 0;
   }
 }
 @media only screen and (min-width: 47.99875em) {
   .hero__content {
     max-width: none;
-    margin-right: 67.7966101695%;
   }
 }
-
 .hero__slogan {
   font-family: "Articulat CF Medium", sans-serif;
   margin-bottom: 1.7647058824rem;
@@ -1433,6 +1441,7 @@ textarea {
 @media only screen and (max-width: 61.99875em) {
   .hero__slogan {
     font-size: 0.8823529412rem;
+    margin-bottom: 0.7058823529rem;
   }
 }
 
@@ -1513,7 +1522,7 @@ textarea {
 }
 @media only screen and (max-width: 30em) {
   .hero__image {
-    right: -105%;
+    right: -108%;
   }
 }
 .hero__image ._fit-img {
@@ -1653,33 +1662,30 @@ textarea {
 }
 .organize .heading {
   margin-bottom: 3.4741176471rem;
+  margin-left: 36.8055555556%;
 }
 @media only screen and (max-width: 64em) {
   .organize .heading {
     margin-bottom: 2.2211764706rem;
+    margin-left: 39.0625%;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .organize .heading {
     margin-bottom: 1.8535294118rem;
-  }
-}
-@media only screen and (min-width: 47.99875em) {
-  .organize .heading {
-    margin-left: 33.8983050847%;
+    margin-left: 0;
   }
 }
 
 .organize__options {
   max-width: 49.1525423729%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 28.4722222222%;
   margin-bottom: 3.5729411765rem;
 }
 @media only screen and (max-width: 64em) {
   .organize__options {
     max-width: 36.71875%;
-    margin-left: 25.390625%;
+    margin-left: 31.54296875%;
     margin-right: 0;
     margin-bottom: 2.9917647059rem;
   }
@@ -1704,7 +1710,7 @@ textarea {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  column-gap: 2.6470588235rem;
+  column-gap: 7.7586206897%;
 }
 @media only screen and (max-width: 64em) {
   .organize__option {
@@ -1729,7 +1735,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .organize__option:not(:last-child) {
-    margin-bottom: 1.9176470588rem;
+    margin-bottom: 1.1176470588rem;
   }
 }
 
@@ -1756,6 +1762,7 @@ textarea {
 @media only screen and (max-width: 64em) {
   .option-organize__icon {
     width: 2.7958823529rem;
+    height: 2.6752941176rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -1763,12 +1770,20 @@ textarea {
     width: 2.2276470588rem;
   }
 }
+@media only screen and (max-width: 61.99875em) {
+  .option-organize__icon--rost {
+    width: 2.5805882353rem;
+    height: 1.98rem;
+  }
+}
 .option-organize__icon img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .option-organize__text {
   font-size: 1.2882352941rem;
+  line-height: 140%;
 }
 @media only screen and (max-width: 64em) {
   .option-organize__text {
@@ -1781,14 +1796,18 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 47.99875em) {
+.organize__bottom {
+  padding-left: 36.8055555556%;
+}
+@media only screen and (max-width: 64em) {
   .organize__bottom {
-    text-align: center;
+    padding-left: 39.0625%;
   }
 }
-@media only screen and (min-width: 47.99875em) {
+@media only screen and (max-width: 47.99875em) {
   .organize__bottom {
-    padding-left: 33.8983050847%;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -1807,7 +1826,7 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .premium {
     padding-top: 3.0294117647rem;
-    padding-bottom: 2.2764705882rem;
+    padding-bottom: 4.6152941176rem;
   }
 }
 
@@ -1873,8 +1892,8 @@ textarea {
 }
 
 .premium__link, .smart__link {
-  -ms-flex: 0 0 40.6779661017%;
-  flex: 0 0 40.6779661017%;
+  -ms-flex: 0 0 42.3611111111%;
+  flex: 0 0 42.3611111111%;
 }
 @media only screen and (min-width: 47.99875em) {
   .premium__link, .smart__link {
@@ -1883,8 +1902,8 @@ textarea {
 }
 
 .premium__text, .smart__text {
-  -ms-flex: 0 0 57.6271186441%;
-  flex: 0 0 57.6271186441%;
+  -ms-flex: 0 0 47.2222222222%;
+  flex: 0 0 47.2222222222%;
 }
 @media only screen and (max-width: 47.99875em) {
   .premium__text, .smart__text {
@@ -1905,6 +1924,7 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .smart {
     padding-top: 2.9411764706rem;
+    padding-bottom: 3.1176470588rem;
   }
 }
 .smart .heading {
@@ -2103,8 +2123,6 @@ textarea {
 @media only screen and (max-width: 64em) {
   .system__wrapper {
     min-height: 23.6370588235rem;
-    padding-left: 15.8203125%;
-    padding-right: 15.8203125%;
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -2127,16 +2145,30 @@ textarea {
     padding-top: 2.4011764706rem;
   }
 }
+@media only screen and (max-width: 47.99875em) {
+  .system__top-wrapper {
+    padding-top: 1.3547058824rem;
+  }
+}
 
 .system__heading {
   position: relative;
   z-index: 2;
   color: #fff;
-  margin-left: 33.8983050847%;
 }
 @media only screen and (max-width: 47.99875em) {
   .system__heading {
     margin-left: 2.6470588235rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .system__heading {
+    margin-left: 39.0625%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .system__heading {
+    margin-left: 36.8055555556%;
   }
 }
 
@@ -2165,7 +2197,7 @@ textarea {
 }
 @media only screen and (max-width: 64em) {
   .system__text {
-    font-size: 1.1176470588rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -2261,7 +2293,8 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .descr-system__app {
     line-height: 170%;
-    margin-bottom: 0;
+    margin-bottom: 0.2941176471rem;
+    line-height: 200%;
   }
 }
 .descr-system__app a {

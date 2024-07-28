@@ -21,8 +21,10 @@
 
 }
 .hero__content {
-	max-width: rem(400);
+	max-width: rem(330);
 	padding-top: rem(358);
+		margin-right: prc(935, $maxWidth);
+		// margin-left: prc(184, $maxWidth);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -31,6 +33,7 @@
 
 	@include max-screen($lgg){
 		padding-top: rem(328);
+		margin-right: prc(632, 1024);
 
 	}
 	@include max-screen($md){
@@ -38,10 +41,19 @@
 	}
 	@include max-screen($sm){
 		max-width: rem(232);
+		padding-top: rem(320);
+		margin-right: 0;
+		margin-left: prc(150, 1024);
+	}
+	@include max-screen($xs){
+		margin-left: 0;
 	}
 	@include min-screen($sm){
 		max-width: none;
-		margin-right: prc(800, $maxWidthContainer);
+		// margin-right: prc(800, $maxWidthContainer);
+	}
+	@include min-screen($lgg){
+		
 	}
 }
 .hero__slogan {
@@ -56,6 +68,7 @@
 	}
 	@include max-screen($md){
 		font-size: rem(15);
+		margin-bottom: rem(12);
 		
 	}
 }
@@ -125,7 +138,7 @@
 
 	}
 	@include max-screen($xss){
-		right: -105%;
+		right: -108%;
 		// width: rem(1103.52);
 
 	}
