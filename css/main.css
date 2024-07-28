@@ -273,6 +273,7 @@ html, body {
 .main .footer {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  margin-top: auto;
 }
 
 a {
@@ -1151,6 +1152,7 @@ textarea {
     height: 100%;
     transition: all 0.4s ease;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 .menu-header .toggle-mnu span, .menu-header .toggle-mnu span:after, .menu-header .toggle-mnu span:before {
@@ -1170,6 +1172,11 @@ textarea {
 @media only screen and (max-width: 61.99875em) {
   .menu-header {
     margin-left: auto;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .menu-header .menu-header__body {
+    height: 100svh;
   }
 }
 
@@ -1223,6 +1230,11 @@ textarea {
 .header--dark .menu__link {
   color: #fff;
 }
+@media only screen and (max-width: 61.99875em) {
+  .header--dark .menu__link {
+    color: #1A1A1A;
+  }
+}
 @media only screen and (max-width: 64em) {
   .menu__link {
     font-size: 0.8235294118rem;
@@ -1233,7 +1245,6 @@ textarea {
     color: #1A1A1A;
     font-size: 1.2941176471rem;
     font-family: "Articulat CF Medium", sans-serif;
-    line-height: 3.1764705882rem;
   }
 }
 
@@ -1273,9 +1284,6 @@ textarea {
 .header__search-button img, .header__search-button svg {
   width: 100%;
   max-height: 100%;
-}
-.header__search-button svg path {
-  stroke: red;
 }
 
 .header__serch-area {
