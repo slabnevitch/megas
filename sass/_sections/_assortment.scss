@@ -106,7 +106,6 @@
 
 	}
 
-
 	@include max-screen($lgg){
 	}
 
@@ -118,16 +117,25 @@
 
 }
 .assortment__shedule {
+	max-width: rem(99.32);
 	font-size: rem(54.23);
 	font-family: $light;
 	line-height: .6;
 	color: $accent;
 
 	@include max-screen($lgg){
+		max-width: rem(89);
 		font-size: rem(46.31);
 	}
 	@include max-screen($sm){
+		max-width: rem(65);
 		font-size: rem(33.76);
+	}
+
+	img{
+		display: block;
+		max-width: 100%;
+		min-height: 100%;
 	}
 }
 .assortment__bottom {

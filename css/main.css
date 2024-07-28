@@ -235,11 +235,13 @@ body {
   overflow-x: hidden;
   color: #1A1A1A;
 }
-.lock body {
-  overflow: hidden;
-  -ms-touch-action: none;
-  touch-action: none;
-  overflow-behavior: none;
+@media only screen and (max-width: 61.99875em) {
+  .lock body {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+    overflow-behavior: none;
+  }
 }
 
 html, body {
@@ -745,6 +747,7 @@ textarea {
 }
 
 .assortment__shedule {
+  max-width: 5.8423529412rem;
   font-size: 3.19rem;
   font-family: "Articulat CF Light", sans-serif;
   line-height: 0.6;
@@ -752,13 +755,20 @@ textarea {
 }
 @media only screen and (max-width: 64em) {
   .assortment__shedule {
+    max-width: 5.2352941176rem;
     font-size: 2.7241176471rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .assortment__shedule {
+    max-width: 3.8235294118rem;
     font-size: 1.9858823529rem;
   }
+}
+.assortment__shedule img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
 }
 
 .assortment__bottom {
@@ -788,6 +798,8 @@ textarea {
 .footer {
   padding-top: 3.6988235294rem;
   padding-bottom: 7.5652941176rem;
+  color: #4D4D4D;
+  background-color: #E6E6E6;
 }
 @media only screen and (max-width: 64em) {
   .footer {
@@ -911,6 +923,7 @@ textarea {
   font-size: 0.8529411765rem;
   font-family: "Articulat CF Medium", sans-serif;
   text-decoration: none;
+  color: #333333;
 }
 @media only screen and (max-width: 64em) {
   .menu-footer__link {
@@ -1589,10 +1602,12 @@ textarea {
 .main-slider__carousel .tns-nav {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 6.5082352941rem;
   -ms-flex-pack: center;
   justify-content: center;
-  column-gap: 1.0958823529rem;
+  gap: 0.5664705882rem;
 }
 @media only screen and (max-width: 64em) {
   .main-slider__carousel .tns-nav {
@@ -1610,20 +1625,14 @@ textarea {
   padding: 0;
   background-color: transparent;
   border: none;
-  width: 0.8364705882rem;
-  height: 0.8364705882rem;
+  width: 0.5958823529rem;
+  height: 0.5958823529rem;
   border-radius: 50%;
   background-color: #4D4D4D;
 }
 @media (any-hover: hover) {
   .main-slider__carousel .tns-nav button {
     cursor: pointer;
-  }
-}
-@media only screen and (max-width: 64em) {
-  .main-slider__carousel .tns-nav button {
-    width: 0.5958823529rem;
-    height: 0.5958823529rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -1936,7 +1945,6 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .smart {
     padding-top: 2.9411764706rem;
-    padding-bottom: 3.1176470588rem;
   }
 }
 .smart .heading {
@@ -1944,6 +1952,9 @@ textarea {
 }
 
 .smart__content {
+  -ms-flex-pack: center;
+  justify-content: center;
+  column-gap: 1.1764705882rem;
   margin-bottom: 3.0588235294rem;
 }
 @media only screen and (max-width: 64em) {
@@ -1957,6 +1968,15 @@ textarea {
   }
 }
 
+.smart__link {
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.smart__text {
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
 .smart__text p {
   max-width: none;
 }
@@ -2079,8 +2099,8 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .solutions__slogan {
-    margin-bottom: 0;
-    font-size: 0.7647058824rem;
+    margin-bottom: 0.3529411765rem;
+    font-size: 0.8235294118rem;
   }
 }
 
@@ -2330,7 +2350,6 @@ textarea {
 }
 @media (any-hover: hover) {
   .descr-system__app a:hover {
-    color: #1A1A1A;
     font-family: "Articulat CF Medium", sans-serif;
   }
 }
@@ -2379,6 +2398,17 @@ textarea {
 .system__item--title .item-system__icon {
   display: none;
 }
+.system__item[data-trigger] {
+  transition: all 0.7s ease-out;
+  opacity: 0;
+  -ms-transform: translateX(2.3529411765rem);
+  transform: translateX(2.3529411765rem);
+}
+.system__item[data-trigger].visible {
+  opacity: 1;
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
 @media only screen and (max-width: 64em) {
   .system__item {
     font-size: 0.8823529412rem;
@@ -2409,8 +2439,7 @@ textarea {
 }
 
 .item-system__icon {
-  width: 2.7558823529rem;
-  height: 2.8117647059rem;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -2421,16 +2450,53 @@ textarea {
   margin-right: auto;
   margin-bottom: 4.1176470588rem;
 }
-.item-system__icon[data-trigger] {
-  transition: all 0.7s ease-out;
-  opacity: 0;
-  -ms-transform: translateX(2.3529411765rem);
-  transform: translateX(2.3529411765rem);
+.item-system__icon--clock {
+  width: 2.7558823529rem;
+  height: 2.7558823529rem;
 }
-.item-system__icon[data-trigger].visible {
-  opacity: 1;
-  -ms-transform: translateX(0);
-  transform: translateX(0);
+@media only screen and (max-width: 73.75em) {
+  .item-system__icon--clock {
+    width: 2.2323529412rem;
+    height: 2.2323529412rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .item-system__icon--clock {
+    width: 1.9911764706rem;
+    height: 1.9911764706rem;
+  }
+}
+.item-system__icon--user {
+  width: 2.4311764706rem;
+  height: 2.8117647059rem;
+}
+@media only screen and (max-width: 73.75em) {
+  .item-system__icon--user {
+    width: 2.0082352941rem;
+    height: 2.3241176471rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .item-system__icon--user {
+    width: 1.81rem;
+    height: 2.0911764706rem;
+  }
+}
+.item-system__icon--time {
+  width: 2.2382352941rem;
+  height: 2.5305882353rem;
+}
+@media only screen and (max-width: 73.75em) {
+  .item-system__icon--time {
+    width: 1.7688235294rem;
+    height: 2rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .item-system__icon--time {
+    width: 1.6311764706rem;
+    height: 1.8447058824rem;
+  }
 }
 .item-system__icon--circle {
   -ms-flex-align: start;
@@ -2446,23 +2512,24 @@ textarea {
 }
 @media only screen and (max-width: 64em) {
   .item-system__icon {
-    width: 2.2323529412rem;
-    height: 2.3241176471rem;
     margin-bottom: 3.85rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .item-system__icon {
     margin-bottom: 0;
-    width: 2rem;
-    height: 2.0911764706rem;
     grid-row: 1/3;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .item-system__icon {
+    left: -1.1764705882rem;
   }
 }
 .item-system__icon img {
   display: block;
   width: 100%;
-  max-height: 100%;
+  height: 100%;
 }
 
 .item-system__circle {
@@ -2476,6 +2543,11 @@ textarea {
   margin-bottom: 0.7647058824rem;
   font-family: "Articulat CF Medium", sans-serif;
   line-height: 150%;
+}
+@media only screen and (min-width: 47.99875em) {
+  .item-system__title br {
+    display: none;
+  }
 }
 
 .item-system__text {

@@ -27,9 +27,12 @@ body{
 	// max-width: 360px;
 
 	.lock & {
-		overflow: hidden;
-		touch-action: none;
-		overflow-behavior: none;
+		@include max-screen($md){
+			overflow: hidden;
+			touch-action: none;
+			overflow-behavior: none;
+			
+		}
 	}
 }
 

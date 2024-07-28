@@ -74,8 +74,8 @@
 		font-size: rem(19);
 	}
 	@include max-screen($sm){
-		margin-bottom: 0;
-		font-size: rem(13);
+		margin-bottom: rem(6);
+		font-size: rem(14);
 	}
 }
 .solutions__descr {

@@ -34,9 +34,10 @@
 	}
 	.tns-nav{
 		display: flex;
+		flex-wrap: wrap;
 		margin-top: rem(110.64);
 		justify-content: center;
-		column-gap: rem(18.63);
+		gap: rem(9.63);
 		// width: 100%;
 
 		@include max-screen($lgg){
@@ -51,14 +52,13 @@
 		button{
 			@include but-null();
 			// display: inline-block;
-			width: rem(14.22);
-			height: rem(14.22);
+			width: rem(10.13);
+			height: rem(10.13);
 			border-radius: 50%;
 			background-color: $text-gray;
 
 			@include max-screen($lgg){
-				width: rem(10.13);
-				height: rem(10.13);
+				
 			}
 			@include max-screen($sm){
 				width: rem(6.66);

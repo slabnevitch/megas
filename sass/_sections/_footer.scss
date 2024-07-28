@@ -2,6 +2,9 @@
 .footer {
 	padding-top: rem(62.88);
 	padding-bottom: rem(128.61);
+	color: $text-gray;
+
+	background-color: #E6E6E6;
 
 	@include max-screen($lgg){
 		padding-top: rem(70);
@@ -91,6 +94,7 @@
 	font-size: rem(14.5);
 	font-family: $med;
 	text-decoration: none;
+	color: $bg;
 
 	@include max-screen($lgg){
 		font-size: rem(14);

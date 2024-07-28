@@ -20,11 +20,11 @@
 			.system__items
 				- var items = [{title: 'Время, дата и период выдачи', text:'например, бесплатно в дни общих собраний или до начала рабочего дня для поддержания дисциплины'}, {title: 'Тип бонуса', text: 'бесплатный товар, скидка или кэшбек для определенных людей, групп или всех сотрудников в виде поощрения'}, {title: 'Лимит', text: 'групповой и индивидуальный, на день и на месяц'}];
 
-				- var subitems = [{title: 'Дополнительные возможности >>'}, {title: 'Интеграция', text: 'привязка к пропускным картам сотрудников'}, {title: 'Мониторинг и коррекция бюджета', text: 'расходов на питание онлайн'}];
+				- var subitems = [{title: 'Дополнительные <br>возможности>>>'}, {title: 'Интеграция', text: 'привязка к пропускным картам сотрудников'}, {title: 'Мониторинг и коррекция бюджета', text: 'расходов на питание онлайн'}];
 
 				each item, i in items
-					article.system__item.item-system
-						.item-system__icon(data-trigger style="transition-delay:" + (.2 * (i - 1))+"s;")
+					article.system__item.item-system(data-trigger style="transition-delay:" + (.2 * (i - 1))+"s;")
+						div(class=i==0 ? "item-system__icon item-system__icon--clock" : i==1 ? "item-system__icon item-system__icon--user" : "item-system__icon item-system__icon--time" )
 							img(src="img/system/"+(i+1)+".svg" alt="alt")
 						.item-system__title= item.title
 						p.item-system__text= item.text
@@ -35,7 +35,7 @@
 							if item.text
 								.item-system__circle
 						
-						.item-system__title= item.title
+						.item-system__title!= item.title
 						
 						if item.text
 							p.item-system__text= item.text
