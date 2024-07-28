@@ -134,16 +134,24 @@
 			fabFade = document.querySelector('[data-fab-fade]'),
 			footer = document.querySelector('.footer');
 
-		fabTimer = setInterval(function() {
-			fab.classList.toggle('drive');
-		}, 8000);
+		if(fabFade !== null && fab !== null){
 
-		window.onscroll = function(e) {		
-			if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
-				|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
-				fab.style.visibility = 'hidden';
-			}else{
-				fab.style.visibility = 'visible';
+			fabTimer = setInterval(function() {
+				fab.classList.toggle('drive');
+			}, 8000);
+
+			fabButtonCheck();
+			window.onscroll = function(e) {		
+				fabButtonCheck()
+			}
+			function fabButtonCheck() {
+				if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
+					|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
+					fab.style.visibility = 'hidden';
+				}else{
+					fab.style.visibility = 'visible';
+				}
+
 			}
 		}
 		// END fab button
