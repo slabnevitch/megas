@@ -14,19 +14,31 @@
 	document.addEventListener('DOMContentLoaded', function() {
 		console.log('DOMContentLoaded!');
 
-		document.querySelector('.toggle-mnu').onclick = function(e) {
-			this.classList.toggle('on');
-			document.documentElement.classList.toggle('menu-opened');
-			document.documentElement.classList.toggle('lock');
-		}
+		// document.querySelector('.toggle-mnu').onclick = function(e) {
+		// 	this.classList.toggle('on');
+		// 	document.documentElement.classList.toggle('menu-opened');
+		// 	document.documentElement.classList.toggle('lock');
+		// }
 
 		document.onclick = function(e) {
 			var targ = e.target;
-			console.log(targ)
+			console.log(targ);
+
+			if(targ.closest('.toggle-mnu') !== null){
+				document.querySelector('.toggle-mnu').classList.toggle('on');
+				if(!document.documentElement.classList.contains('search-open')){
+					document.documentElement.classList.toggle('lock');
+				}
+				document.documentElement.classList.remove('search-open');
+				document.documentElement.classList.toggle('menu-opened');
+			}
+
 			if(targ.className === 'header__search-button' || targ.closest('.header__search-button') !== null){
 				document.documentElement.classList.toggle('search-open');
-			}else if (targ.closest('.header__serch-area') == null){
+				document.documentElement.classList.toggle('lock');
+			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null){
 				document.documentElement.classList.remove('search-open');
+				document.documentElement.classList.remove('lock');
 			}
 		}
 

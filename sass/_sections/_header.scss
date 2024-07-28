@@ -71,6 +71,13 @@
 	@include max-screen($md){
 		margin-left: auto;
 	}
+
+	.menu-header__body {
+
+		@include max-screen($md){
+			height: 100svh;
+		}
+	}
 }
 .toggle-mnu {}
 .menu-header__body {
@@ -107,6 +114,9 @@
 
 	.header--dark &{
 		color: #fff;
+		@include max-screen($md){
+			color: $text;
+		}
 	}
 
 	@include max-screen($lgg){
@@ -116,7 +126,7 @@
 		color: $text;
 		font-size: rem(22);
 		font-family: $med;
-		line-height: rem(54);
+		// line-height: rem(54);
 	}
 }
 .header__search-button {
@@ -141,13 +151,13 @@
 		max-height: 100%;
 	}
 
-	svg{
-		path{
+	// svg{
+	// 	path{
 			
-			stroke: red;
-		}
+	// 		stroke: red;
+	// 	}
 
-	}
+	// }
 
 
 }
