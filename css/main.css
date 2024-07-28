@@ -327,7 +327,7 @@ textarea {
   padding-right: 0.5882352941rem;
   max-width: 70.5882352941rem;
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 73.75em) {
   [class*=__wrapper] {
     padding-left: 1.7647058824rem;
     padding-right: 1.7647058824rem;
@@ -1081,12 +1081,6 @@ textarea {
   width: 100%;
   min-height: 3.7647058824rem;
 }
-@media only screen and (max-width: 64em) {
-  .header__body {
-    padding-left: 1.8823529412rem;
-    padding-right: 1.8823529412rem;
-  }
-}
 @media only screen and (max-width: 61.99875em) {
   .header__body {
     padding-left: 0;
@@ -1174,6 +1168,12 @@ textarea {
     margin-left: auto;
   }
 }
+@media only screen and (min-width: 61.99875em) {
+  .menu-header {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+}
 @media only screen and (max-width: 61.99875em) {
   .menu-header .menu-header__body {
     height: 100svh;
@@ -1201,7 +1201,7 @@ textarea {
     column-gap: clamp( 0.5882352941rem , -0.0504201681rem  +  3.3928571429vw , 2.8235294118rem );
   }
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 73.75em) {
   .menu__list {
     column-gap: 1.7058823529rem;
   }
@@ -1235,15 +1235,15 @@ textarea {
     color: #1A1A1A;
   }
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 73.75em) {
   .menu__link {
     font-size: 0.8235294118rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .menu__link {
-    color: #1A1A1A;
     font-size: 1.2941176471rem;
+    color: #1A1A1A;
     font-family: "Articulat CF Medium", sans-serif;
   }
 }
@@ -1378,20 +1378,9 @@ textarea {
 /*--------------------hero----------------------*/
 .hero {
   position: relative;
-  min-height: 44.5376470588rem;
+  min-height: 100svh;
   background-color: #EFF2F7;
 }
-@media only screen and (max-width: 64em) {
-  .hero {
-    min-height: 42.4494117647rem;
-  }
-}
-@media only screen and (max-width: 61.99875em) {
-  .hero {
-    min-height: 34.0588235294rem;
-  }
-}
-
 .hero__content {
   max-width: 19.4117647059rem;
   padding-top: 21.0588235294rem;
@@ -1492,9 +1481,9 @@ textarea {
   padding-bottom: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   height: 100%;
-  width: 80.1523529412rem;
+  width: 100%;
 }
 @media only screen and (max-width: 85.375em) {
   .hero__image {

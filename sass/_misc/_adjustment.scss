@@ -150,7 +150,7 @@ textarea{
 	max-width: rem($maxContainerWidth);
 	// outline: 1px solid;
 
-	@include max-screen($md){
+	@include max-screen(em($maxWidthContainer)){
 		padding-left: rem(30);
 		padding-right: rem(30);
 	}

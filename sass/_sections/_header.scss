@@ -36,10 +36,10 @@
 	width: 100%;
 	min-height: rem(64);
 
-	@include max-screen($lgg){
-		padding-left: rem(32);
-		padding-right: rem(32);
-	}
+	// @include max-screen($lgg){
+	// 	padding-left: rem(32);
+	// 	padding-right: rem(32);
+	// }
 
 	@include max-screen($md){
 		padding-left: 0;
@@ -66,10 +66,14 @@
 .header__menu {}
 .menu-header {
 	margin-top: rem(7);
-
 	@include menu-mob($media: $md, $burgerColor: #fff, $burgerOpenColor: $text, $plateBgColor: #fff, $plateHeight: 52);
 	@include max-screen($md){
 		margin-left: auto;
+	}
+
+	@include min-screen($md){
+		flex: 1 1 auto;
+		
 	}
 
 	.menu-header__body {
@@ -93,7 +97,7 @@
 	@include adaptive-value-rem('column-gap', 48, 10, $maxWidth, $minWidth, 1);
 	row-gap: rem(5);
 
-	@include max-screen($lgg){
+	@include max-screen($lg){
 		column-gap: rem(29);
 	}
 	@include max-screen($md){
@@ -118,13 +122,15 @@
 			color: $text;
 		}
 	}
-
-	@include max-screen($lgg){
+	@include max-screen($lg){
 		font-size: rem(14);
+		
+	}
+	@include max-screen($lgg){
 	}
 	@include max-screen($md){
-		color: $text;
 		font-size: rem(22);
+		color: $text;
 		font-family: $med;
 		// line-height: rem(54);
 	}
