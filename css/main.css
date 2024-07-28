@@ -1378,12 +1378,31 @@ textarea {
 /*--------------------hero----------------------*/
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: calc(100svh - 64px);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
   background-color: #EFF2F7;
 }
+@media only screen and (max-width: 61.99875em) {
+  .hero {
+    min-height: calc(100svh - 52px);
+  }
+}
+
+.hero__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
 .hero__content {
   max-width: 19.4117647059rem;
-  padding-top: 21.0588235294rem;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 9.7222222222%;
   margin-right: 64.9305555556%;
   display: -ms-flexbox;
   display: flex;
@@ -1400,15 +1419,9 @@ textarea {
     margin-right: 61.71875%;
   }
 }
-@media only screen and (max-width: 61.99875em) {
-  .hero__content {
-    padding-top: 17.6470588235rem;
-  }
-}
 @media only screen and (max-width: 47.99875em) {
   .hero__content {
     max-width: 13.6470588235rem;
-    padding-top: 18.8235294118rem;
     margin-right: 0;
     margin-left: 14.6484375%;
   }
@@ -1485,41 +1498,42 @@ textarea {
   height: 100%;
   width: 100%;
 }
-@media only screen and (max-width: 85.375em) {
-  .hero__image {
-    right: -10%;
-  }
-}
-@media only screen and (max-width: 73.75em) {
-  .hero__image {
-    right: -20%;
-  }
-}
 @media only screen and (max-width: 64em) {
   .hero__image {
-    right: -22%;
-    width: 76.3847058824rem;
+    right: -62%;
+    width: 150%;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .hero__image {
-    right: -30%;
-    width: 64.9129411765rem;
+    right: -60%;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .hero__image {
-    right: -60%;
+    right: -100%;
+    width: 100%;
+    width: 64.9129411765rem;
   }
 }
 @media only screen and (max-width: 36em) {
   .hero__image {
-    right: -60%;
+    right: -130%;
   }
 }
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 22.5em) {
   .hero__image {
-    right: -108%;
+    right: -130%;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .hero__image {
+    right: -120%;
+  }
+}
+@media only screen and (min-width: 73.75em) {
+  .hero__image {
+    margin-right: -5%;
   }
 }
 .hero__image ._fit-img {

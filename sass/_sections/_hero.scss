@@ -2,7 +2,9 @@
 .hero {
 	position: relative;
 	// min-height: rem(757.14);
-	min-height: 100svh;
+	min-height: calc(100svh - 64px);
+	display: flex;
+	align-items: flex-end;
 	
 	// padding-bottom: rem(101.14);
 	background-color: #EFF2F7;
@@ -15,15 +17,23 @@
 
 	@include max-screen($md){
 		// min-height: rem(579);
-
+		min-height: calc(100svh - 52px);
 	}
 }
 .hero__wrapper {
-
+	display: flex;
+	// flex-direction: column;
+	// justify-content: flex-end;
+	height: 100%;
+	width: 100%;
 }
 .hero__content {
 	max-width: rem(330);
-	padding-top: rem(358);
+	height: 100%;
+	width: 100%;
+	// padding-top: rem(358);
+	margin-bottom: prc(140, $maxWidth);
+	// margin-top: prc(358, $maxWidth);
 		margin-right: prc(935, $maxWidth);
 		// margin-left: prc(184, $maxWidth);
 	display: flex;
@@ -38,11 +48,11 @@
 
 	}
 	@include max-screen($md){
-		padding-top: rem(300);
+		// padding-top: rem(300);
 	}
 	@include max-screen($sm){
 		max-width: rem(232);
-		padding-top: rem(320);
+		// padding-top: rem(320);
 		margin-right: 0;
 		margin-left: prc(150, 1024);
 	}
@@ -113,36 +123,42 @@
 	// width: rem(1362.59);
 	// text-align: right;
 	// aspect-ratio: 1362.59 / 757.14;
+		// right: -7%;
 
 	@include max-screen(em(1366)){
-		right: -10%;
 	}
 	@include max-screen($lg){
-		right: -20%;
+		// right: -20%;
 	}
 	@include max-screen($lgg){
-		right: -22%;
-		width: rem(1298.54);
+		right: -62%;
+		width: 150%;
 	}
 	@include max-screen($md){
-		right: -30%;
-		width: rem(1103.52);
+		right: -60%;
 
 	}
 	@include max-screen($sm){
-		right: -60%;
-		// width: rem(1103.52);
+		right: -100%;
+		width: 100%;
+		width: rem(1103.52);
 
 	}
 	@include max-screen($xs){
-		right: -60%;
+		right: -130%;
 		// width: rem(1103.52);
 
 	}
-	@include max-screen($xss){
-		right: -108%;
+	@include max-screen($min){
+		right: -130%;
 		// width: rem(1103.52);
 
+	}
+	@include max-screen($mins){
+		right: -120%;
+	}
+	@include min-screen($lg){
+		margin-right: -5%;
 	}
 
 	._fit-img{
