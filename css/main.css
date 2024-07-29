@@ -1468,7 +1468,7 @@ textarea {
     margin-bottom: 22.2222222222%;
   }
 }
-@media only screen and (min-width: 61.99875em) {
+@media only screen and (min-width: 86.25em) {
   .hero__content {
     margin-bottom: 8.3333333333%;
   }
@@ -2356,7 +2356,7 @@ textarea {
 }
 
 .descr-system__app {
-  max-width: 37.6470588235rem;
+  max-width: 32.3529411765rem;
   margin-bottom: 0.5882352941rem;
 }
 @media only screen and (max-width: 86.25em) {
