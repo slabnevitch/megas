@@ -1212,7 +1212,7 @@ textarea {
 }
 @media only screen and (max-width: 86.25em) {
   .menu__list {
-    column-gap: 1.1764705882rem;
+    column-gap: 2.6470588235rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -1809,6 +1809,11 @@ textarea {
     font-size: 0.8823529412rem;
   }
 }
+@media only screen and (min-width: 86.25em) {
+  .option-organize__text br {
+    display: none;
+  }
+}
 
 .organize__bottom {
   padding-left: 36.8055555556%;
@@ -2145,7 +2150,7 @@ textarea {
 .system__wrapper {
   min-height: 33.5552941176rem;
 }
-@media only screen and (max-width: 86.25em) {
+@media only screen and (max-width: 61.99875em) {
   .system__wrapper {
     min-height: 23.6370588235rem;
   }
@@ -2283,7 +2288,7 @@ textarea {
   margin-left: 8.4745762712%;
   font-size: 1.2941176471rem;
 }
-@media only screen and (max-width: 73.75em) {
+@media only screen and (max-width: 86.25em) {
   .system__descr {
     margin-left: 0;
     font-size: 1.1176470588rem;
@@ -2447,7 +2452,7 @@ textarea {
   width: 2.7558823529rem;
   height: 2.7558823529rem;
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 86.25em) {
   .item-system__icon--clock {
     width: 2.2323529412rem;
     height: 2.2323529412rem;
@@ -2463,7 +2468,7 @@ textarea {
   width: 2.4311764706rem;
   height: 2.8117647059rem;
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 86.25em) {
   .item-system__icon--user {
     width: 2.0082352941rem;
     height: 2.3241176471rem;
@@ -2479,7 +2484,7 @@ textarea {
   width: 2.2382352941rem;
   height: 2.5305882353rem;
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 86.25em) {
   .item-system__icon--time {
     width: 1.7688235294rem;
     height: 2rem;
