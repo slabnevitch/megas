@@ -2413,19 +2413,19 @@ textarea {
 .system__items {
   display: -ms-flexbox;
   display: flex;
-  column-gap: 1.1764705882rem;
+  column-gap: 4.1176470588rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 4.5882352941rem;
 }
 .system__items .item-system {
-  -ms-flex-preferred-size: calc(calc(100% / 3) - calc(1.1764705882rem / 3 * calc(3 - 1)));
-  flex-basis: calc(calc(100% / 3) - calc(1.1764705882rem / 3 * calc(3 - 1)));
+  -ms-flex-preferred-size: calc(calc(100% / 3) - calc(4.1176470588rem / 3 * calc(3 - 1)));
+  flex-basis: calc(calc(100% / 3) - calc(4.1176470588rem / 3 * calc(3 - 1)));
 }
 @media only screen and (max-width: 61.99875em) {
   .system__items .item-system {
-    -ms-flex-preferred-size: calc(calc(100% / 1) - calc(1.1764705882rem / 1 * calc(1 - 1)));
-    flex-basis: calc(calc(100% / 1) - calc(1.1764705882rem / 1 * calc(1 - 1)));
+    -ms-flex-preferred-size: calc(calc(100% / 1) - calc(4.1176470588rem / 1 * calc(1 - 1)));
+    flex-basis: calc(calc(100% / 1) - calc(4.1176470588rem / 1 * calc(1 - 1)));
   }
 }
 @media only screen and (max-width: 86.25em) {
