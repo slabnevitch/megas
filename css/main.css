@@ -234,6 +234,7 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   color: #1A1A1A;
+  background-color: #F2F2F2;
 }
 @media only screen and (max-width: 61.99875em) {
   .lock body {
@@ -403,8 +404,8 @@ textarea {
   text-align: center;
 }
 
-.gray-bg {
-  background-color: #F2F2F2;
+.wht-bg {
+  background-color: #fff;
 }
 
 .fab {
@@ -1717,14 +1718,13 @@ textarea {
     max-width: 36.71875%;
     margin-left: 31.54296875%;
     margin-right: 0;
-    margin-bottom: 2.9917647059rem;
+    margin-bottom: 1.3805882353rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .organize__options {
     max-width: none;
     margin-left: 0;
-    margin-bottom: 2.5570588235rem;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -1766,6 +1766,18 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .organize__option:not(:last-child) {
     margin-bottom: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 86.25em) {
+  .organize__option--rost {
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .organize__option--rost {
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
