@@ -2356,7 +2356,6 @@ textarea {
 }
 
 .descr-system__app {
-  max-width: 32.3529411765rem;
   margin-bottom: 0.5882352941rem;
 }
 @media only screen and (max-width: 86.25em) {
