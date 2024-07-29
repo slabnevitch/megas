@@ -100,6 +100,9 @@
 	@include max-screen($lg){
 		column-gap: rem(29);
 	}
+	@include max-screen($lgg){
+		column-gap: rem(45);
+	}
 	@include max-screen($md){
 		flex-direction: column;
 		align-items: flex-start;
@@ -127,6 +130,7 @@
 		
 	}
 	@include max-screen($lgg){
+		font-size: rem(12);
 	}
 	@include max-screen($md){
 		font-size: rem(22);

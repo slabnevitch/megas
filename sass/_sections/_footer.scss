@@ -146,6 +146,7 @@
 
 	@include max-screen($lgg){
 		padding-left: 0;
+		font-size: rem(13);
 	}
 
 	@include max-screen($md){

@@ -1,30 +1,34 @@
 /*--------------------hero----------------------*/
 .hero {
 	position: relative;
-	// min-height: rem(757.14);
-	min-height: calc(100svh - 64px);
+	min-height: rem(757.14);
+	
 	display: flex;
 	align-items: flex-end;
-	
-	// padding-bottom: rem(101.14);
 	background-color: #EFF2F7;
 
 	@include max-screen($lgg){
 		// min-height: rem(721.64);
-		
-		
 	}
 
 	@include max-screen($md){
-		// min-height: rem(579);
-		min-height: calc(100svh - 52px);
+		min-height: rem(579);
+
+	}
+	@include min-screen($md){
+		// height: auto;
+		min-height: rem(600);
+	}
+	@include min-screen($lg){
+		height: calc(100svh - 64px);
+		min-height: 0;
 	}
 }
 .hero__wrapper {
 	display: flex;
 	// flex-direction: column;
-	// justify-content: flex-end;
-	height: 100%;
+	justify-content: flex-end;
+	// height: 100%;
 	width: 100%;
 }
 .hero__content {
@@ -32,7 +36,7 @@
 	height: 100%;
 	width: 100%;
 	// padding-top: rem(358);
-	margin-bottom: prc(140, $maxWidth);
+	margin-bottom: prc(120, $maxWidth);
 	// margin-top: prc(358, $maxWidth);
 		margin-right: prc(935, $maxWidth);
 		// margin-left: prc(184, $maxWidth);
@@ -43,8 +47,13 @@
 	z-index: 2;
 
 	@include max-screen($lgg){
-		padding-top: rem(328);
+		// padding-top: rem(328);
 		margin-right: prc(632, 1024);
+
+	}
+	@include max-screen($lgg){
+		// padding-top: rem(328);
+		// margin-right: prc(632, 1024);
 
 	}
 	@include max-screen($md){
@@ -53,18 +62,22 @@
 	@include max-screen($sm){
 		max-width: rem(232);
 		// padding-top: rem(320);
-		margin-right: 0;
-		margin-left: prc(150, 1024);
+		// margin-left: prc(150, 1024);
 	}
 	@include max-screen($xs){
+		margin-right: 20%;
+		max-width: none;
 		margin-left: 0;
 	}
 	@include min-screen($sm){
 		max-width: none;
 		// margin-right: prc(800, $maxWidthContainer);
 	}
-	@include min-screen($lgg){
-		
+	@include min-screen($md){
+		margin-bottom: prc(320, $maxWidth);
+	}
+	@include min-screen($md){
+		margin-bottom: prc(120, $maxWidth);
 	}
 }
 .hero__slogan {
@@ -72,6 +85,7 @@
 	margin-bottom: rem(30);
 	font-size: rem(22);
 	color: #1A1A1A;
+	text-align: right;
 
 	@include max-screen($lgg){
 		font-size: rem(19);
@@ -126,44 +140,41 @@
 		right: -10%;
 
 	@include max-screen(em(1366)){
+		right: -10%;
 	}
 	@include max-screen($lg){
 		// right: -20%;
 	}
 	@include max-screen($lgg){
-		right: -62%;
-		width: 150%;
+		// right: -22%;
+		// width: rem(1298.54);
 	}
 	@include max-screen($md){
-		right: -60%;
+		right: -30%;
+		// width: rem(1103.52);
 
 	}
 	@include max-screen($sm){
-		right: -100%;
-		width: 100%;
-		width: rem(1103.52);
+		// right: -40%;
+		// width: rem(1103.52);
 
 	}
 	@include max-screen($xs){
-		right: -130%;
-		// width: rem(1103.52);
+		right: -60%;
+		width: 200%;
 
 	}
-	@include max-screen($min){
-		right: -130%;
+	@include max-screen($xss){
+		right: -108%;
 		// width: rem(1103.52);
 
-	}
-	@include max-screen($mins){
-		right: -120%;
-	}
-	@include min-screen($lg){
-		margin-right: -5%;
 	}
 
 	._fit-img{
 		// bottom: 0;
 		// right: 0;
+
+		width: prc(1362.59, $maxWidth);
 		object-position: right top;
 
 		@include max-screen($md){

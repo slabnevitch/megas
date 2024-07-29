@@ -134,6 +134,12 @@
 	@include max-screen($md){
 		font-size: rem(15);
 	}
+
+	br{
+		@include min-screen($lgg){
+			display: none;
+		}
+	}
 }
 .organize__bottom {
 

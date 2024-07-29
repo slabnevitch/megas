@@ -24,6 +24,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 	color: $text;
+	background-color: $gray-bg;
 	// max-width: 360px;
 
 	.lock & {
@@ -157,6 +158,9 @@ textarea{
 		padding-left: rem(30);
 		padding-right: rem(30);
 	}
+	@include max-screen($lgg){
+		max-width: rem(1024);
+	}
 
 }
 // classes for smartgrid(c) structure
@@ -221,8 +225,8 @@ padding-bottom: 52.25%;
 .text-center{
 	text-align: center;
 }
-.gray-bg{
-	background-color: $gray-bg;
+.wht-bg{
+	background-color: #fff;
 }
 .fab{
 	position: fixed;
@@ -232,13 +236,13 @@ padding-bottom: 52.25%;
 	left: prc(55, $maxWidth);
 	z-index: 20;
 
+	// @include max-screen($lgg){
+	// 	width: rem(130);
+	// 	height: rem(152.4);
+	// 	top: rem(372.63);
+	// 	left: rem(34.29);
+	// }
 	@include max-screen($lgg){
-		width: rem(130);
-		height: rem(152.4);
-		top: rem(372.63);
-		left: rem(34.29);
-	}
-	@include max-screen($sm){
 		width: rem(110.96);
 		height: rem(130);
 		top: rem(418);
@@ -262,10 +266,10 @@ padding-bottom: 52.25%;
 	}
 }
 .fab__phone{
+	// @include max-screen($lgg){
+	// 	width: rem(93.42);
+	// }
 	@include max-screen($lgg){
-		width: rem(93.42);
-	}
-	@include max-screen($sm){
 		width: rem(79.69);
 	}
 
