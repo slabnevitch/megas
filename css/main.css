@@ -980,6 +980,7 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .footer__info {
     padding-left: 0;
+    font-size: 0.7647058824rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
