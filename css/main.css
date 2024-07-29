@@ -1407,6 +1407,11 @@ textarea {
 }
 @media only screen and (min-width: 61.99875em) {
   .hero {
+    min-height: 35.2941176471rem;
+  }
+}
+@media only screen and (min-width: 73.75em) {
+  .hero {
     height: calc(100svh - 64px);
     min-height: 0;
   }
@@ -1455,6 +1460,16 @@ textarea {
 @media only screen and (min-width: 47.99875em) {
   .hero__content {
     max-width: none;
+  }
+}
+@media only screen and (min-width: 61.99875em) {
+  .hero__content {
+    margin-bottom: 22.2222222222%;
+  }
+}
+@media only screen and (min-width: 61.99875em) {
+  .hero__content {
+    margin-bottom: 8.3333333333%;
   }
 }
 
@@ -1866,26 +1881,42 @@ textarea {
 
 .premium__image {
   margin-bottom: 3.1688235294rem;
-  margin-left: 11.6949152542%;
-  margin-right: 11.6949152542%;
+  position: relative;
+  aspect-ratio: 887/575.37;
+  margin-left: -0.8823529412rem;
+  margin-right: -0.8823529412rem;
 }
-@media only screen and (max-width: 86.25em) {
+@media only screen and (min-width: 47.99875em) {
   .premium__image {
+    margin-bottom: 2.1935294118rem;
     margin-bottom: 2.0211764706rem;
     margin-left: 12.0338983051%;
     margin-right: 12.0338983051%;
   }
 }
-@media only screen and (max-width: 47.99875em) {
+@media only screen and (min-width: 61.99875em) {
   .premium__image {
-    margin-bottom: 2.1935294118rem;
-    margin-left: -0.8823529412rem;
-    margin-right: -0.8823529412rem;
+    max-height: 17.9411764706rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 17.9411764706rem;
+  }
+}
+@media only screen and (min-width: 73.75em) {
+  .premium__image {
+    max-height: none;
+    margin-left: 11.6949152542%;
+    margin-right: 11.6949152542%;
   }
 }
 .premium__image img {
   width: 100%;
-  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .premium__bottom, .smart__content {
