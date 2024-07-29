@@ -14,11 +14,13 @@
 		.system__wrapper
 			.system__descr.descr-system
 				p.descr-system__chapter Мы создали гибкую систему распределения товаров и напитков между сотрудниками и клиентами
-				p.descr-system__app Вместе с вами настроим и подключим программу лояльности в приложении #[a(href="#") Vending Wallet] 
+				p.descr-system__app Вместе с вами настроим и подключим программу лояльности 
+					br
+					| в приложении #[a(href="#") Vending Wallet] 
 				.parameters-title Параметры выдачи:
 
 			.system__items
-				- var items = [{title: 'Время, дата и период выдачи', text:'например, бесплатно в дни общих собраний или до начала рабочего дня для поддержания дисциплины'}, {title: 'Тип бонуса', text: 'бесплатный товар, скидка или кэшбек для определенных людей, групп или всех сотрудников в виде поощрения'}, {title: 'Лимит', text: 'групповой и индивидуальный, на день и на месяц'}];
+				- var items = [{title: 'Время, дата и период выдачи', text:'например, бесплатно в дни общих собраний или до начала рабочего дня для поддержания дисциплины'}, {title: 'Тип бонуса', text: 'бесплатный товар, скидка или кэшбек для определенных людей, групп или всех сотрудников в виде поощрения'}, {title: 'Лимит', text: 'групповой и индивидуальный, <br>на день и на месяц'}];
 
 				- var subitems = [{title: 'Дополнительные <br>возможности>>>'}, {title: 'Интеграция', text: 'привязка к пропускным картам сотрудников'}, {title: 'Мониторинг и коррекция бюджета', text: 'расходов на питание онлайн'}];
 
@@ -27,7 +29,7 @@
 						div(class=i==0 ? "item-system__icon item-system__icon--clock" : i==1 ? "item-system__icon item-system__icon--user" : "item-system__icon item-system__icon--time" )
 							img(src="img/system/"+(i+1)+".svg" alt="alt")
 						.item-system__title= item.title
-						p.item-system__text= item.text
+						p.item-system__text!= item.text
 
 				each item, i in subitems
 					article(class=i==0 ? "system__item system__item--title item-system" : "system__item item-system")

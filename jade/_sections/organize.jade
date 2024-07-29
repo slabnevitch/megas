@@ -5,9 +5,9 @@ section.organize
 			h2.heading__title.organize__title 24/7
 		
 		.organize__options
-			- var opts = ['быстрый перекус с помощью современных технологий', 'умное оборудование <br>и цифровые системы самообслуживания, корпоративного питания', 'высокое качество товаров <br>и ингредиентов, премиальный зерновой кофе', 'профессиональное обслуживание, <br>18 лет опыта'];
+			- var opts = ['быстрый перекус с помощью современных технологий', 'умное оборудование <br>и цифровые системы самообслуживания, корпоративного питания', 'высокое качество товаров <br>и ингредиентов, премиальный зерновой кофе', 'профессиональное обслуживание, 18 лет опыта'];
 			each opt, i in opts
-				article.organize__option.option-organize
+				article(class=i==1 ? "organize__option option-organize organize__option--hand" : i==2 ? "organize__option option-organize organize__option--rost" : "organize__option option-organize organize__option--medal")
 					div(class=i==2 ? "option-organize__icon option-organize__icon--rost" : "option-organize__icon" data-trigger style="transition-delay:"+(0.1 * i)+"s")
 						img(src="img/organize/"+(i+1)+".svg" alt="alt")
 					.option-organize__text!= opt

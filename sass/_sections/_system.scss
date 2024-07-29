@@ -143,7 +143,7 @@
 	}
 }
 .descr-system__app {
-	max-width: rem(640);
+	// max-width: rem(550);
 	margin-bottom: rem(10);
 
 	@include max-screen($lgg){
@@ -192,7 +192,7 @@
  	}
 }
 .system__items {
- 	@include flex-cols-gap(20, 78, 3, ($md: 1), 'item-system', 1);
+ 	@include flex-cols-gap(70, 78, 3, ($md: 1), 'item-system', 1);
 
  	@include max-screen($lgg){
  		row-gap: rem(39);	

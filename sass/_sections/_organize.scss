@@ -42,12 +42,12 @@
 		max-width: prc(376,  1024);
 		margin-left: prc(323, 1024);
 		margin-right: 0;
-		margin-bottom: rem(50.86);
+		// margin-bottom: rem(50.86);
+		margin-bottom: rem(33.47);
 	}
 	@include max-screen($sm){
 		max-width: none;
 		margin-left: 0;
-		margin-bottom: rem(43.47);
 
 	}
 
@@ -82,6 +82,15 @@
 		@include max-screen($sm){
 			margin-bottom: rem(19);
 			
+		}
+	}
+
+	&--rost{
+		@include max-screen($lgg){
+			align-items: flex-start;
+		}
+		@include max-screen($sm){
+			align-items: center;
 		}
 	}
 

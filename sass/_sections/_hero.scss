@@ -76,7 +76,7 @@
 	@include min-screen($md){
 		margin-bottom: prc(320, $maxWidth);
 	}
-	@include min-screen($md){
+	@include min-screen($lgg){
 		margin-bottom: prc(120, $maxWidth);
 	}
 }
