@@ -1,14 +1,18 @@
 /*--------------------school-scroll----------------------*/
 .school-scroll {
-	padding-top: rem(247.98);
-	min-height: rem(1500);
+	margin-top: calc(100vh - rem(247.98));
+	padding-top: prc(247.98, 960);
+	padding-bottom: prc(576, 960);
+	// min-height: rem(1500);
 	// background-color: rgba(#000, 0.4);
 	// overflow: hidden;
+	position: relative;
+	z-index: 2;
 
-
-	&.inv{
-		visibility: hidden;
-		
+	@include max-screen($lgg){
+		margin-top: calc(100vh - rem(32));
+		padding-top: prc(32, 768);
+		padding-bottom: prc(290, 768);
 	}
 }
 .school-scroll__wrapper {
@@ -17,20 +21,56 @@
 }
 .school-scroll__text {
 	max-width: rem(440);
+	margin-right: rem(40);
 	color: #fff;
+
+	@include max-screen($sm){
+		margin-right: 0;
+		max-width: none;
+		margin-left: rem(56);
+	}
 }
 .school-scroll__title {
+	margin-bottom: rem(84.73);
 	font-size: rem(45);
 	line-height: 200%;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(78);
+		font-size: rem(39);
+		
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(56.06);
+		font-size: rem(25);
+		line-height: 150%;
+	}
 }
 .school-scroll__list {
 	padding-left: rem(100);
 	display: flex;
 	flex-direction: column;
 	row-gap: rem(86);
+
+	@include max-screen($lgg){
+		row-gap: rem(64);
+	
+	}
+	@include max-screen($sm){
+		padding-left: rem(64);
+		row-gap: rem(14);
+	}
 }
 .school-scroll__item {
 	list-style-type: none;
 	font-size: rem(40);
+
+	@include max-screen($lgg){
+
+		font-size: rem(36);	
+	}
+	@include max-screen($sm){
+		font-size: rem(25);
+	}
 }
 /*--------------------END school-scroll----------------------*/ 

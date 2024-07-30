@@ -792,6 +792,7 @@ textarea {
   padding-top: 3.6988235294rem;
   padding-bottom: 7.5652941176rem;
   color: #4D4D4D;
+  z-index: 2;
   background-color: #E6E6E6;
 }
 @media only screen and (max-width: 86.25em) {
@@ -2626,13 +2627,14 @@ textarea {
 .pizda {
   height: 100vh;
   background-color: #1A1A1A;
+  position: relative;
+  z-index: 2;
 }
 
 .school-hero {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  top: 3.0588235294rem;
   width: 100%;
-  top: 0;
   left: 0;
   height: 36.0588235294rem;
   display: -ms-flexbox;
@@ -2643,13 +2645,41 @@ textarea {
 }
 @media only screen and (min-width: 61.99875em) {
   .school-hero {
+    top: 3.7647058824rem;
+    min-height: 35.2941176471rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .school-hero {
+    height: 100dvh;
+    height: calc(100dvh - 3.7647058824rem);
+    min-height: 0;
+  }
+}
+@media only screen and (min-width: 61.99875em) {
+  .school-hero {
     min-height: 35.2941176471rem;
   }
 }
 @media only screen and (min-width: 73.75em) {
   .school-hero {
-    height: 100svh;
     min-height: 0;
+  }
+}
+.school-hero:after {
+  content: "";
+  height: 100%;
+  width: 49.3055555556%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(90deg, rgba(153, 153, 153, 0), rgba(60, 60, 60, 0.54) 15%, rgba(26, 26, 26, 0.7) 30%, rgba(49, 49, 49, 0.63) 62%, rgba(77, 77, 77, 0) 84%);
+  opacity: 0.5;
+}
+@media only screen and (max-width: 36em) {
+  .school-hero:after {
+    right: -88.8888888889%;
+    width: 149.7777777778%;
   }
 }
 .school-hero__image {
@@ -2673,7 +2703,19 @@ textarea {
     width: auto;
   }
 }
-@media only screen and (min-width: 47.99875em) {
+@media only screen and (min-width: 61.99875em) {
+  .school-hero__image ._fit-img {
+    width: auto;
+    left: auto;
+  }
+}
+@media only screen and (min-width: 73.75em) {
+  .school-hero__image ._fit-img {
+    width: 100%;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 80em) {
   .school-hero__image ._fit-img {
     object-position: right top;
   }
@@ -2682,11 +2724,18 @@ textarea {
 /*--------------------END school-hero----------------------*/
 /*--------------------school-scroll----------------------*/
 .school-scroll {
-  padding-top: 14.5870588235rem;
-  min-height: 88.2352941176rem;
+  margin-top: calc(100vh - 14.5870588235rem);
+  padding-top: 25.83125%;
+  padding-bottom: 60%;
+  position: relative;
+  z-index: 2;
 }
-.school-scroll.inv {
-  visibility: hidden;
+@media only screen and (max-width: 86.25em) {
+  .school-scroll {
+    margin-top: calc(100vh - 1.8823529412rem);
+    padding-top: 4.1666666667%;
+    padding-bottom: 37.7604166667%;
+  }
 }
 
 .school-scroll__wrapper {
@@ -2698,12 +2747,34 @@ textarea {
 
 .school-scroll__text {
   max-width: 25.8823529412rem;
+  margin-right: 2.3529411765rem;
   color: #fff;
+}
+@media only screen and (max-width: 47.99875em) {
+  .school-scroll__text {
+    margin-right: 0;
+    max-width: none;
+    margin-left: 3.2941176471rem;
+  }
 }
 
 .school-scroll__title {
+  margin-bottom: 4.9841176471rem;
   font-size: 2.6470588235rem;
   line-height: 200%;
+}
+@media only screen and (max-width: 86.25em) {
+  .school-scroll__title {
+    margin-bottom: 4.5882352941rem;
+    font-size: 2.2941176471rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .school-scroll__title {
+    margin-bottom: 3.2976470588rem;
+    font-size: 1.4705882353rem;
+    line-height: 150%;
+  }
 }
 
 .school-scroll__list {
@@ -2714,10 +2785,31 @@ textarea {
   flex-direction: column;
   row-gap: 5.0588235294rem;
 }
+@media only screen and (max-width: 86.25em) {
+  .school-scroll__list {
+    row-gap: 3.7647058824rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .school-scroll__list {
+    padding-left: 3.7647058824rem;
+    row-gap: 0.8235294118rem;
+  }
+}
 
 .school-scroll__item {
   list-style-type: none;
   font-size: 2.3529411765rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .school-scroll__item {
+    font-size: 2.1176470588rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .school-scroll__item {
+    font-size: 1.4705882353rem;
+  }
 }
 
 /*--------------------END school-scroll----------------------*/

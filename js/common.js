@@ -42,12 +42,12 @@
 			}
 		}
 
-		if(document.querySelector('.rellax')){
-			var rellax = new Rellax('.rellax', {
-				wrapper: null,
-				breakpoints: [576, 768, 1201]
-			});
-		}
+		// if(document.querySelector('.rellax')){
+		// 	var rellax = new Rellax('.rellax', {
+		// 		wrapper: null,
+		// 		breakpoints: [576, 768, 1201]
+		// 	});
+		// }
 
 		var trigger = new ScrollTrigger.default( {
 			trigger: {
@@ -66,8 +66,8 @@
 	            		console.log('in!');
 	            		console.log(trigger);
 	            		if(trigger.element.classList.contains('pizda')){
-	            			document.querySelector('.school-hero').style="position: static";
-	            			document.querySelector('.school-scroll').classList.add('inv')
+	            			// document.querySelector('.school-hero').style="position: static";
+	            			// document.querySelector('.school-scroll').classList.add('inv')
 	            		}
 	            	},
 	                // A callback when the element is visible on screen, keeps
@@ -84,8 +84,8 @@
 	                    console.log('out!')
 	                    console.log(trigger);
 	                    if(trigger.element.classList.contains('pizda')){
-	            			document.querySelector('.school-hero').style="position: sticky";
-	            			document.querySelector('.school-scroll').classList.remove('inv');
+	            			// document.querySelector('.school-hero').style="position: sticky";
+	            			// document.querySelector('.school-scroll').classList.remove('inv');
 	            		}
 	                     // rellax.refresh();
 	            		return new Promise((resolve, reject) => {
