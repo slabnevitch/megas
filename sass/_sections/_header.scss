@@ -6,7 +6,7 @@
   left: 0;
   top: 0;
   // min-height: 100px; /*опционально*/
-  background-color: rgba(#fff, 0.88);
+  background-color: #fff;
 
   &--dark{
   	background-color: rgba($bg, 0.88);
@@ -66,7 +66,7 @@
 .header__menu {}
 .menu-header {
 	margin-top: rem(7);
-	@include menu-mob($media: $md, $burgerColor: #fff, $burgerOpenColor: $text, $plateBgColor: #fff, $plateHeight: 52);
+	@include menu-mob($media: $md, $burgerColor: $text, $burgerOpenColor: $text, $plateBgColor: #fff, $plateHeight: 52);
 	@include max-screen($md){
 		margin-left: auto;
 	}
@@ -81,6 +81,28 @@
 		@include max-screen($md){
 			height: 100svh;
 		}
+	}
+	.toggle-mnu {
+		span,
+		span:before,
+		span:after{
+			.header--dark & {
+
+				background-color: #fff;
+			}
+		}
+
+		span, span:after, span:before{
+	    background-color: $text;
+
+	    .menu-opened & {
+	    	background-color: $text;
+	    }
+	  }
+
+		&.on span{
+	    	background-color: transparent;
+	  } 
 	}
 }
 .toggle-mnu {}
@@ -161,13 +183,16 @@
 		max-height: 100%;
 	}
 
-	// svg{
-	// 	path{
-			
-	// 		stroke: red;
-	// 	}
+	svg{
+		path{
+			stroke: $text;
+			.header--dark &{
 
-	// }
+				stroke: #fff;
+			}
+
+		}
+	}
 
 
 }

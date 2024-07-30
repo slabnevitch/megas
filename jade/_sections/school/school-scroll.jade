@@ -1,0 +1,11 @@
+.school-scroll.rellax(data-rellax-speed="3")
+	.school-scroll__wrapper
+		.school-scroll__text
+			.school-scroll__title Школьный вендинг –
+				br
+				| это 
+			
+			ul.school-scroll__list
+				- var list = ['Полезно.,', 'Удобно.', 'Безопасно.'];
+					each item in list
+						li.school-scroll__item= item

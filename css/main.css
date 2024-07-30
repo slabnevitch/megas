@@ -201,7 +201,7 @@
   float: left;
 }
 
-
+/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
 /*--end tiny-slider--*/
 /*--tiny-slider--*/
 /*--end tiny-slider--*/
@@ -1056,12 +1056,13 @@ textarea {
 /*--------------------END footer----------------------*/
 /*--------------------header----------------------*/
 .header {
+  position: -webkit-sticky;
   position: sticky;
   z-index: 22;
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: #fff;
 }
 .header--dark {
   background-color: rgba(51, 51, 51, 0.88);
@@ -1156,7 +1157,7 @@ textarea {
   }
 }
 .menu-header .toggle-mnu span, .menu-header .toggle-mnu span:after, .menu-header .toggle-mnu span:before {
-  background-color: #fff;
+  background-color: #1A1A1A;
 }
 .menu-opened .menu-header .toggle-mnu span, .menu-opened .menu-header .toggle-mnu span:after, .menu-opened .menu-header .toggle-mnu span:before {
   background-color: #1A1A1A;
@@ -1184,6 +1185,20 @@ textarea {
   .menu-header .menu-header__body {
     height: 100svh;
   }
+}
+.header--dark .menu-header .toggle-mnu span,
+.header--dark .menu-header .toggle-mnu span:before,
+.header--dark .menu-header .toggle-mnu span:after {
+  background-color: #fff;
+}
+.menu-header .toggle-mnu span, .menu-header .toggle-mnu span:after, .menu-header .toggle-mnu span:before {
+  background-color: #1A1A1A;
+}
+.menu-opened .menu-header .toggle-mnu span, .menu-opened .menu-header .toggle-mnu span:after, .menu-opened .menu-header .toggle-mnu span:before {
+  background-color: #1A1A1A;
+}
+.menu-header .toggle-mnu.on span {
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 61.99875em) {
@@ -1300,6 +1315,12 @@ textarea {
 .header__search-button img, .header__search-button svg {
   width: 100%;
   max-height: 100%;
+}
+.header__search-button svg path {
+  stroke: #1A1A1A;
+}
+.header--dark .header__search-button svg path {
+  stroke: #fff;
 }
 
 .header__serch-area {
@@ -2601,4 +2622,103 @@ textarea {
 }
 
 /*--------------------END system----------------------*/
+/*--------------------school-hero----------------------*/
+.pizda {
+  height: 100vh;
+  background-color: #1A1A1A;
+}
+
+.school-hero {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 36.0588235294rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #F1F7F8;
+}
+@media only screen and (min-width: 61.99875em) {
+  .school-hero {
+    min-height: 35.2941176471rem;
+  }
+}
+@media only screen and (min-width: 73.75em) {
+  .school-hero {
+    height: 100svh;
+    min-height: 0;
+  }
+}
+.school-hero__image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+@media only screen and (max-width: 30em) {
+  .school-hero__image {
+    left: -40%;
+  }
+}
+.school-hero__image ._fit-img {
+  object-position: left bottom;
+}
+@media only screen and (max-width: 36em) {
+  .school-hero__image ._fit-img {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .school-hero__image ._fit-img {
+    object-position: right top;
+  }
+}
+
+/*--------------------END school-hero----------------------*/
+/*--------------------school-scroll----------------------*/
+.school-scroll {
+  padding-top: 14.5870588235rem;
+  min-height: 88.2352941176rem;
+}
+.school-scroll.inv {
+  visibility: hidden;
+}
+
+.school-scroll__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.school-scroll__text {
+  max-width: 25.8823529412rem;
+  color: #fff;
+}
+
+.school-scroll__title {
+  font-size: 2.6470588235rem;
+  line-height: 200%;
+}
+
+.school-scroll__list {
+  padding-left: 5.8823529412rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 5.0588235294rem;
+}
+
+.school-scroll__item {
+  list-style-type: none;
+  font-size: 2.3529411765rem;
+}
+
+/*--------------------END school-scroll----------------------*/
 /*# sourceMappingURL=maps/main.css.map */

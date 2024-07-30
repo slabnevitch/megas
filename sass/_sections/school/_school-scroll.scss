@@ -1,0 +1,36 @@
+/*--------------------school-scroll----------------------*/
+.school-scroll {
+	padding-top: rem(247.98);
+	min-height: rem(1500);
+	// background-color: rgba(#000, 0.4);
+	// overflow: hidden;
+
+
+	&.inv{
+		visibility: hidden;
+		
+	}
+}
+.school-scroll__wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+.school-scroll__text {
+	max-width: rem(440);
+	color: #fff;
+}
+.school-scroll__title {
+	font-size: rem(45);
+	line-height: 200%;
+}
+.school-scroll__list {
+	padding-left: rem(100);
+	display: flex;
+	flex-direction: column;
+	row-gap: rem(86);
+}
+.school-scroll__item {
+	list-style-type: none;
+	font-size: rem(40);
+}
+/*--------------------END school-scroll----------------------*/ 

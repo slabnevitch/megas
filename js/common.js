@@ -42,6 +42,13 @@
 			}
 		}
 
+		if(document.querySelector('.rellax')){
+			var rellax = new Rellax('.rellax', {
+				wrapper: null,
+				breakpoints: [576, 768, 1201]
+			});
+		}
+
 		var trigger = new ScrollTrigger.default( {
 			trigger: {
 				once: false,
@@ -56,8 +63,12 @@
 	                // return a Promise here, the trigger will not be called until
 	                // the promise resolves.
 	            	in: (trigger) => {
-	            		// console.log('in!');
-	            		// console.log(trigger);
+	            		console.log('in!');
+	            		console.log(trigger);
+	            		if(trigger.element.classList.contains('pizda')){
+	            			document.querySelector('.school-hero').style="position: static";
+	            			document.querySelector('.school-scroll').classList.add('inv')
+	            		}
 	            	},
 	                // A callback when the element is visible on screen, keeps
 	                // on triggering for as long as 'sustain' is set
@@ -70,6 +81,13 @@
 	            	out: (trigger) => {
 	                    // `trigger` contains the Trigger object that goes out
 	                    // of the viewport
+	                    console.log('out!')
+	                    console.log(trigger);
+	                    if(trigger.element.classList.contains('pizda')){
+	            			document.querySelector('.school-hero').style="position: sticky";
+	            			document.querySelector('.school-scroll').classList.remove('inv');
+	            		}
+	                     // rellax.refresh();
 	            		return new Promise((resolve, reject) => {
 	            			setTimeout(resolve, 10)
 	            		})
@@ -82,6 +100,7 @@
 				// Add all html elements with attribute data-trigger
 		trigger.add('[data-trigger]');
 
+	
 
 		// main-slider
 		// usage: http://ganlanyuan.github.io/tiny-slider/#usage

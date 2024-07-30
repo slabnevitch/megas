@@ -1,0 +1,63 @@
+/*--------------------school-hero----------------------*/
+.pizda{
+	// margin-top: 100vh;
+	height: 100vh;
+	background-color:$text;
+}
+.school-hero{
+	position: sticky;
+	// margin-top: rem(64);
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: rem(613);
+	display: flex;
+	justify-content: flex-end;
+	background-color: #F1F7F8;
+
+	@include min-screen($md){
+		// height: auto;
+		min-height: rem(600);
+	}
+
+	@include min-screen($lg){
+		height: 100svh;
+		min-height: 0;
+	}
+
+	&__image{
+		height: 100%;
+		width: 100%;
+		position: relative;
+
+		    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+		@include max-screen($xss){
+			// width: 200%;
+			left: -40%;
+		}
+
+		@include min-screen($md){
+			// width: prc(1206.22, $maxWidth);
+			
+		}
+
+		._fit-img{
+			// position: static;
+			object-position: left bottom;
+
+			@include max-screen($xs){
+				width: auto;
+			}
+
+			@include min-screen($sm){
+				object-position: right top;
+				
+			}
+		}
+	}
+}
+
+/*--------------------END school-hero----------------------*/ 
