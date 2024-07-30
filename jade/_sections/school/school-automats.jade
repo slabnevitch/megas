@@ -1,0 +1,21 @@
+.self-service
+	.self-service__wrapper
+		.self-service__top
+			.self-service__text Торговые автоматы самообслуживания 
+				br
+				| от компании #[a(href="#") Мегас.Вендинг]
+				br
+				| оснащённые умным программным 
+				br
+				| обеспечением для здорового 
+				br
+				| питания обучающихся:
+		
+		.self-service__items
+			- var items = ['полный контроль дополнительного питания учащегося', 'ассортимент и сроки годности онлайн в личном кабинете доступны педсоставу школы', 'купить товар может только родитель или опекун через мобильное приложение, отправив ребёнку QR-код', 'ребёнок получит товар, выбранный родителем, остканировав QR-код считывателем на автомате'];
+			each item, i in items
+				article.self-service__item.item-self-service
+					.item-self-service__icon
+						img(src="img/school-page/self-service/" + (i+1) + ".svg" alt="alt")
+					
+					.item-self-service__text= item

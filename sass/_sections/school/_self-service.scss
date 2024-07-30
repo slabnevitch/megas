@@ -1,0 +1,61 @@
+/*--------------------self-service----------------------*/
+.self-service {
+	position: relative;
+	z-index: 2;
+	padding-top: rem(79);
+	background-color: $gray-bg;
+}
+.self-service__wrapper {}
+.self-service__top {
+	padding-left: prc(200, $maxWidth);
+	margin-bottom: rem(116.82);
+}
+.self-service__text {
+	font-size: rem(22);
+	line-height: 200%;
+
+	@include max-screen($lgg){
+		margin-left: 0;
+		font-size: rem(19);
+	}
+	@include max-screen($sm){
+		font-size: rem(15);
+	}
+
+	a{
+		margin-left: rem(8);
+		font-size: rem(36);
+		color: $accent;
+		text-decoration: none;
+		line-height: 176%;
+		font-family: $light;
+		// font-weight: 300;
+
+		@include max-screen($lgg){
+			font-size: rem(33);
+			line-height: 170%;
+		}
+
+		@include max-screen($sm){
+			font-size: rem(25);
+			line-height: 150%;
+		}
+
+		@media (any-hover: hover) { //только для устройств с ховером
+				&:hover{
+					font-family: $med;
+				}
+			}
+	}
+}
+.self-service__items {
+	margin-left: prc(100, $maxWidth);
+	margin-right: prc(100, $maxWidth);
+	@include flex-cols-gap(48, 0, 4, ($md: 1), 'self-service__item ', 1);
+
+}
+.self-service__item {}
+.item-self-service {}
+.item-self-service__icon {}
+.item-self-service__text {}
+/*--------------------END self-service----------------------*/ 
