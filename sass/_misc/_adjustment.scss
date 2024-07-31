@@ -228,6 +228,13 @@ padding-bottom: 52.25%;
 .wht-bg{
 	background-color: #fff;
 }
+.gray-bg{
+	background-color: $gray-bg;
+}
+.school-section{
+	position: relative;
+	z-index: 2;
+}
 .fab{
 	position: fixed;
 	width: rem(158);

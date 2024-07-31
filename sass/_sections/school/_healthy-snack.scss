@@ -1,0 +1,279 @@
+/*--------------------healthy-snack----------------------*/
+.healthy-snack {
+	
+}
+.healthy-snack__wrapper {}
+.healthy-snack__title {
+	margin-bottom: rem(60);
+	font-size: rem(22);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		
+		font-size: rem(19);
+		margin-bottom: rem(43);
+	}
+
+	@include max-screen($sm){
+		font-size: rem(15);
+		margin-bottom: rem(26);
+	}
+
+	span{
+		@include max-screen($lgg){
+			display: block;
+		}
+	}
+
+	br{
+		@include max-screen($lgg){
+			display: none;
+		}
+		@include max-screen($sm){
+			display: block;
+		}
+	}
+}
+.healthy-snack__image {
+	height: rem(593.72);
+
+	@include max-screen($lgg){
+		height: rem(453);
+		
+	}
+	@include max-screen($sm){
+		height: auto;
+		aspect-ratio: 360 / 218.18;
+	}
+
+	@include min-screen(em($maxWidth)){
+		height: auto;
+		aspect-ratio: $maxWidth / 593.72;
+	}
+}
+.assortment--school{
+	padding-top: rem(96.58);
+
+	@include max-screen($lgg){
+		
+		padding-top: rem(51);
+	}
+	@include max-screen($sm){
+		
+		padding-top: rem(39.63);
+	}
+
+
+	.assortment__bottom{
+		@include max-screen($sm){
+			max-width: calc(55% - rem(10));
+			text-align: right;
+		}
+	}
+}
+.assortment__content--school{
+	align-items: stretch;
+	margin-bottom: rem(95.18);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(43.12);
+
+	}
+	@include max-screen($sm){
+		flex-direction: row-reverse;
+		column-gap: rem(20);
+	}
+
+	@include max-screen($xss){
+		
+		margin-bottom: 0;
+	}
+	.assortment__text{
+		@include max-screen($sm){
+			flex: 0 0 calc(55% - rem(10));
+			text-align: right;
+		}
+	}
+	.assortment__text p{
+		max-width: none;
+		line-height: 150%;
+
+		@include max-screen($xs){
+			font-size: rem(13);
+		}
+
+		a{
+			color: $accent;
+			text-decoration: none;
+
+			@media (any-hover: hover) { //только для устройств с ховером
+					&:hover{
+						font-family: $med;
+					}
+				}
+		}
+
+		br{
+			@include max-screen($sm){
+				display: block;
+			}
+			@include max-screen($xs){
+				display: none;
+			}
+		}
+
+		span{
+			@include max-screen($xss){
+				font-family: $med;
+			}
+		}
+	}
+
+	
+	.assortment__picts{
+		flex-direction: column;
+		max-width: rem(380);
+		row-gap: 0;
+		margin-bottom: 0;
+
+		@include max-screen($lgg){
+			row-gap: rem(24);
+			
+		}
+
+		@include max-screen($sm){
+			flex: 0 0 calc(45% - rem(10));
+			row-gap: rem(10);
+		}
+		@include max-screen($sm){
+			flex: 0 0 calc(45% - rem(10));
+			column-gap: rem(12.5);
+		}
+
+	
+		
+		.assortment__pict{
+			&:first-child{
+				max-width: rem(34.64);
+
+				@include max-screen($lgg){
+					// max-width: rem(37.77);
+					max-width: rem(30.91);
+					
+				}
+				@include max-screen($xs){
+					max-width: rem(16.6);
+				}
+
+			}
+			&:nth-child(2){
+				max-width: none;
+
+				@include max-screen($lgg){
+					// max-width: rem(37.77);
+					max-width: rem(60.12);
+					
+				}
+				@include max-screen($xs){
+					max-width: rem(37.05);
+				}
+
+			}
+			&:nth-child(3){
+				max-width: rem(44.76);
+
+				@include max-screen($lgg){
+					max-width: rem(37.77);
+					
+				}
+				@include max-screen($xs){
+					max-width: rem(21.09);
+				}
+
+			}
+			&:nth-child(4){
+
+				@include max-screen($lgg){
+					max-width: rem(57.84);
+					
+				}
+
+				@include max-screen($xs){
+					max-width: rem(35.94);
+				}
+
+			}
+
+		}
+
+		.assortment__shedule{
+			@include max-screen($lgg){
+				// max-width: rem(101.29);
+				max-width: rem(80.65);
+			}
+			@include max-screen($xs){
+				margin-top: rem(18.19);
+				max-width: rem(41.26);
+			}
+		}
+
+		.assortment__mode{
+			width: rem(121);
+			height: rem(18);
+
+			max-width: none;
+			margin-top: auto;
+
+			@include max-screen($xss){
+				display: block;
+			}
+			@include max-screen($mins){
+				
+				margin-right: rem(-15);
+			}
+
+			@include min-screen($xss){
+				display: none;
+			}
+		}
+	}
+}
+.assortment__picts-inner{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	column-gap: rem(33);
+	row-gap: rem(28);
+
+	@include max-screen($lgg){
+		row-gap: rem(24);
+
+	}
+
+	@include max-screen($sm){
+		row-gap: rem(10);
+	}
+	@include max-screen($sm){
+		column-gap: rem(12.5);
+	}
+
+	@include max-screen($xs){
+		padding-right: rem(30);
+	}
+
+}
+.assortment__mode{
+	max-width: rem(224);
+	height: rem(32);
+	display: inline-block;
+
+	@include max-screen($xss){
+		display: none;
+	}
+
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+/*--------------------END healthy-snack----------------------*/ 
