@@ -1,9 +1,18 @@
 /*--------------------guarantee----------------------*/
 .guarantee {
+	padding-top: rem(151);
 	padding-bottom: rem(177.18);
 
 	@include max-screen($lgg){
+		padding-top: rem(90.83);
 		padding-bottom: rem(116);
+	}
+	@include max-screen($md){
+		padding-bottom: rem(47.25);
+	}
+	@include max-screen($sm){
+		
+		padding-top: 0;
 	}
 }
 .guarantee__wrapper {
@@ -23,6 +32,9 @@
 .guarantee__title{
 	@include max-screen($md){
 		font-size: rem(27);
+	}
+	@include max-screen($sm){
+		font-size: rem(22);
 	}
 }
 .guarantee__content {}

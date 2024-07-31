@@ -1,0 +1,56 @@
+/*--------------------school-auto----------------------*/
+.school-auto {
+
+}
+.school-section {}
+.gray-bg {}
+.school-auto__wrapper {}
+.heading {}
+.school-auto__heading {
+	margin-bottom: rem(9.52);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(9.52);
+		
+	}
+}
+.text-center {}
+.heading__subtitle {}
+.heading__title {}
+.school-auto__descr{
+	margin-bottom: rem(39);
+	text-align: center;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(29.36);
+		font-size: rem(15);
+	}
+	@include max-screen($sm){
+		
+		margin-bottom: rem(13.31);
+		font-size: rem(13);
+	}
+}
+.school-auto__image{
+	aspect-ratio: $maxWidth / 810;
+
+	@include max-screen($lgg){
+		aspect-ratio: auto;
+		height: rem(500);
+	}
+
+	@include max-screen($md){
+		aspect-ratio: $maxWidth / 810;
+		height: auto;
+	}
+
+	@include max-screen($sm){
+		aspect-ratio: 360 / 263.45;
+	}
+
+	._fit-img{
+		width: prc(468.35, 360);
+		left: -25%;
+	}
+}
+/*--------------------END school-auto----------------------*/ 

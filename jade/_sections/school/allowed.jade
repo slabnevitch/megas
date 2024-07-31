@@ -1,0 +1,21 @@
+section.allowed.school-section.gray-bg
+	.allowed__wrapper
+		.heading.allowed__heading.text-center
+			h2.heading__title Разрешено
+
+		.allowed__items
+			- var items = ['КОМИТЕТ ИМУЩЕСТВЕННЫХ ОТНОШЕНИЙ <br>САНКТ-ПЕТЕРБУРГА', 'КОМИТЕТ СОВЕТА ФЕДЕРАЦИИ <br>ПО АГРАРНО-ПРОДОВОЛЬСТВЕННОЙ <br>ПОЛИТИКЕ <br>И ПРИРОДОПОЛЬЗОВАНИЮ', 'ПРАВИТЕЛЬСТВО САНКТ-ПЕТЕРБУРГА <br>ВИЦЕ-ГУБЕРНАТОР <br>САНКТ ПЕТЕРБУРГА', 'ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>УПРАВЛЕНИЕ СОЦИАЛЬНОГО <br>ПИТАНИЯ', 'ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>КОМИТЕТ <br>ПО ОБРАЗОВАНИЮ', 'ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>КОМИТЕТ ТЕРРИТОРИАЛЬНОГО РАЗВИТИЯ'];
+					
+			each item, i in items
+				.allowed__item.item-allowed
+						if i<3
+							.item-allowed__icon
+								img(src="img/school-page/permission/"+(i+1)+".png" "img/school-page/permission/3.png" alt="alt")
+						else 
+							.item-allowed__icon
+								img(src="img/school-page/permission/3.png" alt="alt")
+						
+						.item-allowed__text!= item 
+		
+		.allowed__bottom
+			a(href="#").btn Сертификаты и Лицензии
