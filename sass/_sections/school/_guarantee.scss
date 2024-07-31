@@ -1,0 +1,145 @@
+/*--------------------guarantee----------------------*/
+.guarantee {
+	padding-bottom: rem(177.18);
+
+	@include max-screen($lgg){
+		padding-bottom: rem(116);
+	}
+}
+.guarantee__wrapper {
+}
+
+.guarantee__heading {
+
+	margin-bottom: rem(74);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(63);
+	}
+	@include max-screen($lgg){
+		margin-bottom: rem(16.64);
+	}
+}
+.guarantee__title{
+	@include max-screen($md){
+		font-size: rem(27);
+	}
+}
+.guarantee__content {}
+.guarantee__list {
+	// padding-left: rem(41);
+	margin-bottom: rem(36);
+	margin-right: rem(100);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(19);
+		margin-right: prc(162, 1024);
+	}
+	@include max-screen($md){
+		margin-right: prc(50, 360);
+	}
+
+}
+.guarantee__item {
+	position: relative;
+	list-style-type: none;
+	padding-left: rem(100);
+	font-size: rem(22);
+	
+
+	@include max-screen($lgg){
+		padding-left: prc(120, 1024);
+		font-size: rem(19);
+		line-height: 130%;
+	}
+	@include max-screen($sm){
+		font-size: rem(13);
+		line-height: normal;
+	}
+	@include max-screen($xss){
+		padding-left: prc(70, 360);
+
+	}
+	@include min-screen($sm){
+		letter-spacing: -.5px;
+	}
+
+	&:before{
+		content: '';
+		position: absolute;
+		top: rem(8);
+		left: rem(41);
+		width: rem(11);
+		height: rem(11);
+		border-radius: 50%;
+		background-color: #000;
+
+		@include max-screen($lgg){
+			width: rem(9.51);
+			height: rem(9.51);
+			left: prc(52, 1024);
+			top: rem(6);
+		}
+
+		@include max-screen($md){
+			width: rem(6);
+			height: rem(6);
+			left: prc(15, 360);
+			top: rem(4);
+		}
+	}
+
+
+	&:not(:last-child){
+		margin-bottom: rem(46.52);
+
+		@include max-screen($lgg){
+			margin-bottom: rem(29);
+		}
+		@include max-screen($md){
+			margin-bottom: rem(14.8);
+		}
+	}
+
+	
+
+}
+.guarantee__marker{
+
+	@include max-screen($sm){
+		color: $accent;
+
+	}
+}
+.guarantee__dots{
+	@include min-screen($sm){
+		display: none;
+	}
+}
+.guarantee__text{
+	margin-left: rem(100);
+	margin-right: rem(100);
+	line-height: 130%;
+	color: $accent;
+
+	@include max-screen($lgg){
+		margin-left: prc(110, 1024);
+		margin-right: prc(162, 1024);
+		font-size: rem(15);
+		line-height: 130%;
+	}
+	@include max-screen($sm){
+		display: none;
+	}
+
+}
+.dots {}
+.guarantee__hidden-text {
+
+	color: $accent;
+
+	@include min-screen($sm){
+		display: none;
+	}
+}
+/*--------------------END guarantee----------------------*/ 
