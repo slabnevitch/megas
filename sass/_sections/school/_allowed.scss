@@ -7,6 +7,10 @@
 		padding-top: rem(108.13);
 		padding-bottom: rem(131);
 	}
+	@include max-screen($md){
+		padding-top: rem(45.06);
+		padding-bottom: rem(83);
+	}
 }
 .school-section {}
 .gray-bg {}
@@ -26,13 +30,72 @@
 	// column-gap: prc(90, $maxWidthContainer);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	column-gap: prc(40, $maxWidthContainer);
-	column-gap: prc(40, $maxWidthContainer);
+	// column-gap: prc(40, $maxWidthContainer);
+	column-gap: rem(20);
 	row-gap: rem(63.65);
 	margin-bottom: rem(96);
+
+	@include max-screen($lgg){
+		margin-left: prc(142, 1024);
+		margin-right: prc(142, 1024);
+		row-gap: rem(51);
+		margin-bottom: rem(85);
+
+	}
+	@include max-screen($md){
+		margin-left: 0;
+		margin-right: 0;
+	}
+	@include max-screen($sm){
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: rem(16.58);
+		margin-bottom: 0;
+	}
+	@include max-screen($xs){
+		margin-left: rem(26);
+		margin-right: rem(26);
+	}
 }
 .allowed__item {
 	text-align: center;
+
+	&:nth-child(1){
+		@include max-screen($xs){
+			order: 5;
+
+		}
+	}
+	&:nth-child(2){
+		.item-allowed__icon{
+			@include max-screen($lgg){
+				max-width: rem(136.48);
+			}
+
+			@include max-screen($xs){
+				max-width: rem(75.12);
+				margin-top: rem(-7);
+			}
+
+		}
+		@include max-screen($xs){
+			order: 6;
+		}
+	}
+	&:nth-child(3){
+		.item-allowed__text{
+			br{
+				&:first-child{
+					display: none;
+
+					@include max-screen($lgg){
+						display: block;
+					}
+				}
+
+			}
+		}
+	}
+
 }
 .item-allowed {}
 .item-allowed__icon {
@@ -45,6 +108,17 @@
 	height: rem(189.44);
 	max-width: rem(206.58);
 
+	@include max-screen($lgg){
+		max-width: rem(106.8);
+		height: rem(120);
+		margin-bottom: rem(18);
+	}
+	@include max-screen($sm){
+		max-width: rem(60);
+		height: rem(67.55);
+		margin-bottom: rem(10.23);
+	}
+
 	img{
 		max-height: 100%;
 		max-width: 100%;
@@ -53,8 +127,19 @@
 .item-allowed__text {
 	font-size: rem(17);
 	text-transform: uppercase;
+
+	@include max-screen($lgg){
+		font-size: rem(15);
+	}
+	@include max-screen($xs){
+		font-size: rem(10);
+	}
 }
 .allowed__bottom{
 	text-align: center;
+
+	@include max-screen($sm){
+		display: none;
+	}
 }
 /*--------------------END section.allowed----------------------*/ 
