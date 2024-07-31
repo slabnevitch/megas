@@ -2924,6 +2924,181 @@ textarea {
 }
 
 /*--------------------END healthy-snack----------------------*/
+/*--------------------individual----------------------*/
+.individual {
+  padding-top: 4.0411764706rem;
+  padding-bottom: 10.3129411765rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual {
+    padding-top: 2.8723529412rem;
+    padding-bottom: 6.7158823529rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .individual {
+    padding-top: 0;
+    padding-bottom: 2.8505882353rem;
+    background: #F2F2F2;
+  }
+}
+
+.individual__container {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 10.1694915254%;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__container {
+    column-gap: 8.984375%;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .individual__container {
+    column-gap: 1.1764705882rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .individual__container {
+    display: block;
+  }
+}
+
+.individual__image {
+  width: 66.1016949153%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  aspect-ratio: 780/526;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__image {
+    width: 56.4453125%;
+    margin-left: 2.9411764706rem;
+    aspect-ratio: 578/385;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .individual__image {
+    margin-left: 0;
+    aspect-ratio: 360/240;
+    width: 66.1016949153%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .individual__image {
+    width: calc(100% + 3.5294117647rem);
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+    margin-bottom: 2.3735294118rem;
+  }
+}
+
+.individual__content {
+  width: 23.7288135593%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__content {
+    width: 21.484375%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .individual__content {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    column-gap: 1.5294117647rem;
+  }
+}
+
+.individual__heading {
+  margin-bottom: 2.5470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__heading {
+    margin-bottom: 1.9111764706rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .individual__heading {
+    text-align: left;
+  }
+}
+.individual__heading .heading__subtitle {
+  margin-bottom: 0.2941176471rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__heading .heading__subtitle {
+    margin-bottom: 0.7423529412rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .individual__heading .heading__subtitle {
+    margin-bottom: 0.4705882353rem;
+  }
+}
+
+.individual__text {
+  max-width: 12.7058823529rem;
+  margin-bottom: 7.1682352941rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__text {
+    max-width: none;
+    font-size: 0.8823529412rem;
+    margin-bottom: 4.2941176471rem;
+    line-height: 130%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .individual__text {
+    font-size: 0.7647058824rem;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 86.25em) {
+  .individual__text br {
+    display: none;
+  }
+}
+
+.individual__button {
+  max-width: 9.9735294118rem;
+  height: 2.4558823529rem;
+  display: inline-block;
+}
+@media only screen and (max-width: 86.25em) {
+  .individual__button {
+    max-width: 8.5294117647rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .individual__button {
+    max-width: 5rem;
+  }
+}
+.individual__button img {
+  max-width: 100%;
+}
+
+.individual__button-mob {
+  -ms-flex: 0 0 calc(35% - 0.7647058824rem);
+  flex: 0 0 calc(35% - 0.7647058824rem);
+  text-align: right;
+}
+@media only screen and (min-width: 47.99875em) {
+  .individual__button-mob {
+    display: none;
+  }
+}
+
+.individual__block {
+  -ms-flex: 0 0 calc(65% - 0.7647058824rem);
+  flex: 0 0 calc(65% - 0.7647058824rem);
+}
+
+/*--------------------END individual----------------------*/
 /*--------------------school-hero----------------------*/
 .pizda {
   height: 100vh;
