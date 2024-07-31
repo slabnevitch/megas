@@ -115,10 +115,6 @@
 				autoplay: true,
 				// center: true,
 				controls: false, // отключение кнопок "вперед/назад"
-				// controlsContainer: '.hits.carouseled .block-header__nav', // внутри .block-header__nav должны быть 2 заранее отстилизованные кнопки
-				// navContainer: "#customize-thumbnails",//конткйнер для навигации миниатюрами
-				// navAsThumbnails: true, //включение навигации миниатюрами
-				// nav: false, //отключение bullets
 				navPosition: 'bottom',//положение bullets
 				mouseDrag: true,
 				gutter: 20, //добавляет padding, а не margin! Нужна обертка вокруг содержимого каждого слайда!
@@ -146,6 +142,23 @@
 		}
 
 		// END main-slider
+
+		// cacao-carousel
+		if(document.querySelector('.cacao__carousel .tiny-sldr') !== null){
+			var slider = tns({
+				container: '.cacao__carousel .tiny-sldr',
+				mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
+				items: 1,
+				speed: 1000,
+				// loop: false,
+				slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
+				// center: true,
+				controlsContainer: '.cacao__carousel .tiny-carousel__nav',
+				navPosition: 'bottom',//положение bullets
+				mouseDrag: true
+			});
+		}
+		// END cacao-carousel
 
 		// fab button
 		var fabTimer,

@@ -28,48 +28,7 @@
 }
 .text-center {}
 .main-slider__carousel {
-	[data-action="stop"],
-	[data-action="start"]{
-		display: none;
-	}
-	.tns-nav{
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: rem(110.64);
-		justify-content: center;
-		gap: rem(9.63);
-		// width: 100%;
-
-		@include max-screen($lgg){
-			margin-top: rem(89);
-			column-gap: rem(13.27);
-		}
-		@include max-screen($sm){
-			column-gap: rem(8.72);
-			margin-top: rem(76.77);
-		}
-
-		button{
-			@include but-null();
-			// display: inline-block;
-			width: rem(10.13);
-			height: rem(10.13);
-			border-radius: 50%;
-			background-color: $text-gray;
-
-			@include max-screen($lgg){
-				
-			}
-			@include max-screen($sm){
-				width: rem(6.66);
-				height: rem(6.66);
-			}
-
-			&.tns-nav-active{
-				background-color: $accent;
-			}
-		}
-	}
+	
 }
 .main-carousel {}
 .tiny-carousel {}

@@ -611,6 +611,57 @@ textarea {
   }
 }
 
+[data-action=stop],
+[data-action=start] {
+  display: none;
+}
+
+.tns-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 6.5082352941rem;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.5664705882rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .tns-nav {
+    margin-top: 5.2352941176rem;
+    column-gap: 0.7805882353rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .tns-nav {
+    column-gap: 0.5129411765rem;
+    margin-top: 4.5158823529rem;
+  }
+}
+.tns-nav button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 0.5958823529rem;
+  height: 0.5958823529rem;
+  border-radius: 50%;
+  background-color: #4D4D4D;
+}
+@media (any-hover: hover) {
+  .tns-nav button {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .tns-nav button {
+    width: 0.3917647059rem;
+    height: 0.3917647059rem;
+  }
+}
+.tns-nav button.tns-nav-active {
+  background-color: #009245;
+}
+
 /*--------------------END ui----------------------*/
 /*--------------------assortmetn----------------------*/
 .assortment {
@@ -1634,56 +1685,6 @@ textarea {
     margin-bottom: 2.3264705882rem;
     font-size: 0.8235294118rem;
   }
-}
-
-.main-slider__carousel [data-action=stop],
-.main-slider__carousel [data-action=start] {
-  display: none;
-}
-.main-slider__carousel .tns-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 6.5082352941rem;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 0.5664705882rem;
-}
-@media only screen and (max-width: 86.25em) {
-  .main-slider__carousel .tns-nav {
-    margin-top: 5.2352941176rem;
-    column-gap: 0.7805882353rem;
-  }
-}
-@media only screen and (max-width: 47.99875em) {
-  .main-slider__carousel .tns-nav {
-    column-gap: 0.5129411765rem;
-    margin-top: 4.5158823529rem;
-  }
-}
-.main-slider__carousel .tns-nav button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  width: 0.5958823529rem;
-  height: 0.5958823529rem;
-  border-radius: 50%;
-  background-color: #4D4D4D;
-}
-@media (any-hover: hover) {
-  .main-slider__carousel .tns-nav button {
-    cursor: pointer;
-  }
-}
-@media only screen and (max-width: 47.99875em) {
-  .main-slider__carousel .tns-nav button {
-    width: 0.3917647059rem;
-    height: 0.3917647059rem;
-  }
-}
-.main-slider__carousel .tns-nav button.tns-nav-active {
-  background-color: #009245;
 }
 
 .main-carousel__slide-wrap {
@@ -2789,6 +2790,129 @@ textarea {
 }
 
 /*--------------------END section.allowed----------------------*/
+/*--------------------cacao----------------------*/
+.cacao {
+  padding-bottom: 23.8235294118rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cacao {
+    padding-bottom: 9.2323529412rem;
+  }
+}
+
+.cacao__title {
+  font-size: 1.2941176471rem;
+  margin-bottom: 3.1764705882rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cacao__title {
+    margin-bottom: 2.2352941176rem;
+    font-size: 1.2941176471rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cacao__title {
+    margin-bottom: 1.4117647059rem;
+    font-size: 0.8823529412rem;
+  }
+}
+
+.cacao__carousel {
+  position: relative;
+  margin-left: 8.4745762712%;
+  margin-right: 8.4745762712%;
+}
+@media only screen and (max-width: 86.25em) {
+  .cacao__carousel {
+    margin-left: 14.16015625%;
+    margin-right: 14.16015625%;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cacao__carousel {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cacao__carousel .tiny-carousel__nav {
+    display: none;
+  }
+}
+.cacao__carousel .tns-nav {
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cacao__carousel .tns-nav {
+    margin-top: 2.4117647059rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cacao__carousel .tns-nav {
+    margin-top: 1.8235294118rem;
+  }
+}
+
+.tns-prev,
+.tns-next {
+  position: absolute;
+  top: calc(50% - 4.8823529412rem);
+  width: 1.7647058824rem;
+  height: 1.7647058824rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media (any-hover: hover) {
+  .tns-prev,
+  .tns-next {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 86.25em) {
+  .tns-prev,
+  .tns-next {
+    top: calc(50% - 3.2352941176rem);
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .tns-prev,
+  .tns-next {
+    top: calc(50% - 2.7058823529rem);
+  }
+}
+
+.tns-prev {
+  left: -12.7118644068%;
+}
+
+.tns-next {
+  right: -11.0169491525%;
+}
+
+.cacao__slide {
+  aspect-ratio: 965.33/724;
+}
+@media only screen and (max-width: 86.25em) {
+  .cacao__slide {
+    aspect-ratio: 700/545;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cacao__slide {
+    aspect-ratio: 360/282;
+  }
+}
+
+/*--------------------END cacao----------------------*/
 /*--------------------guarantee----------------------*/
 .guarantee {
   padding-top: 8.8823529412rem;
