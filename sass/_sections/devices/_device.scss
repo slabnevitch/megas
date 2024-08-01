@@ -1,0 +1,45 @@
+/*--------------------device----------------------*/
+.device {}
+.device__wrapper {}
+.device__heading {
+	margin-bottom: rem(33.29);
+}
+
+.device__title {
+	&-mob{
+		@include min-screen($sm){
+			display: none;
+		}
+	}
+	&-desk{
+		@include max-screen($sm){
+			display: none;
+		}
+	}
+}
+.device__anim {
+	background-color: #fff;
+}
+.device__anim-inner {
+	margin-left: prc(116, $maxWidthContainer);
+	margin-right: prc(116, $maxWidthContainer);
+
+	@include max-screen($lgg){
+		margin-left: prc(140, $maxWidthContainer);
+		margin-right: prc(140, $maxWidthContainer);
+	}
+	@include max-screen($sm){
+		margin-left: rem(-60);
+		margin-right: rem(-60);
+	}
+}
+.device__gif {
+	aspect-ratio: 946.76 / 710.07;
+
+	@include max-screen($sm){
+		aspect-ratio: 372 / 279;
+	}
+}
+._fit {}
+._fit-img {}
+/*--------------------END device----------------------*/ 

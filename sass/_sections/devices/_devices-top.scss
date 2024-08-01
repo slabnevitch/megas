@@ -1,0 +1,60 @@
+/*--------------------devices-top----------------------*/
+.devices-top {
+	padding-top: rem(75.4);
+	padding-bottom: rem(118.97);
+
+	@include max-screen($lgg){
+		padding-top: rem(77.79);
+		padding-bottom: rem(63.67);
+	}
+	@include max-screen($sm){
+		padding-top: rem(28);
+		padding-bottom: rem(28);
+	}
+}
+.devices-top__wrapper {}
+.devices-top__wrapper__slogan {
+	margin-bottom: rem(50);
+	text-align: center;
+	color: $accent;
+	font-family: $med;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(29);
+		
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(38.9);
+		
+	}
+}
+
+.devices-top__heading {
+	display: flex;
+	flex-direction:row-reverse;
+	align-items: baseline;
+	justify-content: center;
+	column-gap: rem(6);
+
+	@include max-screen($sm){
+		column-gap: rem(4);	
+	}
+}
+
+.devices-top__subtitle {
+
+	font-size: rem(36);
+
+	@include max-screen($lgg){
+		font-size: rem(30);
+	}
+	@include max-screen($sm){
+		font-size: rem(17);
+	}
+}
+.devices-top__title {
+	@include max-screen($sm){
+		font-size: rem(25);
+	}
+}
+/*--------------------END devices-top----------------------*/ 

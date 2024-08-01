@@ -104,6 +104,7 @@
      @include max-screen($sm){
       font-size: rem(15);
     }
+   
   }
   &__title{
     font-size: rem(45);
@@ -115,6 +116,12 @@
 
      @include max-screen($sm){
       font-size: rem(27);
+    }
+
+    .heading--mob-title-25 &{
+       @include max-screen($sm){
+         font-size: rem(25);
+      }
     }
 
     span{
@@ -177,4 +184,14 @@
     }
   }
 // END tiny-slider
+.text{
+  font-size: rem(22);
+
+  @include max-screen($lgg){
+    font-size: rem(19);
+  }
+  @include max-screen($sm){
+    font-size: rem(13);
+  }
+}
 /*--------------------END ui----------------------*/ 

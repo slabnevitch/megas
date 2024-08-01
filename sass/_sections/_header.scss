@@ -142,7 +142,8 @@
 	letter-spacing: .3;
 	text-decoration: none;
 
-	.header--dark &{
+	.header--dark &,
+	.search-open &{
 		color: #fff;
 		@include max-screen($md){
 			color: $text;

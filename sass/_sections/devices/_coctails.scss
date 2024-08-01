@@ -1,0 +1,85 @@
+/*--------------------coctails----------------------*/
+.cocktails {
+	padding-top: rem(168.28);
+	
+	@include max-screen($lgg){
+		padding-top: rem(170.99);
+	}
+	@include max-screen($sm){
+		padding-top: rem(59.77);
+	}
+}
+.cocktails__wrapper {}
+.cocktails__title {
+	margin-bottom: rem(35);
+
+	@include max-screen($sm){
+		margin-bottom: rem(19.09);;
+	}
+
+}
+.cocktails__picts{
+	margin-bottom: rem(65.66);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(170.99);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(82.11);
+	}
+}
+.cocktails__icons {
+	// display: flex;
+	// justify-content: center;
+	// align-items: flex-end;
+	max-width: rem(393.17);
+	margin: 0 auto;
+
+	@include max-screen($lgg){
+		max-width: rem(320);
+	}
+	@include max-screen($sm){
+		max-width: rem(176);
+	}
+
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+.cocktails__icon {
+	flex: 0 0 auto;
+	&:first-child{
+		margin-right: rem(32.07);
+	}
+	&:nth-child(2){
+		margin-right: rem(25.39);
+	}
+	&:nth-child(3){
+		margin-right: rem(12.09);
+	}
+	&:nth-child(4){
+		margin-right: rem(12.09);
+	}
+	&:last-child{
+		
+	}
+
+
+	img{
+		max-width: 100%;
+	}
+}
+.cocktails__image{
+	aspect-ratio: $maxWidth / 415;
+
+	@include max-screen($lgg){
+		aspect-ratio: 1024 / 390;
+		
+	}
+	@include max-screen($sm){
+		aspect-ratio: 360 / 169.2;
+		
+	}
+}
+/*--------------------END coctails----------------------*/ 
