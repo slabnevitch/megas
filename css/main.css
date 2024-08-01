@@ -1247,9 +1247,11 @@ textarea {
     height: 100svh;
   }
 }
-.header--dark .menu-header .toggle-mnu span,
+.header--dark .menu-header .toggle-mnu span, .search-open .menu-header .toggle-mnu span,
 .header--dark .menu-header .toggle-mnu span:before,
-.header--dark .menu-header .toggle-mnu span:after {
+.search-open .menu-header .toggle-mnu span:before,
+.header--dark .menu-header .toggle-mnu span:after,
+.search-open .menu-header .toggle-mnu span:after {
   background-color: #fff;
 }
 .menu-header .toggle-mnu span, .menu-header .toggle-mnu span:after, .menu-header .toggle-mnu span:before {
@@ -1380,7 +1382,7 @@ textarea {
 .header__search-button svg path {
   stroke: #1A1A1A;
 }
-.header--dark .header__search-button svg path {
+.header--dark .header__search-button svg path, .search-open .header__search-button svg path {
   stroke: #fff;
 }
 
@@ -3608,13 +3610,6 @@ textarea {
 
 /*--------------------END school-auto----------------------*/
 /*--------------------school-hero----------------------*/
-.pizda {
-  height: 100vh;
-  background-color: #1A1A1A;
-  position: relative;
-  z-index: 2;
-}
-
 .school-hero {
   position: fixed;
   top: 3.0588235294rem;
@@ -3625,7 +3620,7 @@ textarea {
   display: flex;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-color: #F1F7F8;
+  background-color: #F3F8FB;
 }
 @media only screen and (min-width: 61.99875em) {
   .school-hero {
@@ -3674,7 +3669,7 @@ textarea {
   background-size: cover;
   background-position: center center;
 }
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 61.99875em) {
   .school-hero__image {
     left: -40%;
   }
@@ -3682,12 +3677,18 @@ textarea {
 .school-hero__image ._fit-img {
   object-position: left bottom;
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 61.99875em) {
   .school-hero__image ._fit-img {
     width: auto;
   }
 }
 @media only screen and (min-width: 61.99875em) {
+  .school-hero__image ._fit-img {
+    width: auto;
+    left: -40%;
+  }
+}
+@media only screen and (min-width: 64.06125em) {
   .school-hero__image ._fit-img {
     width: auto;
     left: auto;

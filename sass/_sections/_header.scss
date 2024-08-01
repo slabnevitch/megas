@@ -86,7 +86,8 @@
 		span,
 		span:before,
 		span:after{
-			.header--dark & {
+			.header--dark &,
+			.search-open & {
 
 				background-color: #fff;
 			}
@@ -186,7 +187,8 @@
 	svg{
 		path{
 			stroke: $text;
-			.header--dark &{
+			.header--dark &,
+			.search-open &{
 
 				stroke: #fff;
 			}
