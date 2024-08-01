@@ -42,6 +42,13 @@
 			}
 		}
 
+		// if(document.querySelector('.rellax')){
+		// 	var rellax = new Rellax('.rellax', {
+		// 		wrapper: null,
+		// 		breakpoints: [576, 768, 1201]
+		// 	});
+		// }
+
 		var trigger = new ScrollTrigger.default( {
 			trigger: {
 				once: false,
@@ -56,8 +63,12 @@
 	                // return a Promise here, the trigger will not be called until
 	                // the promise resolves.
 	            	in: (trigger) => {
-	            		// console.log('in!');
-	            		// console.log(trigger);
+	            		console.log('in!');
+	            		console.log(trigger);
+	            		if(trigger.element.classList.contains('pizda')){
+	            			// document.querySelector('.school-hero').style="position: static";
+	            			// document.querySelector('.school-scroll').classList.add('inv')
+	            		}
 	            	},
 	                // A callback when the element is visible on screen, keeps
 	                // on triggering for as long as 'sustain' is set
@@ -70,6 +81,13 @@
 	            	out: (trigger) => {
 	                    // `trigger` contains the Trigger object that goes out
 	                    // of the viewport
+	                    console.log('out!')
+	                    console.log(trigger);
+	                    if(trigger.element.classList.contains('pizda')){
+	            			// document.querySelector('.school-hero').style="position: sticky";
+	            			// document.querySelector('.school-scroll').classList.remove('inv');
+	            		}
+	                     // rellax.refresh();
 	            		return new Promise((resolve, reject) => {
 	            			setTimeout(resolve, 10)
 	            		})
@@ -82,6 +100,7 @@
 				// Add all html elements with attribute data-trigger
 		trigger.add('[data-trigger]');
 
+	
 
 		// main-slider
 		// usage: http://ganlanyuan.github.io/tiny-slider/#usage
@@ -96,10 +115,6 @@
 				autoplay: true,
 				// center: true,
 				controls: false, // отключение кнопок "вперед/назад"
-				// controlsContainer: '.hits.carouseled .block-header__nav', // внутри .block-header__nav должны быть 2 заранее отстилизованные кнопки
-				// navContainer: "#customize-thumbnails",//конткйнер для навигации миниатюрами
-				// navAsThumbnails: true, //включение навигации миниатюрами
-				// nav: false, //отключение bullets
 				navPosition: 'bottom',//положение bullets
 				mouseDrag: true,
 				gutter: 20, //добавляет padding, а не margin! Нужна обертка вокруг содержимого каждого слайда!
@@ -127,6 +142,23 @@
 		}
 
 		// END main-slider
+
+		// cacao-carousel
+		if(document.querySelector('.cacao__carousel .tiny-sldr') !== null){
+			var slider = tns({
+				container: '.cacao__carousel .tiny-sldr',
+				mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
+				items: 1,
+				speed: 1000,
+				// loop: false,
+				slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
+				// center: true,
+				controlsContainer: '.cacao__carousel .tiny-carousel__nav',
+				navPosition: 'bottom',//положение bullets
+				mouseDrag: true
+			});
+		}
+		// END cacao-carousel
 
 		// fab button
 		var fabTimer,
