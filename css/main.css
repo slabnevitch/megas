@@ -592,6 +592,11 @@ textarea {
     font-size: 1.5882352941rem;
   }
 }
+@media only screen and (max-width: 47.99875em) {
+  .heading--mob-title-25 .heading__title {
+    font-size: 1.4705882353rem;
+  }
+}
 .heading__title span {
   font-size: 1.2941176471rem;
 }
@@ -660,6 +665,20 @@ textarea {
 }
 .tns-nav button.tns-nav-active {
   background-color: #009245;
+}
+
+.text {
+  font-size: 1.2941176471rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .text {
+    font-size: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .text {
+    font-size: 0.7647058824rem;
+  }
 }
 
 /*--------------------END ui----------------------*/
@@ -1316,11 +1335,11 @@ textarea {
   letter-spacing: 0.3;
   text-decoration: none;
 }
-.header--dark .menu__link {
+.header--dark .menu__link, .search-open .menu__link {
   color: #fff;
 }
 @media only screen and (max-width: 61.99875em) {
-  .header--dark .menu__link {
+  .header--dark .menu__link, .search-open .menu__link {
     color: #1A1A1A;
   }
 }
@@ -2635,6 +2654,218 @@ textarea {
 }
 
 /*--------------------END system----------------------*/
+/*--------------------coctails----------------------*/
+.cocktails {
+  padding-top: 9.8988235294rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cocktails {
+    padding-top: 10.0582352941rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .cocktails {
+    padding-top: 3.5158823529rem;
+  }
+}
+
+.cocktails__title {
+  margin-bottom: 2.0588235294rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .cocktails__title {
+    margin-bottom: 1.1229411765rem;
+  }
+}
+
+.cocktails__picts {
+  margin-bottom: 3.8623529412rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cocktails__picts {
+    margin-bottom: 10.0582352941rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .cocktails__picts {
+    margin-bottom: 4.83rem;
+  }
+}
+
+.cocktails__icons {
+  max-width: 23.1276470588rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 86.25em) {
+  .cocktails__icons {
+    max-width: 18.8235294118rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .cocktails__icons {
+    max-width: 10.3529411765rem;
+  }
+}
+.cocktails__icons img {
+  display: block;
+  width: 100%;
+}
+
+.cocktails__icon {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.cocktails__icon:first-child {
+  margin-right: 1.8864705882rem;
+}
+.cocktails__icon:nth-child(2) {
+  margin-right: 1.4935294118rem;
+}
+.cocktails__icon:nth-child(3) {
+  margin-right: 0.7111764706rem;
+}
+.cocktails__icon:nth-child(4) {
+  margin-right: 0.7111764706rem;
+}
+.cocktails__icon img {
+  max-width: 100%;
+}
+
+.cocktails__image {
+  aspect-ratio: 3.4698795181;
+}
+@media only screen and (max-width: 86.25em) {
+  .cocktails__image {
+    aspect-ratio: 1024/390;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .cocktails__image {
+    aspect-ratio: 360/169.2;
+  }
+}
+
+/*--------------------END coctails----------------------*/
+/*--------------------device----------------------*/
+.device__heading {
+  margin-bottom: 1.9582352941rem;
+}
+
+@media only screen and (min-width: 47.99875em) {
+  .device__title-mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .device__title-desk {
+    display: none;
+  }
+}
+
+.device__anim {
+  background-color: #fff;
+}
+
+.device__anim-inner {
+  margin-left: 9.8305084746%;
+  margin-right: 9.8305084746%;
+}
+@media only screen and (max-width: 86.25em) {
+  .device__anim-inner {
+    margin-left: 11.8644067797%;
+    margin-right: 11.8644067797%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .device__anim-inner {
+    margin-left: -3.5294117647rem;
+    margin-right: -3.5294117647rem;
+  }
+}
+
+.device__gif {
+  aspect-ratio: 946.76/710.07;
+}
+@media only screen and (max-width: 47.99875em) {
+  .device__gif {
+    aspect-ratio: 372/279;
+  }
+}
+
+/*--------------------END device----------------------*/
+/*--------------------devices-top----------------------*/
+.devices-top {
+  padding-top: 4.4352941176rem;
+  padding-bottom: 6.9982352941rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .devices-top {
+    padding-top: 4.5758823529rem;
+    padding-bottom: 3.7452941176rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .devices-top {
+    padding-top: 1.6470588235rem;
+    padding-bottom: 1.6470588235rem;
+  }
+}
+
+.devices-top__wrapper__slogan {
+  margin-bottom: 2.9411764706rem;
+  text-align: center;
+  color: #009245;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .devices-top__wrapper__slogan {
+    margin-bottom: 1.7058823529rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .devices-top__wrapper__slogan {
+    margin-bottom: 2.2882352941rem;
+  }
+}
+
+.devices-top__heading {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-pack: center;
+  justify-content: center;
+  column-gap: 0.3529411765rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .devices-top__heading {
+    column-gap: 0.2352941176rem;
+  }
+}
+
+.devices-top__subtitle {
+  font-size: 2.1176470588rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .devices-top__subtitle {
+    font-size: 1.7647058824rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .devices-top__subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 47.99875em) {
+  .devices-top__title {
+    font-size: 1.4705882353rem;
+  }
+}
+
+/*--------------------END devices-top----------------------*/
 /*--------------------section.allowed----------------------*/
 .allowed {
   padding-top: 9.9423529412rem;
