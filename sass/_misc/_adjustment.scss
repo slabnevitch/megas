@@ -162,6 +162,19 @@ textarea{
 		max-width: rem(1024);
 	}
 
+	&.padding-inline-75{
+		@include max-screen($lgg){
+			padding-left: rem(75);
+			padding-right: rem(75);
+		}
+
+		@include max-screen(em(1024)){
+			padding-left: rem(30);
+			padding-right: rem(30);
+		}
+
+	}
+
 }
 // classes for smartgrid(c) structure
 // .wrapper-smart{

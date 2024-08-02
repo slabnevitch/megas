@@ -1,0 +1,151 @@
+/*--------------------coffe-machine----------------------*/
+.coffe-machine {
+	padding-top: rem(129);
+
+	@include max-screen($lgg){
+		padding-top: rem(121);
+	}
+	@include max-screen($md){
+		padding-top: rem(73.16);
+	}
+}
+.coffe-machine__wrapper {
+
+}
+.coffe-machine__container {
+	display: grid;
+	grid-template-columns: prc(577.54, $maxWidthContainer) auto;
+	column-gap: prc(120, $maxWidthContainer);
+
+	@include max-screen($lgg){
+		column-gap: prc(89, 1024);
+	}
+	
+
+	@include max-screen($sm){
+		grid-template-columns: auto;
+		
+	}
+}
+.coffe-machine__image {
+	aspect-ratio: 577.54/ 971.54;
+	grid-row: span 2;
+
+	@include max-screen($lgg){
+		aspect-ratio: 430 / 767;
+	}
+	@include max-screen($sm){
+		margin-left: rem(-30);
+		margin-right: rem(-30);
+		aspect-ratio: auto;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	._fit-img{
+
+		@include max-screen($sm){
+			
+			width: prc(272,360);
+			top: rem(14);
+			position: relative;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+.coffe-machine__content{
+	grid-row: span 3;
+
+	@include max-screen($sm){
+		padding-top: rem(37.89);
+	}
+}
+.coffe-machine__heading {
+	margin-bottom: rem(78.28);
+	padding-top: rem(60);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(42.87);
+		padding-top: rem(67);
+		
+	}
+	@include max-screen($md){
+		margin-bottom: rem(22);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(14.66);
+		padding-top: 0;
+		order: -1;
+	}
+}
+.heading--mob-title-25 {}
+.heading__subtitle {}
+.heading__title {}
+.coffe-machine__title {}
+.coffe-machine__text {
+	margin-bottom: rem(71);
+
+	@include min-screen($lgg){
+		padding-right: prc(100, 480);
+		
+	}
+	@include max-screen($md){
+		margin-bottom: rem(25.5);
+	}
+	p{
+
+		&:not(:last-child){
+			margin-bottom: rem(20);
+
+			@include max-screen($lgg){
+				margin-bottom: rem(15);
+			}
+			@include max-screen($md){
+				margin-bottom: rem(8);
+			}
+		}
+
+		span{
+			@include max-screen($sm){
+				font-family: $med;
+			}
+		}
+
+		// br{
+		// 	@include min-screen($xsss){
+		// 		display: none;
+		// 	}
+		// }
+
+	}
+
+}
+.text-17 {}
+.coffe-machine__payments {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: rem(24);
+	row-gap: rem(7);
+	max-width: rem(202.75);
+}
+.coffe-machine__payment {
+
+	&--mastercard{
+		margin-top: rem(-3);
+		flex: 1 0 calc(prc(37.8, 194.75) - rem(12));
+	}
+	&--visa{
+
+		flex: 1 0 calc(prc(53, 194.75) - rem(12));
+	}
+	&--mir{
+
+		flex: 1 0 calc(prc(62.75, 194.75) - rem(12));
+	}
+
+	img{
+		width: 100%;
+	}
+}
+/*--------------------END coffe-machine----------------------*/ 

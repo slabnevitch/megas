@@ -194,4 +194,20 @@
     font-size: rem(13);
   }
 }
+.text-17{
+  line-height: 170%;
+
+  @include max-screen($lgg){
+    font-size: rem(15);
+  }
+  @include max-screen($sm){
+    font-size: rem(13);
+    line-height: 140%;
+  }
+}
+.marker{
+  @include max-screen($sm){
+    color: $accent;
+  }
+}
 /*--------------------END ui----------------------*/ 

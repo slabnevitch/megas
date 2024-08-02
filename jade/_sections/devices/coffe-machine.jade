@@ -1,0 +1,25 @@
+section.coffe-machine
+	.coffe-machine__wrapper.padding-inline-75
+		.coffe-machine__container
+			.coffe-machine__image._fit
+				img._fit-img(src="img/devices-page/machines/coffe-machine.jpg" alt="alt")
+		
+			.heading.coffe-machine__heading.heading--mob-title-25
+				.heading__subtitle кофейный автомат
+				h2.heading__title.coffe-machine__title Opera ToGo
+			
+			.coffe-machine__content
+				.coffe-machine__text
+					p.text-17 #[span Умный комфорт]
+					p.text-17 #[span Всегда идеальный] кофе на рабочем месте
+					p.text-17 #[span Производитель -] итальянская компания Necta
+					p.text-17 #[span 18 видов] горячих напитков из натурального зернового кофе и&#160;растворимых ингредиентов
+					p.text-17 #[span Привлекательный] внешний вид с подсветкой #[br]передней панели и сенсорными кнопками #[br]выбора напитков 
+					p.text-17 #[span.marker Главная особенность –] он создан для работы в&#160;популярном формате «кофе с собой» и&#160;готовит напитки в большой стакан объемом до 300 мл
+
+				.coffe-machine__payments
+					- var classes = ['mastercard', 'visa', 'mir'];
+
+					each item, i in classes
+						div(class="coffe-machine__payment coffe-machine__payment--"+ item)
+							img(src="img/devices-page/cards/"+(i+1)+".svg" alt="alt")
