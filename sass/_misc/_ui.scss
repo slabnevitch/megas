@@ -94,6 +94,37 @@
 } 
 
 .heading{
+
+  &--row {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: baseline;
+    justify-content: center;
+    column-gap: rem(6);
+
+    @include max-screen($sm){
+      column-gap: rem(4); 
+    }
+
+    .heading__title {
+      @include max-screen($sm){
+        font-size: rem(25);
+      }
+    }
+
+    .heading__subtitle {
+
+      font-size: rem(36);
+
+      @include max-screen($lgg){
+        font-size: rem(30);
+      }
+      @include max-screen($sm){
+        font-size: rem(17);
+      }
+    }
+  }
+  
   &__subtitle{
     margin-bottom: rem(1.54);
     font-size: rem(22);

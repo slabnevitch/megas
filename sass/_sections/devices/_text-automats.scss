@@ -1,0 +1,90 @@
+/*--------------------text-automats----------------------*/
+.text-automats {}
+.text-automats__top {}
+.text-automats__wrapper {}
+.heading--row {}
+.text-automats__heading {
+	margin-bottom: rem(79);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(59);
+			
+	}
+	@include max-screen($md){
+		margin-bottom: rem(28.29);
+			
+	}
+}
+.heading--mob-title-25 {}
+.heading__subtitle {}
+.heading__title {}
+.text-automats__title {}
+.text-automats__body {
+	background-color: #fff;
+}
+.text-automats__container {
+	display: flex;
+	align-items: flex-start;
+
+	@include min-screen($sm){
+		column-gap: rem(20);
+		
+	}
+}
+.text-automats__content {
+	flex: 0 0 calc(50% - rem(10));
+	padding-top: rem(128.29);
+	display: flex;
+	flex-direction: column;
+	// align-items: flex-end;
+
+	@include max-screen($lgg){
+		padding-top: rem(111);
+	}
+	@include max-screen($sm){
+		padding-top: rem(35.89);
+	}
+}
+.body-text-automats__heading{
+	margin-bottom: rem(10);
+
+	@include max-screen($sm){
+		text-align: right;
+	}
+}
+.body-text-automats__content{
+	margin-right: prc(100, $maxWidthContainer);
+	margin-bottom: rem(92.26);
+	text-align: right;
+
+
+	@include max-screen($lgg){
+		margin-bottom: rem(56);
+		margin-right: prc(74, 1024);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(2);
+		margin-right: 0;
+	}
+}
+.text-automats__snacks{
+	aspect-ratio: 480 / 319.2;
+
+	@include max-screen($lgg){
+		max-width: rem(480);
+	}
+	@include max-screen($sm){
+		max-width: prc(166, 360);
+		margin-left: auto;
+	}
+}
+.text-automats__desct {}
+.text-17 {}
+.text-automats__image {
+	flex: 0 0 calc(50% - rem(10));
+
+	img{
+		max-width: 100%;
+	}
+}
+/*--------------------END text-automats----------------------*/ 
