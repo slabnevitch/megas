@@ -1,0 +1,89 @@
+/*--------------------comfort-class----------------------*/
+.comfort-class {
+	padding-top: rem(99.46);
+	padding-bottom: rem(266);
+
+	@include max-screen($lgg){
+		padding-top: rem(92);
+		padding-bottom: rem(160);
+	}
+	@include max-screen($md){
+		padding-top: rem(78);
+		padding-bottom: rem(76);
+	}
+}
+.comfort-class__wrapper {}
+.comfort-class__container {
+	display: grid;
+	grid-template-columns: prc(480, $maxWidthContainer) prc(580, $maxWidthContainer);
+	column-gap: prc(120, $maxWidthContainer);
+
+	@include max-screen($lgg){
+		// grid-template-columns: prc(355, 1024) prc(430, 1024);
+		column-gap: prc(87, 1024);
+	}
+	@include max-screen($sm){
+		grid-template-columns: auto;
+	}
+}
+.comfort-class__heading {
+	padding-top: rem(69);
+	margin-bottom: rem(78);
+
+	@include max-screen($lgg){
+		padding-top: rem(50);
+		margin-bottom: rem(48);
+	}
+	@include max-screen($md){
+		padding-top: 0;
+		margin-bottom: rem(13.66);
+	}
+	@include min-screen($sm){
+		
+		text-align: right;
+	}
+}
+
+.comfort-class__title {}
+.comfort-class__descr {
+	letter-spacing: -0.15px;
+
+	@include max-screen($sm){
+		margin-right: prc(30, 360);
+	}
+
+	@include min-screen($sm){
+		
+		text-align: right;
+	}
+	br{
+		@include max-screen($lgg){
+			display: none;
+		}
+	}
+
+
+}
+.comfort-class__image {
+	background-color: #000;
+	grid-row: span 3;
+	aspect-ratio: 580 / 510;
+	overflow: hidden;
+
+	@include max-screen($sm){
+		// aspect-ratio: auto;
+		aspect-ratio: 360 / 285.5;
+		margin-left: rem(-30);
+		margin-right: rem(-30);
+		margin-bottom: rem(28.43);
+	}
+	
+	._fit-img {
+		left: 10%;
+		@include max-screen($sm){
+			// width: prc(451.7, 360);
+			left: -2%;
+		}
+	}
+}
+/*--------------------END comfort-class----------------------*/ 

@@ -2917,25 +2917,178 @@ textarea {
   row-gap: 0.4117647059rem;
   max-width: 11.9264705882rem;
 }
+@media only screen and (max-width: 86.25em) {
+  .coffe-machine__payments {
+    max-width: 10.9164705882rem;
+    column-gap: 0.9082352941rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .coffe-machine__payments {
+    max-width: 9.1617647059rem;
+    column-gap: 0.7647058824rem;
+  }
+}
 
 .coffe-machine__payment--mastercard {
   margin-top: -0.1764705882rem;
   -ms-flex: 1 0 calc(19.4094993582% - 0.7058823529rem);
   flex: 1 0 calc(19.4094993582% - 0.7058823529rem);
 }
+@media only screen and (max-width: 86.25em) {
+  .coffe-machine__payment--mastercard {
+    -ms-flex-preferred-size: calc(19.4094993582% - 0.4541176471rem);
+    flex-basis: calc(19.4094993582% - 0.4541176471rem);
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .coffe-machine__payment--mastercard {
+    -ms-flex-preferred-size: calc(19.4094993582% - 0.3823529412rem);
+    flex-basis: calc(19.4094993582% - 0.3823529412rem);
+  }
+}
 .coffe-machine__payment--visa {
   -ms-flex: 1 0 calc(27.2143774069% - 0.7058823529rem);
   flex: 1 0 calc(27.2143774069% - 0.7058823529rem);
 }
+@media only screen and (max-width: 86.25em) {
+  .coffe-machine__payment--visa {
+    -ms-flex-preferred-size: calc(27.2143774069% - 0.4541176471rem);
+    flex-basis: calc(27.2143774069% - 0.4541176471rem);
+    column-gap: 0.9082352941rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .coffe-machine__payment--visa {
+    -ms-flex-preferred-size: calc(27.2143774069% - 0.3823529412rem);
+    flex-basis: calc(27.2143774069% - 0.3823529412rem);
+    column-gap: 0.9082352941rem;
+  }
+}
 .coffe-machine__payment--mir {
   -ms-flex: 1 0 calc(32.2207958922% - 0.7058823529rem);
   flex: 1 0 calc(32.2207958922% - 0.7058823529rem);
+}
+@media only screen and (max-width: 86.25em) {
+  .coffe-machine__payment--mir {
+    -ms-flex-preferred-size: calc(32.2207958922% - 0.4541176471rem);
+    flex-basis: calc(32.2207958922% - 0.4541176471rem);
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .coffe-machine__payment--mir {
+    -ms-flex-preferred-size: calc(32.2207958922% - 0.3823529412rem);
+    flex-basis: calc(32.2207958922% - 0.3823529412rem);
+  }
 }
 .coffe-machine__payment img {
   width: 100%;
 }
 
 /*--------------------END coffe-machine----------------------*/
+/*--------------------comfort-class----------------------*/
+.comfort-class {
+  padding-top: 5.8505882353rem;
+  padding-bottom: 15.6470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .comfort-class {
+    padding-top: 5.4117647059rem;
+    padding-bottom: 9.4117647059rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .comfort-class {
+    padding-top: 4.5882352941rem;
+    padding-bottom: 4.4705882353rem;
+  }
+}
+
+.comfort-class__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40.6779661017% 49.1525423729%;
+  grid-template-columns: 40.6779661017% 49.1525423729%;
+  column-gap: 10.1694915254%;
+}
+@media only screen and (max-width: 86.25em) {
+  .comfort-class__container {
+    column-gap: 8.49609375%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .comfort-class__container {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+}
+
+.comfort-class__heading {
+  padding-top: 4.0588235294rem;
+  margin-bottom: 4.5882352941rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .comfort-class__heading {
+    padding-top: 2.9411764706rem;
+    margin-bottom: 2.8235294118rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .comfort-class__heading {
+    padding-top: 0;
+    margin-bottom: 0.8035294118rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .comfort-class__heading {
+    text-align: right;
+  }
+}
+
+.comfort-class__descr {
+  letter-spacing: -0.15px;
+}
+@media only screen and (max-width: 47.99875em) {
+  .comfort-class__descr {
+    margin-right: 8.3333333333%;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .comfort-class__descr {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 86.25em) {
+  .comfort-class__descr br {
+    display: none;
+  }
+}
+
+.comfort-class__image {
+  background-color: #000;
+  -ms-grid-row: span 3;
+  grid-row: span 3;
+  aspect-ratio: 580/510;
+  overflow: hidden;
+}
+@media only screen and (max-width: 47.99875em) {
+  .comfort-class__image {
+    aspect-ratio: 360/285.5;
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+    margin-bottom: 1.6723529412rem;
+  }
+}
+.comfort-class__image ._fit-img {
+  left: 10%;
+}
+@media only screen and (max-width: 47.99875em) {
+  .comfort-class__image ._fit-img {
+    left: -2%;
+  }
+}
+
+/*--------------------END comfort-class----------------------*/
 /*--------------------device----------------------*/
 .device__heading {
   margin-bottom: 1.9582352941rem;

@@ -128,20 +128,53 @@
 	column-gap: rem(24);
 	row-gap: rem(7);
 	max-width: rem(202.75);
+
+	@include max-screen($lgg){
+		max-width: rem(185.58);
+		column-gap: rem(15.44);
+	}
+	@include max-screen($md){
+		max-width: rem(155.75);
+		column-gap: rem(13);
+	}
 }
 .coffe-machine__payment {
 
 	&--mastercard{
 		margin-top: rem(-3);
 		flex: 1 0 calc(prc(37.8, 194.75) - rem(12));
+
+		@include max-screen($lgg){
+			flex-basis: calc(prc(37.8, 194.75) - rem(math.div(15.44, 2)));
+		}
+
+		@include max-screen($md){
+			flex-basis: calc(prc(37.8, 194.75) - rem(math.div(13, 2)));
+		}
 	}
 	&--visa{
 
 		flex: 1 0 calc(prc(53, 194.75) - rem(12));
+
+		@include max-screen($lgg){
+			flex-basis: calc(prc(53, 194.75) - rem(math.div(15.44, 2)));
+			column-gap: rem(15.44);
+		}
+		@include max-screen($md){
+			flex-basis: calc(prc(53, 194.75) - rem(math.div(13, 2)));
+			column-gap: rem(15.44);
+		}
 	}
 	&--mir{
 
 		flex: 1 0 calc(prc(62.75, 194.75) - rem(12));
+
+		@include max-screen($lgg){
+			flex-basis: calc(prc(62.75, 194.75) - rem(math.div(15.44, 2)));
+		}
+		@include max-screen($md){
+			flex-basis: calc(prc(62.75, 194.75) - rem(math.div(13, 2)));
+		}
 	}
 
 	img{
