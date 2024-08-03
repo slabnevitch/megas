@@ -42,63 +42,60 @@
 			}
 		}
 
-		// if(document.querySelector('.rellax')){
-		// 	var rellax = new Rellax('.rellax', {
-		// 		wrapper: null,
-		// 		breakpoints: [576, 768, 1201]
-		// 	});
-		// }
+		if(document.querySelector('[data-trigger]')){
+			var trigger = new ScrollTrigger.default( {
+				trigger: {
+					once: false,
+					toggle: {
+		            // The class(es) that should be toggled
+					class: {
+		                in: 'visible', // Either a string, or an array of strings
+		                out: ['invisible']
+		            },
+		            callback: {
+		                // A callback when the element is going in the viewport, you can
+		                // return a Promise here, the trigger will not be called until
+		                // the promise resolves.
+		            	in: (trigger) => {
+		            		console.log('in!');
+		            		console.log(trigger);
+		            		if(trigger.element.classList.contains('pizda')){
+		            			// document.querySelector('.school-hero').style="position: static";
+		            			// document.querySelector('.school-scroll').classList.add('inv')
+		            		}
+		            	},
+		                // A callback when the element is visible on screen, keeps
+		                // on triggering for as long as 'sustain' is set
+		            	visible: null,
+		                // A callback when the element is going out of the viewport.
+		                // You can also return a promise here, like in the 'in' callback.
+		                //
+		                // Here an example where all triggers take 10ms to trigger
+		                // the 'out' class.
+		            	out: (trigger) => {
+		                    // `trigger` contains the Trigger object that goes out
+		                    // of the viewport
+		                    console.log('out!')
+		                    console.log(trigger);
+		                    if(trigger.element.classList.contains('pizda')){
+		            			// document.querySelector('.school-hero').style="position: sticky";
+		            			// document.querySelector('.school-scroll').classList.remove('inv');
+		            		}
+		                     // rellax.refresh();
+		            		return new Promise((resolve, reject) => {
+		            			setTimeout(resolve, 10)
+		            		})
+		            	}
+		           	 }
+		        	}
 
-		var trigger = new ScrollTrigger.default( {
-			trigger: {
-				once: false,
-				toggle: {
-	            // The class(es) that should be toggled
-				class: {
-	                in: 'visible', // Either a string, or an array of strings
-	                out: ['invisible']
-	            },
-	            callback: {
-	                // A callback when the element is going in the viewport, you can
-	                // return a Promise here, the trigger will not be called until
-	                // the promise resolves.
-	            	in: (trigger) => {
-	            		console.log('in!');
-	            		console.log(trigger);
-	            		if(trigger.element.classList.contains('pizda')){
-	            			// document.querySelector('.school-hero').style="position: static";
-	            			// document.querySelector('.school-scroll').classList.add('inv')
-	            		}
-	            	},
-	                // A callback when the element is visible on screen, keeps
-	                // on triggering for as long as 'sustain' is set
-	            	visible: null,
-	                // A callback when the element is going out of the viewport.
-	                // You can also return a promise here, like in the 'in' callback.
-	                //
-	                // Here an example where all triggers take 10ms to trigger
-	                // the 'out' class.
-	            	out: (trigger) => {
-	                    // `trigger` contains the Trigger object that goes out
-	                    // of the viewport
-	                    console.log('out!')
-	                    console.log(trigger);
-	                    if(trigger.element.classList.contains('pizda')){
-	            			// document.querySelector('.school-hero').style="position: sticky";
-	            			// document.querySelector('.school-scroll').classList.remove('inv');
-	            		}
-	                     // rellax.refresh();
-	            		return new Promise((resolve, reject) => {
-	            			setTimeout(resolve, 10)
-	            		})
-	            	}
-	           	 }
-	        	}
+				}
+	        }); // When not using npm, create a new instance with 'new ScrollTrigger.default()'
+					// Add all html elements with attribute data-trigger
+			trigger.add('[data-trigger]');
 
-			}
-        }); // When not using npm, create a new instance with 'new ScrollTrigger.default()'
-				// Add all html elements with attribute data-trigger
-		trigger.add('[data-trigger]');
+		}
+
 
 	
 
@@ -144,16 +141,16 @@
 		// END main-slider
 
 		// cacao-carousel
-		if(document.querySelector('.cacao__carousel .tiny-sldr') !== null){
+		if(document.querySelector('.carousel-ordinary .tiny-sldr') !== null){
 			var slider = tns({
-				container: '.cacao__carousel .tiny-sldr',
+				container: '.carousel-ordinary .tiny-sldr',
 				mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
 				items: 1,
 				speed: 1000,
 				// loop: false,
 				slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
 				// center: true,
-				controlsContainer: '.cacao__carousel .tiny-carousel__nav',
+				controlsContainer: '.carousel-ordinary .tiny-carousel__nav',
 				navPosition: 'bottom',//положение bullets
 				mouseDrag: true
 			});
