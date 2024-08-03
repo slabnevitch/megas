@@ -41,7 +41,7 @@
 	}
 }
 .buffets__visual {
-	flex: 0 0 calc(prc(480, $maxWidthContainer) - rem(10));
+	flex: 1 0 calc(prc(480, $maxWidthContainer) - rem(10));
 	aspect-ratio: 480 / 802;
 
 	@include max-screen($xs){
@@ -50,7 +50,7 @@
 }
 ._fit-img {}
 .buffets__other {
-	flex: 0 0 calc(prc(680, $maxWidthContainer) - rem(10));
+	flex: 1 0 calc(prc(680, $maxWidthContainer) - rem(10));
 
 	@include max-screen($xs){
 		flex: 0 0 calc(prc(680, $maxWidthContainer) - rem(math.div(9.7, 2)));
@@ -70,7 +70,7 @@
 }
 .buffets__picts {
 	max-width: rem(221.76);
-	margin-left: prc(120, $maxWidthContainer);
+	margin-left: prc(100, 680);
 
 	@include max-screen($lgg){
 		max-width: rem(170.72);

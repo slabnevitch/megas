@@ -1,8 +1,10 @@
-.cacao.school-section.gray-bg
-	.cacao__wrapper
-		.cacao__title.text-center Вариант оформления какао-зоны для отдыха учащихся
-		//- Общий блок слайдера
-		.tiny-carousel.carousel-ordinary.cacao__carousel
+section.cosy
+	.cosy__wrapper
+		.heading.heading--row.cosy__heading.heading--mob-title-25
+			.heading__subtitle – кофе-поинты и уличные кофейни
+			h2.heading__title.cosy__title Уютно
+
+		.tiny-carousel.carousel-ordinary.cosy__carousel
 			//- Навигация кастомная (если требуется)
 			//- в js добавить параметр controlsContainer: '.tiny-carousel__nav'
 			.tiny-carousel__nav
@@ -10,7 +12,7 @@
 				button(type="button" class="tns-next") >
 			
 			//- Собственно, слайдер
-			.tiny-sldr.cacao__slider
+			.tiny-sldr.cosy__slider
 				- for (var i=0; i < 2; i++)
-					.cacao__slide._fit
+					.cosy__slide._fit
 						img._fit-img(src="img/school-page/cacao/"+(i+1)+".jpg" alt="alt")

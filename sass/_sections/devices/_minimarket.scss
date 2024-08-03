@@ -1,19 +1,151 @@
 /*--------------------minimarket----------------------*/
 .minimarkets {}
 .minimarkets__wrapper {}
-.minimarkets__container {}
-.minimarkets__item {}
-.minimarkets__item--minimarket {}
-.minimarkets__tile {}
+.minimarkets__container {
+	display: flex;
+	column-gap: rem(20);
+
+	@include max-screen($md){
+		column-gap: rem(10);
+	}
+}
+.minimarkets__heading {
+	margin-bottom: 0;
+}
+.minimarkets__item--minimarket {
+	flex: 1 0 calc(prc(480, $maxWidthContainer) - rem(10));
+
+	@include max-screen($md){
+		flex-basis: calc(50% - rem(math.div(10, 2)));
+	}
+
+	.minimarkets__tile {
+		padding-top: rem(68.41);
+		text-align: right;
+		padding-right: prc(100, 480);
+		aspect-ratio: 480 /358;
+
+		@include max-screen($lgg){
+			aspect-ratio: 480 / 341;
+			padding-top: rem(51.18);
+			padding-right: prc(74, 480);
+		}
+		@include max-screen($md){
+			aspect-ratio: 200 / 260;
+		}
+		@include max-screen($sm){
+			padding-top: rem(14.78);
+		}
+		@include max-screen($xs){
+			aspect-ratio: 129 / 260;
+			padding-right: rem(10);
+		}
+	}
+	.minimarkets__heading {
+	
+		@include max-screen($md){
+			text-align: right;
+		}
+	}
+	.minimarkets__content {
+		p{
+			text-align: right;
+			padding-right: prc(100, 480);
+
+			@include max-screen($lgg){
+				padding-right: prc(74, 480);
+			}
+
+			@include max-screen($xs){
+				padding-right: rem(10);
+			}
+		}
+	}
+}
+
 .heading {}
-.minimarkets__heading {}
+
 .heading--mob-title-25 {}
-.heading__subtitle {}
-.heading__title {}
-.text-17 {}
-.minimarkets__content {}
-.minimarkets__smartimage {}
+.minimarkets__title{
+	margin-bottom: rem(9.4);
+
+	@include max-screen($lgg){
+			margin-bottom: rem(12);
+		}
+}
+
+.minimarkets__smartimage {
+	aspect-ratio: 480 / 370;
+
+	margin-bottom: rem(48.4);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(30.84);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(18.17);
+	}
+}
 ._fit {}
 ._fit-img {}
-.minimarkets__item--buffet {}
+.minimarkets__item--buffet {
+	flex: 1 0 calc(prc(680, $maxWidthContainer) - rem(10));
+
+	@include max-screen($md){
+		flex-basis: calc(50% - rem(math.div(10, 2)));
+	}
+
+	.minimarkets__tile {
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: rem(67.25);
+		padding-left: prc(100, 680);
+		aspect-ratio: 680 / 358;
+
+		@include max-screen($lgg){
+			aspect-ratio: 680 / 341;
+			padding-bottom: rem(48.74);
+			padding-left: prc(74, 680);
+
+		}
+		@include max-screen($md){
+			aspect-ratio: 200 / 260;
+		
+		}
+		@include max-screen($sm){
+			padding-bottom: rem(21.71);
+		}
+		@include max-screen($xs){
+			aspect-ratio: 129 / 260;
+			padding-left: rem(10);
+		}
+		.minimarkets__heading {
+		
+			@include max-screen($md){
+				text-align: left;
+			}
+		}
+	}
+}
+.minimarkets__buffetimage{
+	aspect-ratio: 680 / 834;
+
+	@include max-screen($sm){
+		aspect-ratio: 154 / 252.02;
+		// padding-top: rem(5);
+		// padding-bottom: rem(20);
+		background-color: #fff;
+	}
+	
+	._fit-img{
+		@include max-screen($sm){
+			width: 90%;
+			height: 90%;
+			left: 7%;
+			background-position: left center;
+			
+		}
+	}
+
+}
 /*--------------------END minimarket----------------------*/ 

@@ -219,6 +219,45 @@
       }
     }
   }
+
+.carousel-ordinary{
+  .tns-nav{
+    margin-top: rem(68);
+
+    @include max-screen($lgg){
+      margin-top: rem(41);
+    }
+    @include max-screen($md){
+      margin-top: rem(31);
+    }
+  }
+
+  .tns-prev,
+  .tns-next {
+    position: absolute;
+    top: calc(50% - rem(15 + 68));
+    width: rem(30);
+    height: rem(30);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include but-null();
+
+    @include max-screen($lgg){
+      top: calc(50% - rem(15 + 40));
+    }
+    @include max-screen($md){
+      top: calc(50% - rem(15 + 31));
+    }
+  }
+  .tns-prev{
+    left: prc(-150, $maxWidthContainer);
+  }
+  .tns-next {
+    right: prc(-130, $maxWidthContainer);
+
+  }
+}
 // END tiny-slider
 .text{
   font-size: rem(22);
