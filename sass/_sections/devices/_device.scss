@@ -3,6 +3,13 @@
 .device__wrapper {}
 .device__heading {
 	margin-bottom: rem(33.29);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(23.94);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(13.29);
+	}
 }
 
 .device__title {

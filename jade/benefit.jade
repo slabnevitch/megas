@@ -1,19 +1,10 @@
 extends _templates/main
 
 block title
-	| Школьный вендинг
+	| Польза
 
 block content
-	include _sections/school/school-hero
-	include _sections/school/school-scroll
-	div(data-fab-fade)
-	include _sections/school/school-automats
-	include _sections/school/healthy-snack
-	include _sections/school/individual
-	include _sections/school/guarantee
-	include _sections/school/school-auto
-	include _sections/school/allowed
-	include _sections/school/cacao
+	include _sections/benefit/benefit-tiles
 	
 block page-scripts
 	//- SERVIVE FUNCTIONS==================
@@ -91,7 +82,7 @@ block page-scripts
 
 	//- VANILLA JS===================================
 	//- dynamic-adaptive--------------------------
-	script(src="js/libs/dynamic-adaptive/da.min.js")
+	//- script(src="js/libs/dynamic-adaptive/da.min.js")
 		
 	//- slideout--------------------------
 	//- script(src="js/libs/slideout/slideout.js")

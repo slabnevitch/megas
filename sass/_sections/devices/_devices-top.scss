@@ -27,6 +27,14 @@
 		margin-bottom: rem(38.9);
 		
 	}
+	
+	br{
+		@include min-screen($xs){
+			display: none;
+			
+		}
+	}
+	
 }
 
 .devices-top__heading {
@@ -35,6 +43,7 @@
 	align-items: baseline;
 	justify-content: center;
 	column-gap: rem(6);
+	margin-bottom: 0;
 
 	@include max-screen($sm){
 		column-gap: rem(4);	

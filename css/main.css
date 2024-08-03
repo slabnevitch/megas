@@ -586,6 +586,7 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center;
   column-gap: 0.3529411765rem;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 47.99875em) {
   .heading--row {
@@ -598,6 +599,7 @@ textarea {
     flex-direction: column-reverse;
     -ms-flex-align: center;
     align-items: center;
+    row-gap: 0.2670588235rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -631,6 +633,9 @@ textarea {
   .heading__subtitle {
     font-size: 0.8823529412rem;
   }
+}
+.heading--mob-title-25 .heading__subtitle {
+  margin-bottom: 0.2670588235rem;
 }
 .heading__title {
   font-size: 2.6470588235rem;
@@ -812,7 +817,7 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .text-17 {
     font-size: 0.7647058824rem;
-    line-height: 140%;
+    line-height: 150%;
   }
 }
 
@@ -2795,6 +2800,8 @@ textarea {
 }
 
 /*--------------------END system----------------------*/
+/*--------------------benefit-tiles----------------------*/
+/*--------------------END benefit-tiles----------------------*/
 /*--------------------buffets----------------------*/
 .buffets {
   padding-top: 12.8823529412rem;
@@ -3106,7 +3113,7 @@ textarea {
 }
 @media only screen and (max-width: 61.99875em) {
   .coffe-machine__text p:not(:last-child) {
-    margin-bottom: 0.4705882353rem;
+    margin-bottom: 0.3529411765rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -3343,6 +3350,16 @@ textarea {
 .device__heading {
   margin-bottom: 1.9582352941rem;
 }
+@media only screen and (max-width: 86.25em) {
+  .device__heading {
+    margin-bottom: 1.4082352941rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .device__heading {
+    margin-bottom: 0.7817647059rem;
+  }
+}
 
 @media only screen and (min-width: 47.99875em) {
   .device__title-mob {
@@ -3420,6 +3437,11 @@ textarea {
     margin-bottom: 2.2882352941rem;
   }
 }
+@media only screen and (min-width: 36em) {
+  .devices-top__wrapper__slogan br {
+    display: none;
+  }
+}
 
 .devices-top__heading {
   display: -ms-flexbox;
@@ -3431,6 +3453,7 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center;
   column-gap: 0.3529411765rem;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 47.99875em) {
   .devices-top__heading {
