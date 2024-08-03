@@ -793,7 +793,7 @@ textarea {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .header--dark {
   background-color: rgba(51, 51, 51, 0.88);
@@ -1501,6 +1501,7 @@ textarea {
 
 .cocktails__title {
   margin-bottom: 2.0588235294rem;
+  line-height: 140%;
 }
 
 .cocktails__picts {
@@ -1779,7 +1780,7 @@ textarea {
   display: flex;
   -ms-flex-align: start;
   align-items: flex-start;
-  column-gap: 0.5882352941rem;
+  column-gap: 0;
 }
 
 .text-automats__content {
@@ -1795,6 +1796,12 @@ textarea {
 .body-text-automats__content {
   margin-right: 8.4745762712%;
   margin-bottom: 5.4270588235rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: end;
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -3607,8 +3614,7 @@ textarea {
     margin-right: 0;
   }
   .text-automats__snacks img {
-    max-width: none;
-    width: 108.4337349398%;
+    width: 72%;
   }
   .text-automats__image img {
     max-width: 120%;
@@ -3902,6 +3908,11 @@ textarea {
     left: -7%;
   }
 }
+@media only screen and (max-width: 22.5em) {
+  .text-automats__snacks img {
+    width: 95%;
+  }
+}
 @media only screen and (max-width: 20em) {
   .system__item {
     margin-left: 0;
@@ -3975,6 +3986,12 @@ textarea {
     column-gap: 1.1764705882rem;
     -ms-flex-align: stretch;
     align-items: stretch;
+  }
+  .text-automats__desct {
+    max-width: 15.6470588235rem;
+  }
+  .text-automats__desct br {
+    display: none;
   }
   .guarantee__item {
     letter-spacing: -0.5px;
