@@ -73,10 +73,10 @@
 	
 
 	img{
-		max-width: 100%;
+		max-width: rem(480);
 
 		@include max-screen($lgg){
-			max-width: rem(480);
+			max-width: prc(402, 430);
 		}
 		@include max-screen($md){
 			max-width: none;

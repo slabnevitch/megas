@@ -74,7 +74,7 @@
 
 	@include max-screen($lgg){
 		max-width: rem(170.72);
-		margin-left: prc(88, 1024);
+		margin-left: prc(78, 504);
 	}
 	@include max-screen($sm){
 		max-width: rem(93.32);

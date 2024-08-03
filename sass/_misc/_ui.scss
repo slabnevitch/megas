@@ -221,6 +221,15 @@
   }
 
 .carousel-ordinary{
+  position: relative;
+
+  @include max-screen($md){
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: rem(-30);
+    margin-right: rem(-30);
+  }
+  
   .tns-nav{
     margin-top: rem(68);
 
@@ -242,6 +251,7 @@
     align-items: center;
     justify-content: flex-end;
     @include but-null();
+    color: $accent;
 
     @include max-screen($lgg){
       top: calc(50% - rem(15 + 40));

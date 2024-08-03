@@ -721,6 +721,17 @@ textarea {
   background-color: #009245;
 }
 
+.carousel-ordinary {
+  position: relative;
+}
+@media only screen and (max-width: 61.99875em) {
+  .carousel-ordinary {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+  }
+}
 .carousel-ordinary .tns-nav {
   margin-top: 4rem;
 }
@@ -749,6 +760,7 @@ textarea {
   padding: 0;
   background-color: transparent;
   border: none;
+  color: #009245;
 }
 @media (any-hover: hover) {
   .carousel-ordinary .tns-prev,
@@ -2868,7 +2880,7 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .buffets__picts {
     max-width: 10.0423529412rem;
-    margin-left: 8.59375%;
+    margin-left: 15.4761904762%;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -3285,6 +3297,47 @@ textarea {
 
 /*--------------------END comfort-class----------------------*/
 /*--------------------cosy----------------------*/
+.cosy {
+  padding-top: 13.8235294118rem;
+  padding-bottom: 25.6647058824rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cosy {
+    padding-top: 7.9558823529rem;
+    padding-bottom: 15.8411764706rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cosy {
+    padding-top: 4.2658823529rem;
+    padding-bottom: 11.1735294118rem;
+  }
+}
+
+.cosy__heading {
+  margin-bottom: 4.6470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .cosy__heading {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cosy__heading {
+    margin-bottom: 1.4070588235rem;
+  }
+}
+
+.cosy__carousel .tns-prev {
+  left: -5.0847457627%;
+}
+.cosy__carousel .tns-next {
+  right: -5.0847457627%;
+}
+
+.cosy__slide {
+  aspect-ratio: 1.5967523681;
+}
 /*--------------------END cosy----------------------*/
 /*--------------------device----------------------*/
 .device__heading {
@@ -3442,7 +3495,7 @@ textarea {
   .minimarkets__item--minimarket .minimarkets__tile {
     aspect-ratio: 480/341;
     padding-top: 3.0105882353rem;
-    padding-right: 15.4166666667%;
+    padding-right: 20.7865168539%;
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -3472,7 +3525,7 @@ textarea {
 }
 @media only screen and (max-width: 86.25em) {
   .minimarkets__item--minimarket .minimarkets__content p {
-    padding-right: 15.4166666667%;
+    padding-right: 20.7865168539%;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -3528,7 +3581,7 @@ textarea {
   .minimarkets__item--buffet .minimarkets__tile {
     aspect-ratio: 680/341;
     padding-bottom: 2.8670588235rem;
-    padding-left: 10.8823529412%;
+    padding-left: 14.6825396825%;
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -3653,11 +3706,11 @@ textarea {
   text-align: right;
 }
 .text-automats__snacks img {
-  max-width: 100%;
+  max-width: 28.2352941176rem;
 }
 @media only screen and (max-width: 86.25em) {
   .text-automats__snacks img {
-    max-width: 28.2352941176rem;
+    max-width: 93.488372093%;
   }
 }
 @media only screen and (max-width: 61.99875em) {

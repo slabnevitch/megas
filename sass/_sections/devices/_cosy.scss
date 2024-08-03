@@ -1,3 +1,49 @@
 /*--------------------cosy----------------------*/
+.cosy {
+	padding-top: rem(235);
+	padding-bottom: rem(436.3);
 
+	@include max-screen($lgg){
+		padding-top: rem(135.25);
+		padding-bottom: rem(269.3);
+	}
+	@include max-screen($md){
+		padding-top: rem(72.52);
+		padding-bottom: rem(189.95);
+	}
+}
+.cosy__wrapper {}
+.cosy__heading {
+	margin-bottom: rem(79);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(51);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(23.92);
+	}
+}
+.cosy__title {
+
+}
+
+.cosy__carousel {
+	.tns-prev{
+	    left: prc(-60, $maxWidthContainer);
+	  }
+	  .tns-next {
+	    right: prc(-60, $maxWidthContainer);
+
+	  }
+}
+
+.cosy__slider {}
+.cosy__slide {
+	aspect-ratio: $maxWidthContainer / 739;
+
+	@include max-screen($sm){
+		// aspect-ratio: 360 / 270;
+	}
+}
+._fit-img {}
 /*--------------------END cosy----------------------*/ 

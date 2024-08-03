@@ -1,18 +1,15 @@
 section.cosy
-	.cosy__wrapper
+	.cosy__wrapper.padding-inline-75
 		.heading.heading--row.cosy__heading.heading--mob-title-25
 			.heading__subtitle – кофе-поинты и уличные кофейни
 			h2.heading__title.cosy__title Уютно
 
 		.tiny-carousel.carousel-ordinary.cosy__carousel
-			//- Навигация кастомная (если требуется)
-			//- в js добавить параметр controlsContainer: '.tiny-carousel__nav'
 			.tiny-carousel__nav
 				button(type="button" class="tns-prev") <
 				button(type="button" class="tns-next") >
 			
-			//- Собственно, слайдер
 			.tiny-sldr.cosy__slider
-				- for (var i=0; i < 2; i++)
+				- for (var i=0; i < 3; i++)
 					.cosy__slide._fit
-						img._fit-img(src="img/school-page/cacao/"+(i+1)+".jpg" alt="alt")
+						img._fit-img(src="img/devices-page/slider/"+(i+1)+".jpg" alt="alt")
