@@ -507,6 +507,7 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center;
   column-gap: 0.3529411765rem;
+  margin-bottom: 0;
 }
 .heading--row .heading__subtitle {
   font-size: 2.1176470588rem;
@@ -514,6 +515,9 @@ textarea {
 .heading__subtitle {
   margin-bottom: 0.0905882353rem;
   font-size: 1.2941176471rem;
+}
+.heading--mob-title-25 .heading__subtitle {
+  margin-bottom: 0.2670588235rem;
 }
 .heading__title {
   font-size: 2.6470588235rem;
@@ -1448,6 +1452,8 @@ textarea {
 }
 
 /*--------------------END system----------------------*/
+/*--------------------benefit-tiles----------------------*/
+/*--------------------END benefit-tiles----------------------*/
 /*--------------------buffets----------------------*/
 .buffets {
   padding-top: 12.8823529412rem;
@@ -1697,6 +1703,7 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center;
   column-gap: 0.3529411765rem;
+  margin-bottom: 0;
 }
 
 .devices-top__subtitle {
@@ -2546,6 +2553,9 @@ textarea {
   .cosy__heading {
     margin-bottom: 3rem;
   }
+  .device__heading {
+    margin-bottom: 1.4082352941rem;
+  }
   .device__anim-inner {
     margin-left: 11.8644067797%;
     margin-right: 11.8644067797%;
@@ -3029,7 +3039,7 @@ textarea {
     margin-bottom: 1.5rem;
   }
   .coffe-machine__text p:not(:last-child) {
-    margin-bottom: 0.4705882353rem;
+    margin-bottom: 0.3529411765rem;
   }
   .coffe-machine__payments {
     max-width: 9.1617647059rem;
@@ -3062,6 +3072,9 @@ textarea {
   }
   .cosy__heading {
     margin-bottom: 1.4070588235rem;
+  }
+  .device__heading {
+    margin-bottom: 0.7817647059rem;
   }
   .minimarkets__container {
     column-gap: 0.5882352941rem;
@@ -3247,7 +3260,7 @@ textarea {
   }
   .text-17 {
     font-size: 0.7647058824rem;
-    line-height: 140%;
+    line-height: 150%;
   }
   .marker {
     color: #009245;
@@ -3753,6 +3766,7 @@ textarea {
     flex-direction: column-reverse;
     -ms-flex-align: center;
     align-items: center;
+    row-gap: 0.2670588235rem;
   }
   .info-footer__row--questions {
     -ms-flex-direction: column;
@@ -3899,6 +3913,11 @@ textarea {
 }
 @media only screen and (min-width: 30em) {
   .assortment__content--school .assortment__picts .assortment__mode {
+    display: none;
+  }
+}
+@media only screen and (min-width: 36em) {
+  .devices-top__wrapper__slogan br {
     display: none;
   }
 }
