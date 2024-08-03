@@ -1758,7 +1758,7 @@ textarea {
   display: flex;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding-bottom: 3.9558823529rem;
+  padding-bottom: 4.1323529412rem;
   padding-left: 14.7058823529%;
   aspect-ratio: 680/358;
 }
@@ -2581,7 +2581,7 @@ textarea {
   }
   .minimarkets__item--minimarket .minimarkets__tile {
     aspect-ratio: 480/341;
-    padding-top: 3.0105882353rem;
+    padding-top: 1.7647058824rem;
     padding-right: 20.7865168539%;
   }
   .minimarkets__item--minimarket .minimarkets__content p {
@@ -2595,7 +2595,7 @@ textarea {
   }
   .minimarkets__item--buffet .minimarkets__tile {
     aspect-ratio: 680/341;
-    padding-bottom: 2.8670588235rem;
+    padding-bottom: 2.0588235294rem;
     padding-left: 14.6825396825%;
   }
   .text-automats__heading {
