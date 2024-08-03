@@ -14,6 +14,7 @@
 		margin-bottom: rem(28.29);
 			
 	}
+	
 }
 .heading--mob-title-25 {}
 .heading__subtitle {}
@@ -25,18 +26,16 @@
 .text-automats__container {
 	display: flex;
 	align-items: flex-start;
+	column-gap: rem(10);
 
 	@include min-screen($sm){
 		column-gap: rem(20);
-		
+		align-items: stretch;
 	}
 }
 .text-automats__content {
 	flex: 0 0 calc(50% - rem(10));
 	padding-top: rem(128.29);
-	display: flex;
-	flex-direction: column;
-	// align-items: flex-end;
 
 	@include max-screen($lgg){
 		padding-top: rem(111);
@@ -68,14 +67,25 @@
 	}
 }
 .text-automats__snacks{
-	aspect-ratio: 480 / 319.2;
+	// aspect-ratio: 480 / 319.2;
+	text-align: right;
 
-	@include max-screen($lgg){
-		max-width: rem(480);
-	}
-	@include max-screen($sm){
-		max-width: prc(166, 360);
-		margin-left: auto;
+	
+
+	img{
+		max-width: 100%;
+
+		@include max-screen($lgg){
+			max-width: rem(480);
+		}
+		@include max-screen($md){
+			max-width: none;
+			width: 80%;
+		}
+		@include max-screen($sm){
+			max-width: none;
+			width: prc(180, 166);
+		}
 	}
 }
 .text-automats__desct {}
@@ -85,6 +95,18 @@
 
 	img{
 		max-width: 100%;
+
+		@include max-screen($sm){
+			max-width: 120%;
+			height: 100%;
+		}
+
+		@include max-screen($xsss){
+			max-width: 140%;
+			height: auto;
+			position: relative;
+			left: -7%;
+		}
 	}
 }
 /*--------------------END text-automats----------------------*/ 

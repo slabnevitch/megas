@@ -1,0 +1,88 @@
+/*--------------------buffets----------------------*/
+.buffets {
+	padding-top: rem(219);
+
+	@include max-screen($lgg){
+		padding-top: rem(154);
+		
+	}
+	@include max-screen($md){
+		padding-top: rem(67.6);
+		
+	}
+}
+.buffets__top {}
+.buffets__wrapper {}
+
+.buffets__heading {
+	margin-bottom: rem(79);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(59);
+		
+	}
+	@include max-screen($md){
+		margin-bottom: rem(30);
+		
+	}
+}
+
+.buffets__title {}
+.buffets__body {
+	
+}
+.body-buffets {}
+.buffets__container {
+	display: flex;
+	column-gap: rem(20);
+
+	@include max-screen($xs){
+		column-gap: rem(9.7);
+	}
+}
+.buffets__visual {
+	flex: 0 0 calc(prc(480, $maxWidthContainer) - rem(10));
+	aspect-ratio: 480 / 802;
+
+	@include max-screen($xs){
+		flex: 1 0 calc(prc(480, $maxWidthContainer) - rem(math.div(9.7, 2)));
+	}
+}
+._fit-img {}
+.buffets__other {
+	flex: 0 0 calc(prc(680, $maxWidthContainer) - rem(10));
+
+	@include max-screen($xs){
+		flex: 0 0 calc(prc(680, $maxWidthContainer) - rem(math.div(9.7, 2)));
+	}
+
+}
+.buffets__dishes {
+	aspect-ratio: 680 / 470;
+	margin-bottom: rem(33);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(25.28);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(16.79);
+	}
+}
+.buffets__picts {
+	max-width: rem(221.76);
+	margin-left: prc(120, $maxWidthContainer);
+
+	@include max-screen($lgg){
+		max-width: rem(170.72);
+		margin-left: prc(88, 1024);
+	}
+	@include max-screen($sm){
+		max-width: rem(93.32);
+		margin-left: prc(28.7, 360);
+	}
+	img{
+		width: 100%;
+	}
+}
+
+/*--------------------END buffets----------------------*/ 
