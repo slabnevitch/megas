@@ -3100,25 +3100,11 @@ textarea {
   .minimarkets__container {
     column-gap: 0.5882352941rem;
   }
-  .minimarkets__item--minimarket {
-    -ms-flex-preferred-size: calc(50% - 0.2941176471rem);
-    flex-basis: calc(50% - 0.2941176471rem);
-  }
-  .minimarkets__item--minimarket .minimarkets__tile {
-    aspect-ratio: 200/260;
-  }
   .minimarkets__item--minimarket .minimarkets__heading {
     text-align: right;
   }
   .minimarkets__smartimage {
     margin-bottom: 1.0688235294rem;
-  }
-  .minimarkets__item--buffet {
-    -ms-flex-preferred-size: calc(50% - 0.2941176471rem);
-    flex-basis: calc(50% - 0.2941176471rem);
-  }
-  .minimarkets__item--buffet .minimarkets__tile {
-    aspect-ratio: 200/260;
   }
   .minimarkets__item--buffet .minimarkets__tile .minimarkets__heading {
     text-align: left;
@@ -3595,11 +3581,25 @@ textarea {
   .devices-top__title {
     font-size: 1.4705882353rem;
   }
+  .minimarkets__item--minimarket {
+    -ms-flex-preferred-size: calc(36.9444444444% - 0.2941176471rem);
+    flex-basis: calc(36.9444444444% - 0.2941176471rem);
+  }
   .minimarkets__item--minimarket .minimarkets__tile {
     padding-top: 0.8694117647rem;
+    aspect-ratio: auto;
+    height: 15.1764705882rem;
+    padding-right: 0.8823529412rem;
+  }
+  .minimarkets__item--buffet {
+    -ms-flex-preferred-size: calc(41.6666666667% - 0.2941176471rem);
+    flex-basis: calc(41.6666666667% - 0.2941176471rem);
   }
   .minimarkets__item--buffet .minimarkets__tile {
     padding-bottom: 1.2770588235rem;
+    aspect-ratio: auto;
+    height: 15.1764705882rem;
+    padding-left: 0.5882352941rem;
   }
   .minimarkets__buffetimage {
     aspect-ratio: 154/252.02;
@@ -3822,16 +3822,8 @@ textarea {
     -ms-flex: 0 0 calc(57.6271186441% - 0.2852941176rem);
     flex: 0 0 calc(57.6271186441% - 0.2852941176rem);
   }
-  .minimarkets__item--minimarket .minimarkets__tile {
-    aspect-ratio: 129/260;
-    padding-right: 0.5882352941rem;
-  }
   .minimarkets__item--minimarket .minimarkets__content p {
     padding-right: 0.5882352941rem;
-  }
-  .minimarkets__item--buffet .minimarkets__tile {
-    aspect-ratio: 129/260;
-    padding-left: 0.5882352941rem;
   }
   .allowed__items {
     margin-left: 1.5294117647rem;
@@ -4046,8 +4038,8 @@ textarea {
     display: none;
   }
   .cosy__carousel {
-    padding-left: 5.0847457627%;
-    padding-right: 5.0847457627%;
+    padding-left: 8.4745762712%;
+    padding-right: 8.4745762712%;
   }
   .school-hero {
     top: 3.7647058824rem;
