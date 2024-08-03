@@ -1155,8 +1155,7 @@ textarea {
   padding-top: 7.1505882353rem;
   padding-bottom: 8.7135294118rem;
 }
-
-.heading {
+.premium .heading {
   margin-bottom: 0.6764705882rem;
 }
 
@@ -2395,7 +2394,7 @@ textarea {
     padding-top: 4.1664705882rem;
     padding-bottom: 6.4852941176rem;
   }
-  .heading {
+  .premium .heading {
     margin-bottom: 0.5094117647rem;
   }
   .premium__bottom, .smart__content {
@@ -3383,7 +3382,7 @@ textarea {
     padding-top: 3.0294117647rem;
     padding-bottom: 4.6152941176rem;
   }
-  .heading {
+  .premium .heading {
     margin-bottom: 1.1541176471rem;
   }
   .premium__bottom, .smart__content {
@@ -3614,10 +3613,10 @@ textarea {
     margin-right: 0;
   }
   .text-automats__snacks img {
-    width: 72%;
+    width: 100%;
   }
   .text-automats__image img {
-    max-width: 120%;
+    max-width: 140%;
     height: 100%;
   }
   .allowed__items {
@@ -3902,15 +3901,9 @@ textarea {
     object-position: left center;
   }
   .text-automats__image img {
-    max-width: 140%;
     height: auto;
     position: relative;
     left: -7%;
-  }
-}
-@media only screen and (max-width: 22.5em) {
-  .text-automats__snacks img {
-    width: 95%;
   }
 }
 @media only screen and (max-width: 20em) {
