@@ -1,17 +1,21 @@
 /*--------------------coctails----------------------*/
 .cocktails {
 	padding-top: rem(168.28);
+	// padding-bottom: rem(201.39);
 	
 	@include max-screen($lgg){
-		padding-top: rem(170.99);
+		padding-top: rem(143);
+		// padding-bottom: rem(171.93);
 	}
-	@include max-screen($sm){
+	@include max-screen($md){
 		padding-top: rem(59.77);
+		// padding-bottom: rem(82.56);
 	}
 }
 .cocktails__wrapper {}
 .cocktails__title {
 	margin-bottom: rem(35);
+	line-height: 140%;
 
 	@include max-screen($sm){
 		margin-bottom: rem(19.09);;
@@ -19,12 +23,12 @@
 
 }
 .cocktails__picts{
-	margin-bottom: rem(65.66);
+	margin-bottom: rem(201.39);
 
 	@include max-screen($lgg){
 		margin-bottom: rem(170.99);
 	}
-	@include max-screen($sm){
+	@include max-screen($md){
 		margin-bottom: rem(82.11);
 	}
 }

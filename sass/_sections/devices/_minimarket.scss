@@ -15,8 +15,8 @@
 .minimarkets__item--minimarket {
 	flex: 1 0 calc(prc(480, $maxWidthContainer) - rem(10));
 
-	@include max-screen($md){
-		flex-basis: calc(50% - rem(math.div(10, 2)));
+	@include max-screen($sm){
+		flex-basis: calc(prc(133, 360) - rem(math.div(10, 2)));
 	}
 
 	.minimarkets__tile {
@@ -27,18 +27,19 @@
 
 		@include max-screen($lgg){
 			aspect-ratio: 480 / 341;
-			padding-top: rem(51.18);
+			padding-top: rem(30);
 			padding-right: prc(74, 356);
 		}
 		@include max-screen($md){
-			aspect-ratio: 200 / 260;
 		}
 		@include max-screen($sm){
+			// aspect-ratio: 200 / 260;
 			padding-top: rem(14.78);
+			aspect-ratio: auto;
+			height: rem(258);
+			padding-right: rem(15);
 		}
 		@include max-screen($xs){
-			aspect-ratio: 129 / 260;
-			padding-right: rem(10);
 		}
 	}
 	.minimarkets__heading {
@@ -91,33 +92,35 @@
 .minimarkets__item--buffet {
 	flex: 1 0 calc(prc(680, $maxWidthContainer) - rem(10));
 
-	@include max-screen($md){
-		flex-basis: calc(50% - rem(math.div(10, 2)));
+	@include max-screen($sm){
+		flex-basis: calc(prc(150, 360) - rem(math.div(10, 2)));
+		
 	}
 
 	.minimarkets__tile {
 		display: flex;
 		align-items: flex-end;
-		padding-bottom: rem(67.25);
+		padding-bottom: rem(70.25);
 		padding-left: prc(100, 680);
 		aspect-ratio: 680 / 358;
 
 		@include max-screen($lgg){
 			aspect-ratio: 680 / 341;
-			padding-bottom: rem(48.74);
+			padding-bottom: rem(35);
 			padding-left: prc(74, 504);
 
 		}
 		@include max-screen($md){
-			aspect-ratio: 200 / 260;
 		
 		}
 		@include max-screen($sm){
+			// aspect-ratio: 200 / 260;
 			padding-bottom: rem(21.71);
+			aspect-ratio: auto;
+			height: rem(258);
+			padding-left: rem(10);
 		}
 		@include max-screen($xs){
-			aspect-ratio: 129 / 260;
-			padding-left: rem(10);
 		}
 		.minimarkets__heading {
 		

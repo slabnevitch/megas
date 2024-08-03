@@ -207,8 +207,10 @@
     button{
       @include but-null();
       // display: inline-block;
-      width: rem(10.13);
-      height: rem(10.13);
+      display: block; 
+      flex-shrink: 0;
+      width: rem(12);
+      height: rem(12);
       border-radius: 50%;
       background-color: $text-gray;
 
@@ -216,8 +218,8 @@
         
       }
       @include max-screen($sm){
-        width: rem(6.66);
-        height: rem(6.66);
+        width: rem(7);
+        height: rem(7);
       }
 
       &.tns-nav-active{
@@ -258,6 +260,8 @@
     justify-content: flex-end;
     @include but-null();
     color: $accent;
+    font-size: rem(36);
+    // color: #9B9B9B;
 
     @include max-screen($lgg){
       top: calc(50% - rem(15 + 40));

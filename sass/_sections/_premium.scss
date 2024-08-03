@@ -11,18 +11,18 @@
 		padding-top: rem(51.5);
 		padding-bottom: rem(78.46);
 	}
+	.heading {
+		margin-bottom: rem(11.5);
+
+		@include max-screen($lgg){
+			margin-bottom: rem(8.66);
+		}
+		@include max-screen($sm){
+			margin-bottom: rem(19.62);
+		}
+	}
 }
 .premium__wrapper {}
-.heading {
-	margin-bottom: rem(11.5);
-
-	@include max-screen($lgg){
-		margin-bottom: rem(8.66);
-	}
-	@include max-screen($sm){
-		margin-bottom: rem(19.62);
-	}
-}
 .heading__subtitle {}
 .heading__title {}
 .premium__title {}

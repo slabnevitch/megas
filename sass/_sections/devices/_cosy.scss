@@ -28,16 +28,29 @@
 }
 
 .cosy__carousel {
+	@include min-screen($md){
+		padding-left: prc(100,  $maxWidthContainer);
+		padding-right: prc(100,  $maxWidthContainer);
+	}
 	.tns-prev{
 	    left: prc(-60, $maxWidthContainer);
+
+	    @include max-screen(em(1024)){
+	    	left: prc(-30, $maxWidthContainer);
+	    }
 	  }
 	  .tns-next {
 	    right: prc(-60, $maxWidthContainer);
 
+	    @include max-screen(em(1024)){
+	    	 right: prc(-20, $maxWidthContainer);
+	    }
+
 	  }
 }
 
-.cosy__slider {}
+.cosy__slider {
+}
 .cosy__slide {
 	aspect-ratio: $maxWidthContainer / 739;
 
