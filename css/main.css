@@ -546,8 +546,11 @@ textarea {
   padding: 0;
   background-color: transparent;
   border: none;
-  width: 0.5958823529rem;
-  height: 0.5958823529rem;
+  display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 0.7058823529rem;
+  height: 0.7058823529rem;
   border-radius: 50%;
   background-color: #4D4D4D;
 }
@@ -577,6 +580,7 @@ textarea {
   background-color: transparent;
   border: none;
   color: #009245;
+  font-size: 2.1176470588rem;
 }
 .carousel-ordinary .tns-prev {
   left: -12.7118644068%;
@@ -1504,7 +1508,7 @@ textarea {
 }
 
 .cocktails__picts {
-  margin-bottom: 3.8623529412rem;
+  margin-bottom: 11.8464705882rem;
 }
 
 .cocktails__icons {
@@ -1649,7 +1653,6 @@ textarea {
 .cosy__heading {
   margin-bottom: 4.6470588235rem;
 }
-
 .cosy__carousel .tns-prev {
   left: -5.0847457627%;
 }
@@ -1682,8 +1685,8 @@ textarea {
 /*--------------------END device----------------------*/
 /*--------------------devices-top----------------------*/
 .devices-top {
-  padding-top: 4.4352941176rem;
-  padding-bottom: 6.9982352941rem;
+  padding-top: 3.8470588235rem;
+  padding-bottom: 4.7629411765rem;
 }
 
 .devices-top__wrapper__slogan {
@@ -2494,7 +2497,7 @@ textarea {
     margin-left: 15.4761904762%;
   }
   .cocktails {
-    padding-top: 10.0582352941rem;
+    padding-top: 8.4117647059rem;
   }
   .cocktails__picts {
     margin-bottom: 10.0582352941rem;
@@ -2870,6 +2873,12 @@ textarea {
     padding-left: 1.7647058824rem;
     padding-right: 1.7647058824rem;
   }
+  .cosy__carousel .tns-prev {
+    left: -2.5423728814%;
+  }
+  .cosy__carousel .tns-next {
+    right: -1.6949152542%;
+  }
 }
 @media screen and (max-width: 61.99875em) {
   .menu-header .menu-header__body {
@@ -3034,6 +3043,12 @@ textarea {
   }
   .buffets__heading {
     margin-bottom: 1.7647058824rem;
+  }
+  .cocktails {
+    padding-top: 3.5158823529rem;
+  }
+  .cocktails__picts {
+    margin-bottom: 4.83rem;
   }
   .coffe-machine {
     padding-top: 4.3035294118rem;
@@ -3258,8 +3273,8 @@ textarea {
     margin-top: 4.5158823529rem;
   }
   .tns-nav button {
-    width: 0.3917647059rem;
-    height: 0.3917647059rem;
+    width: 0.4117647059rem;
+    height: 0.4117647059rem;
   }
   .text {
     font-size: 0.7647058824rem;
@@ -3499,14 +3514,8 @@ textarea {
     max-width: 5.4894117647rem;
     margin-left: 7.9722222222%;
   }
-  .cocktails {
-    padding-top: 3.5158823529rem;
-  }
   .cocktails__title {
     margin-bottom: 1.1229411765rem;
-  }
-  .cocktails__picts {
-    margin-bottom: 4.83rem;
   }
   .cocktails__icons {
     max-width: 10.3529411765rem;
@@ -4035,6 +4044,10 @@ textarea {
   }
   .item-system__icon--circle {
     display: none;
+  }
+  .cosy__carousel {
+    padding-left: 4.2372881356%;
+    padding-right: 4.2372881356%;
   }
   .school-hero {
     top: 3.7647058824rem;
