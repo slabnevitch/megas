@@ -26,6 +26,7 @@
 	}
 	
 	.btn {
+		@include but-null();
 		.traffic--open &{
 			visibility: hidden;
 		}
@@ -66,6 +67,11 @@
 	aspect-ratio: 800 / 534.33;
 	// visibility: hidden;
 
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+
+	}
+
 	@include max-screen($lgg){
 		aspect-ratio: 726 / 485;
 	
@@ -99,6 +105,11 @@
 
 	.traffic--open &{
 		display: block;
+	}
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+
 	}
 
 	@include max-screen($lgg){

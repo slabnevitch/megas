@@ -74,6 +74,10 @@
 		aspect-ratio: 300/ 434.47;
 		flex-basis: 100%;
 	}
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+		}
 }
 .benefit-tile__heading {
 	padding-top: rem(45);
