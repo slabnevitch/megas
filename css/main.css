@@ -4448,6 +4448,9 @@ textarea {
   .descr-system__app a:hover {
     font-family: "Articulat CF Medium", sans-serif;
   }
+  .benefit-tile {
+    cursor: pointer;
+  }
   .traffic__heading .btn {
     cursor: pointer;
   }
