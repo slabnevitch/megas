@@ -1,0 +1,158 @@
+/*--------------------benefit-traffic----------------------*/
+.traffic {
+	padding-bottom: rem(385);
+
+	@include max-screen($lgg){
+		padding-bottom: rem(268);
+	}
+	@include max-screen($md){
+		padding-bottom: rem(237);
+	}
+}
+.traffic__container {
+	@extend .benefit-tiles__container;
+	display: block;
+}
+.heading {}
+.traffic__heading {
+	margin-bottom: rem(45);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(17);
+
+	}
+	@include max-screen($md){
+		padding-bottom: rem(24);
+	}
+	
+	.btn {
+		.traffic--open &{
+			visibility: hidden;
+		}
+	}
+}
+.heading__title {
+}
+.traffic__title {
+	margin-bottom: rem(4.54);
+	font-size: rem(36);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		font-size: rem(33);
+	}
+}
+.heading__subtitle {
+	margin-bottom: rem(13);
+
+	font-size: rem(22);
+
+	@include max-screen($lgg){
+		font-size: rem(19);
+	}
+	@include max-screen($md){
+		font-size: rem(17);
+	}
+
+}
+.traffic__content {
+}
+.traffic__image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	aspect-ratio: 800 / 534.33;
+	// visibility: hidden;
+
+	@include max-screen($lgg){
+		aspect-ratio: 726 / 485;
+	
+	}
+	@include max-screen($sm){
+		aspect-ratio: 360 / 333;
+		height: auto;
+	}
+	.traffic--open &{
+		visibility: hidden;
+	}
+}
+._fit-img {}
+.traffic__features {
+	position: relative;
+	min-height: rem(534.33);
+	padding: rem(38) rem(45) rem(68) rem(50);
+	background-color: #fff;
+
+
+	@include max-screen($lgg){
+		min-height: rem(485);
+		padding: rem(34) rem(50) rem(61) rem(49.91);
+	}
+	@include max-screen($sm){
+		min-height: 0;
+		margin-left: rem(-30);
+		margin-right: rem(-30);
+		padding: rem(27) rem(30) rem(56) rem(30);
+	}
+}
+.features-traffic {}
+.features-traffic__heading {
+	display: flex;
+	column-gap: rem(12);
+	align-items: baseline;
+	justify-content: center;
+	margin-bottom: rem(50);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(38);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(32);
+	}
+}
+.features-traffic__subtitle {	
+}
+.features-traffic__title {
+	font-size: rem(36);
+
+	@include max-screen($lgg){
+		font-size: rem(33);
+	}
+	@include max-screen($md){
+		font-size: rem(25);
+	}
+}
+.features-traffic__list {
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: rem(19);
+	row-gap: rem(21);
+	display: none;
+
+	.traffic--open &{
+		display: grid;
+	}
+
+	@include max-screen($sm){
+		column-gap: rem(12);
+		row-gap: rem(11);
+	}
+}
+.features-traffic__key {
+	font-family: $med;
+	text-align: right;
+	line-height: normal;
+}
+.features-traffic__val {
+	line-height: normal;
+
+	br{
+		@include min-screen($sm){
+			display: none;
+		}
+
+	}
+}
+/*--------------------END benefit-traffic----------------------*/ 

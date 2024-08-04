@@ -499,9 +499,18 @@ textarea {
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
   display: inline-block;
   text-decoration: none;
   color: #009245;
+  font-size: 1rem;
+}
+@media (any-hover: hover) {
+  .btn {
+    cursor: pointer;
+  }
 }
 @media only screen and (max-width: 47.99875em) {
   .btn {
@@ -825,10 +834,9 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 47.99875em) {
-  .marker {
-    color: #009245;
-  }
+.marker {
+  color: #009245;
+  font-family: "Articulat CF Medium", sans-serif;
 }
 
 /*--------------------END ui----------------------*/
@@ -2804,7 +2812,316 @@ textarea {
 
 /*--------------------END system----------------------*/
 /*--------------------benefit-tiles----------------------*/
+.benefit-tiles {
+  padding-top: 3.4705882353rem;
+  padding-bottom: 7.2352941176rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .benefit-tiles {
+    padding-top: 2.5641176471rem;
+    padding-bottom: 3.8235294118rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .benefit-tiles {
+    padding-top: 2.4117647059rem;
+    padding-bottom: 2.5294117647rem;
+  }
+}
+
+.benefit-tiles__title {
+  margin-bottom: 4.3411764706rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .benefit-tiles__title {
+    margin-bottom: 2.8823529412rem;
+    font-size: 1.7647058824rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .benefit-tiles__title {
+    margin-bottom: 1.8823529412rem;
+    font-size: 1.4705882353rem;
+    line-height: 1.12;
+  }
+}
+
+.benefit-tiles__container, .traffic__container {
+  max-width: 47.0588235294rem;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  column-gap: 2.3529411765rem;
+  row-gap: 3.0394117647rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .benefit-tiles__container, .traffic__container {
+    max-width: 42.7058823529rem;
+    column-gap: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .benefit-tiles__container, .traffic__container {
+    max-width: none;
+    row-gap: 0.9411764706rem;
+  }
+}
+
+.benefit-tile {
+  position: relative;
+  -ms-flex: 0 0 calc(50% - 1.1764705882rem);
+  flex: 0 0 calc(50% - 1.1764705882rem);
+  aspect-ratio: 380/550.33;
+}
+@media only screen and (max-width: 86.25em) {
+  .benefit-tile {
+    aspect-ratio: 355/514.12;
+    -ms-flex-preferred-size: calc(50% - 0.4411764706rem);
+    flex-basis: calc(50% - 0.4411764706rem);
+  }
+}
+@media only screen and (max-width: 36em) {
+  .benefit-tile {
+    aspect-ratio: 300/434.47;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+
+.benefit-tile__heading {
+  padding-top: 2.6470588235rem;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.benefit-tile__subtitle {
+  margin-bottom: 0.2670588235rem;
+  font-size: 1.2941176471rem;
+}
+
+.benefit-tile__title {
+  margin-bottom: 0.4705882353rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+
+.benefit-tile__body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: pink;
+}
+.active .benefit-tile__body {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.benefit-tile__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.1s;
+}
+.benefit-tile__image--back {
+  visibility: hidden;
+}
+.benefit-tile--active .benefit-tile__image--back {
+  visibility: visible;
+}
+.benefit-tile--active .benefit-tile__image--front {
+  visibility: hidden;
+}
+
+.benefit-tiles__text {
+  margin-top: 0.8823529412rem;
+  text-align: center;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+}
+
 /*--------------------END benefit-tiles----------------------*/
+/*--------------------benefit-traffic----------------------*/
+.traffic {
+  padding-bottom: 22.6470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .traffic {
+    padding-bottom: 15.7647058824rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .traffic {
+    padding-bottom: 13.9411764706rem;
+  }
+}
+
+.traffic__container {
+  display: block;
+}
+
+.traffic__heading {
+  margin-bottom: 2.6470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .traffic__heading {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .traffic__heading {
+    padding-bottom: 1.4117647059rem;
+  }
+}
+.traffic--open .traffic__heading .btn {
+  visibility: hidden;
+}
+
+.traffic__title {
+  margin-bottom: 0.2670588235rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .traffic__title {
+    font-size: 1.9411764706rem;
+  }
+}
+
+.heading__subtitle {
+  margin-bottom: 0.7647058824rem;
+  font-size: 1.2941176471rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .heading__subtitle {
+    font-size: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .heading__subtitle {
+    font-size: 1rem;
+  }
+}
+
+.traffic__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 800/534.33;
+}
+@media only screen and (max-width: 86.25em) {
+  .traffic__image {
+    aspect-ratio: 726/485;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .traffic__image {
+    aspect-ratio: 360/333;
+    height: auto;
+  }
+}
+.traffic--open .traffic__image {
+  visibility: hidden;
+}
+
+.traffic__features {
+  position: relative;
+  min-height: 31.4311764706rem;
+  padding: 2.2352941176rem 2.6470588235rem 4rem 2.9411764706rem;
+  background-color: #fff;
+}
+@media only screen and (max-width: 86.25em) {
+  .traffic__features {
+    min-height: 28.5294117647rem;
+    padding: 2rem 2.9411764706rem 3.5882352941rem 2.9358823529rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .traffic__features {
+    min-height: 0;
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+    padding: 1.5882352941rem 1.7647058824rem 3.2941176471rem 1.7647058824rem;
+  }
+}
+
+.features-traffic__heading {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 0.7058823529rem;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 2.9411764706rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .features-traffic__heading {
+    margin-bottom: 2.2352941176rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .features-traffic__heading {
+    margin-bottom: 1.8823529412rem;
+  }
+}
+
+.features-traffic__title {
+  font-size: 2.1176470588rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .features-traffic__title {
+    font-size: 1.9411764706rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .features-traffic__title {
+    font-size: 1.4705882353rem;
+  }
+}
+
+.features-traffic__list {
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.1176470588rem;
+  row-gap: 1.2352941176rem;
+  display: none;
+}
+.traffic--open .features-traffic__list {
+  display: -ms-grid;
+  display: grid;
+}
+@media only screen and (max-width: 47.99875em) {
+  .features-traffic__list {
+    column-gap: 0.7058823529rem;
+    row-gap: 0.6470588235rem;
+  }
+}
+
+.features-traffic__key {
+  font-family: "Articulat CF Medium", sans-serif;
+  text-align: right;
+  line-height: normal;
+}
+
+.features-traffic__val {
+  line-height: normal;
+}
+@media only screen and (min-width: 47.99875em) {
+  .features-traffic__val br {
+    display: none;
+  }
+}
+
+/*--------------------END benefit-traffic----------------------*/
 /*--------------------buffets----------------------*/
 .buffets {
   padding-top: 12.8823529412rem;

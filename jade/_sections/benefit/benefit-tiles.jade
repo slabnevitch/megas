@@ -1,17 +1,26 @@
 section.benefit-tiles
 	.benefit-tiles__wrapper
-		h1.benefit-tiles__title Не просто вендинг, а способ
+		h1.benefit-tiles__title.text-center Не просто вендинг, а&#160;способ
 		.benefit-tiles__container
 			- var tiles = [{sub: 'расположить клиентов', name: 'Loyalty', btn: '< Узнать как', p: 'Вкусный кофе для клиентов <br>во время переговоров. <br>Быстрый перекус из автоматов <br>для удобства ваших клиентов <br>и при необходимости <br>продолжительных сделок'}, {sub: 'обеспечить дисциплину', name: 'Timing', btn: 'Узнать как >', p: 'Поддержание дисциплины <br>в компании – все придут <br>вовремя, если скидка на кофе <br>только до начала рабочего <br>времени. Поощряйте <br>небольшие достижения <br>сотрудников  бонусными <br>баллами, которые можно <br>менять на любимый кофе. <br>Для удобства у нас есть <br>мобильное приложение'}, {sub: 'создать команду', name: 'Team building', btn: '< Узнать как', p: 'Создание уютной атмосферы. <br>Организованный перекус для <br>сотрудников. Оплатите питание <br>сотрудников и распределите <br>бюджет на каждого в личном <br>кабинете онлайн. Они выберут <br>то, что им нравится в рамках <br>своего бюджета. Стильная #[br]мини-кофейня в организации – <br>любимый ароматный кофе <br>объединит коллектив, настроит <br>на работу. Время бесплатной <br>выдачи (или со скидкой) <br>напитков настроим под режим <br>трудового дня'}, {sub: 'заботиться о сотрудниках', name: 'Health', btn: '< Узнать как', p: 'Следите за здоровьем <br>сотрудников – мы организуем <br>здоровое питание. <br>Полезный перекус – важная <br>составляющая питания <br>любых коллективов'}];
 			
-			each item, i in tiles
+			// each item, i in tiles
+			- for (var i=0; i < 4; i++)
 				article.benefit-tile
-					.benefit-tile__heading
-						.benefit-tile__subtitle= item.sub
-						.benefit-tile__title= item.name
-						a(href="#").btn= item.btn
+					.benefit-tile__image.benefit-tile__image--front._fit
+						img._fit-img(src="img/benefit-page/images/" + (i+1) + ".jpg" alt="alt")
 
-					p.text-17!= item.p
+					.benefit-tile__image.benefit-tile__image--back._fit
+						img._fit-img(src="img/benefit-page/images/" + (i+1) + "-back.jpg" alt="alt")
+					// .benefit-tile__heading
+					// 	.benefit-tile__subtitle= item.sub
+					// 	.benefit-tile__title= item.name
+					// 	a(href="#").btn= item.btn
+
+					// .benefit-tile__body
+					// 	p.benefit-tile__text.text-17!= item.p
 					
-					.benefit-tile__image._fit
-						img._fit-img(src="img/benefit-page/tiles/" + (i+1) + "" alt="alt")
+					// .benefit-tile__image._fit
+					// 	img._fit-img(src="img/benefit-page/tiles/" + (i+1) + ".jpg" alt="alt")
+			
+			p.benefit-tiles__text.text Умные технологии, лучший ассортимент напитков, стильное оформление нашей мини-кофейни уличного формата привлекут дополнительный трафик в&#160;торговые центры. Оптимальные размеры позволят разместить #[br]кофейню в&#160;наиболее удобном месте

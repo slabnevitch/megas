@@ -1,0 +1,26 @@
+section.traffic
+	.traffic__wrapper
+		.traffic__container
+			.heading.traffic__heading.text-center
+					h2.heading__title.traffic__title Smart
+					.heading__subtitle привлечь дополнительный трафик
+					button.btn(type="button" data-traffic-toggler) Узнать как >
+
+		.traffic__container
+			.traffic__content
+			
+				.traffic__features.features-traffic(data-traffic-toggler)
+					.traffic__image._fit
+						img._fit-img(src="img/benefit-page/adigeo.jpg" alt="alt")
+					.features-traffic__heading 
+						.features-traffic__subtitle.text-17 Кофейня нового поколения 
+						.features-traffic__title 24/7
+
+					- var features = [{key: 'умные технологии', val: 'автомат-бариста приготовит ароматный зерновой кофе за&#160;2&#160;минуты'}, {key: 'лучший ассортимент напитков «С&#160;собой»', val: 'премиальный зерновой кофе, кофейные и&#160;молочно-фруктовые коктейли, состав напитка настраивается на любой вкус'}, {key: 'стильное оформление', val: 'уютная атмосфера <br>внутри - кондиционер  или отопление по&#160;сезону'}, {key: 'инновации в&#160;обустройстве территорий', val: 'дополнительный трафик в торговые центры'}, {key: 'удобное расположение', val: 'по пути в торговый центр или из него, на&#160;парковке и т.д.'}, {key: 'оптимальный размер:', val: '2м х 2м х 3м высота'}];
+					
+					.features-traffic__list
+
+						each item in features
+							.features-traffic__key.text-17!= item.key
+							.features-traffic__val.text-17!= item.val
+			

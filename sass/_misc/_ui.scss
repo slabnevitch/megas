@@ -1,8 +1,10 @@
 /*--------------------ui----------------------*/
 .btn{
+  @include but-null();
   display: inline-block;
   text-decoration: none;
   color: $accent;
+  font-size: rem(17);
 
   @include max-screen($sm){
     font-size: rem(14);
@@ -301,8 +303,7 @@
   }
 }
 .marker{
-  @include max-screen($sm){
     color: $accent;
-  }
+    font-family: $med;
 }
 /*--------------------END ui----------------------*/ 

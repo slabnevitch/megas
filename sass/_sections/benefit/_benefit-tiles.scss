@@ -1,3 +1,132 @@
 /*--------------------benefit-tiles----------------------*/
+.benefit-tiles {
+	padding-top: rem(59);
+	padding-bottom: rem(123);
 
+	@include max-screen($lgg){
+		padding-top: rem(43.59);
+		padding-bottom: rem(65);
+	}
+	@include max-screen($md){
+		padding-top: rem(41);
+		padding-bottom: rem(43);
+	}
+
+}
+.benefit-tiles__wrapper {}
+.benefit-tiles__title {
+	margin-bottom: rem(73.8);
+	font-size: rem(36);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(49);
+		font-size: rem(30);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(32);
+		font-size: rem(25);
+		line-height: math.div(28, 25);
+	}
+}
+.benefit-tiles__container {
+	max-width: rem(800);
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: rem(40);
+	row-gap: rem(51.67);
+
+	@include max-screen($lgg){
+		max-width: rem(726);
+		column-gap: rem(15);
+	}
+	@include max-screen($xs){
+		max-width: none;
+		// flex-direction: column;
+		row-gap: rem(16);
+	}
+}
+.benefit-tile {
+	position: relative;
+	flex: 0 0 calc(50% - rem(math.div(40, 2)));
+	// padding: rem(10);
+	// text-align: center;
+	aspect-ratio: 380 / 550.33;
+	// overflow: hidden;
+	// display: flex;
+	// flex-direction: column;
+
+	// &.active{
+	// 	justify-content: center;
+	// }
+
+	// &:first-child{
+	// 	color: #fff;
+	// }
+
+	@include max-screen($lgg){
+		aspect-ratio: 355 / 514.12;
+		flex-basis: calc(50% - rem(math.div(15, 2)));
+	}
+
+	@include max-screen($xs){
+		aspect-ratio: 300/ 434.47;
+		flex-basis: 100%;
+	}
+}
+.benefit-tile__heading {
+	padding-top: rem(45);
+	flex: 0 0 auto;
+}
+.benefit-tile__subtitle {
+	margin-bottom: rem(4.54);
+	font-size: rem(22);
+}
+.benefit-tile__title {
+	margin-bottom: rem(8);
+	font-size: rem(36);
+	font-family: $med;
+}
+.btn {}
+.benefit-tile__body{
+	flex: 1 1 auto;
+	background-color: pink;
+
+	.active &{
+		flex: 0 0 auto;
+	}
+}
+.benefit-tile__image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition: all .1s;
+
+	&--back{
+		visibility: hidden;
+
+		.benefit-tile--active &{
+			visibility: visible;
+		}
+	}
+	&--front{
+		.benefit-tile--active &{
+			visibility: hidden;
+		}
+	}
+}
+._fit-img {}
+.benefit-tile__text{
+	// display: none;
+}
+.benefit-tiles__text{
+	margin-top: rem(15);
+	text-align: center;
+	line-height: 140%;
+	letter-spacing: -0.2px;
+}
 /*--------------------END benefit-tiles----------------------*/ 
