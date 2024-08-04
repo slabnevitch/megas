@@ -1562,6 +1562,11 @@ textarea {
 .traffic__heading {
   margin-bottom: 2.6470588235rem;
 }
+.traffic__heading .btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 .traffic--open .traffic__heading .btn {
   visibility: hidden;
 }
@@ -4442,6 +4447,15 @@ textarea {
   }
   .descr-system__app a:hover {
     font-family: "Articulat CF Medium", sans-serif;
+  }
+  .traffic__heading .btn {
+    cursor: pointer;
+  }
+  .traffic__image {
+    cursor: pointer;
+  }
+  .traffic__features {
+    cursor: pointer;
   }
   .assortment__content--school .assortment__text p a:hover {
     font-family: "Articulat CF Medium", sans-serif;
