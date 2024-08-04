@@ -163,7 +163,7 @@
 			fabFade = document.querySelector('[data-fab-fade]'),
 			footer = document.querySelector('.footer');
 
-		if(fabFade !== null && fab !== null){
+		if(fab !== null){
 
 			fabTimer = setInterval(function() {
 				fab.classList.toggle('drive');
@@ -174,11 +174,21 @@
 				fabButtonCheck()
 			}
 			function fabButtonCheck() {
-				if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
-					|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
-					fab.style.visibility = 'hidden';
+				if(fabFade){
+					console.log('if!')
+					if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
+						|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
+						fab.style.visibility = 'hidden';
+					}else{
+						fab.style.visibility = 'visible';
+					}	
 				}else{
-					fab.style.visibility = 'visible';
+					console.log('else!')
+					if(footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
+						fab.style.visibility = 'hidden';
+					}else{
+						fab.style.visibility = 'visible';
+					}	
 				}
 
 			}
