@@ -1,0 +1,33 @@
+/*--------------------credence----------------------*/
+.credence {
+	min-height: 100dvh;
+	padding-top: rem(90);
+	display: flex;
+	justify-content: center;
+
+}
+.credence__wrapper {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+.credence__title {
+	flex: 0 0 auto;
+	font-size: rem(34);
+}
+.credence__content {
+	padding-right: prc(100, $maxWidthContainer);
+	padding-left: prc(100, $maxWidthContainer);
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.credence__image {
+	margin-bottom: prc(179, 806);
+	img{
+
+		max-width: 100%;
+	}
+}
+/*--------------------END credence----------------------*/ 

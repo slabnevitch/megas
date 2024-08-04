@@ -218,6 +218,8 @@
 				siblings(tile).forEach(function(item, i) {
 					item.classList.remove('benefit-tile--active');
 				});
+
+				document.querySelector('.traffic').classList.remove('traffic--open');
 			}
 		}
 		// END benefit-tiles toggling
@@ -241,6 +243,10 @@
 						clearTimeout(trafficTimer);
 					}
 					parent.classList.toggle('traffic--open');
+
+					Array.prototype.forEach.call(document.querySelectorAll('.benefit-tile'), function(item, i) {
+						item.classList.remove('benefit-tile--active');
+					});
 				});
 			});
 		}

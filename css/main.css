@@ -5511,4 +5511,50 @@ textarea {
 }
 
 /*--------------------END self-service----------------------*/
+/*--------------------credence----------------------*/
+.credence {
+  min-height: 100dvh;
+  padding-top: 5.2941176471rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.credence__wrapper {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.credence__title {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 2rem;
+}
+
+.credence__content {
+  padding-right: 8.4745762712%;
+  padding-left: 8.4745762712%;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.credence__image {
+  margin-bottom: 22.2084367246%;
+}
+.credence__image img {
+  max-width: 100%;
+}
+
+/*--------------------END credence----------------------*/
 /*# sourceMappingURL=maps/main.css.map */
