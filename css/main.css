@@ -2898,6 +2898,12 @@ textarea {
 }
 
 .benefit-tile__heading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefit-tile__heading {
   padding-top: 2.6470588235rem;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -3003,7 +3009,7 @@ textarea {
 }
 @media only screen and (max-width: 61.99875em) {
   .traffic__heading {
-    padding-bottom: 1.4117647059rem;
+    margin-bottom: 1.4117647059rem;
   }
 }
 .traffic__heading .btn {

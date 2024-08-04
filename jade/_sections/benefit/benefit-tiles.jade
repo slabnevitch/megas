@@ -7,8 +7,14 @@ section.benefit-tiles
 			// each item, i in tiles
 			- for (var i=0; i < 4; i++)
 				article.benefit-tile
+					img.benefit-tile__heading(src="img/benefit-page/images/titles/" + (i+1) + ".svg" alt="alt")
+					
 					.benefit-tile__image.benefit-tile__image--front._fit
 						img._fit-img(src="img/benefit-page/images/" + (i+1) + ".jpg" alt="alt")
+					
+					.benefit-tile__image.benefit-tile__image--mob._fit
+						img._fit-img(src="img/benefit-page/tiles/" + (i+1) + ".jpg" alt="alt")
+
 
 					.benefit-tile__image.benefit-tile__image--back._fit
 						img._fit-img(src="img/benefit-page/images/" + (i+1) + "-back.jpg" alt="alt")

@@ -79,6 +79,11 @@
 			cursor: pointer;
 		}
 }
+.benefit-tile__heading{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .benefit-tile__heading {
 	padding-top: rem(45);
 	flex: 0 0 auto;
