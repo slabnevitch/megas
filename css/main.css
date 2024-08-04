@@ -447,9 +447,13 @@ textarea {
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
   display: inline-block;
   text-decoration: none;
   color: #009245;
+  font-size: 1rem;
 }
 
 .toggle-mnu {
@@ -595,6 +599,11 @@ textarea {
 
 .text-17 {
   line-height: 170%;
+}
+
+.marker {
+  color: #009245;
+  font-family: "Articulat CF Medium", sans-serif;
 }
 
 /*--------------------END ui----------------------*/
@@ -1456,7 +1465,172 @@ textarea {
 
 /*--------------------END system----------------------*/
 /*--------------------benefit-tiles----------------------*/
+.benefit-tiles {
+  padding-top: 3.4705882353rem;
+  padding-bottom: 7.2352941176rem;
+}
+
+.benefit-tiles__title {
+  margin-bottom: 4.3411764706rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+
+.benefit-tiles__container, .traffic__container {
+  max-width: 47.0588235294rem;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  column-gap: 2.3529411765rem;
+  row-gap: 3.0394117647rem;
+}
+
+.benefit-tile {
+  position: relative;
+  -ms-flex: 0 0 calc(50% - 1.1764705882rem);
+  flex: 0 0 calc(50% - 1.1764705882rem);
+  aspect-ratio: 380/550.33;
+}
+
+.benefit-tile__heading {
+  padding-top: 2.6470588235rem;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.benefit-tile__subtitle {
+  margin-bottom: 0.2670588235rem;
+  font-size: 1.2941176471rem;
+}
+
+.benefit-tile__title {
+  margin-bottom: 0.4705882353rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+
+.benefit-tile__body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: pink;
+}
+.active .benefit-tile__body {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.benefit-tile__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.1s;
+}
+.benefit-tile__image--back {
+  visibility: hidden;
+}
+.benefit-tile--active .benefit-tile__image--back {
+  visibility: visible;
+}
+.benefit-tile--active .benefit-tile__image--front {
+  visibility: hidden;
+}
+
+.benefit-tiles__text {
+  margin-top: 0.8823529412rem;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  text-align: center;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+}
+
 /*--------------------END benefit-tiles----------------------*/
+/*--------------------benefit-traffic----------------------*/
+.traffic {
+  padding-bottom: 22.6470588235rem;
+}
+
+.traffic__container {
+  display: block;
+}
+
+.traffic__heading {
+  margin-bottom: 2.6470588235rem;
+}
+.traffic--open .traffic__heading .btn {
+  visibility: hidden;
+}
+
+.traffic__title {
+  margin-bottom: 0.2670588235rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+
+.heading__subtitle {
+  margin-bottom: 0.7647058824rem;
+  font-size: 1.2941176471rem;
+}
+
+.traffic__image {
+  aspect-ratio: 800/534.33;
+}
+.traffic--open .traffic__image {
+  display: none;
+}
+
+.traffic__features {
+  position: relative;
+  min-height: 31.4311764706rem;
+  padding: 2.2352941176rem 2.6470588235rem 4rem 2.9411764706rem;
+  background-color: #fff;
+  display: none;
+}
+.traffic--open .traffic__features {
+  display: block;
+}
+
+.features-traffic__heading {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 0.7058823529rem;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 2.9411764706rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+
+.features-traffic__title {
+  font-size: 2.1176470588rem;
+}
+
+.features-traffic__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.1176470588rem;
+  row-gap: 1.2352941176rem;
+}
+
+.features-traffic__key {
+  font-family: "Articulat CF Medium", sans-serif;
+  text-align: right;
+  line-height: normal;
+}
+
+.features-traffic__val {
+  line-height: normal;
+}
+
+/*--------------------END benefit-traffic----------------------*/
 /*--------------------buffets----------------------*/
 .buffets {
   padding-top: 12.8823529412rem;
@@ -2483,6 +2657,51 @@ textarea {
   .item-system__icon {
     margin-bottom: 3.85rem;
   }
+  .benefit-tiles {
+    padding-top: 2.5641176471rem;
+    padding-bottom: 3.8235294118rem;
+  }
+  .benefit-tiles__title {
+    margin-bottom: 2.8823529412rem;
+    font-size: 1.7647058824rem;
+  }
+  .benefit-tiles__container, .traffic__container {
+    max-width: 42.7058823529rem;
+    column-gap: 0.8823529412rem;
+  }
+  .benefit-tile {
+    aspect-ratio: 355/514.12;
+    -ms-flex-preferred-size: calc(50% - 0.4411764706rem);
+    flex-basis: calc(50% - 0.4411764706rem);
+  }
+  .benefit-tiles__text {
+    padding: 0 1.7647058824rem;
+  }
+  .traffic {
+    padding-bottom: 15.7647058824rem;
+  }
+  .traffic__heading {
+    margin-bottom: 1rem;
+  }
+  .traffic__title {
+    font-size: 1.9411764706rem;
+  }
+  .heading__subtitle {
+    font-size: 1.1176470588rem;
+  }
+  .traffic__image {
+    aspect-ratio: 726/485;
+  }
+  .traffic__features {
+    min-height: 28.5294117647rem;
+    padding: 2rem 2.9411764706rem 3.5882352941rem 2.9358823529rem;
+  }
+  .features-traffic__heading {
+    margin-bottom: 2.2352941176rem;
+  }
+  .features-traffic__title {
+    font-size: 1.9411764706rem;
+  }
   .buffets {
     padding-top: 9.0588235294rem;
   }
@@ -3038,6 +3257,30 @@ textarea {
   .item-system__text {
     grid-column: 2/3;
   }
+  .benefit-tiles {
+    padding-top: 2.4117647059rem;
+    padding-bottom: 2.5294117647rem;
+  }
+  .benefit-tiles__title {
+    margin-bottom: 1.8823529412rem;
+    font-size: 1.4705882353rem;
+    line-height: 1.12;
+  }
+  .traffic {
+    padding-bottom: 13.9411764706rem;
+  }
+  .traffic__heading {
+    padding-bottom: 1.4117647059rem;
+  }
+  .heading__subtitle {
+    font-size: 1rem;
+  }
+  .features-traffic__heading {
+    margin-bottom: 1.8823529412rem;
+  }
+  .features-traffic__title {
+    font-size: 1.4705882353rem;
+  }
   .buffets {
     padding-top: 3.9764705882rem;
   }
@@ -3269,9 +3512,6 @@ textarea {
     font-size: 0.7647058824rem;
     line-height: 150%;
   }
-  .marker {
-    color: #009245;
-  }
   .assortment {
     padding-top: 2.5217647059rem;
     padding-bottom: 4.4541176471rem;
@@ -3492,6 +3732,28 @@ textarea {
   .item-system__icon--time {
     width: 1.6311764706rem;
     height: 1.8447058824rem;
+  }
+  .benefit-tiles__text {
+    font-size: 0.8823529412rem;
+  }
+  .traffic__image {
+    aspect-ratio: 360/333;
+    height: auto;
+  }
+  .traffic__image ._fit-img {
+    width: 138.8888888889%;
+    left: auto;
+    right: 0;
+  }
+  .traffic__features {
+    min-height: 0;
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+    padding: 1.5882352941rem 1.7647058824rem 3.2941176471rem 1.7647058824rem;
+  }
+  .features-traffic__list {
+    column-gap: 0.7058823529rem;
+    row-gap: 0.6470588235rem;
   }
   .buffets__dishes {
     margin-bottom: 0.9876470588rem;
@@ -3811,6 +4073,23 @@ textarea {
   .system__image {
     width: 135%;
   }
+  .benefit-tiles__container, .traffic__container {
+    max-width: none;
+    row-gap: 0.9411764706rem;
+  }
+  .benefit-tile {
+    aspect-ratio: 300/434.47;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .benefit-tiles__text {
+    margin-top: 1.4705882353rem;
+    padding: 0;
+  }
+  .traffic__image {
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+  }
   .buffets__container {
     column-gap: 0.5705882353rem;
   }
@@ -3917,6 +4196,9 @@ textarea {
   }
 }
 @media only screen and (min-width: 30em) {
+  .benefit-tiles__text br {
+    display: none;
+  }
   .assortment__content--school .assortment__picts .assortment__mode {
     display: none;
   }
@@ -3965,6 +4247,9 @@ textarea {
     margin-left: 39.0625%;
   }
   .item-system__title br {
+    display: none;
+  }
+  .features-traffic__val br {
     display: none;
   }
   .comfort-class__heading {
@@ -4133,6 +4418,9 @@ textarea {
   }
 }
 @media (any-hover: hover) {
+  .btn {
+    cursor: pointer;
+  }
   .btn {
     cursor: pointer;
   }

@@ -184,6 +184,57 @@
 			}
 		}
 		// END fab button
+
+		// benefit-tiles toggling
+		if(document.querySelector('.benefit-tile') !== null){
+			var tiles = document.querySelectorAll('.benefit-tile'),
+				tilesTimer;
+			
+			Array.prototype.forEach.call(tiles, function(item, i) {
+				item.addEventListener('click', benfitTileClick);
+			});
+
+			function benfitTileClick(e) {
+				var tile = e.target.closest('.benefit-tile');
+
+				if(!tile.classList.contains('benefit-tile--active')){
+					tilesTimer = setTimeout(function() {
+						tile.classList.remove('benefit-tile--active');
+					}, 10000);
+				}
+				
+				tile.classList.toggle('benefit-tile--active');
+
+				siblings(tile).forEach(function(item, i) {
+					item.classList.remove('benefit-tile--active');
+				});
+			}
+		}
+		// END benefit-tiles toggling
+
+		// traffic toggling
+		if(document.querySelector('.traffic__features') !== null){
+			var togglers = document.querySelectorAll('[data-traffic-toggler]'),
+				trafficTimer;
+			
+			Array.prototype.forEach.call(togglers, function(item, i) {
+
+				item.addEventListener('click', function(e) {
+					var parent = e.target.closest('.traffic');
+
+					if(!parent.classList.contains('traffic--open')){
+						console.log('true!')
+						trafficTimer = setTimeout(function() {
+							parent.classList.remove('traffic--open');
+						}, 10000);
+					}else{
+						clearTimeout(trafficTimer);
+					}
+					parent.classList.toggle('traffic--open');
+				});
+			});
+		}
+		// END traffic toggling
 		
 	});
 })();
