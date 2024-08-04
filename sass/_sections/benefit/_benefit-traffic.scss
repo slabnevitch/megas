@@ -58,11 +58,11 @@
 .traffic__content {
 }
 .traffic__image {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
+	// position: absolute;
+	// left: 0;
+	// top: 0;
+	// height: 100%;
+	// width: 100%;
 	aspect-ratio: 800 / 534.33;
 	// visibility: hidden;
 
@@ -74,17 +74,32 @@
 		aspect-ratio: 360 / 333;
 		height: auto;
 	}
+	@include max-screen($xs){
+		margin-left: rem(-30);
+		margin-right: rem(-30);
+	}
 	.traffic--open &{
-		visibility: hidden;
+		display: none;
+	}
+	
+	._fit-img {
+		@include max-screen($sm){
+			width: prc(500, 360);
+			left: auto;
+			right: 0;
+		}
 	}
 }
-._fit-img {}
 .traffic__features {
 	position: relative;
 	min-height: rem(534.33);
 	padding: rem(38) rem(45) rem(68) rem(50);
 	background-color: #fff;
+	display: none;
 
+	.traffic--open &{
+		display: block;
+	}
 
 	@include max-screen($lgg){
 		min-height: rem(485);
@@ -126,15 +141,11 @@
 	}
 }
 .features-traffic__list {
+		display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: rem(19);
 	row-gap: rem(21);
-	display: none;
-
-	.traffic--open &{
-		display: grid;
-	}
-
+	
 	@include max-screen($sm){
 		column-gap: rem(12);
 		row-gap: rem(11);

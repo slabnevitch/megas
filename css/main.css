@@ -2940,9 +2940,32 @@ textarea {
 
 .benefit-tiles__text {
   margin-top: 0.8823529412rem;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
   text-align: center;
   line-height: 140%;
   letter-spacing: -0.2px;
+}
+@media only screen and (max-width: 86.25em) {
+  .benefit-tiles__text {
+    padding: 0 1.7647058824rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .benefit-tiles__text {
+    font-size: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .benefit-tiles__text {
+    margin-top: 1.4705882353rem;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 30em) {
+  .benefit-tiles__text br {
+    display: none;
+  }
 }
 
 /*--------------------END benefit-tiles----------------------*/
@@ -3009,11 +3032,6 @@ textarea {
 }
 
 .traffic__image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
   aspect-ratio: 800/534.33;
 }
 @media only screen and (max-width: 86.25em) {
@@ -3027,8 +3045,21 @@ textarea {
     height: auto;
   }
 }
+@media only screen and (max-width: 36em) {
+  .traffic__image {
+    margin-left: -1.7647058824rem;
+    margin-right: -1.7647058824rem;
+  }
+}
 .traffic--open .traffic__image {
-  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 47.99875em) {
+  .traffic__image ._fit-img {
+    width: 138.8888888889%;
+    left: auto;
+    right: 0;
+  }
 }
 
 .traffic__features {
@@ -3036,6 +3067,10 @@ textarea {
   min-height: 31.4311764706rem;
   padding: 2.2352941176rem 2.6470588235rem 4rem 2.9411764706rem;
   background-color: #fff;
+  display: none;
+}
+.traffic--open .traffic__features {
+  display: block;
 }
 @media only screen and (max-width: 86.25em) {
   .traffic__features {
@@ -3089,15 +3124,12 @@ textarea {
 }
 
 .features-traffic__list {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.1176470588rem;
   row-gap: 1.2352941176rem;
-  display: none;
-}
-.traffic--open .features-traffic__list {
-  display: -ms-grid;
-  display: grid;
 }
 @media only screen and (max-width: 47.99875em) {
   .features-traffic__list {

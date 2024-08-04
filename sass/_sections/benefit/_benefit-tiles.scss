@@ -125,8 +125,26 @@
 }
 .benefit-tiles__text{
 	margin-top: rem(15);
+	flex-basis: 100%;
 	text-align: center;
 	line-height: 140%;
 	letter-spacing: -0.2px;
+
+	@include max-screen($lgg){
+		padding: 0 rem(30);
+	}
+	@include max-screen($sm){
+		font-size: rem(15);
+	}
+	@include max-screen($xs){
+		margin-top: rem(25);
+		padding: 0;
+	}
+
+	br{
+		@include min-screen($xss){
+			display: none;
+		}
+	}
 }
 /*--------------------END benefit-tiles----------------------*/ 
