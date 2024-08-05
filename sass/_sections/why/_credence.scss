@@ -1,10 +1,21 @@
 /*--------------------credence----------------------*/
 .credence {
-	min-height: 100dvh;
-	padding-top: rem(90);
+	// min-height: 100dvh;
+	padding-top: rem(90.15);
+	outline: 1px solid;
 	display: flex;
 	justify-content: center;
 
+	@include max-screen($lgg){
+		padding-top: rem(60.39);
+	}
+	@include max-screen($md){
+		padding-top: rem(47);
+	}
+	@include min-screen($md){
+		min-height: calc(100svh - 64px);
+
+	}
 }
 .credence__wrapper {
 	flex: 1 1 auto;
@@ -13,18 +24,43 @@
 }
 .credence__title {
 	flex: 0 0 auto;
-	font-size: rem(34);
+	margin-bottom: rem(75.21);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(53);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(45);
+	}
 }
 .credence__content {
-	padding-right: prc(100, $maxWidthContainer);
-	padding-left: prc(100, $maxWidthContainer);
+	
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	// justify-content: flex-end;
+
+	@include max-screen($md){
+		margin-left: 0;
+		margin-right: 0;
+	}
+	@include min-screen($lgg){
+		// justify-content: flex-end;
+	}
+	@include max-screen(em(1500)){
+		padding-right: prc(100, $maxWidthContainer);
+		padding-left: prc(100, $maxWidthContainer);
+	}
 }
 .credence__image {
-	margin-bottom: prc(179, 806);
+		margin-bottom: rem(92.81);
+
+	@include min-screen($md){
+		margin-bottom: prc(179, 806);
+	}
+	// @include min-screen(em(1024)){
+	// 	justify-content: flex-end;
+	// }
 	img{
 
 		max-width: 100%;

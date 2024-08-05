@@ -44,7 +44,7 @@
   display: none;
   width: rem(23.15);
   height: rem(14);
-  margin-top: rem(-14);
+  margin-top: rem(-15);
   padding: 0;
   background-color: transparent;
   border: none;
@@ -54,12 +54,12 @@
     content: "";
     position: absolute;
     left: 0;
-    top: rem(7);
+    top: rem(8);
   } 
 
   span:after{
 
-    top: rem(14);
+    top: rem(16);
   }
 
   span{
@@ -305,5 +305,16 @@
 .marker{
     color: $accent;
     font-family: $med;
+}
+.title-34{
+  font-size: rem(34);
+  font-family: $med;
+
+  @include max-screen($lgg){
+    font-size: rem(30);
+  }
+  @include max-screen($md){
+    font-size: rem(22);
+  }
 }
 /*--------------------END ui----------------------*/ 

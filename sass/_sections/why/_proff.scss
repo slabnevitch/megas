@@ -1,0 +1,174 @@
+/*--------------------proff----------------------*/
+.proff {
+	padding-top: rem(107);
+	padding-bottom: rem(155);
+
+	@include max-screen($lgg){
+		padding-top: rem(76);
+		padding-bottom: rem(110);
+	}
+	@include max-screen($md){
+		padding-top: rem(59);
+		padding-bottom: rem(104);
+	}
+}
+.proff__wrapper {}
+.proff__title {
+	margin-bottom: rem(100);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(65);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(84);
+	}
+}
+.proff__items {
+	margin-left: prc(100, $maxWidthContainer);
+	margin-right: prc(100, $maxWidthContainer);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: rem(52);
+	row-gap: rem(78);
+
+	@include max-screen($lgg){
+		margin-left: prc(75, 1024);
+		margin-right: prc(75, 1024);
+		column-gap: rem(20);
+		row-gap: rem(55);
+	}
+	@include max-screen($sm){
+		grid-template-columns: auto;
+		row-gap: rem(51);
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+.proff__item {
+	&:first-child{
+		.item-proff__icon {
+			img{
+				bottom: rem(10);
+
+				@include max-screen($lgg){
+					bottom: rem(15);
+				}
+				@include max-screen($sm){
+					bottom: 0;
+				}
+			}
+
+			@include max-screen($lgg){
+				width: rem(48);
+			}
+		}
+	}
+	&:nth-child(2){
+		.item-proff__icon {
+
+			img{
+				bottom: rem(15);
+
+				@include max-screen($lgg){
+					bottom: rem(15);
+				}
+
+				@include max-screen($sm){
+					bottom: 0;
+				}
+			}
+
+			@include max-screen($lgg){
+				width: rem(41);
+			}
+			@include max-screen($sm){
+				width: rem(44);
+				padding-bottom: 0;
+			}
+		}
+	}
+	&:nth-child(3){
+		.item-proff__icon {
+			@include max-screen($lgg){
+				width: rem(68);
+			}
+			@include max-screen($sm){
+				width: rem(73);
+			}
+		}
+	}
+	&:nth-child(4){
+		.item-proff__icon {
+
+			img{
+				bottom: rem(3);
+
+				@include max-screen($sm){
+					bottom: 0;
+				}
+			}
+
+			@include max-screen($lgg){
+				width: rem(36);
+			}
+			@include max-screen($sm){
+				width: rem(42);
+			}
+		}
+	}
+	
+
+}
+.item-proff {}
+.item-proff__icon {
+	display: flex;
+	align-items: flex-end;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: rem(43);
+	width: rem(95.5);
+	height: rem(72);
+	text-align: center;
+	vertical-align: bottom;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(31);
+		height: rem(51.35);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(35);
+		
+	}
+
+	@include max-screen($sm){
+		height: auto;
+	}
+
+	img{
+		position: relative;
+		max-width: 100%;
+		vertical-align: bottom;
+	}
+}
+.item-proff__text {
+	font-size: rem(22);
+
+	@include max-screen($lgg){
+		font-size: rem(17);
+	}
+	@include max-screen($sm){
+		font-size: rem(15);
+		line-height: 200%;
+	}
+
+	br{
+		@include max-screen($md){
+			display: none;
+		}
+		@include max-screen($sm){
+			display: block;
+			
+		}
+	}
+}
+/*--------------------END proff----------------------*/ 
