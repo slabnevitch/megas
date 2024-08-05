@@ -5857,5 +5857,111 @@ textarea {
   padding-bottom: 9.2941176471rem;
 }
 
+.ruler__text {
+  margin-bottom: 6.3529411765rem;
+  margin-left: 18.3050847458%;
+  font-size: 1.2941176471rem;
+  color: #009245;
+}
+@media only screen and (max-width: 86.25em) {
+  .ruler__text {
+    margin-bottom: 4.5294117647rem;
+    margin-left: 14.453125%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .ruler__text {
+    margin-left: 0;
+    margin-bottom: 4.5294117647rem;
+    font-size: 0.9647058824rem;
+    text-align: center;
+  }
+}
+
+.ruler__items {
+  margin-left: 5.7627118644%;
+  margin-right: 11.3559322034%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  column-gap: 0.5882352941rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .ruler__items {
+    margin-left: 6.4453125%;
+    margin-right: 11.03515625%;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .ruler__items {
+    margin-left: 0;
+    margin-right: 0;
+    column-gap: 0;
+    row-gap: 3.2547058824rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 47.99875em) {
+  .ruler__item {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+}
+.ruler__item:first-child {
+  width: 15.7841176471rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .ruler__item:first-child {
+    width: 11.1394117647rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .ruler__item:first-child {
+    -ms-flex-order: 3;
+    order: 3;
+    width: 54.2266666667%;
+    margin-left: 14.6666666667%;
+  }
+}
+.ruler__item:nth-child(2) {
+  width: 16.7294117647rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .ruler__item:nth-child(2) {
+    width: 11.8117647059rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .ruler__item:nth-child(2) {
+    -ms-flex-order: 1;
+    order: 1;
+    width: 57.4166666667%;
+  }
+}
+.ruler__item:nth-child(3) {
+  width: 9.1311764706rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .ruler__item:nth-child(3) {
+    width: 6.4082352941rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .ruler__item:nth-child(3) {
+    -ms-flex-order: 2;
+    order: 2;
+    width: 32.4566666667%;
+  }
+}
+.ruler__item img {
+  max-width: 100%;
+}
+
 /*--------------------END ruler----------------------*/
 /*# sourceMappingURL=maps/main.css.map */

@@ -3,9 +3,113 @@
 	padding-top: rem(97.2);
 	padding-bottom: rem(158);
 }
-.ruler__wrapper {}
-.padding-inline-75 {}
-.ruler__text {}
-.ruler__items {}
-.ruler__item {}
+
+.ruler__text {
+	margin-bottom: rem(108);
+	margin-left: prc(216, $maxWidthContainer);
+	font-size: rem(22);
+	color: $accent;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(77);
+		margin-left: prc(148, 1024);
+		font-size: rem(17);
+	}
+	@include max-screen($md){
+
+	}
+	@include max-screen($sm){
+		margin-left: 0;
+		margin-bottom: rem(77);
+		font-size: rem(16.4);
+		text-align: center;
+	}
+}
+.ruler__items {
+	margin-left: prc(68, $maxWidthContainer);
+	margin-right: prc(134, $maxWidthContainer);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	column-gap: rem(10);
+
+	@include max-screen($lgg){
+		margin-left: prc(66, 1024);
+		margin-right: prc(113, 1024);
+	}
+	@include max-screen($md){
+	}
+	@include max-screen($sm){
+		margin-left:0;
+		margin-right:0;
+		column-gap: 0;
+		row-gap: rem(55.33);
+		flex-wrap: wrap;
+	}
+}
+.ruler__item {
+	// flex-grow: 1;
+
+	@include max-screen($sm){
+		flex-shrink: 1;
+		
+	}
+	&:first-child{
+		// flex: 0 0 rem(273.33 - 5);
+		width: rem(273.33 - 5);
+		
+		@include max-screen($lgg){
+			// flex: 0 0 rem(194.37 - 5);
+			width: rem(194.37 - 5);
+
+		}
+		@include max-screen($sm){
+			order: 3;
+			// flex: 1 0 calc(prc(172.25, 360) - rem(15));
+			// flex: 1 0 auto;
+			width: prc(162.68, 300);
+			margin-left: prc(44, 300);
+			// max-width: prc(172.25, 300);
+		}
+	}
+	&:nth-child(2){
+		// flex: 0 0 rem(289.4 - 5);
+		width: rem(289.4 - 5);
+
+		@include max-screen($lgg){
+			// flex: 0 0 rem(205.8 - 5);
+			width: rem(205.8 - 5);
+		}
+		@include max-screen($sm){
+			order: 1;
+			// flex: 0 0 calc(prc(162.68, 360) - rem(15));
+			// flex: 1 0 auto;
+			// max-width: calc(prc(162.68, 300) - rem(15));
+			
+
+			width: prc(172.25, 300);
+			// max-width: prc(172.25, 300);
+		}
+	}
+	&:nth-child(3){
+		// flex: 0 0 rem(160.23 - 5);
+		width: rem(160.23 - 5);
+
+		@include max-screen($lgg){
+			// flex: 0 0 rem(113.94 - 5);
+			width: rem(113.94 - 5);
+		}
+		@include max-screen($sm){
+			order: 2;
+			// flex: 0 0 calc(prc(97.37, 360) - rem(15));
+			// flex: 1 1 auto;
+			width: prc(97.37, 300);
+			// max-width:prc(97.37, 300);
+		}
+	}
+
+	img{
+		max-width: 100%;
+	}
+}
 /*--------------------END ruler----------------------*/ 
