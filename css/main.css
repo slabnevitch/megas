@@ -555,10 +555,10 @@ textarea {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.4117647059rem;
+  top: 0.4705882353rem;
 }
 .toggle-mnu span:after {
-  top: 0.8235294118rem;
+  top: 0.9411764706rem;
 }
 .toggle-mnu span {
   position: relative;
@@ -566,7 +566,7 @@ textarea {
 }
 .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
   width: 100%;
-  height: 0.1176470588rem;
+  height: 0.0588235294rem;
   background-color: #000;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -5538,12 +5538,26 @@ textarea {
 /*--------------------END self-service----------------------*/
 /*--------------------credence----------------------*/
 .credence {
-  min-height: 100dvh;
-  padding-top: 5.2941176471rem;
+  outline: 1px solid;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
+}
+@media only screen and (max-width: 86.25em) {
+  .credence {
+    padding-top: 3.5523529412rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .credence {
+    padding-top: 2.7647058824rem;
+  }
+}
+@media only screen and (min-width: 61.99875em) {
+  .credence {
+    min-height: calc(100svh - 64px);
+  }
 }
 
 .credence__wrapper {
@@ -5558,7 +5572,21 @@ textarea {
 .credence__title {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  margin-bottom: 4.4241176471rem;
   font-size: 2rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .credence__title {
+    font-size: 1.7647058824rem;
+    margin-bottom: 3.1176470588rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .credence__title {
+    font-size: 1.2941176471rem;
+    margin-bottom: 2.6470588235rem;
+  }
 }
 
 .credence__content {
@@ -5570,12 +5598,20 @@ textarea {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
-
+@media only screen and (max-width: 61.99875em) {
+  .credence__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .credence__image {
-  margin-bottom: 22.2084367246%;
+  margin-bottom: 5.4594117647rem;
+}
+@media only screen and (min-width: 61.99875em) {
+  .credence__image {
+    margin-bottom: 22.2084367246%;
+  }
 }
 .credence__image img {
   max-width: 100%;
