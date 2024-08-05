@@ -201,7 +201,7 @@
   float: left;
 }
 
-/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
+
 /*--end tiny-slider--*/
 /*--tiny-slider--*/
 /*--end tiny-slider--*/
@@ -546,7 +546,7 @@ textarea {
   display: none;
   width: 1.3617647059rem;
   height: 0.8235294118rem;
-  margin-top: -0.8235294118rem;
+  margin-top: -0.8823529412rem;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -566,7 +566,7 @@ textarea {
 }
 .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
   width: 100%;
-  height: 0.0588235294rem;
+  height: 0.1176470588rem;
   background-color: #000;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -1294,7 +1294,6 @@ textarea {
 /*--------------------END footer----------------------*/
 /*--------------------header----------------------*/
 .header {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 22;
   width: 100%;
@@ -2902,6 +2901,14 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+.benefit-tile--active .benefit-tile__heading {
+  visibility: hidden;
+}
+@media only screen and (max-width: 36em) {
+  .benefit-tile__heading {
+    display: none;
+  }
+}
 
 .benefit-tile__heading {
   padding-top: 2.6470588235rem;
@@ -2937,7 +2944,6 @@ textarea {
   width: 100%;
   height: 100%;
   z-index: -1;
-  transition: all 0.1s;
 }
 .benefit-tile__image--back {
   visibility: hidden;
@@ -2947,6 +2953,19 @@ textarea {
 }
 .benefit-tile--active .benefit-tile__image--front {
   visibility: hidden;
+}
+@media only screen and (max-width: 36em) {
+  .benefit-tile__image--front {
+    display: none;
+  }
+}
+.benefit-tile--active .benefit-tile__image--mob {
+  visibility: hidden;
+}
+@media only screen and (min-width: 36em) {
+  .benefit-tile__image--mob {
+    display: none;
+  }
 }
 
 .benefit-tiles__text {
@@ -3009,7 +3028,7 @@ textarea {
 }
 @media only screen and (max-width: 61.99875em) {
   .traffic__heading {
-    padding-bottom: 1.4117647059rem;
+    margin-bottom: 1.4117647059rem;
   }
 }
 .traffic__heading .btn {
