@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Почему Мегас</title>
+    <title>Почему Мегас
+    </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" sizes="16x16">
@@ -19,11 +20,21 @@
   </head>
   <body>
     <main class="main">
-      <header class="header">
+      <header class="header header--dark">
         <div class="header__wrapper">
           <div class="header__body"><a href="#" class="header__logo"><img src="img/header-logo.svg" alt="alt"></a>
             <div class="header__menu menu-header">
-              <button class="toggle-mnu"><span></span></button>
+              <button class="toggle-mnu">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle-mnu__close">
+                  <path d="M1.24902 1.21875L17.6115 17.5812" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  <path d="M1.25 17.5811L17.6125 1.21859" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                </svg>
+                <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle-mnu__burger">
+                  <path d="M0.860352 1.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  <path d="M0.860352 8.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  <path d="M0.860352 15.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                </svg>
+              </button>
               <nav class="menu-header__body">
                     <ul class="menu__list">
                       <li class="menu__item"><a href="#" class="menu__link">Вендинговые Аппараты</a></li>
@@ -54,9 +65,9 @@
         </div>
       </header>
       <div class="main-content">
-        <section class="credence">
-          <div class="credence__wrapper">
-            <h1 class="credence__title text-center">Нам доверяют</h1>
+        <section data-fab-fade class="credence">
+          <div class="credence__wrapper padding-inline-75">
+            <h1 class="credence__title title-34 text-center">Нам доверяют</h1>
             <div class="credence__content">
               <div class="credence__image">
                 <picture>
@@ -68,6 +79,39 @@
             </div>
           </div>
         </section>
+        <section class="proff wht-bg">
+          <div class="proff__wrapper padding-inline-75">
+            <h2 class="proff__title title-34 text-center">Профессиональное обслуживание<br>опыт - 18 лет</h2>
+            <div class="proff__items">
+              <div class="proff__item item-proff">
+                <div class="item-proff__icon"><img src="img/why-page/proff/1.svg" alt="alt"></div>
+                <p class="item-proff__text">Используем современные технологии - <br>автоматизированный удаленный контроль <br>качества горячих напитков, «умный» график <br>загрузки и обслуживания автоматов, <br>бесперебойная безналичная оплата</p>
+              </div>
+              <div class="proff__item item-proff">
+                <div class="item-proff__icon"><img src="img/why-page/proff/2.svg" alt="alt"></div>
+                <p class="item-proff__text">Бонусы, скидки, акции, программы <br>лояльности - интеграция под потребности <br>бизнеса, индивидуальные лимиты через NFC <br>карты. Свое мобильное приложение</p>
+              </div>
+              <div class="proff__item item-proff">
+                <div class="item-proff__icon"><img src="img/why-page/proff/3.svg" alt="alt"></div>
+                <p class="item-proff__text">Собственная техническая служба. <br>Удаленный мониторинг и оперативное <br>решение технических неисправностей <br>торговых автоматов</p>
+              </div>
+              <div class="proff__item item-proff">
+                <div class="item-proff__icon"><img src="img/why-page/proff/4.svg" alt="alt"></div>
+                <p class="item-proff__text">Высокое качество товара. Прямые контракты <br>с заводами-производителями на поставку <br>ингредиентов и товаров, наличие всех <br>сертификатов соответствия</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="ruler">
+          <div class="ruler__wrapper padding-inline-75">
+            <div class="ruler__text">Широкая линейка торговых автоматов – размер, возможности <br>и наполнение подберем индивидуально под потребности любого бизнеса</div>
+            <div class="ruler__items">
+              <div class="ruler__item"><img src="img/why-page/machines/1.svg" alt="alt"></div>
+              <div class="ruler__item"><img src="img/why-page/machines/2.svg" alt="alt"></div>
+              <div class="ruler__item"><img src="img/why-page/machines/3.svg" alt="alt"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <footer class="footer">
         <div class="footer__wrapper"><a href="#" class="footer__logo"><img src="img/logo-full.svg" alt="alt"></a>
