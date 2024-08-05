@@ -71,6 +71,10 @@
 		margin-left: auto;
 	}
 
+	@include max-screen($md){
+		margin-top: 0;
+	}
+
 	@include min-screen($md){
 		flex: 1 1 auto;
 		
@@ -83,6 +87,22 @@
 		}
 	}
 	.toggle-mnu {
+		svg{
+			path{
+				// stroke: #fff;
+				stroke: $text;
+
+				.header--dark &,
+				.search-open &{
+					stroke: #fff;
+
+				}
+
+				.menu-opened &{
+			        stroke: $text;
+			      }
+			}
+		}
 		span,
 		span:before,
 		span:after{

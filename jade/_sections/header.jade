@@ -6,7 +6,15 @@ header(class=headerDark ? "header header--dark" : "header")
 
 			.header__menu.menu-header
 				button.toggle-mnu
-					span
+					//- span
+					svg.toggle-mnu__close(width='19', height='19', viewBox='0 0 19 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M1.24902 1.21875L17.6115 17.5812', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
+						path(d='M1.25 17.5811L17.6125 1.21859', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
+
+					svg.toggle-mnu__burger(width='25', height='17', viewBox='0 0 25 17', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M0.860352 1.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
+						path(d='M0.860352 8.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
+						path(d='M0.860352 15.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
 				nav.menu-header__body
 					+menu('menu', ['Вендинговые Аппараты', 'Школьный вендинг', 'Почему MegasVending', 'Примеры установок', 'Польза от вендинга'])
 

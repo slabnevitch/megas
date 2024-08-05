@@ -44,10 +44,22 @@
   display: none;
   width: rem(23.15);
   height: rem(14);
-  margin-top: rem(-15);
+  // margin-top: rem(-15);
+  margin-top: rem(3);
   padding: 0;
   background-color: transparent;
   border: none;
+
+  &__close{
+    display: none;
+     .menu-opened &{
+      display:block;
+    }
+  }
+
+  svg{
+    width: 100%;
+  }
 
   span:after, span:before{
 
@@ -93,6 +105,15 @@
 
     transform: rotate(-45deg) translate(rem(5), rem(-7));
   } 
+
+  &__burger{
+    .menu-opened &{
+      display: none;
+    }
+  }
+  &__close{
+   
+  }
 } 
 
 .heading{
