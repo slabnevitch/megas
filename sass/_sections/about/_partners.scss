@@ -1,0 +1,72 @@
+/*--------------------partners----------------------*/
+.partners {
+	padding-top: rem(97);
+	padding-bottom: rem(374);
+
+	@include max-screen($lgg){
+		padding-top: rem(152);
+		padding-bottom: rem(234);
+	}
+	@include max-screen($md){
+		padding-top: rem(53);
+		padding-bottom: rem(155);
+	}
+}
+.partners__title {
+	margin-bottom: rem(86);
+	font-size: rem(36);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(86);
+		font-size: rem(36);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(38);
+		font-size: rem(19);
+	}
+}
+.partners__items {
+	margin-bottom: rem(108);
+	margin-left: prc(100, $maxWidthContainer);
+	margin-right: prc(100, $maxWidthContainer);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: rem(20);
+
+	@include max-screen($lgg){
+		margin-left: prc(74, 1024);
+		margin-right: prc(74, 1024);
+		margin-bottom: rem(79);
+		gap: rem(14);
+	}
+	@include max-screen($md){
+		margin-left: 0;
+		margin-right: 0;
+		gap: rem(10);
+	}
+}
+.partners__item {
+	aspect-ratio: 480 / 680;
+}
+._fit-img {}
+.partners__bottom{
+
+	p{
+		text-align: center;
+		font-size: rem(25);
+		font-family: $med;
+		letter-spacing: 0.2px;
+
+
+		@include max-screen($lgg){
+			font-size: rem(19);
+		}
+		@include max-screen($sm){
+
+			font-size: rem(15);
+		}
+	}
+
+}
+/*--------------------END partners----------------------*/ 

@@ -1620,6 +1620,10 @@ textarea {
   display: block;
 }
 
+.image-modal {
+  cursor: zoom-in;
+}
+
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .btn {
@@ -4043,6 +4047,11 @@ textarea {
 
 .mission__image {
   aspect-ratio: 1.6;
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 @media only screen and (max-width: 36em) {
   .mission__image {
@@ -4058,6 +4067,90 @@ textarea {
 }
 
 /*--------------------END mission----------------------*/
+/*--------------------partners----------------------*/
+.partners {
+  padding-top: 5.7058823529rem;
+  padding-bottom: 22rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .partners {
+    padding-top: 8.9411764706rem;
+    padding-bottom: 13.7647058824rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .partners {
+    padding-top: 3.1176470588rem;
+    padding-bottom: 9.1176470588rem;
+  }
+}
+
+.partners__title {
+  margin-bottom: 5.0588235294rem;
+  font-size: 2.1176470588rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .partners__title {
+    margin-bottom: 5.0588235294rem;
+    font-size: 2.1176470588rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .partners__title {
+    margin-bottom: 2.2352941176rem;
+    font-size: 1.1176470588rem;
+  }
+}
+
+.partners__items {
+  margin-bottom: 6.3529411765rem;
+  margin-left: 8.4745762712%;
+  margin-right: 8.4745762712%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1764705882rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .partners__items {
+    margin-left: 7.2265625%;
+    margin-right: 7.2265625%;
+    margin-bottom: 4.6470588235rem;
+    gap: 0.8235294118rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .partners__items {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 0.5882352941rem;
+  }
+}
+
+.partners__item {
+  aspect-ratio: 480/680;
+}
+
+.partners__bottom p {
+  text-align: center;
+  font-size: 1.4705882353rem;
+  font-family: "Articulat CF Medium", sans-serif;
+  letter-spacing: 0.2px;
+}
+@media only screen and (max-width: 86.25em) {
+  .partners__bottom p {
+    font-size: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .partners__bottom p {
+    font-size: 0.8823529412rem;
+  }
+}
+
+/*--------------------END partners----------------------*/
 /*--------------------product----------------------*/
 .product {
   padding-top: 9.1176470588rem;
@@ -6954,7 +7047,6 @@ textarea {
 
 .certifs__item {
   aspect-ratio: 380/570;
-  cursor: zoom-in;
   background-color: #fff;
 }
 

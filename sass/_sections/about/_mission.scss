@@ -59,6 +59,12 @@
 .mission__image {
 	aspect-ratio: $maxWidth / 900;
 
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
 	@include max-screen($xs){
 		width: prc(1072.38, 360);
 		aspect-ratio: auto;
