@@ -5653,20 +5653,121 @@ textarea {
 .example-style {
   padding-top: 2.5294117647rem;
 }
+@media only screen and (max-width: 86.25em) {
+  .example-style {
+    padding-top: 0;
+  }
+}
 
 .example-style__container {
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 3.5882352941rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .example-style__container {
+    margin-bottom: 2.9411764706rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .example-style__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 2.5882352941rem;
+  }
 }
 
 .example-style__image {
-  width: 49.1525423729%;
   aspect-ratio: 580/818;
+  width: 40.6779661017%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 36em) {
+  .example-style__image {
+    margin-bottom: 1.4705882353rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .example-style__image {
+    width: 100%;
+    aspect-ratio: 300/402.82;
+  }
 }
 
 .example-style__content {
   width: 40.6779661017%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin-left: 10.1694915254%;
+  padding-top: 7.5294117647rem;
+  padding-bottom: 1.7647058824rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .example-style__content {
+    padding-top: 7.5294117647rem;
+    margin-left: 8.59375%;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .example-style__content {
+    padding-top: 2.9411764706rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .example-style__content {
+    width: 100%;
+    padding-top: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.example-style__title {
+  margin-bottom: 3.2941176471rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .example-style__title {
+    margin-bottom: 3.2941176471rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .example-style__title {
+    margin-bottom: 0.8823529412rem;
+    text-align: left;
+    font-size: 1.4705882353rem;
+  }
+}
+
+.example-style__descr {
+  font-size: 1.4705882353rem;
+  line-height: 200%;
+}
+@media only screen and (max-width: 86.25em) {
+  .example-style__descr {
+    font-size: 1.2941176471rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .example-style__descr {
+    font-size: 0.8823529412rem;
+    line-height: 170%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .example-style__descr {
+    margin-right: 13.8888888889%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .example-style__descr br {
+    display: none;
+  }
+}
+
+.example-style__visual {
+  aspect-ratio: 1190/797;
 }
 
 /*--------------------END examples-style----------------------*/

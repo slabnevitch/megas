@@ -1,23 +1,108 @@
 /*--------------------examples-style----------------------*/
 .example-style {
 	padding-top: rem(43);
+
+	@include max-screen($lgg){
+		padding-top: 0;
+	}
 }
 .example-style__wrapper {}
 .example-style__container {
 	display: flex;
+	margin-bottom: rem(61);
+
+
+	@include max-screen($lgg){
+		margin-bottom: rem(50);
+	}
+
+	@include max-screen($xs){
+		flex-direction: column;
+		margin-bottom: rem(44);
+	}
 }
 .example-style__image {
-	width: prc(580, $maxWidthContainer);
 	aspect-ratio: 580 / 818;
+	width: prc(480, $maxWidthContainer);
+	flex-grow: 1;
+
+	@include max-screen($xs){
+		margin-bottom: rem(25);
+	}
+	@include max-screen($xs){
+		// width: calc(100% + rem(60));
+		width: 100%;
+		// margin-left: rem(-30);
+		// margin-right: rem(-30);
+		aspect-ratio: 300 / 402.82;
+	}
 }
 ._fit-img {}
 .example-style__content {
 	width: prc(480, $maxWidthContainer);
+	flex-grow: 1;
 	margin-left: prc(120, $maxWidthContainer);
+	padding-top: rem(128);
+	padding-bottom: rem(30);
+
+
+
+	@include max-screen($lgg){
+		padding-top: rem(128);
+		margin-left: prc(88, 1024);
+	}
+	@include max-screen($md){
+		padding-top: rem(50);
+		
+	}
+	@include max-screen($sm){
+		// margin-bottom: rem(95);
+	}
+	@include max-screen($xs){
+		width: 100%;
+		padding-top: 0;
+		margin-left: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
 }
 .heading {}
 .heading__title {}
-.example-style_title {}
-.example-style__descr {}
-.example-style__visual {}
+.example-style__title {
+	margin-bottom: rem(56);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(56);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(15);
+		text-align: left;
+		font-size: rem(25);
+	}
+}
+.example-style__descr {
+	font-size: rem(25);
+	line-height: 200%;
+
+
+	@include max-screen($lgg){
+		font-size: rem(22);
+	}
+	@include max-screen($sm){
+		font-size: rem(15);
+		line-height: 170%;
+	}
+	@include max-screen($xss){
+		margin-right: prc(50, 360);
+	}
+
+	br{
+		@include max-screen($xs){
+			display: none;
+		}
+	}
+}
+.example-style__visual {
+	aspect-ratio: 1190 / 797;
+}
 /*--------------------END examples-style----------------------*/ 
