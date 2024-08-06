@@ -157,8 +157,12 @@
 		font-size: rem(17);
 	}
 	@include max-screen($sm){
+		text-align: center;
 		font-size: rem(15);
 		line-height: 200%;
+	}
+	@include max-screen($xss){
+		text-align: left;
 	}
 
 	br{

@@ -1,4 +1,11 @@
-section.certifs
-	.certifs__top.gray-bg
+section.certifs.gray-bg
+	.certifs__top
 		.certifs__wrapper.padding-inline-75
-			h2.proff__title.title-34.text-center Сертификаты и Лицензии
+			h2.certifs__title.title-34.text-center Сертификаты и Лицензии
+
+			.certifs__items
+				- for (var i=0; i < 3; i++)
+					a(href="img/devices-page/buffets/buffet.jpg").certifs__item._fit
+						img._fit-img(src="img/devices-page/buffets/buffet.jpg" alt="alt")
+			.certifs__footer
+				p Гарантируем качество #[br]обслуживания #[br]и безопасность продуктов

@@ -18,254 +18,256 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <main class="main">
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__body"><a href="#" class="header__logo"><img src="img/header-logo.svg" alt="alt"></a>
-            <div class="header__menu menu-header">
-              <button class="toggle-mnu">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle-mnu__close">
-                  <path d="M1.24902 1.21875L17.6115 17.5812" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
-                  <path d="M1.25 17.5811L17.6125 1.21859" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
-                </svg>
-                <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle-mnu__burger">
-                  <path d="M0.860352 1.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
-                  <path d="M0.860352 8.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
-                  <path d="M0.860352 15.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+    <div id="wrapper-for-scroll-fix">
+      <main class="main">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="header__body"><a href="#" class="header__logo"><img src="img/header-logo.svg" alt="alt"></a>
+              <div class="header__menu menu-header">
+                <button class="toggle-mnu">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle-mnu__close">
+                    <path d="M1.24902 1.21875L17.6115 17.5812" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path d="M1.25 17.5811L17.6125 1.21859" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  </svg>
+                  <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle-mnu__burger">
+                    <path d="M0.860352 1.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path d="M0.860352 8.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                    <path d="M0.860352 15.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+                <nav class="menu-header__body">
+                        <ul class="menu__list">
+                          <li class="menu__item"><a href="#" class="menu__link">Вендинговые Аппараты</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Школьный вендинг</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Почему MegasVending</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Примеры установок</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Польза от вендинга</a></li>
+                        </ul>
+                </nav>
+              </div>
+              <button type="button" class="header__search-button">
+                <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.34021 16.3798C13.5597 16.3798 16.9802 13.013 16.9802 8.85984C16.9802 4.70666 13.5597 1.33984 9.34021 1.33984C5.12075 1.33984 1.7002 4.70666 1.7002 8.85984C1.7002 13.013 5.12075 16.3798 9.34021 16.3798Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"></path>
+                  <path d="M15.2803 13.5996L20.0902 18.3396" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
                 </svg>
               </button>
-              <nav class="menu-header__body">
-                    <ul class="menu__list">
-                      <li class="menu__item"><a href="#" class="menu__link">Вендинговые Аппараты</a></li>
-                      <li class="menu__item"><a href="#" class="menu__link">Школьный вендинг</a></li>
-                      <li class="menu__item"><a href="#" class="menu__link">Почему MegasVending</a></li>
-                      <li class="menu__item"><a href="#" class="menu__link">Примеры установок</a></li>
-                      <li class="menu__item"><a href="#" class="menu__link">Польза от вендинга</a></li>
-                    </ul>
-              </nav>
-            </div>
-            <button type="button" class="header__search-button">
-              <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.34021 16.3798C13.5597 16.3798 16.9802 13.013 16.9802 8.85984C16.9802 4.70666 13.5597 1.33984 9.34021 1.33984C5.12075 1.33984 1.7002 4.70666 1.7002 8.85984C1.7002 13.013 5.12075 16.3798 9.34021 16.3798Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"></path>
-                <path d="M15.2803 13.5996L20.0902 18.3396" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="header__serch-area">
-          <div class="__wrapper">
-            <form action="#" class="header__serch-form serch-form-header">
-              <label class="serch-form-header__label">
-                <button type="submit" class="serch-form-header__submit"><img src="img/icons/search.svg" alt="alt"></button>
-                <input autocomplete="off" type="text" name="" placeholder="Поиск" class="serch-form-header__input">
-              </label>
-            </form>
-          </div>
-        </div>
-      </header>
-      <div class="main-content">
-        <div class="school-hero">
-          <div class="school-hero__image _fit"><img src="img/school-page/school-hero-img.jpg" alt="alt" class="_fit-img"></div>
-        </div>
-        <div data-rellax-speed="3" class="school-scroll rellax">
-          <div class="school-scroll__wrapper">
-            <div class="school-scroll__text">
-              <div class="school-scroll__title">Школьный вендинг –<br>это </div>
-              <ul class="school-scroll__list">
-                <li class="school-scroll__item">Полезно.</li>
-                <li class="school-scroll__item">Удобно.</li>
-                <li class="school-scroll__item">Безопасно.</li>
-              </ul>
             </div>
           </div>
-        </div>
-        <div data-fab-fade></div>
-        <div class="self-service">
-          <div class="self-service__wrapper">
-            <div class="self-service__top">
-              <div class="self-service__text">Торговые автоматы самообслуживания <br>от компании <a href="#">Мегас.Вендинг</a><br>оснащённые умным программным <br>обеспечением для здорового <br>питания обучающихся:</div>
-            </div>
-            <div class="self-service__items">
-              <article class="self-service__item item-self-service">
-                <div class="item-self-service__icon"><img src="img/school-page/self-service/1.svg" alt="alt"></div>
-                <div class="item-self-service__text">полный контроль <br>дополнительного <br>rпитания учащегося</div>
-              </article>
-              <article class="self-service__item item-self-service">
-                <div class="item-self-service__icon"><img src="img/school-page/self-service/2.svg" alt="alt"></div>
-                <div class="item-self-service__text">ассортимент и сроки годности онлайн <br>в личном кабинете доступны педсоставу школы</div>
-              </article>
-              <article class="self-service__item item-self-service">
-                <div class="item-self-service__icon"><img src="img/school-page/self-service/3.svg" alt="alt"></div>
-                <div class="item-self-service__text">купить товар может только родитель или опекун через мобильное приложение, отправив ребёнку QR&nbsp;-&nbsp;код</div>
-              </article>
-              <article class="self-service__item item-self-service">
-                <div class="item-self-service__icon"><img src="img/school-page/self-service/4.svg" alt="alt"></div>
-                <div class="item-self-service__text">ребёнок получит товар, выбранный родителем, остканировав QR-код считывателем на автомате</div>
-              </article>
+          <div class="header__serch-area">
+            <div class="__wrapper">
+              <form action="#" class="header__serch-form serch-form-header">
+                <label class="serch-form-header__label">
+                  <button type="submit" class="serch-form-header__submit"><img src="img/icons/search.svg" alt="alt"></button>
+                  <input autocomplete="off" type="text" name="" placeholder="Поиск" class="serch-form-header__input">
+                </label>
+              </form>
             </div>
           </div>
-        </div>
-        <section class="healthy-snack gray-bg school-section">
-          <div class="healthy-snack__wrapper">
-            <h2 class="healthy-snack__title text-center">Полезный перекус – это важная составляющая питания школьника. <span>Весь ассортимент подобран <br>с заботой о здоровье учащихся.</span></h2>
+        </header>
+        <div class="main-content">
+          <div class="school-hero">
+            <div class="school-hero__image _fit"><img src="img/school-page/school-hero-img.jpg" alt="alt" class="_fit-img"></div>
           </div>
-          <div class="healthy-snack__image _fit"><img src="img/school-page/school-snack/school-snack-img-3.jpg" alt="alt" class="_fit-img"></div>
-        </section>
-        <div class="assortment assortment--school gray-bg school-section">
-          <div class="assortment__wrapper">
-            <div class="assortment__content assortment__content--school">
-              <div class="assortment__text">
-                <p>В торговых автоматах перекус возможен  <br>во&#160;внеурочное время на&#160;дополнительных <br>и&#160;вечерних занятиях. <a href="#">Всегда в Наличии</a> <br>и&#160;шаговой доступности быстрый  <br>перекус и&#160;питьевая вода. <br><span>Мы&#160;организуем:</span></p>
+          <div data-rellax-speed="3" class="school-scroll rellax">
+            <div class="school-scroll__wrapper">
+              <div class="school-scroll__text">
+                <div class="school-scroll__title">Школьный вендинг –<br>это </div>
+                <ul class="school-scroll__list">
+                  <li class="school-scroll__item">Полезно.</li>
+                  <li class="school-scroll__item">Удобно.</li>
+                  <li class="school-scroll__item">Безопасно.</li>
+                </ul>
               </div>
-              <div class="assortment__picts">
-                <div class="assortment__picts-inner">
-                  <div class="assortment__pict"><img src="img/school-page/school-snack/picts/1.svg" alt="alt"></div>
-                  <div class="assortment__pict"><img src="img/school-page/school-snack/picts/2.svg" alt="alt"></div>
-                  <div class="assortment__pict"><img src="img/school-page/school-snack/picts/3.svg" alt="alt"></div>
-                  <div class="assortment__pict"><img src="img/school-page/school-snack/picts/4.svg" alt="alt"></div>
-                  <div class="assortment__shedule"><img src="img/school-page/school-snack/picts/5.svg" alt="alt"></div>
+            </div>
+          </div>
+          <div data-fab-fade></div>
+          <div class="self-service">
+            <div class="self-service__wrapper">
+              <div class="self-service__top">
+                <div class="self-service__text">Торговые автоматы самообслуживания <br>от компании <a href="#">Мегас.Вендинг</a><br>оснащённые умным программным <br>обеспечением для здорового <br>питания обучающихся:</div>
+              </div>
+              <div class="self-service__items">
+                <article class="self-service__item item-self-service">
+                  <div class="item-self-service__icon"><img src="img/school-page/self-service/1.svg" alt="alt"></div>
+                  <div class="item-self-service__text">полный контроль <br>дополнительного <br>rпитания учащегося</div>
+                </article>
+                <article class="self-service__item item-self-service">
+                  <div class="item-self-service__icon"><img src="img/school-page/self-service/2.svg" alt="alt"></div>
+                  <div class="item-self-service__text">ассортимент и сроки годности онлайн <br>в личном кабинете доступны педсоставу школы</div>
+                </article>
+                <article class="self-service__item item-self-service">
+                  <div class="item-self-service__icon"><img src="img/school-page/self-service/3.svg" alt="alt"></div>
+                  <div class="item-self-service__text">купить товар может только родитель или опекун через мобильное приложение, отправив ребёнку QR&nbsp;-&nbsp;код</div>
+                </article>
+                <article class="self-service__item item-self-service">
+                  <div class="item-self-service__icon"><img src="img/school-page/self-service/4.svg" alt="alt"></div>
+                  <div class="item-self-service__text">ребёнок получит товар, выбранный родителем, остканировав QR-код считывателем на автомате</div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <section class="healthy-snack gray-bg school-section">
+            <div class="healthy-snack__wrapper">
+              <h2 class="healthy-snack__title text-center">Полезный перекус – это важная составляющая питания школьника. <span>Весь ассортимент подобран <br>с заботой о здоровье учащихся.</span></h2>
+            </div>
+            <div class="healthy-snack__image _fit"><img src="img/school-page/school-snack/school-snack-img-3.jpg" alt="alt" class="_fit-img"></div>
+          </section>
+          <div class="assortment assortment--school gray-bg school-section">
+            <div class="assortment__wrapper">
+              <div class="assortment__content assortment__content--school">
+                <div class="assortment__text">
+                  <p>В торговых автоматах перекус возможен  <br>во&#160;внеурочное время на&#160;дополнительных <br>и&#160;вечерних занятиях. <a href="#">Всегда в Наличии</a> <br>и&#160;шаговой доступности быстрый  <br>перекус и&#160;питьевая вода. <br><span>Мы&#160;организуем:</span></p>
                 </div>
+                <div class="assortment__picts">
+                  <div class="assortment__picts-inner">
+                    <div class="assortment__pict"><img src="img/school-page/school-snack/picts/1.svg" alt="alt"></div>
+                    <div class="assortment__pict"><img src="img/school-page/school-snack/picts/2.svg" alt="alt"></div>
+                    <div class="assortment__pict"><img src="img/school-page/school-snack/picts/3.svg" alt="alt"></div>
+                    <div class="assortment__pict"><img src="img/school-page/school-snack/picts/4.svg" alt="alt"></div>
+                    <div class="assortment__shedule"><img src="img/school-page/school-snack/picts/5.svg" alt="alt"></div>
+                  </div>
+                  <div class="assortment__mode"><img src="img/school-page/school-snack/picts/mode.svg" alt="alt"></div>
+                </div>
+              </div>
+              <div class="assortment__bottom">
                 <div class="assortment__mode"><img src="img/school-page/school-snack/picts/mode.svg" alt="alt"></div>
               </div>
             </div>
-            <div class="assortment__bottom">
-              <div class="assortment__mode"><img src="img/school-page/school-snack/picts/mode.svg" alt="alt"></div>
-            </div>
           </div>
-        </div>
-        <section class="individual school-section wht-bg">
-          <div class="individual__wrapper">
-            <div class="individual__container">
-              <div class="individual__image _fit"><img src="img/school-page/individual/individual-img.jpg" alt="alt" class="_fit-img"></div>
-              <div class="individual__content">
-                <div class="individual__button-mob"></div>
-                <div class="individual__block">
-                  <div class="heading individual__heading">
-                    <div class="heading__subtitle">учтём индивидуальные<br>пожелания</div>
-                    <h2 class="heading__title individual__title">Individual</h2>
+          <section class="individual school-section wht-bg">
+            <div class="individual__wrapper">
+              <div class="individual__container">
+                <div class="individual__image _fit"><img src="img/school-page/individual/individual-img.jpg" alt="alt" class="_fit-img"></div>
+                <div class="individual__content">
+                  <div class="individual__button-mob"></div>
+                  <div class="individual__block">
+                    <div class="heading individual__heading">
+                      <div class="heading__subtitle">учтём индивидуальные<br>пожелания</div>
+                      <h2 class="heading__title individual__title">Individual</h2>
+                    </div>
+                    <p class="individual__text">За перемену успеют поесть даже самые маленькие. <br>	Без очередей и контакта с&#160;продавцом</p>
                   </div>
-                  <p class="individual__text">За перемену успеют поесть даже самые маленькие. <br>	Без очередей и контакта с&#160;продавцом</p>
+                  <div data-da="individual__button-mob, 767.98, first" class="individual__button"><img src="img/school-page/individual/ind-btn.svg" alt="alt"></div>
                 </div>
-                <div data-da="individual__button-mob, 767.98, first" class="individual__button"><img src="img/school-page/individual/ind-btn.svg" alt="alt"></div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="guarantee school-section gray-bg">
-          <div class="guarantee__wrapper">
-            <div class="heading guarantee__heading text-center">
-              <h2 class="heading__title guarantee__title">Гарантируем</h2>
-            </div>
-            <div class="guarantee__content">
-              <ul class="guarantee__list">
-                <li class="guarantee__item">соблюдение требований <span class="guarantee__marker">СанПин&#160;2.3/2.4.3590-20,</span> а также <span class="guarantee__marker">регионального стандарта</span> по&#160;обеспечению горячим питанием обучающихся государственных образовательных организаций Санкт-Петербурга</li>
-                <li class="guarantee__item">качество и безопасность товара: в&#160;наличие все сертификаты и&#160;лицензии</li>
-                <li class="guarantee__item">мониторинг сроков годности на всех этапах хранения товара</li>
-                <li class="guarantee__item">cанитарную обработку торгового оборудования<span class="guarantee__dots">:</span> <span class="guarantee__hidden-text">в&#160;соответствии с&#160;применением моющих СанПин 2.3/2.4.3590-20, п. 3.11. Предоставляем и соблюдаем график обслуживания</span></li>
-              </ul>
-            </div>
-            <p class="guarantee__text">аппараты автоматической выдачи пищевой продукции и аппараты по приготовлению напитков обрабатываются согласно инструкции производителя с применением моющих и дезинфицирующих средств. СанПин  2.3/2.4.3590-20  п. 3.11. Предоставляем и соблюдаем график обслуживания</p>
-          </div>
-        </section>
-        <section class="school-auto school-section gray-bg">
-          <div class="school-auto__wrapper">
-            <div class="heading school-auto__heading text-center">
-              <div class="heading__subtitle">питание в вендинг-автоматах</div>
-              <h2 class="heading__title">24/7</h2>
-            </div>
-            <div class="school-auto__descr">перекус возможен во внеурочное время на дополнительных и вечерних занятиях</div>
-          </div>
-          <div class="school-auto__image _fit"><img src="img/school-page/boy.jpg" alt="alt" class="_fit-img"></div>
-        </section>
-        <section class="allowed school-section gray-bg">
-          <div class="allowed__wrapper">
-            <div class="heading allowed__heading text-center">
-              <h2 class="heading__title">Разрешено</h2>
-            </div>
-            <div class="allowed__items">
-              <div class="allowed__item item-allowed">
-                <div class="item-allowed__icon"><img src="img/school-page/permission/1.png" img/school-page/permission/3.png alt="alt"></div>
-                <div class="item-allowed__text">КОМИТЕТ ИМУЩЕСТВЕННЫХ ОТНОШЕНИЙ <br>САНКТ-ПЕТЕРБУРГА</div>
+          </section>
+          <section class="guarantee school-section gray-bg">
+            <div class="guarantee__wrapper">
+              <div class="heading guarantee__heading text-center">
+                <h2 class="heading__title guarantee__title">Гарантируем</h2>
               </div>
-              <div class="allowed__item item-allowed">
-                <div class="item-allowed__icon"><img src="img/school-page/permission/2.png" img/school-page/permission/3.png alt="alt"></div>
-                <div class="item-allowed__text">КОМИТЕТ СОВЕТА ФЕДЕРАЦИИ <br>ПО АГРАРНО-ПРОДОВОЛЬСТВЕННОЙ <br>ПОЛИТИКЕ <br>И&#160;ПРИРОДОПОЛЬЗОВАНИЮ</div>
-              </div>
-              <div class="allowed__item item-allowed">
-                <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" img/school-page/permission/3.png alt="alt"></div>
-                <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>ВИЦЕ-ГУБЕРНАТОР <br>САНКТ ПЕТЕРБУРГА</div>
-              </div>
-              <div class="allowed__item item-allowed">
-                <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" alt="alt"></div>
-                <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>УПРАВЛЕНИЕ СОЦИАЛЬНОГО <br>ПИТАНИЯ</div>
-              </div>
-              <div class="allowed__item item-allowed">
-                <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" alt="alt"></div>
-                <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>КОМИТЕТ <br>ПО ОБРАЗОВАНИЮ</div>
-              </div>
-              <div class="allowed__item item-allowed">
-                <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" alt="alt"></div>
-                <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>КОМИТЕТ ТЕРРИТОРИАЛЬНОГО РАЗВИТИЯ</div>
-              </div>
-            </div>
-            <div class="allowed__bottom"><a href="#" class="btn">Сертификаты и Лицензии</a></div>
-          </div>
-        </section>
-        <div class="cacao school-section gray-bg">
-          <div class="cacao__wrapper">
-            <div class="cacao__title text-center">Вариант оформления какао-зоны для отдыха учащихся</div>
-            <div class="tiny-carousel carousel-ordinary cacao__carousel">
-              <div class="tiny-carousel__nav">
-                <button type="button" class="tns-prev"><</button>
-                <button type="button" class="tns-next">></button>
-              </div>
-              <div class="tiny-sldr cacao__slider">
-                <div class="cacao__slide _fit"><img src="img/school-page/cacao/1.jpg" alt="alt" class="_fit-img"></div>
-                <div class="cacao__slide _fit"><img src="img/school-page/cacao/2.jpg" alt="alt" class="_fit-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="footer__wrapper"><a href="#" class="footer__logo"><img src="img/logo-full.svg" alt="alt"></a>
-          <nav class="footer__menu menu-footer">
-                <ul class="menu-footer__list">
-                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">О Компании</a></li>
-                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Команда</a></li>
-                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Условия установки</a></li>
-                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Отзывы</a></li>
-                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Дополнительная информация</a></li>
+              <div class="guarantee__content">
+                <ul class="guarantee__list">
+                  <li class="guarantee__item">соблюдение требований <span class="guarantee__marker">СанПин&#160;2.3/2.4.3590-20,</span> а также <span class="guarantee__marker">регионального стандарта</span> по&#160;обеспечению горячим питанием обучающихся государственных образовательных организаций Санкт-Петербурга</li>
+                  <li class="guarantee__item">качество и безопасность товара: в&#160;наличие все сертификаты и&#160;лицензии</li>
+                  <li class="guarantee__item">мониторинг сроков годности на всех этапах хранения товара</li>
+                  <li class="guarantee__item">cанитарную обработку торгового оборудования<span class="guarantee__dots">:</span> <span class="guarantee__hidden-text">в&#160;соответствии с&#160;применением моющих СанПин 2.3/2.4.3590-20, п. 3.11. Предоставляем и соблюдаем график обслуживания</span></li>
                 </ul>
-          </nav>
-          <ul class="footer__socials socials-footer">
-            <li class="socials-footer__item"><a href="#" class="socials-footer__link"><img src="img/socs/vk.png" alt="alt"></a></li>
-            <li class="socials-footer__item"><a href="#" class="socials-footer__link"><img src="img/socs/tw.png" alt="alt"></a></li>
-          </ul>
-          <div class="footer__info info-footer">
-            <address class="info-footer__row info-footer__row--address">
-              <div class="info-footer__col"><span>ООО «Мегас»</span> Санкт-Петербург, ул. Симонова 15, лит А, пом. 1</div>
-              <div class="info-footer__col"><a href="tel:+78124673839">+7 (812) 467 38 39</a></div>
-              <div class="info-footer__col"><a href="mailto:razvitie@megasvending.ru">razvitie@megasvending.ru</a></div>
-            </address>
-            <div class="info-footer__row info-footer__row--questions">
-              <div class="info-footer__col"><a href="mailto:megasvending@yandex.ru">megasvending@yandex.ru</a> — общие вопросы</div>
-              <div class="info-footer__col"><a href="mailto:zakupki@megasvending.ru">razvitie@megasvending.ru</a> — установка автоматов </div>
+              </div>
+              <p class="guarantee__text">аппараты автоматической выдачи пищевой продукции и аппараты по приготовлению напитков обрабатываются согласно инструкции производителя с применением моющих и дезинфицирующих средств. СанПин  2.3/2.4.3590-20  п. 3.11. Предоставляем и соблюдаем график обслуживания</p>
             </div>
-            <div class="info-footer__row">
-              <div class="info-footer__col"><a href="mailto:zakupki@megasvending.ru">zakupki@megasvending.ru</a> — по вопросам закупки продукции и ингредиентов</div>
+          </section>
+          <section class="school-auto school-section gray-bg">
+            <div class="school-auto__wrapper">
+              <div class="heading school-auto__heading text-center">
+                <div class="heading__subtitle">питание в вендинг-автоматах</div>
+                <h2 class="heading__title">24/7</h2>
+              </div>
+              <div class="school-auto__descr">перекус возможен во внеурочное время на дополнительных и вечерних занятиях</div>
             </div>
-            <div class="footer__inns">
-              <div class="footer__inns-item">ИНН: 7814342327</div>
-              <div class="footer__inns-item">КПП: 780201001</div>
-              <div class="footer__inns-item">ОГРН: 1069847102181</div>
+            <div class="school-auto__image _fit"><img src="img/school-page/boy.jpg" alt="alt" class="_fit-img"></div>
+          </section>
+          <section class="allowed school-section gray-bg">
+            <div class="allowed__wrapper">
+              <div class="heading allowed__heading text-center">
+                <h2 class="heading__title">Разрешено</h2>
+              </div>
+              <div class="allowed__items">
+                <div class="allowed__item item-allowed">
+                  <div class="item-allowed__icon"><img src="img/school-page/permission/1.png" img/school-page/permission/3.png alt="alt"></div>
+                  <div class="item-allowed__text">КОМИТЕТ ИМУЩЕСТВЕННЫХ ОТНОШЕНИЙ <br>САНКТ-ПЕТЕРБУРГА</div>
+                </div>
+                <div class="allowed__item item-allowed">
+                  <div class="item-allowed__icon"><img src="img/school-page/permission/2.png" img/school-page/permission/3.png alt="alt"></div>
+                  <div class="item-allowed__text">КОМИТЕТ СОВЕТА ФЕДЕРАЦИИ <br>ПО АГРАРНО-ПРОДОВОЛЬСТВЕННОЙ <br>ПОЛИТИКЕ <br>И&#160;ПРИРОДОПОЛЬЗОВАНИЮ</div>
+                </div>
+                <div class="allowed__item item-allowed">
+                  <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" img/school-page/permission/3.png alt="alt"></div>
+                  <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>ВИЦЕ-ГУБЕРНАТОР <br>САНКТ ПЕТЕРБУРГА</div>
+                </div>
+                <div class="allowed__item item-allowed">
+                  <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" alt="alt"></div>
+                  <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>УПРАВЛЕНИЕ СОЦИАЛЬНОГО <br>ПИТАНИЯ</div>
+                </div>
+                <div class="allowed__item item-allowed">
+                  <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" alt="alt"></div>
+                  <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>КОМИТЕТ <br>ПО ОБРАЗОВАНИЮ</div>
+                </div>
+                <div class="allowed__item item-allowed">
+                  <div class="item-allowed__icon"><img src="img/school-page/permission/3.png" alt="alt"></div>
+                  <div class="item-allowed__text">ПРАВИТЕЛЬСТВО <br>САНКТ-ПЕТЕРБУРГА <br>КОМИТЕТ ТЕРРИТОРИАЛЬНОГО РАЗВИТИЯ</div>
+                </div>
+              </div>
+              <div class="allowed__bottom"><a href="#" class="btn">Сертификаты и Лицензии</a></div>
+            </div>
+          </section>
+          <div class="cacao school-section gray-bg">
+            <div class="cacao__wrapper">
+              <div class="cacao__title text-center">Вариант оформления какао-зоны для отдыха учащихся</div>
+              <div class="tiny-carousel carousel-ordinary cacao__carousel">
+                <div class="tiny-carousel__nav">
+                  <button type="button" class="tns-prev"><</button>
+                  <button type="button" class="tns-next">></button>
+                </div>
+                <div class="tiny-sldr cacao__slider">
+                  <div class="cacao__slide _fit"><img src="img/school-page/cacao/1.jpg" alt="alt" class="_fit-img"></div>
+                  <div class="cacao__slide _fit"><img src="img/school-page/cacao/2.jpg" alt="alt" class="_fit-img"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-    </main>
-    <div class="blur"></div>
-    <div class="fab"><a href="#" class="fab__phone"><img src="img/fab/call.svg" alt="alt"></a><a href="#" class="fab__drive"><img src="img/fab/test-drive.svg" alt="alt"></a></div>
+        <footer class="footer">
+          <div class="footer__wrapper"><a href="#" class="footer__logo"><img src="img/logo-full.svg" alt="alt"></a>
+            <nav class="footer__menu menu-footer">
+                    <ul class="menu-footer__list">
+                      <li class="menu-footer__item"><a href="#" class="menu-footer__link">О Компании</a></li>
+                      <li class="menu-footer__item"><a href="#" class="menu-footer__link">Команда</a></li>
+                      <li class="menu-footer__item"><a href="#" class="menu-footer__link">Условия установки</a></li>
+                      <li class="menu-footer__item"><a href="#" class="menu-footer__link">Отзывы</a></li>
+                      <li class="menu-footer__item"><a href="#" class="menu-footer__link">Дополнительная информация</a></li>
+                    </ul>
+            </nav>
+            <ul class="footer__socials socials-footer">
+              <li class="socials-footer__item"><a href="#" class="socials-footer__link"><img src="img/socs/vk.png" alt="alt"></a></li>
+              <li class="socials-footer__item"><a href="#" class="socials-footer__link"><img src="img/socs/tw.png" alt="alt"></a></li>
+            </ul>
+            <div class="footer__info info-footer">
+              <address class="info-footer__row info-footer__row--address">
+                <div class="info-footer__col"><span>ООО «Мегас»</span> Санкт-Петербург, ул. Симонова 15, лит А, пом. 1</div>
+                <div class="info-footer__col"><a href="tel:+78124673839">+7 (812) 467 38 39</a></div>
+                <div class="info-footer__col"><a href="mailto:razvitie@megasvending.ru">razvitie@megasvending.ru</a></div>
+              </address>
+              <div class="info-footer__row info-footer__row--questions">
+                <div class="info-footer__col"><a href="mailto:megasvending@yandex.ru">megasvending@yandex.ru</a> — общие вопросы</div>
+                <div class="info-footer__col"><a href="mailto:zakupki@megasvending.ru">razvitie@megasvending.ru</a> — установка автоматов </div>
+              </div>
+              <div class="info-footer__row">
+                <div class="info-footer__col"><a href="mailto:zakupki@megasvending.ru">zakupki@megasvending.ru</a> — по вопросам закупки продукции и ингредиентов</div>
+              </div>
+              <div class="footer__inns">
+                <div class="footer__inns-item">ИНН: 7814342327</div>
+                <div class="footer__inns-item">КПП: 780201001</div>
+                <div class="footer__inns-item">ОГРН: 1069847102181</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+      <div class="blur"></div>
+      <div class="fab"><a href="#" class="fab__phone"><img src="img/fab/call.svg" alt="alt"></a><a href="#" class="fab__drive"><img src="img/fab/test-drive.svg" alt="alt"></a></div>
+    </div>
     
     
     

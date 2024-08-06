@@ -27,28 +27,29 @@ html(lang='ru')
 		link(rel="stylesheet" href="css/main.css")
 	
 	body
-		include ../_misc/_mixins
-		include ../_misc/_vars
+		#wrapper-for-scroll-fix
+			include ../_misc/_mixins
+			include ../_misc/_vars
 
-		//- html for use slideOut.js--------------------
-		//- include ../_misc/_body-html-for-slideout 
+			//- html for use slideOut.js--------------------
+			//- include ../_misc/_body-html-for-slideout 
 
-		//- footer-to-bottom--------------------
-		include ../_misc/_footer-to-bottom
-		
-		//- при использовании _body-html-for-slideout или _footer-to-bottom  -- закомментировать:
-		//- include ../_sections/header
-		//- block content
-		//- include ../_sections/footer
+			//- footer-to-bottom--------------------
+			include ../_misc/_footer-to-bottom
+			
+			//- при использовании _body-html-for-slideout или _footer-to-bottom  -- закомментировать:
+			//- include ../_sections/header
+			//- block content
+			//- include ../_sections/footer
 
-		.blur
-		
-		.fab
-			a(href="#").fab__phone
-				img(src="img/fab/call.svg" alt="alt")
+			.blur
+			
+			.fab
+				a(href="#").fab__phone
+					img(src="img/fab/call.svg" alt="alt")
 
-			a(href="#").fab__drive
-				img(src="img/fab/test-drive.svg" alt="alt")
+				a(href="#").fab__drive
+					img(src="img/fab/test-drive.svg" alt="alt")
 
 		//- УДАЛИТЬ если в gulpfile.js buildMode = 'webpack'
 		include ../_misc/_scripts

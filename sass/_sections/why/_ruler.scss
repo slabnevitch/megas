@@ -1,7 +1,16 @@
 /*--------------------ruler----------------------*/
 .ruler {
 	padding-top: rem(97.2);
-	padding-bottom: rem(158);
+	padding-bottom: rem(221);
+
+	@include max-screen($lgg){
+		padding-bottom: rem(158);
+
+	}
+	@include max-screen($md){
+		padding-bottom: rem(120);
+
+	}
 }
 
 .ruler__text {

@@ -41,24 +41,24 @@ body{
 // все содержимое страницы оборачивается в #wrapper-for-scroll-fix
 // использовать совместно с libs-vanilla/service-functions/scrollWidth.js 
 
-// #wrapper-for-scroll-fix{
-// 	overflow: hidden;
-// }
-// #wrapper-for-scroll-fix.modal-open {
-//     padding-right: var(--scroll-width);
-// }
-// .header { // в случае position: fixed у хедера
-//    .modal-open &{
-//     	padding-right: var(--scroll-width);
-//    }
-// }
-// .modal__container{//компенсация сдвига модалки при анимации исчезновения
-// 	margin-left: var(--scroll-width);
-//   .modal-open & {
-//   	margin-left: 0;
-//   }
+#wrapper-for-scroll-fix{
+	overflow: hidden;
+}
+#wrapper-for-scroll-fix.modal-open {
+    padding-right: var(--scroll-width);
+}
+.header { // в случае position: fixed у хедера
+   .modal-open &{
+    	padding-right: var(--scroll-width);
+   }
+}
+.modal__container{//компенсация сдвига модалки при анимации исчезновения
+	margin-left: var(--scroll-width);
+  .modal-open & {
+  	margin-left: 0;
+  }
 
-// }
+}
 // END компенсация ширины скроллбара при появлении ванильных поапов
 
 

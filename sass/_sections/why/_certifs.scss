@@ -1,0 +1,86 @@
+/*--------------------certifs----------------------*/
+.certifs {}
+.certifs__top {}
+
+.certifs__title {
+	margin-bottom: rem(88);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(55);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(53);
+	}
+}
+.title-34 {}
+.text-center {}
+.certifs__items {
+	margin-bottom: rem(142);
+	@include flex-cols-gap(20, 0, 3, ( $xs: 1), 'certifs__item', 1);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(91);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(88);
+	}
+	@include max-screen($sm){
+		row-gap: rem(20);
+	}
+}
+.certifs__item{
+	aspect-ratio: 380 / 570;
+	cursor: zoom-in;
+	background-color: #fff;
+}
+.certifs__footer{
+	padding-bottom: rem(352);
+	p{
+		font-size: rem(22);
+		text-align: center;
+		color: $accent;
+		line-height: 140%;
+
+		@include max-screen($lgg){
+			max-width: rem(483);
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+			font-size: rem(19);
+		}
+		@include max-screen($xs){
+			margin-left: prc(43,360);
+			margin-right: prc(43,360);
+			max-width: none;
+			// text-align: center;
+			font-size: rem(17);
+		}
+
+		br{
+			@include min-screen($xs){
+				display: none;
+			}
+		}
+
+
+	}
+
+	@include max-screen($lgg){
+		padding-bottom: rem(212);
+	}
+	@include max-screen($md){
+		padding-bottom: rem(136);
+	}
+}
+.vbox-child{
+	width: 100%;
+	max-width: rem($maxWidthContainer);
+
+	@include max-screen($lgg){
+		max-width: rem(1024);
+	}
+}
+.vbox-container img{
+	width: 100%;
+}
+/*--------------------END certifs----------------------*/ 
