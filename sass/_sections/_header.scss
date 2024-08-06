@@ -13,6 +13,10 @@
 
   }
 
+  &--fixed{
+  	position: fixed;
+  }
+
   .search-open &{
   	background-color: transparent;
   }

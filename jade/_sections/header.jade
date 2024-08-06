@@ -1,4 +1,4 @@
-header(class=headerDark ? "header header--dark" : "header")
+header(class=headerDark && headerFixed ? "header header--dark header--fixed" : headerDark ? "header header--dark" : headerFixed ? "header header--fixed" : "header")
 	.header__wrapper
 		.header__body
 			a(href="#").header__logo

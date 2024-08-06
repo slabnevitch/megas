@@ -33,9 +33,9 @@
 		    onPostOpen: function(obj, gallIndex, thenext, theprev){
 		    	console.log('post open')
 		    	document.querySelector('.vbox-child').addEventListener('click', sertifBoxClick);
-		    	certifsCloseTimer = setTimeout(function() {
-		    		certifsBox.close();
-		    	}, 9000);
+		    	// certifsCloseTimer = setTimeout(function() {
+		    	// 	certifsBox.close();
+		    	// }, 9000);
 		    },
 		    onPreClose: function(obj, gallIndex, thenext, theprev){
 		       document.querySelector('.vbox-child').removeEventListener('click', sertifBoxClick);

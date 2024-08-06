@@ -47,18 +47,24 @@ body{
 #wrapper-for-scroll-fix.modal-open {
     padding-right: var(--scroll-width);
 }
+.vbox-container{
+	.vbox-open &{
+    	padding-right: var(--scroll-width);
+
+	}
+} 
 .header { // в случае position: fixed у хедера
    .modal-open &{
     	padding-right: var(--scroll-width);
    }
 }
-.modal__container{//компенсация сдвига модалки при анимации исчезновения
-	margin-left: var(--scroll-width);
-  .modal-open & {
-  	margin-left: 0;
-  }
+// .modal__container, .vbox-overlay{//компенсация сдвига модалки при анимации исчезновения
+// 	margin-left: var(--scroll-width);
+//   .modal-open & {
+//   	margin-left: 0;
+//   }
 
-}
+// }
 // END компенсация ширины скроллбара при появлении ванильных поапов
 
 

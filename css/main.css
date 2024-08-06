@@ -1361,15 +1361,12 @@ body {
   padding-right: var(--scroll-width);
 }
 
-.modal-open .header {
+.vbox-open .vbox-container {
   padding-right: var(--scroll-width);
 }
 
-.modal__container {
-  margin-left: var(--scroll-width);
-}
-.modal-open .modal__container {
-  margin-left: 0;
+.modal-open .header {
+  padding-right: var(--scroll-width);
 }
 
 html, body {
@@ -2457,6 +2454,9 @@ textarea {
 }
 .header--dark {
   background-color: rgba(51, 51, 51, 0.88);
+}
+.header--fixed {
+  position: fixed;
 }
 .search-open .header {
   background-color: transparent;
@@ -6818,7 +6818,7 @@ textarea {
 /*--------------------END certifs----------------------*/
 /*--------------------credence----------------------*/
 .credence {
-  padding-top: 5.3029411765rem;
+  padding-top: 9.0676470588rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -6826,17 +6826,17 @@ textarea {
 }
 @media only screen and (max-width: 86.25em) {
   .credence {
-    padding-top: 3.5523529412rem;
+    padding-top: 7.3170588235rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .credence {
-    padding-top: 2.7647058824rem;
+    padding-top: 5.8235294118rem;
   }
 }
 @media only screen and (min-width: 61.99875em) {
   .credence {
-    min-height: calc(100svh - 64px);
+    min-height: 100svh;
   }
 }
 

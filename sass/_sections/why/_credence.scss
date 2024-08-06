@@ -1,19 +1,19 @@
 /*--------------------credence----------------------*/
 .credence {
 	// min-height: 100dvh;
-	padding-top: rem(90.15);
+	padding-top: rem(90.15 + 64);
 	// outline: 1px solid;
 	display: flex;
 	justify-content: center;
 
 	@include max-screen($lgg){
-		padding-top: rem(60.39);
+		padding-top: rem(60.39 + 64);
 	}
 	@include max-screen($md){
-		padding-top: rem(47);
+		padding-top: rem(47 + 52);
 	}
 	@include min-screen($md){
-		min-height: calc(100svh - 64px);
+		min-height: 100svh;
 
 	}
 }
