@@ -1,0 +1,51 @@
+/*--------------------elegant----------------------*/
+.legant {
+	padding-top: rem(149);
+
+	@include max-screen($lgg){
+		padding-top: rem(149);
+	}
+	@include max-screen($md){
+		padding-top: rem(53);
+		
+	}
+}
+.elegant__wrapper {}
+.heading {}
+.elegant__heading {
+	margin-bottom: rem(94);
+
+	@include max-screen($lgg){
+		margin-bottom: rem(66);
+	}
+	@include max-screen($md){
+		margin-bottom: rem(43);
+		
+	}
+}
+.elegant__title {}
+.example-style__title {}
+.heading--mob-title-25 {}
+.elegant__container {
+	display: flex;
+	column-gap: rem(20);
+
+	@include max-screen($lgg){
+		column-gap: rem(16);
+	}
+	@include max-screen($xs){
+		flex-direction: column;
+		row-gap: rem(13);
+	}
+}
+.elegant__col {
+	flex: 1 0 50%;
+
+	@include max-screen($xs){
+		flex: 0 0 auto;
+	}
+}
+.elegant__image {
+	aspect-ratio: 581 / 773;
+}
+/*--------------------END elegant----------------------*/ 
