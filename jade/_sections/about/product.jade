@@ -1,0 +1,15 @@
+section.product
+	.product__wrapper.padding-inline-75
+		.product__logo
+			img(src="img/logo-long.svg" alt="alt")
+
+		.product__descr устанавливает и обслуживает вендинговые автоматы 
+			br
+			| уже более 18 лет
+		
+		h1.product__title.text-center Наш продукт
+		
+		.product__features
+			- var items = ['<span>кофе – </span>только зерновой Jardin Crema', '<span>кофе-поинты – </span>уютные кофейные уголки','<span>снеки - </span>ассортимент согласовывается с заказчиком', '<span>автоматы </span>свежевыжатого сока;', '<span>автоматы мороженого – </span>со вкусным мороженым', '<span>уличные кофейни – </span>новый формат комфорта'];
+			each item in items
+				.product__feature!= item

@@ -1,0 +1,75 @@
+/*--------------------mission----------------------*/
+.mission__wrapper {}
+.padding-inline-75 {}
+.mission__title {
+	margin-bottom: rem(17);
+	font-family: $med;
+	font-size: rem(36);
+
+	@include max-screen($lgg){
+		font-size: rem(25);
+		margin-bottom: rem(13);
+	}
+	@include max-screen($sm){
+		font-size: rem(19);
+		margin-bottom: rem(17);
+	}
+
+	span{
+		font-size: rem(30);
+		vertical-align: baseline;
+
+		@include max-screen($lgg){
+			font-size: rem(19);
+		}
+
+		@include max-screen($xs){
+			display: none;
+		}
+
+	}
+}
+.mission__descr {
+	max-width: rem(980);
+	margin-bottom: rem(44);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: rem(22);
+	line-height: 140%;
+	font-display: $light;
+	text-align: center;
+
+	@include max-screen($lgg){
+		max-width: rem(650);
+		margin-bottom: rem(34);
+		font-size: rem(17);
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(57);
+		font-size: rem(15);
+		font-family: $med;
+	}
+
+	span{
+		@include min-screen($xs){
+			display: none;
+		}
+	}
+}
+.mission__image {
+	aspect-ratio: $maxWidth / 900;
+
+	@include max-screen($xs){
+		width: prc(1072.38, 360);
+		aspect-ratio: auto;
+		height: rem(660);
+		// aspect-ratio: 660 / 360;
+	}
+	._fit-img {
+		@include max-screen($xs){
+			left: prc(-205, 1072.38);
+		}
+	}
+}
+
+/*--------------------END mission----------------------*/ 

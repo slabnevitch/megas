@@ -33,9 +33,9 @@
 		    onPostOpen: function(obj, gallIndex, thenext, theprev){
 		    	console.log('post open')
 		    	document.querySelector('.vbox-child').addEventListener('click', sertifBoxClick);
-		    	// certifsCloseTimer = setTimeout(function() {
-		    	// 	certifsBox.close();
-		    	// }, 9000);
+		    	certifsCloseTimer = setTimeout(function() {
+		    		certifsBox.close();
+		    	}, 9000);
 		    },
 		    onPreClose: function(obj, gallIndex, thenext, theprev){
 		       document.querySelector('.vbox-child').removeEventListener('click', sertifBoxClick);
@@ -57,14 +57,14 @@
 			var targ = e.target;
 			console.log(targ);
 
-			// if(targ.closest('.toggle-mnu') !== null){
-			// 	document.querySelector('.toggle-mnu').classList.toggle('on');
-			// 	if(!document.documentElement.classList.contains('search-open')){
-			// 		document.documentElement.classList.toggle('lock');
-			// 	}
-			// 	document.documentElement.classList.remove('search-open');
-			// 	document.documentElement.classList.toggle('menu-opened');
-			// }
+			if(targ.closest('.toggle-mnu') !== null){
+				document.querySelector('.toggle-mnu').classList.toggle('on');
+				if(!document.documentElement.classList.contains('search-open')){
+					document.documentElement.classList.toggle('lock');
+				}
+				document.documentElement.classList.remove('search-open');
+				document.documentElement.classList.toggle('menu-opened');
+			}
 
 			if(targ.className === 'header__search-button' || targ.closest('.header__search-button') !== null){
 				document.documentElement.classList.toggle('search-open');

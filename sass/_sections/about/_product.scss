@@ -1,0 +1,107 @@
+/*--------------------product----------------------*/
+.product {
+	padding-top: rem(155);
+	padding-bottom: rem(107);
+
+	@include max-screen($lgg){
+		padding-top: rem(129);
+		padding-bottom: rem(80);
+	}
+	@include max-screen($md){
+		padding-top: rem(107);
+		padding-bottom: rem(69);
+	}
+}
+.product__logo {
+	max-width: rem(344);
+	margin-bottom: rem(44);
+	margin-left: auto;
+	margin-right: auto;
+
+	@include max-screen($lgg){
+		max-width: rem(244);
+		margin-bottom: rem(32);
+	}
+	@include max-screen($sm){
+		max-width: rem(244);
+		margin-bottom: rem(23);
+	}
+
+	img{
+		width: 100%;
+	}
+}
+.product__descr {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: rem(664);
+	margin-bottom: rem(70);
+	text-align: center;
+	font-size: rem(25);
+
+	@include max-screen($lgg){
+		max-width: rem(500);
+		margin-bottom: rem(62);
+		font-size: rem(19);
+	}
+	@include max-screen($sm){
+		font-size: rem(15);
+		line-height: 140%;
+	}
+	@include max-screen($xs){
+		margin-bottom: rem(40);
+		margin-left: prc(44, 360);
+		margin-right: prc(44, 360);
+	}
+
+	br{
+		@include min-screen($xs){
+			display: none;
+			
+		}
+	}
+}
+.product__title {
+	margin-bottom: rem(38);
+	font-size: rem(36);
+	font-family: $med;
+
+	@include max-screen($lgg){
+		margin-bottom: rem(28);
+		font-size: rem(25);
+		
+	}
+	@include max-screen($sm){
+		margin-bottom: rem(15);
+		font-size: rem(19);
+	}
+
+}
+.product__features {}
+.product__feature {
+
+	font-size: rem(22);
+	text-align: center;
+
+	@include max-screen($lgg){
+		font-size: rem(17);
+		
+	}
+	@include max-screen($sm){
+		font-size: rem(13);
+	}
+
+	&:not(:last-child){
+		margin-bottom: rem(13);
+
+		@include max-screen($lgg){
+			margin-bottom: rem(9);	
+		}
+	}
+
+	span{
+		font-family: $med;
+	}
+}
+
+/*--------------------END product----------------------*/ 
