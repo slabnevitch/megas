@@ -1,0 +1,23 @@
+/*--------------------examples-style----------------------*/
+.example-style {
+	padding-top: rem(43);
+}
+.example-style__wrapper {}
+.example-style__container {
+	display: flex;
+}
+.example-style__image {
+	width: prc(580, $maxWidthContainer);
+	aspect-ratio: 580 / 818;
+}
+._fit-img {}
+.example-style__content {
+	width: prc(480, $maxWidthContainer);
+	margin-left: prc(120, $maxWidthContainer);
+}
+.heading {}
+.heading__title {}
+.example-style_title {}
+.example-style__descr {}
+.example-style__visual {}
+/*--------------------END examples-style----------------------*/ 

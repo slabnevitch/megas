@@ -5649,6 +5649,27 @@ textarea {
 }
 
 /*--------------------END text-automats----------------------*/
+/*--------------------examples-style----------------------*/
+.example-style {
+  padding-top: 2.5294117647rem;
+}
+
+.example-style__container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.example-style__image {
+  width: 49.1525423729%;
+  aspect-ratio: 580/818;
+}
+
+.example-style__content {
+  width: 40.6779661017%;
+  margin-left: 10.1694915254%;
+}
+
+/*--------------------END examples-style----------------------*/
 /*--------------------section.allowed----------------------*/
 .allowed {
   padding-top: 9.9423529412rem;
