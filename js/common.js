@@ -198,6 +198,11 @@
 
 		if(fab !== null){
 
+			fab.onclick = function(e){
+				document.documentElement.classList.toggle('fab-open');
+				this.classList.toggle('fab--active');
+				this.classList.remove('drive');
+			}
 			fabTimer = setInterval(function() {
 				fab.classList.toggle('drive');
 			}, 8000);
@@ -211,16 +216,17 @@
 					console.log('if!')
 					if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
 						|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
-						fab.style.visibility = 'hidden';
+						fab.classList.add('fab--hidden');
 					}else{
-						fab.style.visibility = 'visible';
+						fab.classList.remove('fab--hidden');
+
 					}	
 				}else{
 					console.log('else!')
 					if(footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
-						fab.style.visibility = 'hidden';
+						fab.classList.add('fab--hidden');
 					}else{
-						fab.style.visibility = 'visible';
+						fab.classList.remove('fab--hidden');
 					}	
 				}
 
