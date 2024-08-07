@@ -20,6 +20,39 @@
 		// 	document.documentElement.classList.toggle('lock');
 		// }
 
+		// venoBox modal
+		if (document.querySelector('.image-modal') !== null){
+			var certifsCloseTimer;
+			var certifsBox = new VenoBox({
+			    selector: '.image-modal',
+			    spinner: 'rotating-plane',
+			     onPreOpen: function(obj){
+			       console.log('PRE OPEN');
+			       console.log(obj);
+		    		document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+			    },
+			    onPostOpen: function(obj, gallIndex, thenext, theprev){
+			    	document.querySelector('.vbox-child').addEventListener('click', sertifBoxClick);
+			    	certifsCloseTimer = setTimeout(function() {
+			    		certifsBox.close();
+			    	}, 9000);
+			    },
+			    onPreClose: function(obj, gallIndex, thenext, theprev){
+			       document.querySelector('.vbox-child').removeEventListener('click', sertifBoxClick);
+			       clearTimeout(certifsCloseTimer);
+						document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+			    }
+			});
+			
+			function sertifBoxClick() {
+				clearTimeout(certifsCloseTimer);
+				certifsBox.close();
+			}
+
+		}
+
+		// END venoBox modal
+
 		document.onclick = function(e) {
 			var targ = e.target;
 			console.log(targ);
