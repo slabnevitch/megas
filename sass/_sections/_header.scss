@@ -279,11 +279,11 @@
 .serch-form-header__input {
 	height: rem(37);
 	background-color: transparent;
-	@include placecolor(#fff);
+	@include placecolor($text);
 	font-size: rem(24);
 	line-height: math.div(32.64, 24);
 	font-family: inherit;
-	color: #fff;
+	color: $text;
 	letter-spacing: rem(0.5);
 }
 /*--------------------END header----------------------*/ 

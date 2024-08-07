@@ -2949,23 +2949,23 @@ textarea {
   font-size: 1.4117647059rem;
   line-height: 1.36;
   font-family: inherit;
-  color: #fff;
+  color: #1A1A1A;
   letter-spacing: 0.0294117647rem;
 }
 .serch-form-header__input::-webkit-input-placeholder {
-  color: #fff;
+  color: #1A1A1A;
   opacity: 1;
 }
 .serch-form-header__input::-moz-placeholder {
-  color: #fff;
+  color: #1A1A1A;
   opacity: 1;
 }
 .serch-form-header__input:-moz-placeholder {
-  color: #fff;
+  color: #1A1A1A;
   opacity: 1;
 }
 .serch-form-header__input:-ms-input-placeholder {
-  color: #fff;
+  color: #1A1A1A;
   opacity: 1;
 }
 
