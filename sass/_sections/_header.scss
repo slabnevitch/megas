@@ -96,15 +96,18 @@
 				// stroke: #fff;
 				stroke: $text;
 
-				.header--dark &,
-				.search-open &{
+				.header--dark &{
 					stroke: #fff;
+				}
 
+				.search-open &{
+
+					stroke: $text;
 				}
 
 				.menu-opened &{
-			        stroke: $text;
-			      }
+					stroke: $text;
+				}
 			}
 		}
 		span,
@@ -212,10 +215,13 @@
 	svg{
 		path{
 			stroke: $text;
-			.header--dark &,
-			.search-open &{
+			.header--dark &{
 
 				stroke: #fff;
+			}
+			.search-open &{
+
+				stroke: $text;
 			}
 
 		}
@@ -232,7 +238,7 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .5s ease;
-	background-color: rgba($bg, .88);
+	background-color: rgba(#fff, .88);
 
 	@include max-screen($lgg){
 		position: fixed;

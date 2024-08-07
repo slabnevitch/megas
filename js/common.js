@@ -199,6 +199,7 @@
 		if(fab !== null){
 
 			fab.onclick = function(e){
+				document.documentElement.classList.toggle('fab-open');
 				this.classList.toggle('fab--active');
 				this.classList.remove('drive');
 			}

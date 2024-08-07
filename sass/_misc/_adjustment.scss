@@ -260,7 +260,7 @@ padding-bottom: 52.25%;
 	height: rem(185.86);
 	top: rem(620);
 	left: prc(55, $maxWidth);
-	z-index: 20;
+	z-index: 21;
 
 	&--hidden{
 		visibility: hidden;
@@ -428,7 +428,8 @@ padding-bottom: 52.25%;
 	z-index: 21;
 	display: none;
 
-	.search-open &{
+	.search-open &,
+	.fab-open &{
 		display: block;
 	}
 }

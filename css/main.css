@@ -1559,7 +1559,7 @@ textarea {
   height: 10.9329411765rem;
   top: 36.4705882353rem;
   left: 3.8194444444%;
-  z-index: 20;
+  z-index: 21;
 }
 .fab--hidden {
   visibility: hidden;
@@ -1757,7 +1757,7 @@ textarea {
   z-index: 21;
   display: none;
 }
-.search-open .blur {
+.search-open .blur, .fab-open .blur {
   display: block;
 }
 
@@ -2664,13 +2664,13 @@ textarea {
   height: 3.0588235294rem;
   width: 100%;
   position: fixed;
-  right: -100%;
-  top: 0;
+  top: -100%;
+  left: 0;
   background-color: #fff;
-  transition: right 0.4s ease;
+  transition: top 0.4s ease;
 }
 .menu-opened .menu-header .menu-header__body:before {
-  right: 0;
+  top: 0;
 }
 @media only screen and (min-width: 61.99875em) {
   .menu-header .menu-header__body:before {
@@ -2678,13 +2678,13 @@ textarea {
   }
 }
 .menu-opened .menu-header .menu-header__body {
-  right: 0;
+  top: 0;
 }
 @media screen and (max-width: 61.99875em) {
   .menu-header .menu-header__body {
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
     transition: all 0.4s ease;
@@ -2730,8 +2730,11 @@ textarea {
 .menu-header .toggle-mnu svg path {
   stroke: #1A1A1A;
 }
-.header--dark .menu-header .toggle-mnu svg path, .search-open .menu-header .toggle-mnu svg path {
+.header--dark .menu-header .toggle-mnu svg path {
   stroke: #fff;
+}
+.search-open .menu-header .toggle-mnu svg path {
+  stroke: #1A1A1A;
 }
 .menu-opened .menu-header .toggle-mnu svg path {
   stroke: #1A1A1A;
@@ -2871,8 +2874,11 @@ textarea {
 .header__search-button svg path {
   stroke: #1A1A1A;
 }
-.header--dark .header__search-button svg path, .search-open .header__search-button svg path {
+.header--dark .header__search-button svg path {
   stroke: #fff;
+}
+.search-open .header__search-button svg path {
+  stroke: #1A1A1A;
 }
 
 .header__serch-area {
@@ -2884,7 +2890,7 @@ textarea {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
-  background-color: rgba(51, 51, 51, 0.88);
+  background-color: rgba(255, 255, 255, 0.88);
 }
 @media only screen and (max-width: 86.25em) {
   .header__serch-area {
