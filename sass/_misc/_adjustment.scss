@@ -258,9 +258,13 @@ padding-bottom: 52.25%;
 	position: fixed;
 	width: rem(158);
 	height: rem(185.86);
-	top: rem(565);
+	top: rem(620);
 	left: prc(55, $maxWidth);
 	z-index: 20;
+
+	&--hidden{
+		visibility: hidden;
+	}
 
 	// @include max-screen($lgg){
 	// 	width: rem(130);
@@ -271,8 +275,15 @@ padding-bottom: 52.25%;
 	@include max-screen($lgg){
 		width: rem(110.96);
 		height: rem(130);
-		top: rem(418);
+		top: rem(463);
 		left: rem(14);
+	}
+	@include max-screen($sm){
+		top: rem(500);
+	}
+	@include max-screen($min){
+		top: rem(400);
+		left: rem(5);
 	}
 
 	@include min-screen(em(1500)){
@@ -281,10 +292,16 @@ padding-bottom: 52.25%;
 }
 .fab__phone,
 .fab__drive{
+	@include but-null();
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	transition: opacity 0.5s ease;
+
+	.fab--active & {
+		visibility: hidden;
+	}
+
 	img{
 		max-width: 100%;
 		max-height: 100%;
@@ -307,6 +324,98 @@ padding-bottom: 52.25%;
 	opacity: 0;
 	.drive &{
 		opacity: 1;
+	}
+}
+
+.fab__list {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	// left: rem(54);
+	width: rem(71);
+	transition: all .3s;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(10%) translateX(-50%);
+
+	.fab--active &{
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0) translateX(-50%);
+	}
+	.fab--hidden &{
+		visibility: hidden;
+	}
+
+	@include max-screen($lgg){
+		width: rem(59);
+	}
+	@include max-screen($md){
+		width: rem(50);
+	}
+}
+.fab__link {
+	display: block;
+	img{
+		width: 100%;
+	}
+}
+.fab__link--wa {
+	width: prc(54, 71);
+	margin-bottom: prc(33.59, 71);
+	margin-left: prc(7, 71);
+}
+.fab__link--tg {
+
+	width: prc(58.97, 71);
+	margin-bottom: prc(35.5, 71);
+}
+.fab__link--mail {
+	width: prc(50.18, 71);
+	margin-left: prc(8.32, 71);
+	margin-bottom: prc(37.72, 71);
+}
+.fab__link--chat {
+		width: prc(54, 71);
+		margin-bottom: prc(24.07, 71);
+		margin-left: prc(7, 71);
+}
+.fab__link--smart {
+	width: prc(60, 68);
+	margin-left: prc(10.34, 71);
+}
+.fab__cross {
+	@include but-null();
+	@include absolute-center-old;
+	width: rem(31);
+	height: rem(31);
+	transition: all .3s;
+	// transition-delay: 0.1s;
+	transform: rotate(-30deg) scale(0.7);
+	// transform-origin: center center;
+	opacity: 0;
+	visibility: hidden;
+
+	.fab--active &{
+		visibility: visible;
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+	.fab--hidden &{
+		visibility: hidden;
+	}
+
+	@include max-screen($lgg){
+		width: rem(25.57);
+		height: rem(25.57);
+	}
+	@include max-screen($md){
+		width: rem(21.65);
+		height: rem(21.65);
+	}
+
+	img{
+		width: 100%;
 	}
 }
 .blur{
