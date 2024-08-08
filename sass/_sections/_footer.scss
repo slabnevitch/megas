@@ -129,6 +129,7 @@
 	width: rem(42);
 	height: rem(42);
 
+
 	@include max-screen($sm){
 		width: rem(29.2);
 		height: rem(29.2);
@@ -138,6 +139,11 @@
 		display: block;
 		width: 100%;
 		max-height: 100%;
+	}
+	&--vk{
+		img{
+			width: 94%;
+		}
 	}
 }
 .footer__info {
