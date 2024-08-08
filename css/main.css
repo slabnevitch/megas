@@ -1564,6 +1564,9 @@ textarea {
 .fab--hidden {
   visibility: hidden;
 }
+.search-open .fab {
+  z-index: 20;
+}
 @media only screen and (max-width: 86.25em) {
   .fab {
     width: 6.5270588235rem;
@@ -1759,6 +1762,9 @@ textarea {
 }
 .search-open .blur, .fab-open .blur {
   display: block;
+}
+.fab-open .blur {
+  background-color: rgba(255, 255, 255, 0.88);
 }
 
 .image-modal {
