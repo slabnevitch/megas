@@ -266,6 +266,10 @@ padding-bottom: 52.25%;
 		visibility: hidden;
 	}
 
+	.search-open &{
+		z-index: 20;
+	}
+
 	// @include max-screen($lgg){
 	// 	width: rem(130);
 	// 	height: rem(152.4);
@@ -425,12 +429,17 @@ padding-bottom: 52.25%;
 	top: 0;
 	left: 0;
 	backdrop-filter: blur(6px);
+	
 	z-index: 21;
 	display: none;
 
 	.search-open &,
 	.fab-open &{
 		display: block;
+	}
+
+	.fab-open &{
+		background-color: rgba(#fff, .88);
 	}
 }
 

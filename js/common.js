@@ -69,6 +69,8 @@
 			if(targ.className === 'header__search-button' || targ.closest('.header__search-button') !== null){
 				document.documentElement.classList.toggle('search-open');
 				document.documentElement.classList.toggle('lock');
+				document.documentElement.classList.remove('fab-open');
+				document.querySelector('.fab').classList.remove('fab--active');
 			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null){
 				document.documentElement.classList.remove('search-open');
 				document.documentElement.classList.remove('lock');
