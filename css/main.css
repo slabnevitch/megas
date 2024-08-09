@@ -6271,7 +6271,8 @@ textarea {
 @media only screen and (max-width: 36em) {
   .allowed__item:nth-child(2) .item-allowed__icon {
     max-width: 4.4188235294rem;
-    margin-top: -0.4117647059rem;
+    margin-top: -0.4705882353rem;
+    margin-bottom: 0.4117647059rem;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -6570,7 +6571,7 @@ textarea {
 }
 @media only screen and (max-width: 86.25em) {
   .guarantee__text {
-    margin-left: 10.7421875%;
+    margin-left: 9.765625%;
     margin-right: 15.8203125%;
     font-size: 0.8823529412rem;
     line-height: 130%;
