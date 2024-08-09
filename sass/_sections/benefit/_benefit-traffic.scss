@@ -15,7 +15,7 @@
 }
 .heading {}
 .traffic__heading {
-	margin-bottom: rem(45);
+	margin-bottom: rem(35);
 
 	@include max-screen($lgg){
 		margin-bottom: rem(17);

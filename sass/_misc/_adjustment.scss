@@ -279,8 +279,8 @@ padding-bottom: 52.25%;
 	@include max-screen($lgg){
 		width: rem(110.96);
 		height: rem(130);
-		top: rem(463);
-		left: rem(14);
+		top: rem(453);
+		left: rem(34);
 	}
 	@include max-screen($sm){
 		top: rem(500);
@@ -291,7 +291,8 @@ padding-bottom: 52.25%;
 	}
 
 	@include min-screen(em(1500)){
-		left: calc((100% - rem($maxWidth)) / 2 - rem(55));
+		top: rem(580);
+		left: calc((100% - rem($maxWidth)) / 2 - rem(35));
 	}
 }
 .fab__phone,
@@ -353,9 +354,11 @@ padding-bottom: 52.25%;
 
 	@include max-screen($lgg){
 		width: rem(59);
+		bottom: calc(100% - rem(10));
 	}
 	@include max-screen($md){
 		width: rem(50);
+		bottom: 100%;
 	}
 }
 .fab__link {

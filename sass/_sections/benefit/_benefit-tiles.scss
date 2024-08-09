@@ -1,6 +1,6 @@
 /*--------------------benefit-tiles----------------------*/
 .benefit-tiles {
-	padding-top: rem(59);
+	padding-top: rem(49);
 	padding-bottom: rem(123);
 
 	@include max-screen($lgg){
@@ -15,7 +15,7 @@
 }
 .benefit-tiles__wrapper {}
 .benefit-tiles__title {
-	margin-bottom: rem(73.8);
+	margin-bottom: rem(63.8);
 	font-size: rem(36);
 	font-family: $med;
 
@@ -39,7 +39,7 @@
 
 	@include max-screen($lgg){
 		max-width: rem(726);
-		column-gap: rem(15);
+		// column-gap: rem(40);
 	}
 	@include max-screen($xs){
 		max-width: none;
@@ -67,7 +67,7 @@
 
 	@include max-screen($lgg){
 		aspect-ratio: 355 / 514.12;
-		flex-basis: calc(50% - rem(math.div(15, 2)));
+		// flex-basis: calc(50% - rem(math.div(30, 2)));
 	}
 
 	@include max-screen($xs){
@@ -83,6 +83,9 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	transform-origin: top center;
+	transform: scale(.97);
+	max-width: 97%;
 
 	.benefit-tile--active &{
 		visibility: hidden;
@@ -90,6 +93,10 @@
 
 	@include max-screen($xs){
 		display: none;
+	}
+
+	img{
+
 	}
 }
 .benefit-tile__heading {
@@ -152,7 +159,10 @@
 	// display: none;
 }
 .benefit-tiles__text{
+	max-width: rem(760);
 	margin-top: rem(15);
+	margin-left: auto;
+	margin-right: auto;
 	flex-basis: 100%;
 	text-align: center;
 	line-height: 140%;
