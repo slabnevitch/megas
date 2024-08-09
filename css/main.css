@@ -1571,8 +1571,8 @@ textarea {
   .fab {
     width: 6.5270588235rem;
     height: 7.6470588235rem;
-    top: 27.2352941176rem;
-    left: 0.8235294118rem;
+    top: 26.6470588235rem;
+    left: 2rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -1588,7 +1588,8 @@ textarea {
 }
 @media only screen and (min-width: 93.75em) {
   .fab {
-    left: calc((100% - 84.7058823529rem) / 2 - 3.2352941176rem);
+    top: 34.1176470588rem;
+    left: calc((100% - 84.7058823529rem) / 2 - 2.0588235294rem);
   }
 }
 
@@ -1658,11 +1659,13 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .fab__list {
     width: 3.4705882353rem;
+    bottom: calc(100% - 0.5882352941rem);
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .fab__list {
     width: 2.9411764706rem;
+    bottom: 100%;
   }
 }
 
@@ -3056,7 +3059,7 @@ textarea {
     margin-bottom: 22.2222222222%;
   }
 }
-@media only screen and (min-width: 86.25em) {
+@media only screen and (min-width: 64em) {
   .hero__content {
     margin-bottom: 8.3333333333%;
   }
@@ -4027,15 +4030,14 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4.1176470588rem;
+  height: 2.3241176471rem;
 }
 .item-system__icon--clock {
   width: 2.7558823529rem;
-  height: 2.7558823529rem;
 }
 @media only screen and (max-width: 86.25em) {
   .item-system__icon--clock {
     width: 2.2323529412rem;
-    height: 2.2323529412rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -4046,12 +4048,10 @@ textarea {
 }
 .item-system__icon--user {
   width: 2.4311764706rem;
-  height: 2.8117647059rem;
 }
 @media only screen and (max-width: 86.25em) {
   .item-system__icon--user {
     width: 2.0082352941rem;
-    height: 2.3241176471rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -4062,12 +4062,10 @@ textarea {
 }
 .item-system__icon--time {
   width: 2.2382352941rem;
-  height: 2.5305882353rem;
 }
 @media only screen and (max-width: 86.25em) {
   .item-system__icon--time {
     width: 1.7688235294rem;
-    height: 2rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -4428,7 +4426,7 @@ textarea {
 /*--------------------END product----------------------*/
 /*--------------------benefit-tiles----------------------*/
 .benefit-tiles {
-  padding-top: 3.4705882353rem;
+  padding-top: 2.8823529412rem;
   padding-bottom: 7.2352941176rem;
 }
 @media only screen and (max-width: 86.25em) {
@@ -4445,7 +4443,7 @@ textarea {
 }
 
 .benefit-tiles__title {
-  margin-bottom: 4.3411764706rem;
+  margin-bottom: 3.7529411765rem;
   font-size: 2.1176470588rem;
   font-family: "Articulat CF Medium", sans-serif;
 }
@@ -4476,7 +4474,7 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .benefit-tiles__container, .traffic__container {
     max-width: 42.7058823529rem;
-    column-gap: 0.8823529412rem;
+    column-gap: 1.7647058824rem;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -4495,8 +4493,8 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .benefit-tile {
     aspect-ratio: 355/514.12;
-    -ms-flex-preferred-size: calc(50% - 0.4411764706rem);
-    flex-basis: calc(50% - 0.4411764706rem);
+    -ms-flex-preferred-size: calc(50% - 0.8823529412rem);
+    flex-basis: calc(50% - 0.8823529412rem);
   }
 }
 @media only screen and (max-width: 36em) {
@@ -4516,6 +4514,11 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+  max-width: 97%;
 }
 .benefit-tile--active .benefit-tile__heading {
   visibility: hidden;
@@ -4525,7 +4528,6 @@ textarea {
     display: none;
   }
 }
-
 .benefit-tile__heading {
   padding-top: 2.6470588235rem;
   -ms-flex: 0 0 auto;
@@ -4585,7 +4587,10 @@ textarea {
 }
 
 .benefit-tiles__text {
+  max-width: 44.7058823529rem;
   margin-top: 0.8823529412rem;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   text-align: center;
@@ -4635,7 +4640,7 @@ textarea {
 }
 
 .traffic__heading {
-  margin-bottom: 2.6470588235rem;
+  margin-bottom: 2.0588235294rem;
 }
 @media only screen and (max-width: 86.25em) {
   .traffic__heading {
