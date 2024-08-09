@@ -63,6 +63,10 @@
 			
 		}
 
+		span{
+			font-family: $med;
+		}
+
 		br{
 			@include max-screen($sm){
 				display: none;

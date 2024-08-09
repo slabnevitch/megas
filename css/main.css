@@ -2227,6 +2227,9 @@ textarea {
     text-align: right;
   }
 }
+.assortment__text p span {
+  font-family: "Articulat CF Medium", sans-serif;
+}
 @media only screen and (max-width: 47.99875em) {
   .assortment__text p br {
     display: none;
@@ -6541,6 +6544,11 @@ textarea {
     margin-bottom: 0.8705882353rem;
   }
 }
+@media only screen and (min-width: 30em) {
+  .guarantee__item br {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 47.99875em) {
   .guarantee__marker {
@@ -6697,12 +6705,12 @@ textarea {
     font-size: 0.7647058824rem;
   }
 }
-.assortment__content--school .assortment__text p a {
-  color: #009245;
+.assortment__content--school .assortment__text p span {
+  font-family: "Articulat CF Medium", sans-serif;
   text-decoration: none;
 }
 @media (any-hover: hover) {
-  .assortment__content--school .assortment__text p a:hover {
+  .assortment__content--school .assortment__text p span:hover {
     font-family: "Articulat CF Medium", sans-serif;
   }
 }
@@ -6746,6 +6754,15 @@ textarea {
     flex: 0 0 calc(45% - 0.5882352941rem);
     column-gap: 0.7352941176rem;
   }
+}
+@media only screen and (max-width: 30em) {
+  .assortment__content--school .assortment__picts {
+    -ms-flex-align: start;
+    align-items: start;
+  }
+}
+.assortment__content--school .assortment__picts .assortment__pict {
+  max-height: none;
 }
 .assortment__content--school .assortment__picts .assortment__pict:first-child {
   max-width: 2.0376470588rem;
@@ -6847,15 +6864,12 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .assortment__picts-inner {
     row-gap: 0.5882352941rem;
-  }
-}
-@media only screen and (max-width: 47.99875em) {
-  .assortment__picts-inner {
     column-gap: 0.7352941176rem;
   }
 }
 @media only screen and (max-width: 36em) {
   .assortment__picts-inner {
+    padding-left: 0.6470588235rem;
     padding-right: 1.7647058824rem;
   }
 }
@@ -7043,6 +7057,13 @@ textarea {
   .individual__button-mob {
     display: none;
   }
+}
+.individual__button-mob .individual__button {
+  height: 1.0641176471rem;
+  width: auto;
+}
+.individual__button-mob .individual__button img {
+  height: 100%;
 }
 
 .individual__block {

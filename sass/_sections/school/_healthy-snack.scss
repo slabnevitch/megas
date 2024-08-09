@@ -102,8 +102,9 @@
 			font-size: rem(13);
 		}
 
-		a{
-			color: $accent;
+		span{
+			font-family: $med;
+			// color: $accent;
 			text-decoration: none;
 
 			@media (any-hover: hover) { //только для устройств с ховером
@@ -149,10 +150,13 @@
 			flex: 0 0 calc(45% - rem(10));
 			column-gap: rem(12.5);
 		}
-
+		@include max-screen($xss){
+			align-items: start;
+		}
 	
 		
 		.assortment__pict{
+			max-height: none;
 			&:first-child{
 				max-width: rem(34.64);
 
@@ -252,12 +256,14 @@
 
 	@include max-screen($sm){
 		row-gap: rem(10);
-	}
-	@include max-screen($sm){
 		column-gap: rem(12.5);
+	}
+	@include max-screen($xs){
+		// row-gap: rem(7);
 	}
 
 	@include max-screen($xs){
+		padding-left: rem(11);
 		padding-right: rem(30);
 	}
 

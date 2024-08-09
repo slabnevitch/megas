@@ -127,6 +127,7 @@
 		max-width: rem(85);
 	}
 
+
 	img{
 		max-width: 100%;
 	}
@@ -137,6 +138,15 @@
 
 	@include min-screen($sm){
 		display: none;
+	}
+
+	.individual__button {
+		height: rem(18.09);
+		width: auto;
+
+		img{
+			height: 100%;
+		}
 	}
 }
 .individual__block{
