@@ -324,7 +324,11 @@
 	img{
 		display: block;
 		width: 100%;
-		height: 100%;
+
+		@include max-screen($sm){
+			height: 100%;
+			
+		}
 	}
 }
 .item-system__circle{

@@ -5,11 +5,10 @@
 	top: rem(52);
 	width: 100%;
 	left: 0;
-	height: rem(613);
+	height: rem(610);
 	display: flex;
 	justify-content: flex-end;
 	background-color: #F3F8FB;
-
 
 
 	@include min-screen($md){
@@ -42,8 +41,8 @@
 		opacity: 0.5;
 
 		@include max-screen($xs){
-			right: prc(-320, 360);
-			width: prc(539.2, 360);
+			right: prc(-280, 360);
+			width: prc(560, 360);
 		}
 	}
 
@@ -56,9 +55,21 @@
     background-size: cover;
     background-position: center center;
 
+		@include max-screen(em(1024)){
+			width: 200%;
+			left: 30%;
+		}
 		@include max-screen($md){
 			// width: 200%;
-			left: -40%;
+			// left: 0;
+		}
+		@include max-screen($sm){
+			// width: 200%;
+			// left: -40%;
+		}
+		@include max-screen($xss){
+			width: 100%;
+			left: -38%;
 		}
 
 		@include min-screen($md){
