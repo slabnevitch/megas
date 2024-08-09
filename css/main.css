@@ -7067,12 +7067,12 @@ textarea {
   }
 }
 .individual__button-mob .individual__button {
-  height: 1.0641176471rem;
-  height: 1.2769411765rem;
-  width: auto;
+  height: auto;
+  width: 5.2941176471rem;
+  max-width: none;
 }
 .individual__button-mob .individual__button img {
-  height: 100%;
+  height: auto;
 }
 
 .individual__block {
