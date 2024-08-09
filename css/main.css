@@ -6544,6 +6544,11 @@ textarea {
     margin-bottom: 0.8705882353rem;
   }
 }
+@media only screen and (min-width: 30em) {
+  .guarantee__item br {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 47.99875em) {
   .guarantee__marker {
@@ -7052,6 +7057,13 @@ textarea {
   .individual__button-mob {
     display: none;
   }
+}
+.individual__button-mob .individual__button {
+  height: 1.0641176471rem;
+  width: auto;
+}
+.individual__button-mob .individual__button img {
+  height: 100%;
 }
 
 .individual__block {
