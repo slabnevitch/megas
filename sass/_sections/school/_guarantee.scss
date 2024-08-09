@@ -69,7 +69,7 @@
 		line-height: normal;
 	}
 	@include max-screen($xss){
-		padding-left: prc(70, 360);
+		padding-left: prc(100, 360);
 
 	}
 	@include min-screen($sm){
@@ -96,7 +96,7 @@
 		@include max-screen($md){
 			width: rem(6);
 			height: rem(6);
-			left: prc(15, 360);
+			left: prc(25, 300);
 			top: rem(4);
 		}
 	}
@@ -139,7 +139,7 @@
 	color: $accent;
 
 	@include max-screen($lgg){
-		margin-left: prc(110, 1024);
+		margin-left: prc(100, 1024);
 		margin-right: prc(162, 1024);
 		font-size: rem(15);
 		line-height: 130%;
