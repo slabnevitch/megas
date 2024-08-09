@@ -76,8 +76,8 @@
 			// width: prc(1206.22, $maxWidth);
 			
 		}
-		@include min-screen(em(2560)){
-			// width: 100%;
+		@include min-screen(em(1500)){
+			width: 72%;
 		}
 
 		._fit-img{
@@ -110,9 +110,10 @@
 				object-position: left bottom;
 
 			}
-			@include min-screen(em(1600)){
-				width: 96%;
-				object-position: right bottom;
+			@include min-screen(em(1500)){
+				width: 110%;
+				// right: 0;
+				object-position: right top;
 
 			}
 
