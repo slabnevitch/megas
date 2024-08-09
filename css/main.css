@@ -3059,7 +3059,7 @@ textarea {
     margin-bottom: 22.2222222222%;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 73.75em) {
   .hero__content {
     margin-bottom: 8.3333333333%;
   }
@@ -4105,7 +4105,11 @@ textarea {
 .item-system__icon img {
   display: block;
   width: 100%;
-  height: 100%;
+}
+@media only screen and (max-width: 47.99875em) {
+  .item-system__icon img {
+    height: 100%;
+  }
 }
 
 .item-system__circle {
@@ -7106,7 +7110,7 @@ textarea {
   top: 3.0588235294rem;
   width: 100%;
   left: 0;
-  height: 36.0588235294rem;
+  height: 35.8823529412rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -7148,8 +7152,8 @@ textarea {
 }
 @media only screen and (max-width: 36em) {
   .school-hero:after {
-    right: -88.8888888889%;
-    width: 149.7777777778%;
+    right: -77.7777777778%;
+    width: 155.5555555556%;
   }
 }
 .school-hero__image {
@@ -7160,9 +7164,16 @@ textarea {
   background-size: cover;
   background-position: center center;
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 64em) {
   .school-hero__image {
-    left: -40%;
+    width: 200%;
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .school-hero__image {
+    width: 100%;
+    left: -38%;
   }
 }
 .school-hero__image ._fit-img {
@@ -7225,6 +7236,11 @@ textarea {
     padding-bottom: 37.7604166667%;
   }
 }
+@media only screen and (max-width: 47.99875em) {
+  .school-scroll {
+    padding-bottom: 35.8823529412rem;
+  }
+}
 
 .school-scroll__wrapper {
   display: -ms-flexbox;
@@ -7249,6 +7265,7 @@ textarea {
 .school-scroll__title {
   margin-bottom: 4.9841176471rem;
   font-size: 2.6470588235rem;
+  font-family: "Articulat CF Medium", sans-serif;
   line-height: 200%;
 }
 @media only screen and (max-width: 86.25em) {
@@ -7339,7 +7356,7 @@ textarea {
 
 .self-service__text {
   font-size: 1.2941176471rem;
-  line-height: 200%;
+  line-height: 220%;
 }
 @media only screen and (max-width: 86.25em) {
   .self-service__text {
@@ -7350,19 +7367,19 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .self-service__text {
     font-size: 0.8823529412rem;
+    line-height: 250%;
   }
 }
 .self-service__text a {
   font-size: 2.1176470588rem;
   color: #009245;
   text-decoration: none;
-  line-height: 176%;
+  line-height: 139%;
   font-family: "Articulat CF Light", sans-serif;
 }
 @media only screen and (max-width: 86.25em) {
   .self-service__text a {
     font-size: 1.9411764706rem;
-    line-height: 150%;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -7408,6 +7425,18 @@ textarea {
     max-width: 55.5555555556%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .self-service__items {
+    padding-left: 0.8823529412rem;
+    padding-right: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .self-service__items {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
