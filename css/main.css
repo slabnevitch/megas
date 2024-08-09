@@ -7358,7 +7358,7 @@ textarea {
 
 .self-service__text {
   font-size: 1.2941176471rem;
-  line-height: 220%;
+  line-height: 205%;
 }
 @media only screen and (max-width: 86.25em) {
   .self-service__text {
@@ -7369,7 +7369,7 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .self-service__text {
     font-size: 0.8823529412rem;
-    line-height: 250%;
+    line-height: 220%;
   }
 }
 .self-service__text a {
@@ -7387,12 +7387,18 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .self-service__text a {
     font-size: 1.4705882353rem;
-    line-height: 150%;
+    line-height: 110%;
+    margin-left: 0.1764705882rem;
   }
 }
 @media only screen and (min-width: 47.99875em) {
   .self-service__text a {
     margin-left: 0.4705882353rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .self-service__text a {
+    margin-left: 0.1176470588rem;
   }
 }
 @media (any-hover: hover) {
