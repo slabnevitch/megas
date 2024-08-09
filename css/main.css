@@ -4474,7 +4474,6 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .benefit-tiles__container, .traffic__container {
     max-width: 42.7058823529rem;
-    column-gap: 1.7647058824rem;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -4493,8 +4492,6 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .benefit-tile {
     aspect-ratio: 355/514.12;
-    -ms-flex-preferred-size: calc(50% - 0.8823529412rem);
-    flex-basis: calc(50% - 0.8823529412rem);
   }
 }
 @media only screen and (max-width: 36em) {
