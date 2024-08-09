@@ -7289,6 +7289,7 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 5.0588235294rem;
+  font-family: "Articulat CF Medium", sans-serif;
 }
 @media only screen and (max-width: 86.25em) {
   .school-scroll__list {
@@ -7299,6 +7300,7 @@ textarea {
   .school-scroll__list {
     padding-left: 3.7647058824rem;
     row-gap: 0.8235294118rem;
+    line-height: 200%;
   }
 }
 
