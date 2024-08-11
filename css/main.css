@@ -6266,7 +6266,7 @@ textarea {
 }
 @media only screen and (min-width: 90em) {
   .allowed__items {
-    row-gap: 0;
+    row-gap: 0.5882352941rem;
   }
 }
 
