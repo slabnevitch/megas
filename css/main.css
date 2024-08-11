@@ -6207,12 +6207,23 @@ textarea {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  .allowed__wrapper {
+    max-width: 52.9411764706rem;
+  }
+}
+
 .allowed__heading {
-  margin-bottom: 5.2223529412rem;
+  margin-bottom: 2.8694117647rem;
 }
 @media only screen and (max-width: 86.25em) {
   .allowed__heading {
     margin-bottom: 3.0588235294rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .allowed__heading {
+    margin-bottom: 1.6929411765rem;
   }
 }
 
@@ -6222,7 +6233,7 @@ textarea {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.1764705882rem;
-  row-gap: 3.7441176471rem;
+  row-gap: 1.9794117647rem;
   margin-bottom: 5.6470588235rem;
 }
 @media only screen and (max-width: 86.25em) {
@@ -6253,9 +6264,20 @@ textarea {
     margin-right: 1.5294117647rem;
   }
 }
+@media only screen and (min-width: 90em) {
+  .allowed__items {
+    row-gap: 0;
+  }
+}
 
 .allowed__item {
   text-align: center;
+}
+@media only screen and (min-width: 90em) {
+  .allowed__item {
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
 }
 @media only screen and (max-width: 36em) {
   .allowed__item:nth-child(1) {
@@ -6263,9 +6285,14 @@ textarea {
     order: 5;
   }
 }
+.allowed__item:nth-child(2) .item-allowed__icon {
+  position: relative;
+  top: -15px;
+}
 @media only screen and (max-width: 86.25em) {
   .allowed__item:nth-child(2) .item-allowed__icon {
     max-width: 8.0282352941rem;
+    top: -5px;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -6299,7 +6326,7 @@ textarea {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 1.43rem;
+  margin-bottom: 1.2352941176rem;
   height: 11.1435294118rem;
   max-width: 12.1517647059rem;
 }
@@ -6307,7 +6334,7 @@ textarea {
   .item-allowed__icon {
     max-width: 6.2823529412rem;
     height: 7.0588235294rem;
-    margin-bottom: 1.0588235294rem;
+    margin-bottom: 1.0117647059rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -6376,8 +6403,8 @@ textarea {
 
 .cacao__carousel {
   position: relative;
-  margin-left: 8.4745762712%;
-  margin-right: 8.4745762712%;
+  margin-left: 16.9491525424%;
+  margin-right: 16.9491525424%;
 }
 @media only screen and (max-width: 86.25em) {
   .cacao__carousel {
