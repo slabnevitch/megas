@@ -7042,7 +7042,7 @@ textarea {
 }
 
 .individual__button {
-  max-width: 9.9735294118rem;
+  max-width: 10.2088235294rem;
   height: 2.4558823529rem;
   display: inline-block;
 }
@@ -7052,7 +7052,7 @@ textarea {
   }
 }
 .individual__button img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .individual__button-mob {
