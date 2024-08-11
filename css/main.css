@@ -6366,7 +6366,7 @@ textarea {
 }
 @media only screen and (min-width: 90em) {
   .item-allowed__text {
-    font-size: 0.8rem;
+    font-size: 0.7647058824rem;
   }
 }
 
