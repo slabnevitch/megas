@@ -7131,6 +7131,18 @@ textarea {
     aspect-ratio: 360/263.45;
   }
 }
+@media only screen and (min-width: 90em) {
+  .school-auto__image {
+    aspect-ratio: auto;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .school-auto__image ._fit-img {
+    position: static;
+    width: 100%;
+  }
+}
+
 /*--------------------END school-auto----------------------*/
 /*--------------------school-hero----------------------*/
 .school-hero {
