@@ -6883,9 +6883,13 @@ textarea {
 }
 
 .assortment__mode {
-  max-width: 13.1764705882rem;
-  height: 1.8823529412rem;
+  width: 16.4705882353rem;
   display: inline-block;
+}
+@media only screen and (max-width: 86.25em) {
+  .assortment__mode {
+    width: 13.1764705882rem;
+  }
 }
 @media only screen and (max-width: 30em) {
   .assortment__mode {
@@ -6893,7 +6897,7 @@ textarea {
   }
 }
 .assortment__mode img {
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
 }
 
@@ -7045,11 +7049,6 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .individual__button {
     max-width: 8.5294117647rem;
-  }
-}
-@media only screen and (max-width: 61.99875em) {
-  .individual__button {
-    max-width: 5rem;
   }
 }
 .individual__button img {
@@ -7581,7 +7580,7 @@ textarea {
   display: flex;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-bottom: 4.3476470588rem;
+  margin-bottom: 3.7594117647rem;
   margin-left: auto;
   margin-right: auto;
 }
