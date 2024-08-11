@@ -6378,6 +6378,9 @@ textarea {
     display: none;
   }
 }
+.allowed__bottom a {
+  font-family: "Articulat CF Medium", sans-serif;
+}
 
 /*--------------------END section.allowed----------------------*/
 /*--------------------cacao----------------------*/
@@ -6436,6 +6439,10 @@ textarea {
   .cacao__carousel .tiny-carousel__nav {
     display: none;
   }
+}
+.cacao__carousel .tns-prev,
+.cacao__carousel .tns-next {
+  top: calc(50% - 5.7647058824rem);
 }
 .cacao__carousel .tns-prev {
   left: -25.4237288136%;
