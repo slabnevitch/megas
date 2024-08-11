@@ -14,17 +14,28 @@
 }
 .school-section {}
 .gray-bg {}
-.allowed__wrapper {}
+.allowed__wrapper {
+
+	@include min-screen(em($maxWidth)){
+		max-width: rem(900);
+	}
+}
 .heading {}
 .allowed__heading {
-	margin-bottom: rem(88.78);
+	margin-bottom: rem(48.78);
+	
 
 	@include max-screen($lgg){
 		margin-bottom: rem(52);
 	}
+
+	@include min-screen(em($maxWidth)){
+		margin-bottom: rem(28.78);
+	}
 }
 .heading__title {}
 .allowed__items {
+
 	// display: flex;
 	// flex-wrap: wrap;
 	// column-gap: prc(90, $maxWidthContainer);
@@ -32,7 +43,8 @@
 	grid-template-columns: repeat(3, 1fr);
 	// column-gap: prc(40, $maxWidthContainer);
 	column-gap: rem(20);
-	row-gap: rem(63.65);
+	row-gap: rem(33.65);
+	
 	margin-bottom: rem(96);
 
 	@include max-screen($lgg){
@@ -55,6 +67,11 @@
 		margin-left: rem(26);
 		margin-right: rem(26);
 	}
+
+
+	@include min-screen(em($maxWidth)){
+		row-gap: rem(10);
+	}
 }
 .allowed__item {
 	text-align: center;
@@ -67,8 +84,12 @@
 	}
 	&:nth-child(2){
 		.item-allowed__icon{
+			position: relative;
+			top: -11px;
+
 			@include max-screen($lgg){
 				max-width: rem(136.48);
+				top: -5px;
 			}
 
 			@include max-screen($xs){
@@ -76,6 +97,10 @@
 				margin-top: rem(-8);
 				margin-bottom: rem(7);
 			}
+
+			// @include min-screen(em($maxWidth)){
+				
+			// }
 
 		}
 		@include max-screen($xs){
@@ -105,19 +130,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: rem(24.31);
+	// margin-bottom: rem(24.31);
+	margin-bottom: rem(21);
 	height: rem(189.44);
 	max-width: rem(206.58);
+	
 
 	@include max-screen($lgg){
 		max-width: rem(106.8);
 		height: rem(120);
-		margin-bottom: rem(18);
+		// margin-bottom: rem(18);
+		margin-bottom: rem(17.2);
 	}
 	@include max-screen($sm){
 		max-width: rem(60);
 		height: rem(67.55);
 		margin-bottom: rem(10.23);
+	}
+
+	@include min-screen(em($maxWidth)){
+		transform: scale(0.8);	
+		margin-bottom: 0;
 	}
 
 	img{
@@ -135,12 +168,20 @@
 	@include max-screen($xs){
 		font-size: rem(10);
 	}
+
+	@include min-screen(em($maxWidth)){
+		font-size: rem(13);
+	}
 }
 .allowed__bottom{
 	text-align: center;
 
 	@include max-screen($sm){
 		display: none;
+	}
+
+	a{
+		font-family: $med;
 	}
 }
 /*--------------------END section.allowed----------------------*/ 

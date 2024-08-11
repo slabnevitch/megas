@@ -6207,12 +6207,23 @@ textarea {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  .allowed__wrapper {
+    max-width: 52.9411764706rem;
+  }
+}
+
 .allowed__heading {
-  margin-bottom: 5.2223529412rem;
+  margin-bottom: 2.8694117647rem;
 }
 @media only screen and (max-width: 86.25em) {
   .allowed__heading {
     margin-bottom: 3.0588235294rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .allowed__heading {
+    margin-bottom: 1.6929411765rem;
   }
 }
 
@@ -6222,7 +6233,7 @@ textarea {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.1764705882rem;
-  row-gap: 3.7441176471rem;
+  row-gap: 1.9794117647rem;
   margin-bottom: 5.6470588235rem;
 }
 @media only screen and (max-width: 86.25em) {
@@ -6253,6 +6264,11 @@ textarea {
     margin-right: 1.5294117647rem;
   }
 }
+@media only screen and (min-width: 90em) {
+  .allowed__items {
+    row-gap: 0.5882352941rem;
+  }
+}
 
 .allowed__item {
   text-align: center;
@@ -6263,9 +6279,14 @@ textarea {
     order: 5;
   }
 }
+.allowed__item:nth-child(2) .item-allowed__icon {
+  position: relative;
+  top: -11px;
+}
 @media only screen and (max-width: 86.25em) {
   .allowed__item:nth-child(2) .item-allowed__icon {
     max-width: 8.0282352941rem;
+    top: -5px;
   }
 }
 @media only screen and (max-width: 36em) {
@@ -6299,7 +6320,7 @@ textarea {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 1.43rem;
+  margin-bottom: 1.2352941176rem;
   height: 11.1435294118rem;
   max-width: 12.1517647059rem;
 }
@@ -6307,7 +6328,7 @@ textarea {
   .item-allowed__icon {
     max-width: 6.2823529412rem;
     height: 7.0588235294rem;
-    margin-bottom: 1.0588235294rem;
+    margin-bottom: 1.0117647059rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
@@ -6315,6 +6336,13 @@ textarea {
     max-width: 3.5294117647rem;
     height: 3.9735294118rem;
     margin-bottom: 0.6017647059rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .item-allowed__icon {
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-bottom: 0;
   }
 }
 .item-allowed__icon img {
@@ -6336,6 +6364,11 @@ textarea {
     font-size: 0.5882352941rem;
   }
 }
+@media only screen and (min-width: 90em) {
+  .item-allowed__text {
+    font-size: 0.7647058824rem;
+  }
+}
 
 .allowed__bottom {
   text-align: center;
@@ -6344,6 +6377,9 @@ textarea {
   .allowed__bottom {
     display: none;
   }
+}
+.allowed__bottom a {
+  font-family: "Articulat CF Medium", sans-serif;
 }
 
 /*--------------------END section.allowed----------------------*/
@@ -6393,14 +6429,30 @@ textarea {
     margin-right: -1.7647058824rem;
   }
 }
+@media only screen and (min-width: 90em) {
+  .cacao__carousel {
+    margin-left: 16.9491525424%;
+    margin-right: 16.9491525424%;
+  }
+}
 @media only screen and (max-width: 61.99875em) {
   .cacao__carousel .tiny-carousel__nav {
     display: none;
   }
 }
+.cacao__carousel .tns-prev,
+.cacao__carousel .tns-next {
+  top: calc(50% - 5.7647058824rem);
+}
+.cacao__carousel .tns-prev {
+  left: -25.4237288136%;
+}
+.cacao__carousel .tns-next {
+  right: -25.4237288136%;
+}
 
 .cacao__slide {
-  aspect-ratio: 965.33/724;
+  aspect-ratio: 4200/3000;
 }
 @media only screen and (max-width: 86.25em) {
   .cacao__slide {
@@ -7131,6 +7183,18 @@ textarea {
     aspect-ratio: 360/263.45;
   }
 }
+@media only screen and (min-width: 90em) {
+  .school-auto__image {
+    aspect-ratio: auto;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .school-auto__image ._fit-img {
+    position: static;
+    width: 100%;
+  }
+}
+
 /*--------------------END school-auto----------------------*/
 /*--------------------school-hero----------------------*/
 .school-hero {

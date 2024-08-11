@@ -34,7 +34,7 @@
 	}
 }
 .school-auto__image{
-	aspect-ratio: $maxWidth / 810;
+	aspect-ratio: $maxWidth /810;
 
 	@include max-screen($lgg){
 		aspect-ratio: auto;
@@ -50,9 +50,17 @@
 		aspect-ratio: 360 / 263.45;
 	}
 
+	@include min-screen(em($maxWidth)){
+		aspect-ratio: auto;
+	}
+
 	._fit-img{
 		// width: prc(468.35, 360);
 		// left: -25%;
+		@include min-screen(em($maxWidth)){
+			position: static;
+			width: 100%
+		}
 	}
 }
 /*--------------------END school-auto----------------------*/ 

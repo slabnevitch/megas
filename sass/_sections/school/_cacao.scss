@@ -38,20 +38,48 @@
 		margin-right: rem(-30);
 	}
 
+	@include min-screen(em($maxWidth)){
+		margin-left: prc(200, $maxWidthContainer);
+		margin-right: prc(200, $maxWidthContainer);
+	}
+
 	.tiny-carousel__nav {
 		@include max-screen($md){
 			display: none;
 		}
 	}
 
+	.tns-prev,
+	.tns-next{
+
+		@include min-screen(em($maxWidth)){
+			top: calc(50% - rem(15 + 83));
+		}
+	}
+	.tns-prev{
+
+		@include min-screen(em($maxWidth)){
+
+			left: prc(-300, $maxWidthContainer);
+		}
+	}
+	.tns-next{
+
+		@include min-screen(em($maxWidth)){
+			right: prc(-300, $maxWidthContainer);
+
+		}
+	}
 	
 }
 
 
 .tiny-sldr {}
-.cacao__slider {}
+.cacao__slider {
+}
 .cacao__slide {
-	aspect-ratio: 965.33 / 724;
+	// aspect-ratio: 965.33 / 724;
+	aspect-ratio: 4200 / 3000;
 
 	@include max-screen($lgg){
 		aspect-ratio: 700 / 545;
