@@ -57,7 +57,7 @@
 	list-style-type: none;
 	padding-left: rem(100);
 	font-size: rem(22);
-	
+	line-height: calc(32 / 22);
 
 	@include max-screen($lgg){
 		padding-left: prc(120, 1024);
@@ -135,7 +135,7 @@
 .guarantee__text{
 	margin-left: rem(100);
 	margin-right: rem(100);
-	line-height: 130%;
+	line-height: calc(26 / 17);
 	color: $accent;
 
 	@include max-screen($lgg){

@@ -6482,6 +6482,7 @@ textarea {
   list-style-type: none;
   padding-left: 5.8823529412rem;
   font-size: 1.2941176471rem;
+  line-height: 1.4545454545;
 }
 @media only screen and (max-width: 86.25em) {
   .guarantee__item {
@@ -6566,7 +6567,7 @@ textarea {
 .guarantee__text {
   margin-left: 5.8823529412rem;
   margin-right: 5.8823529412rem;
-  line-height: 130%;
+  line-height: 1.5294117647;
   color: #009245;
 }
 @media only screen and (max-width: 86.25em) {
@@ -7130,10 +7131,6 @@ textarea {
     aspect-ratio: 360/263.45;
   }
 }
-.school-auto__image ._fit-img {
-  width: 130.0972222222%;
-}
-
 /*--------------------END school-auto----------------------*/
 /*--------------------school-hero----------------------*/
 .school-hero {
