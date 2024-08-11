@@ -282,16 +282,19 @@
 
 }
 .assortment__mode{
-	max-width: rem(224);
-	height: rem(32);
+	width: rem(280);
+	// height: rem(32);
 	display: inline-block;
 
+	@include max-screen($lgg){
+		width: rem(224);
+	}
 	@include max-screen($xss){
 		display: none;
 	}
 
 	img{
-		max-width: 100%;
+		width: 100%;
 		max-height: 100%;
 	}
 }

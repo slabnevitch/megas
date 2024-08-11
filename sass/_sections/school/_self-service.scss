@@ -84,7 +84,7 @@ $itemsWidth: 1012;
 	margin-right: prc(100, $maxWidth);
 	// @include flex-cols-gap(48, 0, 4, ($md: 1), 'self-service__item ', 1);
 	display: grid;
-	grid-template-columns: prc(155, $itemsWidth) prc(243, $itemsWidth) prc(216, $itemsWidth) 1fr;
+	grid-template-columns: prc(165, $itemsWidth) prc(243, $itemsWidth) prc(216, $itemsWidth) 1fr;
 	column-gap: rem(48);
 	// justify-content: space-between;
 
@@ -120,7 +120,17 @@ $itemsWidth: 1012;
 .item-self-service {
 
 	&:nth-child(1){
+		.item-self-service__icon {
+
+			@include min-screen($md){
+				width: rem(75);
+			}
+			@include min-screen($lgg){
+				width: rem(110);
+			}
+		}
 		.item-self-service__text{
+
 			@include max-screen($lgg){
 				padding-left: rem(67);
 			}
@@ -148,6 +158,13 @@ $itemsWidth: 1012;
 			}
 			@include max-screen($sm){
 				margin-top: rem(-10);
+			}
+
+			@include min-screen($md){
+				width: rem(65);	
+			}
+			@include min-screen($lgg){
+				width: rem(95);	
 			}
 		}
 	}
@@ -196,7 +213,7 @@ $itemsWidth: 1012;
 	height: rem(115.13);
 	display: flex;
 	align-items: flex-end;
-	margin-bottom: rem(73.91);
+	margin-bottom: rem(63.91);
 	margin-left: auto;
 	margin-right: auto;
 

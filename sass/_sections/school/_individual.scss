@@ -116,7 +116,7 @@
 	}
 }
 .individual__button {
-	max-width: rem(169.55);
+	max-width: rem(173.55);
 	height: rem(41.75);
 	display: inline-block;
 
@@ -124,12 +124,12 @@
 		max-width: rem(145);
 	}
 	@include max-screen($md){
-		max-width: rem(85);
+		// max-width: rem(85);
 	}
 
 
 	img{
-		max-width: 100%;
+		width: 100%;
 	}
 }
 .individual__button-mob{
