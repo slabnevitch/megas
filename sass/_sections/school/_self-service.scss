@@ -35,10 +35,11 @@
 	@include max-screen($lgg){
 		margin-left: 0;
 		font-size: rem(19);
+		line-height: calc(41 / 19);
 	}
 	@include max-screen($sm){
 		font-size: rem(15);
-		line-height: 220%;
+		// line-height: 220%;
 	}
 
 	a{
@@ -54,6 +55,7 @@
 		@include max-screen($lgg){
 			font-size: rem(33);
 			// line-height: 150%;
+			line-height: calc(41 / 33);
 		}
 
 		@include max-screen($sm){
