@@ -2039,7 +2039,7 @@ textarea {
   }
 }
 .carousel-ordinary .tns-nav {
-  margin-top: 4rem;
+  margin-top: 2.9411764706rem;
 }
 @media only screen and (max-width: 86.25em) {
   .carousel-ordinary .tns-nav {
@@ -2054,7 +2054,7 @@ textarea {
 .carousel-ordinary .tns-prev,
 .carousel-ordinary .tns-next {
   position: absolute;
-  top: calc(50% - 4.8823529412rem);
+  top: calc(50% - 3.8235294118rem);
   width: 1.7647058824rem;
   height: 1.7647058824rem;
   display: -ms-flexbox;
@@ -6440,15 +6440,15 @@ textarea {
     display: none;
   }
 }
-.cacao__carousel .tns-prev,
-.cacao__carousel .tns-next {
-  top: calc(50% - 5.7647058824rem);
+@media only screen and (min-width: 90em) {
+  .cacao__carousel .tns-prev {
+    left: -25.4237288136%;
+  }
 }
-.cacao__carousel .tns-prev {
-  left: -25.4237288136%;
-}
-.cacao__carousel .tns-next {
-  right: -25.4237288136%;
+@media only screen and (min-width: 90em) {
+  .cacao__carousel .tns-next {
+    right: -25.4237288136%;
+  }
 }
 
 .cacao__slide {
