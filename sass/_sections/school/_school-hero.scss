@@ -76,7 +76,7 @@
 			// width: prc(1206.22, $maxWidth);
 			
 		}
-		@include min-screen(em(1500)){
+		@include min-screen(em(1200)){
 			width: 72%;
 		}
 
@@ -99,6 +99,11 @@
 			@include min-screen($lg){
 				width: 100%;
 				left: 0;
+			}
+			@include min-screen(em(1300)){
+				width: 110%;
+				left: auto;
+				object-position: right 20%;
 			}
 			@include min-screen($lgg){
 				object-position: right top;

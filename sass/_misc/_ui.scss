@@ -262,7 +262,7 @@
   }
   
   .tns-nav{
-    margin-top: rem(68);
+    margin-top: rem(50);
 
     @include max-screen($lgg){
       margin-top: rem(41);
@@ -275,7 +275,7 @@
   .tns-prev,
   .tns-next {
     position: absolute;
-    top: calc(50% - rem(15 + 68));
+    top: calc(50% - rem(15 + 50));
     width: rem(30);
     height: rem(30);
     display: flex;

@@ -49,13 +49,6 @@
 		}
 	}
 
-	.tns-prev,
-	.tns-next{
-
-		@include min-screen(em($maxWidth)){
-			top: calc(50% - rem(15 + 83));
-		}
-	}
 	.tns-prev{
 
 		@include min-screen(em($maxWidth)){
@@ -82,7 +75,7 @@
 	aspect-ratio: 4200 / 3000;
 
 	@include max-screen($lgg){
-		aspect-ratio: 700 / 545;
+		// aspect-ratio: 700 / 545;
 	}
 	@include max-screen($md){
 		aspect-ratio: 360 / 282;
