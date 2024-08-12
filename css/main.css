@@ -6454,11 +6454,6 @@ textarea {
 .cacao__slide {
   aspect-ratio: 4200/3000;
 }
-@media only screen and (max-width: 86.25em) {
-  .cacao__slide {
-    aspect-ratio: 700/545;
-  }
-}
 @media only screen and (max-width: 61.99875em) {
   .cacao__slide {
     aspect-ratio: 360/282;
@@ -7268,7 +7263,7 @@ textarea {
     left: -38%;
   }
 }
-@media only screen and (min-width: 93.75em) {
+@media only screen and (min-width: 75em) {
   .school-hero__image {
     width: 72%;
   }
@@ -7297,6 +7292,13 @@ textarea {
   .school-hero__image ._fit-img {
     width: 100%;
     left: 0;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .school-hero__image ._fit-img {
+    width: 110%;
+    left: auto;
+    object-position: right top;
   }
 }
 @media only screen and (min-width: 86.25em) {
