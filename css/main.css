@@ -7294,9 +7294,9 @@ textarea {
     left: 0;
   }
 }
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 81.25em) {
   .school-hero__image ._fit-img {
-    width: 110%;
+    width: 106%;
     left: auto;
     object-position: right top;
   }
