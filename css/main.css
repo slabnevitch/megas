@@ -7463,12 +7463,12 @@ textarea {
   .self-service__text {
     margin-left: 0;
     font-size: 1.1176470588rem;
+    line-height: 2.1578947368;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .self-service__text {
     font-size: 0.8823529412rem;
-    line-height: 220%;
   }
 }
 .self-service__text a {
@@ -7481,6 +7481,7 @@ textarea {
 @media only screen and (max-width: 86.25em) {
   .self-service__text a {
     font-size: 1.9411764706rem;
+    line-height: 1.2424242424;
   }
 }
 @media only screen and (max-width: 47.99875em) {
