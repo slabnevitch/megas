@@ -1,10 +1,19 @@
 footer.footer
 	.footer__wrapper
-		a(href="#").footer__logo
+		a(href="index.html").footer__logo
 			img(src="img/logo-full.svg" alt="alt")
 
 		nav.footer__menu.menu-footer
-			+menu('menu-footer', ['О Компании','Команда','Условия установки','Отзывы','Дополнительная информация'])
+			ul.menu-footer__list
+				- var footMenu =  ['О Компании','Команда','Условия установки','Отзывы','Дополнительная информация'];
+				each item in footMenu
+					li.menu-footer__item
+						if item == 'Условия установки'
+							a(href="examples.html").menu-footer__link= item
+						else
+							a(href="about.html").menu-footer__link= item
+			
+			//- +menu('menu-footer', ['О Компании','Команда','Условия установки','Отзывы','Дополнительная информация'])
 
 		ul.footer__socials.socials-footer
 			li.socials-footer__item

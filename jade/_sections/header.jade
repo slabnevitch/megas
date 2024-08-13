@@ -1,7 +1,7 @@
 header(class=headerDark && headerFixed ? "header header--dark header--fixed" : headerDark ? "header header--dark" : headerFixed ? "header header--fixed" : "header")
 	.header__wrapper
 		.header__body
-			a(href="#").header__logo
+			a(href="index.html").header__logo
 				img(src="img/header-logo.svg" alt="alt")
 
 			.header__menu.menu-header
@@ -15,8 +15,14 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 						path(d='M0.860352 1.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
 						path(d='M0.860352 8.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
 						path(d='M0.860352 15.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
-				nav.menu-header__body
-					+menu('menu', ['Вендинговые Аппараты', 'Школьный вендинг', 'Почему MegasVending', 'Примеры установок', 'Польза от вендинга'])
+				nav.menu-header__body.menu
+					.menu__list
+						- var menu =  [{title:'Вендинговые Аппараты', link:'devices'}, {title:'Школьный вендинг', link:'school'}, {title:'Почему MegasVending', link:'why'}, {title: 'Примеры установок', link:'examples'}, {title: 'Польза от вендинга', link:'benefit'}];
+						
+						each item in menu
+							li.menu__item
+								a(href=item.link+".html").menu__link= item.title
+					//- +menu('menu', ['Вендинговые Аппараты', 'Школьный вендинг', 'Почему MegasVending', 'Примеры установок', 'Польза от вендинга'])
 
 			button(type="button").header__search-button
 				svg(viewBox='0 0 21 20', fill='none', xmlns='http://www.w3.org/2000/svg')

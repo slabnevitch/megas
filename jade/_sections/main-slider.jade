@@ -7,7 +7,9 @@ section.main-slider.gray-bg
 		.tiny-carousel
 			//- Собственно, слайдер
 			.tiny-sldr
-				- for (var i=0; i < 5; i++)
-					div.main-carousel__slide
-						a(href="#").main-carousel__slide-wrap._fit
-							img._fit-img(src="img/main-slider/lg/"+(i+1)+".jpg" alt="alt")
+				//- - for (var i=0; i < 5; i++)
+				- var links = ['devices.html', 'examples.html', 'benefit.html', 'devices.html#opera-togo', 'school.html'];
+					each link, i in links
+						div.main-carousel__slide
+							a(href=link).main-carousel__slide-wrap._fit
+								img._fit-img(src="img/main-slider/lg/"+(i+1)+".jpg" alt="alt")
