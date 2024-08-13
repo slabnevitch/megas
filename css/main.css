@@ -3111,6 +3111,12 @@ textarea {
 .hero__text {
   line-height: 130%;
   text-align: right;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
 }
 @media only screen and (max-width: 86.25em) {
   .hero__text {
