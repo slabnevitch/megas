@@ -118,6 +118,7 @@
 .hero__text {
 	line-height: 130%;
 	text-align: right;
+	@include dots-family-multi(5);
 
 	@include max-screen($lgg){
 		font-size: rem(15);

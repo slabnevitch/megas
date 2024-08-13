@@ -19,9 +19,14 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 					.menu__list
 						- var menu =  [{title:'Вендинговые Аппараты', link:'devices'}, {title:'Школьный вендинг', link:'school'}, {title:'Почему MegasVending', link:'why'}, {title: 'Примеры установок', link:'examples'}, {title: 'Польза от вендинга', link:'benefit'}];
 						
-						each item in menu
+						each item, i in menu
 							li.menu__item
-								a(href=item.link+".html").menu__link= item.title
+								if pageIndex == i
+									a(href="#").menu__link= item.title
+								else
+									a(href=item.link+".html").menu__link= item.title
+								
+								//- a(href=item.link+".html").menu__link= item.title
 					//- +menu('menu', ['Вендинговые Аппараты', 'Школьный вендинг', 'Почему MegasVending', 'Примеры установок', 'Польза от вендинга'])
 
 			button(type="button").header__search-button
