@@ -7159,18 +7159,18 @@ textarea {
 }
 
 .school-auto__descr {
-  margin-bottom: 2.2941176471rem;
+  padding-bottom: 2.2941176471rem;
   text-align: center;
 }
 @media only screen and (max-width: 86.25em) {
   .school-auto__descr {
-    margin-bottom: 1.7270588235rem;
+    padding-bottom: 1.7270588235rem;
     font-size: 0.8823529412rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .school-auto__descr {
-    margin-bottom: 0.7829411765rem;
+    padding-bottom: 0.7829411765rem;
     font-size: 0.7647058824rem;
   }
 }
