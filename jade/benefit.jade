@@ -1,7 +1,8 @@
 extends _templates/main
 
 block title
-	| Польза	
+	| Польза
+	- var pageIndex = 4;	
 
 block content
 	include _sections/benefit/benefit-tiles
@@ -121,7 +122,7 @@ block page-scripts
 	//- script(src="js/libs/swiper/swiper-bundle.min.js")
 
 	//- tiny-slider--------------------------
-	script(src="js/libs/tiny-slider/dist/min/tiny-slider.js")
+	//- script(src="js/libs/tiny-slider/dist/min/tiny-slider.js")
 
 	//- wNumb--------------------------
 	//- script(src=path + "wnumb/wNumb.js")

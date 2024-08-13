@@ -2,6 +2,7 @@ extends _templates/main
 
 block title
 	| Примеры
+	- var pageIndex = 3;
 	
 block content
 	include _sections/examples/examples-style
@@ -52,7 +53,7 @@ block page-scripts
 	//- script(src="js/libs/service-functions/scrollDisable.js")
 
 	//- scrollWidth(фикс прыгания стр-цы. при открытии модалки--------------------------
-	script(src="js/libs/service-functions/scrollWidth.js")
+	//- script(src="js/libs/service-functions/scrollWidth.js")
 
 	//- All in one file--------------------------
 	//- script(src="js/libs/service-functions/all-functions.js")
@@ -123,7 +124,7 @@ block page-scripts
 	//- script(src="js/libs/swiper/swiper-bundle.min.js")
 
 	//- tiny-slider--------------------------
-	script(src="js/libs/tiny-slider/dist/min/tiny-slider.js")
+	//- script(src="js/libs/tiny-slider/dist/min/tiny-slider.js")
 
 	//- wNumb--------------------------
 	//- script(src=path + "wnumb/wNumb.js")
@@ -177,6 +178,6 @@ block page-scripts
 	//- script(src="js/libs/rellax/rellax.js")
 
 	//-venobox--------------------------
-	script(src="js/libs/VenoBox/dist/venobox.min.js")
+	//- script(src="js/libs/VenoBox/dist/venobox.min.js")
 
 //- end VANILLA JS===================================

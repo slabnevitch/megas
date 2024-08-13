@@ -1,34 +1,25 @@
 (function() {
-	// ibg class
-	// if('objectFit' in document.documentElement.style === false){
-	//   Array.prototype.forEach.call(document.querySelectorAll('._fit'), function(el){
+	// ibg class Для замены object-fit: cover;
+	if('objectFit' in document.documentElement.style === false){
+	  Array.prototype.forEach.call(document.querySelectorAll('._fit'), function(el){
 
-	//     var image = el.querySelector('img');
-	//     el.style.backgroundImage = 'url("'+image.src+'")';
-	//     el.classList.add('ibg');
-	//     el.classList.remove('_fit');
-	// 	 });
-	// }
-	// End ibg class
+	    var image = el.querySelector('img');
+	    el.style.backgroundImage = 'url("'+image.src+'")';
+	    el.classList.add('ibg');
+	    el.classList.remove('_fit');
+		 });
+	}
+	// End ibg class Для замены object-fit: cover;
 
 	document.addEventListener('DOMContentLoaded', function() {
-		console.log('DOMContentLoaded!');
 
-		// document.querySelector('.toggle-mnu').onclick = function(e) {
-		// 	this.classList.toggle('on');
-		// 	document.documentElement.classList.toggle('menu-opened');
-		// 	document.documentElement.classList.toggle('lock');
-		// }
-
-		// venoBox modal
+		// venoBox modal Модальные окна с картинками на about.html и why.html
 		if (document.querySelector('.image-modal') !== null){
 			var certifsCloseTimer;
 			var certifsBox = new VenoBox({
 			    selector: '.image-modal',
 			    spinner: 'rotating-plane',
 			     onPreOpen: function(obj){
-			       console.log('PRE OPEN');
-			       console.log(obj);
 		    		document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
 			    },
 			    onPostOpen: function(obj, gallIndex, thenext, theprev){
@@ -40,7 +31,7 @@
 			    onPreClose: function(obj, gallIndex, thenext, theprev){
 			       document.querySelector('.vbox-child').removeEventListener('click', sertifBoxClick);
 			       clearTimeout(certifsCloseTimer);
-						document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+			       document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
 			    }
 			});
 			
@@ -50,13 +41,12 @@
 			}
 
 		}
-
 		// END venoBox modal
 
 		document.onclick = function(e) {
 			var targ = e.target;
-			console.log(targ);
 
+			// открытие/закрытие мобильного меню
 			if(targ.closest('.toggle-mnu') !== null){
 				document.querySelector('.toggle-mnu').classList.toggle('on');
 				if(!document.documentElement.classList.contains('search-open')){
@@ -65,7 +55,9 @@
 				document.documentElement.classList.remove('search-open');
 				document.documentElement.classList.toggle('menu-opened');
 			}
+			//КОНЕЦ открытие/закрытие мобильного меню
 
+			//открытие/закрытие окна поиска
 			if(targ.className === 'header__search-button' || targ.closest('.header__search-button') !== null){
 				document.documentElement.classList.toggle('search-open');
 				document.documentElement.classList.toggle('lock');
@@ -75,8 +67,10 @@
 				document.documentElement.classList.remove('search-open');
 				document.documentElement.classList.remove('lock');
 			}
+			//КОНЕЦ открытие/закрытие окна поиска
 		}
 
+		//добавление анимации при появлении элементов на экране в блоках ".organize" и ".self-service"
 		if(document.querySelector('[data-trigger]')){
 			var trigger = new ScrollTrigger.default( {
 				trigger: {
@@ -92,12 +86,7 @@
 		                // return a Promise here, the trigger will not be called until
 		                // the promise resolves.
 		            	in: (trigger) => {
-		            		console.log('in!');
-		            		console.log(trigger);
-		            		if(trigger.element.classList.contains('pizda')){
-		            			// document.querySelector('.school-hero').style="position: static";
-		            			// document.querySelector('.school-scroll').classList.add('inv')
-		            		}
+	
 		            	},
 		                // A callback when the element is visible on screen, keeps
 		                // on triggering for as long as 'sustain' is set
@@ -110,13 +99,6 @@
 		            	out: (trigger) => {
 		                    // `trigger` contains the Trigger object that goes out
 		                    // of the viewport
-		                    console.log('out!')
-		                    console.log(trigger);
-		                    if(trigger.element.classList.contains('pizda')){
-		            			// document.querySelector('.school-hero').style="position: sticky";
-		            			// document.querySelector('.school-scroll').classList.remove('inv');
-		            		}
-		                     // rellax.refresh();
 		            		return new Promise((resolve, reject) => {
 		            			setTimeout(resolve, 10)
 		            		})
@@ -128,13 +110,10 @@
 	        }); // When not using npm, create a new instance with 'new ScrollTrigger.default()'
 					// Add all html elements with attribute data-trigger
 			trigger.add('[data-trigger]');
-
 		}
+		//КОНЕЦ добавление анимации при появлении элементов на экране в блоках ".organize" и ".self-service"
 
-
-	
-
-		// main-slider
+		// main-slider слайдер внизу главной страницы
 		// usage: http://ganlanyuan.github.io/tiny-slider/#usage
 		if(document.querySelector('.main-slider__carousel .tiny-sldr') !== null){
 			var slider = tns({
@@ -172,10 +151,9 @@
 				}
 			});
 		}
+		// END main-slider слайдер внизу главной страницы
 
-		// END main-slider
-
-		// cacao-carousel
+		// cacao-carousel слайдер "Вариант оформления какао-зоны для отдыха учащихся" на shcool.html
 		if(document.querySelector('.carousel-ordinary .tiny-sldr') !== null){
 			var slider = tns({
 				container: '.carousel-ordinary .tiny-sldr',
@@ -190,9 +168,9 @@
 				mouseDrag: true
 			});
 		}
-		// END cacao-carousel
+		// END cacao-carousel слайдер "Вариант оформления какао-зоны для отдыха учащихся" на shcool.html
 
-		// fab button
+		// fab button управление состоянием кнопки .fab
 		var fabTimer,
 			fab = document.querySelector('.fab'),
 			fabFade = document.querySelector('[data-fab-fade]'),
@@ -215,7 +193,6 @@
 			}
 			function fabButtonCheck() {
 				if(fabFade){
-					console.log('if!')
 					if(fabFade.getBoundingClientRect().bottom >= document.querySelector('.fab').getBoundingClientRect().top
 						|| footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
 						fab.classList.add('fab--hidden');
@@ -224,7 +201,6 @@
 
 					}	
 				}else{
-					console.log('else!')
 					if(footer.getBoundingClientRect().top <= document.querySelector('.fab').getBoundingClientRect().bottom){
 						fab.classList.add('fab--hidden');
 					}else{
@@ -234,9 +210,9 @@
 
 			}
 		}
-		// END fab button
+		// END fab button управление состоянием кнопки .fab
 
-		// benefit-tiles toggling
+		// benefit-tiles toggling переключение вида карточек на benefit.html
 		if(document.querySelector('.benefit-tile') !== null){
 			var tiles = document.querySelectorAll('.benefit-tile'),
 				tilesTimer;
@@ -263,9 +239,9 @@
 				document.querySelector('.traffic').classList.remove('traffic--open');
 			}
 		}
-		// END benefit-tiles toggling
+		// END benefit-tiles toggling переключение вида карточек на benefit.html
 
-		// traffic toggling
+		// traffic toggling переключение вида картинки в блоке smart на benefit.html
 		if(document.querySelector('.traffic__features') !== null){
 			var togglers = document.querySelectorAll('[data-traffic-toggler]'),
 				trafficTimer;
@@ -276,7 +252,6 @@
 					var parent = e.target.closest('.traffic');
 
 					if(!parent.classList.contains('traffic--open')){
-						console.log('true!')
 						trafficTimer = setTimeout(function() {
 							parent.classList.remove('traffic--open');
 						}, 10000);
@@ -291,7 +266,7 @@
 				});
 			});
 		}
-		// END traffic toggling
+		// END traffic toggling переключение вида картинки в блоке smart на benefit.html
 		
 	});
 })();
