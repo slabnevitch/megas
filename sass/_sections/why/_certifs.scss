@@ -1,5 +1,16 @@
 /*--------------------certifs----------------------*/
-.certifs {}
+.certifs {
+	padding-top: rem(221);
+
+	@include max-screen($lgg){
+		padding-top: rem(158);
+
+	}
+	@include max-screen($md){
+		padding-top: rem(120);
+
+	}
+}
 .certifs__top {}
 
 .certifs__title {

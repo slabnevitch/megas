@@ -1,15 +1,12 @@
 /*--------------------comfort-class----------------------*/
 .comfort-class {
 	padding-top: rem(99.46);
-	padding-bottom: rem(266);
 
 	@include max-screen($lgg){
 		padding-top: rem(92);
-		padding-bottom: rem(160);
 	}
 	@include max-screen($md){
 		padding-top: rem(78);
-		padding-bottom: rem(76);
 	}
 }
 .comfort-class__wrapper {}

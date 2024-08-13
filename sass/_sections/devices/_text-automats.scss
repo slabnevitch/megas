@@ -1,5 +1,14 @@
 /*--------------------text-automats----------------------*/
-.text-automats {}
+.text-automats {
+	padding-top: rem(266);
+
+	@include max-screen($lgg){
+		padding-top: rem(160);
+	}
+	@include max-screen($md){
+		padding-top: rem(76);
+	}
+}
 .text-automats__top {}
 .text-automats__wrapper {}
 .heading--row {}

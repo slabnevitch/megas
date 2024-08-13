@@ -5231,18 +5231,15 @@ textarea {
 /*--------------------comfort-class----------------------*/
 .comfort-class {
   padding-top: 5.8505882353rem;
-  padding-bottom: 15.6470588235rem;
 }
 @media only screen and (max-width: 86.25em) {
   .comfort-class {
     padding-top: 5.4117647059rem;
-    padding-bottom: 9.4117647059rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .comfort-class {
     padding-top: 4.5882352941rem;
-    padding-bottom: 4.4705882353rem;
   }
 }
 
@@ -5677,6 +5674,20 @@ textarea {
 
 /*--------------------END minimarket----------------------*/
 /*--------------------text-automats----------------------*/
+.text-automats {
+  padding-top: 15.6470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .text-automats {
+    padding-top: 9.4117647059rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .text-automats {
+    padding-top: 4.4705882353rem;
+  }
+}
+
 .text-automats__heading {
   margin-bottom: 4.6470588235rem;
 }
@@ -7471,7 +7482,7 @@ textarea {
     font-size: 0.8823529412rem;
   }
 }
-.self-service__text a {
+.self-service__text a, .self-service__text span {
   font-size: 2.1176470588rem;
   color: #009245;
   text-decoration: none;
@@ -7479,30 +7490,30 @@ textarea {
   font-family: "Articulat CF Light", sans-serif;
 }
 @media only screen and (max-width: 86.25em) {
-  .self-service__text a {
+  .self-service__text a, .self-service__text span {
     font-size: 1.9411764706rem;
     line-height: 1.2424242424;
   }
 }
 @media only screen and (max-width: 47.99875em) {
-  .self-service__text a {
+  .self-service__text a, .self-service__text span {
     font-size: 1.4705882353rem;
     line-height: 110%;
     margin-left: 0.1764705882rem;
   }
 }
 @media only screen and (min-width: 47.99875em) {
-  .self-service__text a {
+  .self-service__text a, .self-service__text span {
     margin-left: 0.4705882353rem;
   }
 }
 @media only screen and (min-width: 47.99875em) {
-  .self-service__text a {
+  .self-service__text a, .self-service__text span {
     margin-left: 0.1176470588rem;
   }
 }
 @media (any-hover: hover) {
-  .self-service__text a:hover {
+  .self-service__text a:hover, .self-service__text span:hover {
     font-family: "Articulat CF Medium", sans-serif;
   }
 }
@@ -7687,6 +7698,20 @@ textarea {
 
 /*--------------------END self-service----------------------*/
 /*--------------------certifs----------------------*/
+.certifs {
+  padding-top: 13rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .certifs {
+    padding-top: 9.2941176471rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .certifs {
+    padding-top: 7.0588235294rem;
+  }
+}
+
 .certifs__title {
   margin-bottom: 5.1764705882rem;
 }
@@ -8081,17 +8106,6 @@ textarea {
 /*--------------------ruler----------------------*/
 .ruler {
   padding-top: 5.7176470588rem;
-  padding-bottom: 13rem;
-}
-@media only screen and (max-width: 86.25em) {
-  .ruler {
-    padding-bottom: 9.2941176471rem;
-  }
-}
-@media only screen and (max-width: 61.99875em) {
-  .ruler {
-    padding-bottom: 7.0588235294rem;
-  }
 }
 
 .ruler__text {
