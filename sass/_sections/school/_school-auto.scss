@@ -20,16 +20,16 @@
 .text-center {}
 .heading__title {}
 .school-auto__descr{
-	margin-bottom: rem(39);
+	padding-bottom: rem(39);
 	text-align: center;
 
 	@include max-screen($lgg){
-		margin-bottom: rem(29.36);
+		padding-bottom: rem(29.36);
 		font-size: rem(15);
 	}
 	@include max-screen($sm){
 		
-		margin-bottom: rem(13.31);
+		padding-bottom: rem(13.31);
 		font-size: rem(13);
 	}
 }
