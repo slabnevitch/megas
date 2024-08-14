@@ -1548,7 +1548,7 @@ textarea {
   background-color: #F2F2F2;
 }
 
-.school-section {
+.school-section, .school-page {
   position: relative;
   z-index: 2;
 }
@@ -7215,6 +7215,9 @@ textarea {
   -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #F3F8FB;
+}
+.school-hero--hidden {
+  visibility: hidden;
 }
 @media only screen and (min-width: 61.99875em) {
   .school-hero {
