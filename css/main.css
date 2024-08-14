@@ -1548,7 +1548,7 @@ textarea {
   background-color: #F2F2F2;
 }
 
-.school-section {
+.school-section, .school-page {
   position: relative;
   z-index: 2;
 }
@@ -2333,6 +2333,7 @@ textarea {
 /*--------------------END assortmetn----------------------*/
 /*--------------------footer----------------------*/
 .footer {
+  position: relative;
   padding-top: 3.6988235294rem;
   padding-bottom: 7.5652941176rem;
   color: #4D4D4D;
@@ -7215,6 +7216,20 @@ textarea {
   -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #F3F8FB;
+}
+.school-hero:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F2F2F2;
+  display: none;
+  z-index: 2;
+}
+.school-hero--hidden:before {
+  display: block;
 }
 @media only screen and (min-width: 61.99875em) {
   .school-hero {

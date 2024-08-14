@@ -113,6 +113,21 @@
 		}
 		//КОНЕЦ добавление анимации при появлении элементов на экране в блоках ".organize" и ".self-service"
 
+
+		if(document.querySelector('.school-scroll') !== null && document.querySelector('.school-hero') !== null){
+			console.log('if!!!')
+			window.addEventListener('scroll',  function(e) {		
+				console.log(document.querySelector('.school-scroll').getBoundingClientRect().top);
+	        	var schoolScroll = document.querySelector('.school-scroll');
+	        	if(schoolScroll.getBoundingClientRect().top + schoolScroll.offsetHeight <= 0){
+	        		document.querySelector('.school-hero').classList.add('school-hero--hidden');
+	        	}else{
+	        		document.querySelector('.school-hero').classList.remove('school-hero--hidden');
+
+	        	}
+			});
+		}
+
 		// main-slider слайдер внизу главной страницы
 		// usage: http://ganlanyuan.github.io/tiny-slider/#usage
 		if(document.querySelector('.main-slider__carousel .tiny-sldr') !== null){
