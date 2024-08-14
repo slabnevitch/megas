@@ -154,21 +154,27 @@
 		// END main-slider слайдер внизу главной страницы
 
 		// cacao-carousel слайдер "Вариант оформления какао-зоны для отдыха учащихся" на shcool.html
+		// и " кофе-поинты и уличные кофейни" на devices.html
 		if(document.querySelector('.carousel-ordinary .tiny-sldr') !== null){
-			var slider = tns({
-				container: '.carousel-ordinary .tiny-sldr',
-				mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
-				items: 1,
-				speed: 1000,
-				// loop: false,
-				slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
-				// center: true,
-				controlsContainer: '.carousel-ordinary .tiny-carousel__nav',
-				navPosition: 'bottom',//положение bullets
-				mouseDrag: true
-			});
+			var tnsCarousels = document.querySelectorAll('.carousel-ordinary');
+				for(var i = 0; i < tnsCarousels.length; i++) {
+
+					var slider = tns({
+						container: tnsCarousels[i].querySelector('.tiny-sldr'),
+						mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
+						items: 1,
+						speed: 1000,
+						// loop: false,
+						slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
+						// center: true,
+						controlsContainer: tnsCarousels[i].querySelector('.tiny-carousel__nav'),
+						navPosition: 'bottom',//положение bullets
+						mouseDrag: true
+					});
+				}
 		}
 		// END cacao-carousel слайдер "Вариант оформления какао-зоны для отдыха учащихся" на shcool.html
+		// и " кофе-поинты и уличные кофейни" на devices.html
 
 		// fab button управление состоянием кнопки .fab
 		var fabTimer,

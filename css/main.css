@@ -3919,7 +3919,7 @@ textarea {
     line-height: 200%;
   }
 }
-.descr-system__app a {
+.descr-system__app a, .descr-system__app span {
   font-size: 2.1176470588rem;
   color: #009245;
   text-decoration: none;
@@ -3927,20 +3927,15 @@ textarea {
   font-family: "Articulat CF Light", sans-serif;
 }
 @media only screen and (max-width: 86.25em) {
-  .descr-system__app a {
+  .descr-system__app a, .descr-system__app span {
     font-size: 1.9411764706rem;
     line-height: 170%;
   }
 }
 @media only screen and (max-width: 47.99875em) {
-  .descr-system__app a {
+  .descr-system__app a, .descr-system__app span {
     font-size: 1.4705882353rem;
     line-height: 150%;
-  }
-}
-@media (any-hover: hover) {
-  .descr-system__app a:hover {
-    font-family: "Articulat CF Medium", sans-serif;
   }
 }
 

@@ -155,7 +155,7 @@
 		line-height: 200%;
 	}
 
-	a{
+	a, span{
 		font-size: rem(36);
 		color: $accent;
 		text-decoration: none;
@@ -173,11 +173,11 @@
 			line-height: 150%;
 		}
 
-		@media (any-hover: hover) { //только для устройств с ховером
-				&:hover{
-					font-family: $med;
-				}
-			}
+		// @media (any-hover: hover) { //только для устройств с ховером
+		// 		&:hover{
+		// 			font-family: $med;
+		// 		}
+		// 	}
 	}
 }
 .parameters-title{
