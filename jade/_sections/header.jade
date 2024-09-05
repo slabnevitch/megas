@@ -16,8 +16,21 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 						path(d='M0.860352 8.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
 						path(d='M0.860352 15.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
 				nav.menu-header__body.menu
-					.menu__list
-						- var menu =  [{title:'Вендинговые Аппараты', link:'devices'}, {title:'Школьный вендинг', link:'school'}, {title:'Почему MegasVending', link:'why'}, {title: 'Примеры установок', link:'examples'}, {title: 'Польза от вендинга', link:'benefit'}];
+					ul.menu__list
+						- var menu =  [{title:'Школьный вендинг', link:'school'}, /*{title:'Почему MegasVending', link:'why'},*/ {title: 'Примеры установок', link:'examples'}, {title: 'Польза от вендинга', link:'benefit'}];
+						
+						li(data-single-dropdown='').menu__item
+							a.menu__link(href='devices.html') Вендинговые Аппараты
+							button.menu__arrow(type='button' data-dropdown-arrow)
+							ul.single-dropdown
+								li.single-dropdown__item
+									a.single-dropdown__link(href="devices.html") Кофейные автоматы
+								li.single-dropdown__item
+									a.single-dropdown__link(href="devices.html#coffee-points") Кофе поинты
+								li.single-dropdown__item
+									a.single-dropdown__link(href="devices.html#snack-machines") Снековые автоматы
+								li.single-dropdown__item
+									a.single-dropdown__link(href="devices.html#smartmarkets") Смартмаркеты
 						
 						each item, i in menu
 							li.menu__item

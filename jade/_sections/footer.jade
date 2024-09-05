@@ -5,10 +5,16 @@ footer.footer
 
 		nav.footer__menu.menu-footer
 			ul.menu-footer__list
-				- var footMenu =  ['О Компании','Команда','Условия установки','Отзывы','Дополнительная информация'];
-				each item in footMenu
+				- var footMenu =  ['О Компании','MegasVending','Условия установки','Отзывы','Дополнительная информация'];
+				each item, i in footMenu
 					li.menu-footer__item
-						if item == 'Условия установки'
+						if i==1
+							if pageIndex == 2
+								a(href="#").menu-footer__link= item
+							else
+								a(href="why.html").menu-footer__link= item
+						
+						else if item == 'Условия установки'
 							if pageIndex == 3
 								a(href="#").menu-footer__link= item
 							else
