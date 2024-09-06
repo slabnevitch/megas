@@ -155,9 +155,12 @@
 	}
 	@include max-screen($md){
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: stretch;
 		row-gap: rem(25);
 		padding: rem(95) rem(30) rem(30) rem(30);
+	}
+	@include max-screen($mins){
+		padding-right: 15px;
 	}
 }
 .menu__item {
@@ -184,6 +187,7 @@
 		font-size: rem(12);
 	}
 	@include max-screen($md){
+		display: block;
 		font-size: rem(22);
 		color: $text;
 		font-family: $med;

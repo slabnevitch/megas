@@ -30,10 +30,13 @@
 	}
 	.submenu-list{
 		left: 0;
+
 		top: 100%;
-		background-color: gray;
+		
+		// background-color: gray;
 	}
 }
+
 .submenu-list__item{
 	position: relative;
 	display: flex;
@@ -62,6 +65,7 @@
 
 }
  [data-dropdowned]{
+ 	// display: flex;
 	@media (any-hover: hover) { //только для устройств с ховером
 		&:hover{
 			& >.submenu-list{
@@ -69,25 +73,29 @@
 			opacity: 1;
 			}
 			& > .menu-list__icon{
-				transform: rotate(90deg);
+				transform: rotate(180deg);
 			}
 		}
 	}
 	&.active{
 		& > .menu-list__icon{
-			transform: rotate(90deg);
+			transform: rotate(180deg);
 		}
 
 		& > .submenu-list{
-			// display: block;
 			visibility: visible;
 			opacity: 1;
+
+			@include max-screen($md){
+				display: block;
+			}  
 		}
 	}
 
  }
 .menu-list__icon{
-	width: rem(20);
+	@include but-null();
+	width: rem(12);
 	height: rem(20);
 	margin: 0 rem(5);
 	// outline: 1px solid red;
@@ -100,14 +108,19 @@
 		width: 0;
 		height: 0;
 		border-style: solid;
-		border-width: 10px 7.5px 0 7.5px;
+		border-width: 5px 5px 0 5px;
 		border-color: #000 transparent transparent transparent;
+		
+		@include max-screen($md){
+			border-width: 7px 7px 0 7px;
+
+		}
 	}
 
-	@include max-screen($sm){
+	@include max-screen($md){
 		position: absolute;
-		top: rem(5);
-		right: rem(5);
+		top: rem(4);
+		right: 0;
 		margin: 0;
 	}  
 }
@@ -117,14 +130,34 @@
 	opacity: 0;
 	transition: all .2s ease;
 	min-width: rem(200);
+	padding: rem(15) rem(10);
+	background-color: #E6E6E6;
 
-	@include max-screen($sm){
+	@include max-screen($md){
 		position: relative;
-		padding-left: rem(10);
+		// padding-left: rem(10);
+		visibility: visible;
+		opacity: 1;
+		display: none;
+		background-color: transparent;
 	}  
 	a{
-		@include max-screen($multilevelPoint){
+		font-size: rem(15.5);
+		text-decoration: none;
+
+		@include max-screen($lg){
+			font-size: rem(14);
+			
+		}
+		@include max-screen($lgg){
 			font-size: rem(12);
-		}  
+		}
+		@include max-screen($md){
+			font-size: rem(18);
+			color: $text;
+			font-family: $med;
+		} 
 	}
+}
+.submenu-list__link{
 }
