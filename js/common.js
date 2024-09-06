@@ -50,6 +50,7 @@
 			if(targ.closest('.toggle-mnu') !== null){
 				document.querySelector('.toggle-mnu').classList.toggle('on');
 				if(!document.documentElement.classList.contains('search-open')){
+					console.log('rererer!!!')
 					document.documentElement.classList.toggle('lock');
 				}
 				document.documentElement.classList.remove('search-open');
@@ -63,7 +64,8 @@
 				document.documentElement.classList.toggle('lock');
 				document.documentElement.classList.remove('fab-open');
 				document.querySelector('.fab').classList.remove('fab--active');
-			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null){
+			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null && targ.closest('.menu-header__body') == null){
+				console.log('fuccl!!!')
 				document.documentElement.classList.remove('search-open');
 				document.documentElement.classList.remove('lock');
 			}
