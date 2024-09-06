@@ -70,6 +70,13 @@
 				document.documentElement.classList.remove('lock');
 			}
 			//КОНЕЦ открытие/закрытие окна поиска
+
+			//закрытие моб. меню при переходе по якорным ссылкам подменю на devices.html
+			if(targ.closest('.submenu-list__link') !== null){
+				document.documentElement.classList.remove('menu-opened');
+				document.documentElement.classList.remove('lock');
+			}
+			//КОНЕЦ закрытие моб. меню при переходе по якорным ссылкам подменю на devices.html
 		}
 
 		//добавление анимации при появлении элементов на экране в блоках ".organize" и ".self-service"
