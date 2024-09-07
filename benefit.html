@@ -35,19 +35,24 @@
                   <path d="M0.860352 15.3999H24.0004" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"></path>
                 </svg>
               </button>
-              <nav class="menu-header__body menu">
-                <div class="menu__list">
-                  <li class="menu__item"><a href="devices.html" class="menu__link">Вендинговые Аппараты</a>
+              <nav class="menu-header__body menu mulilevel-nav">
+                <ul class="menu__list">
+                  <li data-dropdowned data-dropdowned-parent class="menu-list__item menu__item"><a href="devices.html" class="menu__link">Вендинговые Аппараты</a>
+                    <button data-dropdown-icon class="menu-list__icon"></button>
+                    <ul class="submenu-list">
+                      <li class="submenu-list__item"><a href="devices.html" class="submenu-list__link">Кофейные автоматы</a></li>
+                      <li class="submenu-list__item"><a href="devices.html#coffee-points" class="submenu-list__link">Кофе поинты</a></li>
+                      <li class="submenu-list__item"><a href="devices.html#snack-machines" class="submenu-list__link">Снековые автоматы</a></li>
+                      <li class="submenu-list__item"><a href="devices.html#smartmarkets" class="submenu-list__link">Смартмаркеты</a></li>
+                    </ul>
                   </li>
                   <li class="menu__item"><a href="school.html" class="menu__link">Школьный вендинг</a>
-                  </li>
-                  <li class="menu__item"><a href="why.html" class="menu__link">Почему MegasVending</a>
                   </li>
                   <li class="menu__item"><a href="examples.html" class="menu__link">Примеры установок</a>
                   </li>
                   <li class="menu__item"><a href="#" class="menu__link">Польза от вендинга</a>
                   </li>
-                </div>
+                </ul>
               </nav>
             </div>
             <button type="button" class="header__search-button">
@@ -173,13 +178,13 @@
             <ul class="menu-footer__list">
               <li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О Компании</a>
               </li>
-              <li class="menu-footer__item"><a href="about.html" class="menu-footer__link">Команда</a>
+              <li class="menu-footer__item"><a href="why.html" class="menu-footer__link">MegasVending</a>
               </li>
               <li class="menu-footer__item"><a href="examples.html" class="menu-footer__link">Условия установки</a>
               </li>
               <li class="menu-footer__item"><a href="about.html" class="menu-footer__link">Отзывы</a>
               </li>
-              <li class="menu-footer__item"><a href="about.html" class="menu-footer__link">Дополнительная информация</a>
+              <li class="menu-footer__item"><a href="template.html" class="menu-footer__link">Дополнительная информация</a>
               </li>
             </ul>
           </nav>
@@ -218,9 +223,12 @@
       <button type="button" class="fab__phone"><img src="img/fab/call.svg" alt="alt"></button>
       <button type="button" class="fab__drive"><img src="img/fab/test-drive.svg" alt="alt"></button>
     </div>
-    
-    
+    <script src="js/libs/service-functions/remove-class.js"></script>
     <script src="js/libs/service-functions/siblings.js"></script>
+    <script src="js/libs/service-functions/mobileDetect.js"></script>
+    
+    
+    <script src="js/libs/multilevel-dropdown/multidropdown.js"></script>
     
     
     <script src="js/common.js"></script>

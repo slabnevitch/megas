@@ -50,6 +50,7 @@
 			if(targ.closest('.toggle-mnu') !== null){
 				document.querySelector('.toggle-mnu').classList.toggle('on');
 				if(!document.documentElement.classList.contains('search-open')){
+					console.log('rererer!!!')
 					document.documentElement.classList.toggle('lock');
 				}
 				document.documentElement.classList.remove('search-open');
@@ -63,11 +64,19 @@
 				document.documentElement.classList.toggle('lock');
 				document.documentElement.classList.remove('fab-open');
 				document.querySelector('.fab').classList.remove('fab--active');
-			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null){
+			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null && targ.closest('.menu-header__body') == null){
+				console.log('fuccl!!!')
 				document.documentElement.classList.remove('search-open');
 				document.documentElement.classList.remove('lock');
 			}
 			//КОНЕЦ открытие/закрытие окна поиска
+
+			//закрытие моб. меню при переходе по якорным ссылкам подменю на devices.html
+			if(targ.closest('.submenu-list__link') !== null){
+				document.documentElement.classList.remove('menu-opened');
+				document.documentElement.classList.remove('lock');
+			}
+			//КОНЕЦ закрытие моб. меню при переходе по якорным ссылкам подменю на devices.html
 		}
 
 		//добавление анимации при появлении элементов на экране в блоках ".organize" и ".self-service"
