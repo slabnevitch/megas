@@ -17,7 +17,7 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 						path(d='M0.860352 15.3999H24.0004', stroke-width='1.6', stroke-miterlimit='10', stroke-linecap='round')
 				nav.menu-header__body.menu.mulilevel-nav
 					ul.menu__list
-						- var menu =  [{title:'Школьный вендинг', link:'school'}, /*{title:'Почему MegasVending', link:'why'},*/ {title: 'Примеры установок', link:'examples'}, {title: 'Польза от вендинга', link:'benefit'}];
+						- var menu =  [{title:'Школьный вендинг', link:'school'}, {title: 'Примеры установок', link:'examples'}, {title: 'Польза от вендинга', link:'benefit'}];
 						
 						//- li(data-single-dropdown='').menu__item
 						//- 	a.menu__link(href='devices.html') Вендинговые Аппараты
@@ -33,7 +33,10 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 						//- 			a.single-dropdown__link(href="devices.html#smartmarkets") Смартмаркеты
 
 						li.menu-list__item.menu__item(data-dropdowned data-dropdowned-parent)
-							a.menu__link(href='devices.html') Вендинговые Аппараты
+							if pageIndex == 0
+								a.menu__link(href='#') Вендинговые Аппараты
+							else
+								a.menu__link(href='devices.html') Вендинговые Аппараты
 							button.menu-list__icon(data-dropdown-icon)
 							ul.submenu-list
 								li.submenu-list__item
@@ -47,7 +50,7 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 						
 						each item, i in menu
 							li.menu__item
-								if pageIndex == i
+								if pageIndex == (i+1)
 									a(href="#").menu__link= item.title
 								else
 									a(href=item.link+".html").menu__link= item.title

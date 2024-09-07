@@ -1443,6 +1443,9 @@
   border-width: 5px 5px 0 5px;
   border-color: #000 transparent transparent transparent;
 }
+.header--dark .menu-list__icon:after {
+  border-color: #fff transparent transparent transparent;
+}
 @media only screen and (max-width: 61.99875em) {
   .menu-list__icon:after {
     border-width: 7px 7px 0 7px;
