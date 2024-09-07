@@ -2512,6 +2512,287 @@ textarea {
 }
 
 /*--------------------END assortmetn----------------------*/
+/*--------------------contacts----------------------*/
+.contacts {
+  padding-top: 5.7058823529rem;
+  padding-bottom: 14.1176470588rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .contacts {
+    padding-top: 4.1176470588rem;
+    padding-bottom: 12.4705882353rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .contacts {
+    padding-top: 3rem;
+    padding-bottom: 11.1176470588rem;
+  }
+}
+
+@media only screen and (min-width: 86.25em) {
+  .contacts__wrapper {
+    padding: 0 8.4745762712%;
+  }
+}
+
+.contacts__logo {
+  width: 100%;
+  max-width: 20.2352941176rem;
+  margin-bottom: 3.1764705882rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .contacts__logo {
+    max-width: 17.9411764706rem;
+    margin-bottom: 1.8823529412rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .contacts__logo {
+    max-width: 12.2941176471rem;
+    margin-bottom: 1.5882352941rem;
+  }
+}
+.contacts__logo img {
+  width: 100%;
+}
+
+.contacts__values {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 19.8305084746%;
+  margin-bottom: 3.7058823529rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .contacts__values {
+    margin-bottom: 2.2941176471rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .contacts__values {
+    margin-bottom: 2.1764705882rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .contacts__values {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.value-contacts__text {
+  font-size: 1.2941176471rem;
+  line-height: 1.9090909091;
+  font-style: normal;
+}
+@media only screen and (max-width: 86.25em) {
+  .value-contacts__text {
+    font-size: 1.1176470588rem;
+    line-height: 1.7368421053;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .value-contacts__text {
+    margin-bottom: 1.4705882353rem;
+    font-size: 0.8823529412rem;
+  }
+}
+
+.value-contacts__row span {
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (min-width: 30em) {
+  .value-contacts__row br {
+    display: none;
+  }
+}
+
+.value-contacts__socs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  column-gap: 0.7882352941rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+@media only screen and (min-width: 47.99875em) {
+  .value-contacts__socs {
+    margin-bottom: 0.4117647059rem;
+    column-gap: 1.15rem;
+  }
+}
+@media only screen and (min-width: 86.25em) {
+  .value-contacts__socs {
+    margin-bottom: 0.8235294118rem;
+    column-gap: 1.2941176471rem;
+  }
+}
+
+.value-contacts__soc {
+  list-style-type: none;
+}
+
+.value-contacts__soc-link {
+  display: block;
+  aspect-ratio: 1/1;
+}
+.value-contacts__soc-link--vk {
+  width: 3.4117647059rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .value-contacts__soc-link--vk {
+    width: 3.0311764706rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .value-contacts__soc-link--vk {
+    width: 2.0782352941rem;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .value-contacts__soc-link--vk {
+    margin-bottom: 0.0964705882rem;
+  }
+}
+.value-contacts__soc-link--tg {
+  width: 3.6470588235rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .value-contacts__soc-link--tg {
+    width: 3.24rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .value-contacts__soc-link--tg {
+    width: 2.2217647059rem;
+  }
+}
+.value-contacts__soc-link img {
+  width: 100%;
+}
+
+.contacts__details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1.1176470588rem;
+  column-gap: 1.8823529412rem;
+  row-gap: 0.8823529412rem;
+  font-size: 1.2941176471rem;
+  font-family: "Articulat CF Medium", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .contacts__details {
+    margin-bottom: 0.7576470588rem;
+    column-gap: 1.4705882353rem;
+    font-size: 1.1176470588rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .contacts__details {
+    margin-bottom: 1.0588235294rem;
+    column-gap: 0.5882352941rem;
+    row-gap: 0.2941176471rem;
+    font-size: 0.7647058824rem;
+    line-height: 1.2352941176rem;
+  }
+}
+
+.mails-contacts {
+  margin-bottom: 3.2352941176rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .mails-contacts {
+    margin-bottom: 2.2941176471rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .mails-contacts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.mails-contact__row {
+  font-size: 1.2941176471rem;
+  line-height: 2.4705882353rem;
+}
+@media only screen and (max-width: 30em) {
+  .mails-contact__row:nth-child(2) {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 86.25em) {
+  .mails-contact__row {
+    font-size: 1.1176470588rem;
+    line-height: 1.9411764706rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .mails-contact__row {
+    font-size: 0.7647058824rem;
+    line-height: 1.4117647059rem;
+  }
+}
+
+.mails-contact__val {
+  color: #009245;
+  display: inline-block;
+}
+
+.mails-contact__key {
+  display: inline-block;
+}
+
+.contacts__specs h2 {
+  margin-bottom: 1.1764705882rem;
+  font-family: "Articulat CF Medium", sans-serif;
+  font-size: 1.4705882353rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .contacts__specs h2 {
+    margin-bottom: 0.9411764706rem;
+    font-size: 1.2941176471rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .contacts__specs h2 {
+    margin-bottom: 0.6470588235rem;
+    font-size: 0.8823529412rem;
+  }
+}
+@media only screen and (min-width: 30em) {
+  .contacts__specs h2 br {
+    display: none;
+  }
+}
+.contacts__specs p {
+  max-width: 55.2941176471rem;
+  font-size: 1.2941176471rem;
+  line-height: 2rem;
+  font-family: "Articulat CF Light", sans-serif;
+}
+@media only screen and (max-width: 86.25em) {
+  .contacts__specs p {
+    font-size: 1.1176470588rem;
+    line-height: 1.6470588235rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .contacts__specs p {
+    font-size: 0.7647058824rem;
+    line-height: 1.4117647059rem;
+  }
+}
+
+/*--------------------END contacts----------------------*/
 /*--------------------footer----------------------*/
 .footer {
   position: relative;

@@ -2,44 +2,9 @@ extends _templates/main
 
 block title
 	| Контакты
-	- var pageIndex = 6;
+	- var pageIndex = 7;
 	
 block content
-	section.contacts
-		.contacts__wrapper
-			.contacts__logo
-				img(src="img/logo-long.svg" alt="alt")
-			
-			.contacts__values.value-contacts
-				address.value-contacts__text
-					p.value-contacts__row #[span ООО «Мегас»]
-					p.value-contacts__row Санкт-Петербург, 
-						br
-						| ул. Симонова 15, лит А, пом. 1
-					p.value-contacts__row #[a(href="tel:+78124673839") +7 (812) 467 38 39]
-				
-				ul.value-contacts__socs
-					li.value-contacts__soc
-						a(href="#").value-contacts__soc-link.value-contacts__soc-link--vk
-							img(src="img/socs/vk.svg" alt="alt")
-
-					li.value-contacts__soc
-						a(href="#").value-contacts__soc-link.value-contacts__soc-link--tg
-							img(src="img/socs/tgm.svg" alt="alt")
-
-			.contacts__details
-				- var dets = ['ИНН: 7814342327', 'КПП: 780201001' , 'ОГРН: 1069847102181'];
-				each det in dets
-					.contacts__detail= det
-			
-			.contacts__mails.mails-contacts
-				- var mails = ['<span class="mails-contact__val">megasvending@yandex.ru </span> — общие вопросы', '<span class="mails-contact__val">zakupki@megasvending.ru</span> — по вопросам закупки продукции и ингредиентов', '<span class="mails-contact__val">razvitie@megasvending.ru </span>— установка автоматов'];
-					each mail in mails
-						.mails-contact__row!= mail
-				
-			.contacts__specs
-				h2 Обратитесь к нашим специалистам #[br]прямо сейчас
-				p и получите профессиональную консультацию по&#160;вопросам установки и&#160;работы торговых автоматов по&#160;телефону или по&#160;электронной почте. Будем рады помочь вам и&#160;ответить на&#160;все ваши вопросы
 
 block page-scripts
 	//- SERVIVE FUNCTIONS==================
