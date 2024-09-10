@@ -113,6 +113,10 @@
 
 		.header--dark &{
 			border-color: #fff transparent transparent transparent;
+
+			@include max-screen($md){
+				border-color: #000 transparent transparent transparent;
+			}
 		}
 		
 		@include max-screen($md){

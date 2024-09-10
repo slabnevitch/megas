@@ -45,7 +45,7 @@
 
 		document.onclick = function(e) {
 			var targ = e.target;
-
+			
 			// открытие/закрытие мобильного меню
 			if(targ.closest('.toggle-mnu') !== null){
 				document.querySelector('.toggle-mnu').classList.toggle('on');
