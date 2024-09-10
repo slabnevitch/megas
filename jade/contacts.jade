@@ -33,7 +33,7 @@ block content
 					.contacts__detail= det
 			
 			.contacts__mails.mails-contacts
-				- var mails = ['<span class="mails-contact__val">megasvending@yandex.ru </span> — общие вопросы', '<span class="mails-contact__val">zakupki@megasvending.ru</span> — по вопросам закупки продукции и ингредиентов', '<span class="mails-contact__val">razvitie@megasvending.ru </span>— установка автоматов'];
+				- var mails = ['<a href="mailto:megasvending@yandex.ru" class="mails-contact__val">megasvending@yandex.ru </a> — общие вопросы', '<a href="mailto:zakupki@megasvending.ru" class="mails-contact__val">zakupki@megasvending.ru</a> — по вопросам закупки продукции и ингредиентов', '<a href="mailto:zakupki@megasvending.ru" class="mails-contact__val">razvitie@megasvending.ru </a>— установка автоматов'];
 					each mail in mails
 						.mails-contact__row!= mail
 				
