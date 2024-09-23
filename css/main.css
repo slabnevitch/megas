@@ -1373,7 +1373,6 @@
 }
 .submenu-list__item a {
   display: block;
-  padding: 0.2941176471rem 0.5882352941rem;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
@@ -1388,16 +1387,6 @@
   }
 }
 
-@media (any-hover: hover) {
-  [data-dropdowned]:hover > .submenu-list {
-    visibility: visible;
-    opacity: 1;
-  }
-  [data-dropdowned]:hover > .menu-list__icon {
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
 [data-dropdowned].active > .menu-list__icon {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1471,11 +1460,16 @@
   opacity: 0;
   transition: all 0.2s ease;
   min-width: 11.7647058824rem;
-  padding: 0.8823529412rem 0.5882352941rem;
-  background-color: #E6E6E6;
+  padding: 5.1176470588rem 0 0 0;
+}
+@media only screen and (max-width: 86.25em) {
+  .submenu-list {
+    padding-top: 4rem;
+  }
 }
 @media only screen and (max-width: 61.99875em) {
   .submenu-list {
+    padding-top: 0.8823529412rem;
     position: relative;
     visibility: visible;
     opacity: 1;
@@ -1484,22 +1478,20 @@
   }
 }
 .submenu-list a {
-  font-size: 0.9117647059rem;
+  font-size: 1.4705882353rem;
+  line-height: 3.1764705882rem;
+  font-family: "Articulat CF Medium", sans-serif;
   text-decoration: none;
-}
-@media only screen and (max-width: 73.75em) {
-  .submenu-list a {
-    font-size: 0.8235294118rem;
-  }
 }
 @media only screen and (max-width: 86.25em) {
   .submenu-list a {
-    font-size: 0.7058823529rem;
+    font-size: 1.2941176471rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .submenu-list a {
     font-size: 1.0588235294rem;
+    line-height: 2.3529411765rem;
     color: #1A1A1A;
     font-family: "Articulat CF Medium", sans-serif;
   }
@@ -1961,6 +1953,20 @@ textarea {
 
 .image-modal {
   cursor: zoom-in;
+}
+
+.submenu-cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 21;
+}
+.submenu-open .submenu-cover {
+  display: block;
 }
 
 /*--------------------END adjustment----------------------*/
@@ -3092,6 +3098,9 @@ textarea {
 .search-open .header {
   background-color: transparent;
 }
+.search-open .header:not(.header--dark) .menu-list__icon:after {
+  border-color: #fff;
+}
 
 .header__wrapper {
   position: relative;
@@ -3154,6 +3163,7 @@ textarea {
   left: 0;
   background-color: #fff;
   transition: top 0.4s ease;
+  z-index: 2;
 }
 .menu-opened .menu-header .menu-header__body:before {
   top: 0;
@@ -5867,15 +5877,18 @@ textarea {
 /*--------------------END cosy----------------------*/
 /*--------------------device----------------------*/
 .device__heading {
+  padding-top: 4.7629411765rem;
   margin-bottom: 1.9582352941rem;
 }
 @media only screen and (max-width: 86.25em) {
   .device__heading {
+    padding-top: 3.7452941176rem;
     margin-bottom: 1.4082352941rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .device__heading {
+    padding-top: 1.6470588235rem;
     margin-bottom: 0.7817647059rem;
   }
 }
@@ -5925,18 +5938,15 @@ textarea {
 /*--------------------devices-top----------------------*/
 .devices-top {
   padding-top: 3.8470588235rem;
-  padding-bottom: 4.7629411765rem;
 }
 @media only screen and (max-width: 86.25em) {
   .devices-top {
     padding-top: 4.5758823529rem;
-    padding-bottom: 3.7452941176rem;
   }
 }
 @media only screen and (max-width: 47.99875em) {
   .devices-top {
     padding-top: 1.6470588235rem;
-    padding-bottom: 1.6470588235rem;
   }
 }
 

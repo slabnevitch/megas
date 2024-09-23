@@ -20,6 +20,16 @@
   .search-open &{
   	background-color: transparent;
   }
+
+  &:not(.header--dark){
+  	.search-open &{
+  		.menu-list__icon{
+  			&:after{
+  				border-color: #fff;
+  			}
+  		}
+  	}
+  }
 }
 .header__wrapper{
   position: relative;

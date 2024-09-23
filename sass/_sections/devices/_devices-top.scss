@@ -1,15 +1,12 @@
 /*--------------------devices-top----------------------*/
 .devices-top {
 	padding-top: rem(65.4);
-	padding-bottom: rem(80.97);
 
 	@include max-screen($lgg){
 		padding-top: rem(77.79);
-		padding-bottom: rem(63.67);
 	}
 	@include max-screen($sm){
 		padding-top: rem(28);
-		padding-bottom: rem(28);
 	}
 }
 .devices-top__wrapper {}

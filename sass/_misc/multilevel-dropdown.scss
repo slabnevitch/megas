@@ -49,7 +49,7 @@
 
 	a{
 		display: block;
-		padding: rem(5) rem(10);
+		// padding: rem(5) rem(10);
 		flex: 1 0 auto;
 	}
 	.submenu-list{
@@ -66,17 +66,17 @@
 }
  [data-dropdowned]{
  	// display: flex;
-	@media (any-hover: hover) { //только для устройств с ховером
-		&:hover{
-			& >.submenu-list{
-				visibility: visible;
-			opacity: 1;
-			}
-			& > .menu-list__icon{
-				transform: rotate(180deg);
-			}
-		}
-	}
+	// @media (any-hover: hover) { //только для устройств с ховером
+	// 	&:hover{
+	// 		& >.submenu-list{
+	// 			visibility: visible;
+	// 		opacity: 1;
+	// 		}
+	// 		& > .menu-list__icon{
+	// 			transform: rotate(180deg);
+	// 		}
+	// 	}
+	// }
 	&.active{
 		& > .menu-list__icon{
 			transform: rotate(180deg);
@@ -138,10 +138,15 @@
 	opacity: 0;
 	transition: all .2s ease;
 	min-width: rem(200);
-	padding: rem(15) rem(10);
-	background-color: #E6E6E6;
+	padding: rem(87) 0 0 0;
+	// background-color: #E6E6E6;
+
+	@include max-screen($lgg){
+		padding-top: rem(68);
+	}
 
 	@include max-screen($md){
+		padding-top: rem(15);
 		position: relative;
 		// padding-left: rem(10);
 		visibility: visible;
@@ -150,18 +155,21 @@
 		background-color: transparent;
 	}  
 	a{
-		font-size: rem(15.5);
+		font-size: rem(25);
+		line-height: rem(54);
+		font-family: $med;
 		text-decoration: none;
 
-		@include max-screen($lg){
-			font-size: rem(14);
+		// @include max-screen($lg){
+		// 	font-size: rem(14);
 			
-		}
+		// }
 		@include max-screen($lgg){
-			font-size: rem(12);
+			font-size: rem(22);
 		}
 		@include max-screen($md){
 			font-size: rem(18);
+			line-height: rem(40);
 			color: $text;
 			font-family: $med;
 		} 

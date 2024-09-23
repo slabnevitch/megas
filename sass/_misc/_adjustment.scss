@@ -449,6 +449,21 @@ padding-bottom: 52.25%;
 .image-modal{
 	cursor: zoom-in;
 }
+.submenu-cover{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	background-color: rgba(#fff, .9);
+	z-index: 21;
+
+	.submenu-open &{
+		display: block;
+	}
+}
+
 // tabs-pure base styles
 // .tabs__buttons{
 // 	display: flex;

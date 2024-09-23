@@ -11,12 +11,16 @@
 							mainParent = this.closest('[data-dropdowned-parent]');
 
 					parent.classList.toggle('active');
+					document.documentElement.classList.toggle('submenu-open');
+					
 					Array.prototype.slice.call(parent.querySelectorAll('[data-dropdowned]'))
 						.forEach(function(item) {
 							item.classList.remove('active');
+							// document.documentElement.classList.remove('submenu-open');
 						})
 
 					siblings(mainParent).forEach(function(item) {
+						// document.documentElement.classList.remove('submenu-open');
 						item.classList.remove('active');
 					})
 
@@ -29,6 +33,7 @@
 				if (!targ.closest('[data-dropdowned]')){
 					Array.prototype.slice.call(document.querySelector('.mulilevel-nav').querySelectorAll('[data-dropdowned]')).forEach(function(item) {
 						item.classList.remove('active');
+						document.documentElement.classList.remove('submenu-open');
 					});
 				}
 			});

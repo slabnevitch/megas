@@ -2,12 +2,15 @@
 .device {}
 .device__wrapper {}
 .device__heading {
+	padding-top: rem(80.97);
 	margin-bottom: rem(33.29);
 
 	@include max-screen($lgg){
+		padding-top: rem(63.67);
 		margin-bottom: rem(23.94);
 	}
 	@include max-screen($md){
+		padding-top: rem(28);
 		margin-bottom: rem(13.29);
 	}
 }

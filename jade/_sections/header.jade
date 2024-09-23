@@ -32,21 +32,27 @@ header(class=headerDark && headerFixed ? "header header--dark header--fixed" : h
 						//- 		li.single-dropdown__item
 						//- 			a.single-dropdown__link(href="devices.html#smartmarkets") Смартмаркеты
 
-						li.menu-list__item.menu__item(data-dropdowned data-dropdowned-parent)
-							if pageIndex == 0
-								a.menu__link(href='#') Вендинговые Аппараты
-							else
-								a.menu__link(href='devices.html') Вендинговые Аппараты
-							button.menu-list__icon(data-dropdown-icon)
+						li.menu-list__item.menu__item(data-dropdowned data-dropdowned-parent data-dropdown-icon)
+							//- if pageIndex == 0
+							span.menu__link Вендинговые Аппараты
+							//- else
+							//- 	a.menu__link(href='devices.html') Вендинговые Аппараты
+							//- button.menu-list__icon(data-dropdown-icon)
 							ul.submenu-list
 								li.submenu-list__item
 									a.submenu-list__link(href="devices.html") Кофейные автоматы
 								li.submenu-list__item
-									a.submenu-list__link(href="devices.html#coffee-points") Кофе поинты
-								li.submenu-list__item
 									a.submenu-list__link(href="devices.html#snack-machines") Снековые автоматы
 								li.submenu-list__item
+									a.submenu-list__link(href="devices.html#cocktail") Коктейльные автоматы
+								li.submenu-list__item
+									a.submenu-list__link(href="school.html#cacao-zone") Детские какао – автоматы
+								li.submenu-list__item
 									a.submenu-list__link(href="devices.html#smartmarkets") Смартмаркеты
+								li.submenu-list__item
+									a.submenu-list__link(href="devices.html#coffee-points") Кофе поинты
+								li.submenu-list__item
+									a.submenu-list__link(href="devices.html#coffee-points") Уличные кофейни
 						
 						each item, i in menu
 							li.menu__item

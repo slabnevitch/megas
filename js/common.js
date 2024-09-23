@@ -43,6 +43,22 @@
 		}
 		// END venoBox modal
 
+		// submenu hover
+		if(document.querySelector('[data-dropdowned]') !== null && !isMobile.any()){
+			Array.prototype.slice.call(document.querySelectorAll('[data-dropdowned]'))
+				.forEach(function(item) {
+					item.addEventListener('mouseover', function(e) {
+						document.documentElement.classList.add('submenu-open');
+						e.target.closest('[data-dropdowned]').classList.add('active');
+					});
+					item.addEventListener('mouseout', function(e) {
+						document.documentElement.classList.remove('submenu-open');
+						e.target.closest('[data-dropdowned]').classList.remove('active');
+					});
+				});
+		}
+		// END submenu hover
+
 		document.onclick = function(e) {
 			var targ = e.target;
 			
@@ -75,6 +91,10 @@
 			if(targ.closest('.submenu-list__link') !== null){
 				document.documentElement.classList.remove('menu-opened');
 				document.documentElement.classList.remove('lock');
+				document.documentElement.classList.remove('submenu-open');
+				Array.prototype.slice.call(document.querySelectorAll('[data-dropdowned]')).forEach(function(item) {
+					item.classList.remove('active');
+				});
 			}
 			//КОНЕЦ закрытие моб. меню при переходе по якорным ссылкам подменю на devices.html
 		}
