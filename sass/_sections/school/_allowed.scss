@@ -1,15 +1,14 @@
 /*--------------------section.allowed----------------------*/
 .allowed {
 	padding-top: rem(169.02);
-	padding-bottom: rem(142);
+	
 
 	@include max-screen($lgg){
 		padding-top: rem(108.13);
-		padding-bottom: rem(131);
+		
 	}
 	@include max-screen($md){
 		padding-top: rem(45.06);
-		padding-bottom: rem(83);
 	}
 }
 .school-section {}

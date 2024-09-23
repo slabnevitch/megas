@@ -1,9 +1,14 @@
 /*--------------------cacao----------------------*/
 .cacao {
 	padding-bottom: rem(405);
+	padding-top: rem(142);
 
 	@include max-screen($lgg){
+		padding-top: rem(131);
 		padding-bottom: rem(156.95);
+	}
+	@include max-screen($md){
+		padding-top: rem(83);
 	}
 }
 

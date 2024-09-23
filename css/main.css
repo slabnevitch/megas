@@ -6691,18 +6691,15 @@ textarea {
 /*--------------------section.allowed----------------------*/
 .allowed {
   padding-top: 9.9423529412rem;
-  padding-bottom: 8.3529411765rem;
 }
 @media only screen and (max-width: 86.25em) {
   .allowed {
     padding-top: 6.3605882353rem;
-    padding-bottom: 7.7058823529rem;
   }
 }
 @media only screen and (max-width: 61.99875em) {
   .allowed {
     padding-top: 2.6505882353rem;
-    padding-bottom: 4.8823529412rem;
   }
 }
 
@@ -6885,10 +6882,17 @@ textarea {
 /*--------------------cacao----------------------*/
 .cacao {
   padding-bottom: 23.8235294118rem;
+  padding-top: 8.3529411765rem;
 }
 @media only screen and (max-width: 86.25em) {
   .cacao {
+    padding-top: 7.7058823529rem;
     padding-bottom: 9.2323529412rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .cacao {
+    padding-top: 4.8823529412rem;
   }
 }
 
