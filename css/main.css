@@ -7983,7 +7983,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .self-service__text {
-    font-size: 0.9117647059rem;
+    font-size: 1.0588235294rem;
   }
 }
 .self-service__text a, .self-service__text span {
@@ -8001,7 +8001,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .self-service__text a, .self-service__text span {
-    font-size: 1.5rem;
+    font-size: 1.7647058824rem;
     line-height: 110%;
     margin-left: 0.1764705882rem;
   }
@@ -8045,14 +8045,13 @@ textarea {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     row-gap: 1.7647058824rem;
-    max-width: 55.5555555556%;
+    max-width: 69.4444444444%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media only screen and (max-width: 30em) {
   .self-service__items {
-    max-width: 63.8888888889%;
     padding-left: 0.8823529412rem;
     padding-right: 0.8823529412rem;
   }
@@ -8191,7 +8190,6 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .item-self-service__text {
-    font-size: 0.7941176471rem;
     line-height: normal;
   }
 }
