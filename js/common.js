@@ -66,7 +66,6 @@
 			if(targ.closest('.toggle-mnu') !== null){
 				document.querySelector('.toggle-mnu').classList.toggle('on');
 				if(!document.documentElement.classList.contains('search-open')){
-					console.log('rererer!!!')
 					document.documentElement.classList.toggle('lock');
 				}
 				document.documentElement.classList.remove('search-open');
@@ -81,7 +80,6 @@
 				document.documentElement.classList.remove('fab-open');
 				document.querySelector('.fab').classList.remove('fab--active');
 			}else if (targ.closest('.header__serch-area') == null  && targ.closest('.toggle-mnu') == null && targ.closest('.menu-header__body') == null){
-				console.log('fuccl!!!')
 				document.documentElement.classList.remove('search-open');
 				document.documentElement.classList.remove('lock');
 			}
@@ -144,9 +142,7 @@
 
 
 		if(document.querySelector('.school-scroll') !== null && document.querySelector('.school-hero') !== null){
-			console.log('if!!!')
-			window.addEventListener('scroll',  function(e) {		
-				console.log(document.querySelector('.school-scroll').getBoundingClientRect().top);
+			window.addEventListener('scroll',  function(e) {
 	        	var schoolScroll = document.querySelector('.school-scroll');
 	        	if(schoolScroll.getBoundingClientRect().top + schoolScroll.offsetHeight <= 0){
 	        		document.querySelector('.school-hero').classList.add('school-hero--hidden');
