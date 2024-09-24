@@ -200,8 +200,6 @@
   height: 10px;
   float: left;
 }
-
-/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
 /*--end tiny-slider--*/
 /*--tiny-slider--*/
 /*--end tiny-slider--*/
@@ -1315,7 +1313,6 @@
     transform: rotate(-360deg);
   }
 }
-/*# sourceMappingURL=venobox.min.css.map */
 .menu-list {
   display: -ms-flexbox;
   display: flex;
@@ -7986,7 +7983,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .self-service__text {
-    font-size: 0.8823529412rem;
+    font-size: 1.0588235294rem;
   }
 }
 .self-service__text a, .self-service__text span {
@@ -8004,7 +8001,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .self-service__text a, .self-service__text span {
-    font-size: 1.4705882353rem;
+    font-size: 1.7647058824rem;
     line-height: 110%;
     margin-left: 0.1764705882rem;
   }
@@ -8048,7 +8045,7 @@ textarea {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     row-gap: 1.7647058824rem;
-    max-width: 55.5555555556%;
+    max-width: 69.4444444444%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -8193,7 +8190,6 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .item-self-service__text {
-    font-size: 0.7647058824rem;
     line-height: normal;
   }
 }
