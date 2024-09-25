@@ -200,6 +200,8 @@
   height: 10px;
   float: left;
 }
+
+/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
 /*--end tiny-slider--*/
 /*--tiny-slider--*/
 /*--end tiny-slider--*/
@@ -1313,6 +1315,7 @@
     transform: rotate(-360deg);
   }
 }
+/*# sourceMappingURL=venobox.min.css.map */
 .menu-list {
   display: -ms-flexbox;
   display: flex;
@@ -6752,12 +6755,6 @@ textarea {
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 36em) {
-  .allowed__items {
-    margin-left: 1.5294117647rem;
-    margin-right: 1.5294117647rem;
-  }
-}
 @media only screen and (min-width: 90em) {
   .allowed__items {
     row-gap: 0.5882352941rem;
@@ -6855,7 +6852,7 @@ textarea {
 }
 @media only screen and (max-width: 36em) {
   .item-allowed__text {
-    font-size: 0.5882352941rem;
+    font-size: 0.7058823529rem;
   }
 }
 @media only screen and (min-width: 90em) {
@@ -6908,6 +6905,12 @@ textarea {
   .cacao__title {
     margin-bottom: 1.4117647059rem;
     font-size: 0.8823529412rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .cacao__title {
+    margin-bottom: 1.4117647059rem;
+    font-size: 1.0588235294rem;
   }
 }
 
@@ -6984,6 +6987,13 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 30em) {
+  .guarantee__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .guarantee__heading {
   margin-bottom: 4.3529411765rem;
 }
@@ -7041,13 +7051,13 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .guarantee__item {
-    font-size: 0.7647058824rem;
+    font-size: 0.9411764706rem;
     line-height: normal;
   }
 }
 @media only screen and (max-width: 30em) {
   .guarantee__item {
-    padding-left: 27.7777777778%;
+    padding-left: 22.2222222222%;
   }
 }
 @media only screen and (min-width: 47.99875em) {
@@ -7069,7 +7079,7 @@ textarea {
   .guarantee__item:before {
     width: 0.5594117647rem;
     height: 0.5594117647rem;
-    left: 5.078125%;
+    left: 4.1015625%;
     top: 0.3529411765rem;
   }
 }
@@ -7156,7 +7166,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .healthy-snack__title {
-    font-size: 0.8823529412rem;
+    font-size: 1.0588235294rem;
     margin-bottom: 1.5294117647rem;
   }
 }
@@ -7251,6 +7261,11 @@ textarea {
   line-height: 150%;
 }
 @media only screen and (max-width: 36em) {
+  .assortment__content--school .assortment__text p {
+    font-size: 0.9176470588rem;
+  }
+}
+@media only screen and (max-width: 22.5em) {
   .assortment__content--school .assortment__text p {
     font-size: 0.7647058824rem;
   }
@@ -7580,7 +7595,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .individual__text {
-    font-size: 0.7647058824rem;
+    font-size: 0.8823529412rem;
     margin-bottom: 0;
   }
 }
@@ -7655,7 +7670,7 @@ textarea {
 @media only screen and (max-width: 47.99875em) {
   .school-auto__descr {
     padding-bottom: 0.7829411765rem;
-    font-size: 0.7647058824rem;
+    font-size: 0.9411764706rem;
   }
 }
 
@@ -8045,7 +8060,7 @@ textarea {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     row-gap: 1.7647058824rem;
-    max-width: 69.4444444444%;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -8190,6 +8205,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .item-self-service__text {
+    font-size: 0.9411764706rem;
     line-height: normal;
   }
 }
