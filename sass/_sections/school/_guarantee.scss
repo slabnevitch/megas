@@ -16,6 +16,10 @@
 	}
 }
 .guarantee__wrapper {
+	@include max-screen($xss){
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .guarantee__heading {
@@ -65,11 +69,11 @@
 		line-height: 130%;
 	}
 	@include max-screen($sm){
-		font-size: rem(13);
+		font-size: rem(16);
 		line-height: normal;
 	}
 	@include max-screen($xss){
-		padding-left: prc(100, 360);
+		padding-left: prc(80, 360);
 
 	}
 	@include min-screen($sm){
@@ -89,7 +93,7 @@
 		@include max-screen($lgg){
 			width: rem(9.51);
 			height: rem(9.51);
-			left: prc(52, 1024);
+			left: prc(42, 1024);
 			top: rem(6);
 		}
 

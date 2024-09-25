@@ -101,14 +101,14 @@ $itemsWidth: 1012;
 	@include max-screen($md){
 		grid-template-columns: auto;
 		row-gap: rem(30);
-		max-width: prc(250, 360);
+		max-width: prc(300, 360);
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	@include max-screen($xss){
-		padding-left: rem(15);
-		padding-right: rem(15);
+		// padding-left: rem(15);
+		// padding-right: rem(15);
 	}
 	@include max-screen($mins){
 		padding-left: 0;
@@ -244,7 +244,7 @@ $itemsWidth: 1012;
 		font-size: rem(15);
 	}
 	@include max-screen($sm){
-		// font-size: rem(13);
+		font-size: rem(20);
 		line-height: normal;
 	}
 

@@ -25,6 +25,10 @@
 		margin-bottom: rem(24);
 		font-size: rem(15);
 	}
+	@include max-screen($sm){
+		margin-bottom: rem(24);
+		font-size: rem(18);
+	}
 }
 .tiny-carousel {}
 .cacao__carousel {
