@@ -8060,15 +8060,9 @@ textarea {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     row-gap: 1.7647058824rem;
-    max-width: 75%;
+    max-width: 83.3333333333%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .self-service__items {
-    padding-left: 0.8823529412rem;
-    padding-right: 0.8823529412rem;
   }
 }
 @media only screen and (max-width: 20em) {
@@ -8205,7 +8199,7 @@ textarea {
 }
 @media only screen and (max-width: 47.99875em) {
   .item-self-service__text {
-    font-size: 0.9411764706rem;
+    font-size: 1.1764705882rem;
     line-height: normal;
   }
 }
